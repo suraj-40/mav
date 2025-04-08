@@ -1,1 +1,2 @@
-# avschool
+# AvSchool
+ AV School Project
