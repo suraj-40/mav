@@ -12,11 +12,52 @@ const Registration = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      const user = {
+        name,
+        email,
+        parentsContact,
+        admissionForClass,
+        lastSchoolAttended,
+        branch,
+        gender
+      };
+        try {
+          console.log('user:', user);
+          const response = await fetch('http://localhost:8080/api/admission', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(user)
+          });
+
+          if (response.ok) {
+              const data = await response.json();
+              console.log('success:', data);
+              // Handle successful registration (e.g., redirect to login page)
+          } else {
+              console.error('failed:', response.statusText);
+              // Handle registration failure
+          }
+      } catch (error) {
+          console.error('Error:', error);
+          // Handle error
+      }
+    };
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [parentsContact, setParentsContact] = useState('');
+    const [admissionForClass, setAdmissionForClass] = useState(''); 
+    const [branch, setBranch] = useState('');
+    const [gender, setGender] = useState('');
+    const [lastSchoolAttended, setLastSchoolAttended] = useState('');
 
   return (
     <section
       className="relative min-h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: "url('/images/school-background.webp')" }} // Update with your image path
+      style={{ backgroundImage: "url('/images/BookImg.png')" }} // Update with your image path
     >
       {/* Overlay for Readability */}
       <div className="absolute inset-0 bg-black/50 z-0" /> {/* Adjust opacity if needed */}
@@ -51,7 +92,7 @@ const Registration = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Section - Content */}
           <div className="space-y-8" data-aos="fade-right">
-            <span className="inline-block px-4 py-2 bg-yellow-200/80 text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm">
+            <span className="inline-block px-4 py-2 bg-[#FF5B00] text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm">
               Academic Year 2025 - 2026
             </span>
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
@@ -68,14 +109,17 @@ const Registration = () => {
 
           {/* Right Section - Form */}
           <div className="relative" data-aos="fade-left">
-            <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md">
-              <form className="space-y-6">
+            <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md" data-aos="fade-up">
+              <form className="space-y-6" onSubmit={handleSubmit} >
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-blue-800">Child&#39;s Full Name</label>
                   <input
                     type="text"
                     placeholder="Enter Full Name In Capital Letters"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -86,6 +130,9 @@ const Registration = () => {
                       type="email"
                       placeholder="Email Address"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <div className="space-y-2">
@@ -94,6 +141,9 @@ const Registration = () => {
                       type="text"
                       placeholder="Enter 10 Digit Phone Number"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="parentsContact"
+                      value={parentsContact}
+                      onChange={(e) => setParentsContact(e.target.value)}
                     />
                   </div>
                 </div>
@@ -101,15 +151,23 @@ const Registration = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Branch</label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800">
+                    <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="branch"
+                      value={branch}
+                      onChange={(e) => setBranch(e.target.value)}  
+                    >
                       <option value="" className="text-gray-500">Select Branch</option>
-                      <option value="branch1" className="text-gray-800">AV Srigandhakavalu</option>
-                      <option value="branch2" className="text-gray-800">AV Ullal</option>
+                      <option value="Srigandhakavalu" className="text-gray-800">AV Srigandhakavalu</option>
+                      <option value="Ullal" className="text-gray-800">AV Ullal</option>
                     </select>
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Gender</label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800">
+                    <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="gender"
+                      value={gender}
+                      onChange={(e) => setGender(e.target.value)}
+                    >
                       <option value="" className="text-gray-500">Select Gender</option>
                       <option value="male" className="text-gray-800">Male</option>
                       <option value="female" className="text-gray-800">Female</option>
@@ -123,6 +181,9 @@ const Registration = () => {
                     type="text"
                     placeholder="Last School Attended (If Any)"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                    id="lastSchoolAttended"
+                    value={lastSchoolAttended}
+                    onChange={(e) => setLastSchoolAttended(e.target.value)}
                   />
                 </div>
 
@@ -132,6 +193,9 @@ const Registration = () => {
                     type="text"
                     placeholder="Montessori 1, 2 or 3, Class 1, 2, 3..."
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                    id="admissionForClass"
+                    value={admissionForClass}
+                    onChange={(e) => setAdmissionForClass(e.target.value)}
                   />
                 </div>
 
