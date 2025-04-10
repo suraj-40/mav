@@ -231,7 +231,7 @@ const Schedule = () => {
                       value={formData.parentContact}
                       required
                       onChange={handleChange}
-                      min={10}
+                       pattern="\d{10}"
                       placeholder="Enter 10 Digit Phone Number"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800"
                     />
