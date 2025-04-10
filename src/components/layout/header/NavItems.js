@@ -19,7 +19,7 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     {
       id: 2,
       name: "Schedule",
-      path: "/application",
+      path: "/schedule",
       // dropdown: <DropdownPages />,
       isRelative: false,
     },
@@ -33,21 +33,21 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     {
       id: 4,
       name: "NEP",
-      path: "/NEP/About",
+      path: "/NEP/about",
       dropdown: <DropdownDashboard />,
       isRelative: true,
     },
     {
       id: 5,
       name: "About Us",
-      path: "/ecommerce/shop",
+      path: "/about-us/our-Leaders/founder",
       dropdown: <DropdownEcommerce />,
       isRelative: true,
     },
     {
       id: 6,
       name: "Why AV?",
-      path: "/whyabc",
+      path: "/whyav",
       // dropdown: <DropdownDemoes />,
       isRelative: true,
     },

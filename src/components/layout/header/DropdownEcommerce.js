@@ -38,13 +38,13 @@ const DropdownEcommerce = () => {
     {
       name: "Vision & Mission",
       status: null,
-      path: "about-us/vision&Mission",
+      path: "/about-us/vision&Mission",
       type: "secondary",
     },
     {
       name: "Contact Us",
       status: null,
-      path: "about-us/contact-Us",
+      path: "/about-us/contact-Us",
       type: "secondary",
     },
   ];
