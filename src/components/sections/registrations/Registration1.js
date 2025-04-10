@@ -95,6 +95,7 @@ const Registration = () => {
                       placeholder="Enter 10 Digit Phone Number"
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
                     />
+
                   </div>
                 </div>
 
@@ -161,7 +162,7 @@ const Registration = () => {
       </div>
 
       {/* Modal */}
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={closeModal}>
           <div
             className="bg-white/95 max-w-2xl w-full mx-4 p-8 rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto backdrop-blur-md"
@@ -201,7 +202,7 @@ const Registration = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };
