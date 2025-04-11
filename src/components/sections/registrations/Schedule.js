@@ -58,7 +58,7 @@ const Schedule = () => {
      
       const [response,] =await Promise.all([
         axios.post('/api/registration', formData),
-        axios.post('/api/Googlesheet', formData)
+        axios.post('/api/ScheduleGoogleSheet', formData)
       ]);
 
        

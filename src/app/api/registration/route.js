@@ -30,7 +30,7 @@ export async function POST(req) {
     <p>Thank you for scheduling your school visit on <strong>${date}</strong>.</p>
     <p>Please arrive 10 minutes early and bring a valid ID.</p>
     <br/>
-    <p>Best regards,<br/>The School Team</p>
+    <p>Best regards,<br/>Agasthya Vidhyanikethan</p>
   `;
 
   const schoolEmailTemplate = `
@@ -42,7 +42,6 @@ export async function POST(req) {
     <p><strong>Gender:</strong> ${gender}</p>
     <p><strong>Last Attended School:</strong> ${lastSchool}</p>
     <p><strong>Admission Class:</strong> ${admissionClass}</p>
-    <p><strong>Policy Accepted:</strong> ${acceptPolicy ? "Yes" : "No"}</p>
     <p><strong>Scheduled Visit Date:</strong> ${date}</p>
     <br/>
     <p>System Notification - LMS</p>
