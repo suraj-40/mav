@@ -1,4 +1,4 @@
-import { Hind, Inter } from "next/font/google";
+import { Hind, Inter, Montserrat } from "next/font/google";
 import "@/assets/css/icofont.min.css";
 import "@/assets/css/popup.css";
 import "@/assets/css/video-modal.css";
@@ -19,6 +19,7 @@ export const inter = Inter({
   display: "swap",
   variable: "--font-inter",
 });
+
 export const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -26,26 +27,28 @@ export const hind = Hind({
   variable: "--font-hind",
 });
 
+export const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
+
 export const metadata = {
   title: "Agasthya Vidhya",
   description: "Home description",
-  icon:"./favicon2.ico"
+  icons: "./favicon2.ico",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${hind.variable}`}>
-      {/* <Head>
-        <link rel="icon" href="/favicon2.ico" />
-      </Head> */}
+    <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>
       <body
-        className={`relative leading-[1.8] bg-bodyBg dark:bg-bodyBg-dark z-0  ${inter.className}`}
+        className={`relative leading-[1.8] bg-bodyBg dark:bg-bodyBg-dark z-0 ${inter.className}`}
       >
         <PreloaderPrimary />
         <ToastContainer position="top-right" autoClose={3000} />
         {children}
-
-        {/* theme fixed shadow */}
         <div>
           <FixedShadow />
           <FixedShadow align={"right"} />

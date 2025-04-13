@@ -1,103 +1,42 @@
-/*********************************************************************************
-
-	  Template Name: Edurock - Education LMS Template
-    Author: Kamrul Hasan
-    Support: kamrulishasan34@gmail.com
-    Description: Edurock -  Education, online course, tailwind v3.0 and Next.js v14,.
-    Version: 1.0.0
-    
-****************
-*****************************************************************/
-
-/**************************************************************
-
-	Start Tailwind Custom Style Indexing
-	|
-	|___screens
-  |
-	|___colors
-  |
-	|___area
-  | |___width 
-  | |___height
-  | |___max width 
-  | |___max height 
-	|
-  |___spacing
-  | |___gap 
-  | |___padding
-  | |___margin 
-  |
-  |___typography
-  | |___font family 
-  | |___font size
-  | |___line-height 
-  | |___letter spacing  
-  |
-	|___background
-	|
-	|___shdow
-  |
-	|___postion
-  |
-	|___transform
-  | |___tranlate 
-	|
-	|___ border
-  | |___width 
-  | |___radius 
-	|
-	|___animation
-  |
-	|___components
-  | |___containers 
-  | |___shadow 
-
-***************************************************************/
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
-    './src/**/*.{html,js,jsx,ts,tsx,css}',
+    "./src/**/*.{html,js,css}",
     "./src/**/*.{html,js}",
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{html,js}",
+    "./src/pages/**/*.{js}",
+    "./src/components/**/*.{js}",
+    "./src/app/**/*.{js}",
+    "./pages/**/*.{js}",
+    "./components/**/*.{js}",
+    "./app/**/*.{js}",
+    "./src/**/*.{js}",
+    "*.{js}",
   ],
-  darkMode: "class",
+  prefix: "",
   theme: {
-    screens: {
-      // Breakpoint
-      xs: "320px",
-      // => @media (min-width: 320px) { ... }
-      sm: "576px",
-      // => @media (min-width: 576px) { ... }
-
-      md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
-      xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
-      "2xl": "1366px",
-      // => @media (min-width: 1366px) { ... }
-
-      "3xl": "1500px",
-      // => @media (min-width: 1500px) { ... }
-
-      "4xl": "1921px",
-      // => @media (min-width: 1920px) { ... }
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
-
+    screens: {
+      xs: "320px",
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1366px",
+      "3xl": "1500px",
+      "4xl": "1921px",
+    },
     extend: {
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
       },
-      // colors
       colors: {
         blue: "#465fe9",
         darkBlue: "#212529",
@@ -171,7 +110,6 @@ module.exports = {
         blueDark: "#260094EE",
         naveBlue: "#17093e",
         placeholder: "rgb(98, 96, 93)",
-
         "bodyColor-dark": "#fff",
         "bodyBg-dark": "#0C0E2B",
         "bodyBg1-dark": "#0C0E2B",
@@ -200,59 +138,69 @@ module.exports = {
         "bs-body-color-dark": "#fff",
         "fb-color": "#3b5999",
         "twiter-color": "#55acee",
-
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))'
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))'
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
         sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))'
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
         },
         school: {
-          orange: '#EA5529',
-          navy: '#182153',
-          blue: '#3A4DA1',
-          lightgray: '#F8F9FA'
+          orange: "#EA5529",
+          navy: "#182153",
+          blue: "#3A4DA1",
+          lightgray: "#F8F9FA",
+        },
+        orange: {
+          50: "#fff7ed",
+          100: "#ffedd5",
+          200: "#fed7aa",
+          300: "#fdba74",
+          400: "#fb923c",
+          500: "#f97316",
+          600: "#ea580c",
+          700: "#c2410c",
+          800: "#9a3412",
+          900: "#7c2d12",
+          950: "#431407",
         },
       },
-      // area
-      // width
       width: {
         "1px": "1px",
         "14px": ".875rem",
@@ -287,7 +235,7 @@ module.exports = {
         "170px": "10.625rem",
         42.5: "10.625rem",
         150: "37.5rem",
-        '210': '210px',
+        "210": "210px",
         2000: "2000px",
         "card-img": "4.46875rem",
         "logo-sm": "9.375rem",
@@ -309,7 +257,6 @@ module.exports = {
         "70%": "70%",
         "83%": "83.33333333%",
       },
-      // height
       height: {
         "1px": "1px",
         "2px": "2px",
@@ -348,7 +295,6 @@ module.exports = {
         2000: "2000px",
         "fixed-shadow": "31.25",
       },
-      // max width
       maxWidth: {
         15: "3.75rem",
         "50px": "3.125rem",
@@ -371,17 +317,13 @@ module.exports = {
         dropdown2: "12.5rem",
         dropdown3: "18.75rem",
       },
-      // max height
       maxHeight: {
         68: "17rem",
         125: "31.25rem",
         137.5: "34.375rem",
         150: "37.5rem",
-
         dropdown: "40.625rem",
       },
-      // spacing
-      // gap
       gap: {
         "5px": ".3125rem",
         "10px": "10px",
@@ -397,7 +339,6 @@ module.exports = {
         "50px": "3.125rem",
         15: "3.75rem",
       },
-      // padding
       padding: {
         "1px": "1px",
         "3px": "3px",
@@ -451,7 +392,6 @@ module.exports = {
         "205px": "12.8125rem",
         "250px": "15.625rem",
       },
-      // margin
       margin: {
         "5px": ".3125rem",
         "6px": ".375rem",
@@ -506,9 +446,6 @@ module.exports = {
         "130px": "8.125rem",
         "150px": "9.375rem",
       },
-      // typography
-
-      //  font size
       fontSize: {
         "size-10": ".625rem",
         "size-11": ".6875rem",
@@ -544,8 +481,6 @@ module.exports = {
         "size-200": "12.5rem",
         "size-auto-xl": "calc(1.325rem + .9vw)",
       },
-
-      // line-height
       lineHeight: {
         1: 1,
         1.2: 1.2,
@@ -601,19 +536,15 @@ module.exports = {
         20: "5rem",
         24: "6rem",
       },
-      // letter spacing
       letterSpacing: {
         "5px": "5px",
         half: ".5px",
       },
-      // background
       backgroundImage: {
         register: "url('../assets/images/register/register__bg.png')",
       },
-      // shdow
       boxShadow: {
-        'dropdown': '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-        dropdown: "0 0 50px 10px rgba(15, 157, 193, 0.1)",
+        dropdown: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
         "dropdown-secodary": "0 0 50px 10px rgba(95, 45, 237, 0.15)",
         "dropdown-card": "0px 0 5px 5px rgba(0, 0, 0, 0.05)",
         "dropdown-card-hover": "0px 0 5px 5px rgba(0, 0, 0, 0.10)",
@@ -626,7 +557,6 @@ module.exports = {
         blog: "0px 3px 40px rgba(14, 37, 49, 0.078)",
         "scroll-up": "0px 10px 50px rgba(13, 38, 59, 0.15)",
         "theme-controller": "0px 6px 34px rgba(215, 216, 222, 0.15)",
-        "scroll-up": "0px 10px 50px rgba(13, 38, 59, 0.15)",
         "hero-action": "0px 4px 13px 1px rgba(95, 45, 237, 0.16)",
         "hero-greeting": "0px 10px 20px 0px rgba(0, 5, 52, 0.1)",
         feature: "0px 4px 30px 0px rgba(0, 0, 0, 0.1)",
@@ -640,18 +570,15 @@ module.exports = {
         review: "0px 10px 25px rgba(0, 0, 0, 0.07)",
         autor: "5px 5px 20px 5px rgba(0, 0, 0, 0.03)",
         accordion: "0 0 20px 10px rgba(95, 45, 237, 0.02)",
-
         accordion2: "0 0 10px 2px rgba(0, 0, 0, 0.05)",
-
         "accordion-dark": "0 0 1px 1px rgba(95, 45, 237, 0.2)",
         select: "0 0 0 .25rem rgba(13,110,253,.25)",
         address: "0px 4px 15px rgba(174, 181, 206, 0.09)",
         "address-hover": "0px 4px 25px rgba(174, 181, 206, 0.3)",
       },
       minWidth: {
-        'dropdown2': '240px',
+        dropdown2: "240px",
       },
-      // postion
       zIndex: {
         "-1": "-1",
         1: "1",
@@ -664,15 +591,11 @@ module.exports = {
         xxl: "1000000000",
         xxxl: "1000000010",
       },
-      // transform
-      // tranlate
       translate: {
         "5px": "5px",
         "50px": "3.125rem",
         "30px": "1.875rem",
       },
-      // border
-      // width
       borderWidth: {
         "3px": "3px",
         "5px": "5px",
@@ -680,11 +603,10 @@ module.exports = {
         12: "12px",
         15: "15px",
       },
-      // radius
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
         standard: "4px",
         "5px": "5px",
         5: "1.25rem",
@@ -694,37 +616,29 @@ module.exports = {
       inset: {
         "5px": "5px",
       },
-      // animation
       keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' }
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' }
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
-        'fade-in': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' }
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
         "spin-slow": {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
         "move-hor": {
-          "0%": {
-            transform: "translateX(20px)",
-          },
-          "100%": {
-            transform: "translateX(0px)",
-          },
+          "0%": { transform: "translateX(20px)" },
+          "100%": { transform: "translateX(0px)" },
         },
         "move-var": {
-          "0%": {
-            "-webkit-transform": "translateY(0)",
-            transform: "translateY(0)",
-          },
+          "0%": { "-webkit-transform": "translateY(0)", transform: "translateY(0)" },
           "50%": {
             "-webkit-transform": "translateY(-20px)",
             transform: "translateY(-20px)",
@@ -735,10 +649,7 @@ module.exports = {
           },
         },
         "move-var2": {
-          "0%": {
-            "-webkit-transform": "translateY(0)",
-            transform: "translateY(0)",
-          },
+          "0%": { "-webkit-transform": "translateY(0)", transform: "translateY(0)" },
           "50%": {
             "-webkit-transform": "translateY(20px)",
             transform: "translateY(20px)",
@@ -750,18 +661,13 @@ module.exports = {
         },
         buble: {
           "0%": {
-            " -webkit-transform": "translate(-50%, -50%) scale(0.5)",
+            "-webkit-transform": "translate(-50%, -50%) scale(0.5)",
             transform: "translate(-50%, -50%) scale(0.5)",
             opacity: 1,
             "border-width": "3px",
           },
-          "40%": {
-            opacity: 0.5,
-            "  border-width": "2px",
-          },
-          "65%": {
-            "border-width": "1px",
-          },
+          "40%": { opacity: 0.5, "border-width": "2px" },
+          "65%": { "border-width": "1px" },
           "100%": {
             "-webkit-transform": "translate(-50%, -50%) scale(1)",
             transform: "translate(-50%, -50%) scale(1)",
@@ -770,12 +676,8 @@ module.exports = {
           },
         },
         marquee: {
-          "0%": {
-            transform: "translateX(0)",
-          },
-          "100%": {
-            transform: "translateX(-50%)",
-          },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
         preloader: {
           "0%": {
@@ -805,7 +707,6 @@ module.exports = {
           },
         },
       },
-     
       animation: {
         "spin-slow": "spin-slow 6s linear 0s infinite alternate",
         "spin-infinit": "spin-slow 2s linear infinite",
@@ -813,9 +714,9 @@ module.exports = {
         "move-hor": "move-hor 3s linear 0s infinite alternate",
         "move-var": "move-var 3s infinite linear",
         "move-var2": "move-var2 3s infinite linear",
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-        'fade-in': 'fade-in 0.5s ease-out forwards',
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out forwards",
         buble: "buble 3.25s linear 0s infinite",
         buble2: "buble 3.25s linear .75s infinite",
         marquee: "marquee 25s linear 0s infinite normal",
@@ -823,13 +724,10 @@ module.exports = {
       },
     },
   },
-  // components
   corePlugins: {
     container: false,
   },
-
   plugins: [
-    // containers
     function ({ addComponents }) {
       addComponents({
         ".container-fluid": {
@@ -843,7 +741,6 @@ module.exports = {
           maxWidth: "100%",
           paddingLeft: "30px",
           paddingRight: "30px",
-
           "@screen 2xl": {
             paddingLeft: "50px",
             paddingRight: "50px",
@@ -891,7 +788,6 @@ module.exports = {
         ".container2-xl": {
           maxWidth: "100%",
           margin: "0 10px",
-
           "@screen lg": {
             margin: "0 40px",
           },
@@ -919,7 +815,6 @@ module.exports = {
           paddingRight: "15px",
         },
       });
-
       addComponents({
         ".container-secondary-md": {
           maxWidth: "85.625rem",
@@ -932,11 +827,9 @@ module.exports = {
           margin: "0 auto",
         },
       });
-      // shadow
       addComponents({
         ".fixed-shadow": {
           backgroundImage: "linear-gradient(45deg, #F2277E, #5F2DED)",
-
           position: "fixed",
           top: "200px",
           right: "auto",

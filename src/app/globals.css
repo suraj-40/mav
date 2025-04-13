@@ -1,55 +1,9 @@
-/*********************************************************************************
-
-	  Template Name: Edurock - Education LMS Template
-    Author: Kamrul Hasan
-    Support: kamrulishasan34@gmail.com
-    Description: Edurock -  Education, online course, tailwind v3.0 and Next.js v14,.
-    Version: 1.0.0
-    
-****************
-*****************************************************************/
-
-/**************************************************************
-
-	Start Style sheet Indexing
-	|
-	|___ Default Styles
-	|	|___ Variables
-	|	|___ Extend
-  |
-	|___Header Styles
-	|	|___ sticky header
-  |
-	|___tab
-	|
-  |___preloader
-  |
-	|___filter
-	|
-	|___swiper
-  | |___ hero 
-  | |___ featured courses 
-  | |___ testimonial
-  | |___ swiper pagination 
-  |
-	|___tooltip
-	|
-	|___accordion
-  | |___ fees 
-  | |___ faq 
-  | |___ shop 
-	|
-	|___ responsive
-	|
-	|___ tailwind directives
-
-***************************************************************/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
-body {
-  @apply bg-background text-foreground font-montserrat;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Variables */
 :root {
@@ -67,41 +21,70 @@ body {
   --borderColor2: #dddddd;
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
-
   --school-navy: hsl(222.2, 47.4%, 11.2%);
   --school-lightgray: hsl(210, 40%, 96.1%);
   --school-orange: hsl(0, 84.2%, 60.2%);
+  --radius: 0.5rem;
 }
+
 .dark {
   --blueLight1: #0c0e2b;
   --borderColor: #312a57;
   --borderColor2: #fff;
-}
-/* Extend */
-a {
-  display: inline-block;
-}
-a,
-button,
-span {
-  transition: 0.3s;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-hind);
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 16 100% 50%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 16 100% 50%;
 }
 
-/* sticky header */
+/* Base Styles */
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+  a {
+    display: inline-block;
+  }
+  a,
+  button,
+  span {
+    transition: 0.3s;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-hind);
+  }
+}
+
+/* Sticky Header */
 .sticky-header.active {
   background: var(--whiteColor);
   box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.15);
 }
 
-/* tab */
+/* Tab Styles */
 .tab-link {
   font-family: var(--font-hind);
 }
@@ -121,24 +104,26 @@ h6 {
 .product-details-course button.active {
   color: var(--primaryColor);
 }
-/* perloder */
+
+/* Preloader */
 .preloader.hide {
   animation: preloaderHide 0.3s linear;
 }
-/* filter active style */
+
+/* Filter Active Style */
 .button-group .is-checked {
   color: var(--primaryColor) !important;
 }
-
 .button-group .is-checked::before {
   width: 100%;
 }
-/* swiper slider */
+
+/* Swiper Slider */
 .swiper {
   width: 100%;
 }
 
-/* hero */
+/* Hero Slider */
 .hero .swiper-button-prev,
 .hero .swiper-button-next,
 .featured-courses .swiper-button-prev,
@@ -178,14 +163,14 @@ h6 {
   background: var(--primaryColor);
   border-color: var(--primaryColor);
 }
-
 .hero:hover .swiper-button-prev::after,
 .hero:hover .swiper-button-next::after {
   opacity: 100;
   visibility: visible;
   transform: translateX(0);
 }
-/* featured courses */
+
+/* Featured Courses */
 .featured-courses .swiper-button-prev::after,
 .featured-courses .swiper-button-next::after {
   opacity: 100;
@@ -198,11 +183,11 @@ h6 {
 .featured-courses .swiper-button-next::after {
   transform: translateX(4px);
 }
-/* testimonial */
+
+/* Testimonial */
 .testimonial .swiper-button-prev {
   transform: translateX(-8px);
 }
-
 .testimonial .swiper-button-next {
   transform: translateX(8px);
 }
@@ -210,7 +195,6 @@ h6 {
 .testimonial .swiper-button-next::after {
   display: none;
 }
-
 .testimonial .swiper {
   position: static;
 }
@@ -221,18 +205,16 @@ h6 {
   font-size: 30px;
   transition: 0.3s;
 }
-
 .testimonial .swiper-button-prev::before {
   content: "\ea93";
 }
 .testimonial .swiper-button-next::before {
   content: "\ea94";
 }
-.testimonial .swiper-button-next:hover:before,
+.testimonial .swiper-button-next:hover::before,
 .testimonial .swiper-button-prev:hover::before {
   color: var(--secondaryColor);
 }
-
 .testimonial2.swiper {
   position: relative;
 }
@@ -266,18 +248,17 @@ h6 {
 .dark .testimonial .swiper-button-next::before {
   color: var(--whiteColor);
 }
-/* swiper pagination */
+
+/* Swiper Pagination */
 .hero .swiper-pagination {
   bottom: 80px;
 }
-
 .kindergarden .swiper-pagination {
   bottom: 30px;
 }
 .machine-learning .swiper-pagination {
   bottom: 20px;
 }
-
 .hero .card-slider .swiper-pagination {
   bottom: -26px;
 }
@@ -296,7 +277,6 @@ h6 {
 .dark .hero .swiper-pagination .swiper-pagination-bullet {
   outline: 2px solid var(--whiteColor);
 }
-
 .hero .swiper-pagination .swiper-pagination-bullet-active,
 .dark .hero .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primaryColor);
@@ -311,18 +291,18 @@ h6 {
   display: none;
 }
 
-/* animation */
+/* Animation */
 .play-state {
   animation-play-state: running;
 }
 .play-state:hover {
   animation-play-state: paused;
 }
-/* tooltip */
+
+/* Tooltip */
 .tooltip {
   position: relative;
 }
-
 .tooltip::after,
 .tooltip::before {
   position: absolute;
@@ -343,7 +323,6 @@ h6 {
   border-radius: 5px;
   top: -40px;
 }
-
 .tooltip::before {
   content: "";
   width: 0;
@@ -357,15 +336,14 @@ h6 {
   visibility: visible;
   opacity: 100;
 }
-/* accordion */
-/* fees  */
+
+/* Accordion */
 .fees .accordion-controller,
 .curriculum .accordion-controller {
   font-family: var(--font-hind);
 }
 .fees .active .accordion-controller,
 .curriculum .active .accordion-controller {
-  /* background-color: #e7f1ff; */
   background-color: var(--blueLight1);
 }
 .fees .active .accordion-controller svg,
@@ -373,12 +351,10 @@ h6 {
   transform: rotate(-179.999deg);
   fill: var(--blue);
 }
-/* create course */
 .create-course .active .accordion-controller {
   background-color: transparent;
   border-bottom: 1px solid var(--borderColor2);
 }
-
 .create-course .active .accordion-controller:focus {
   box-shadow: 0 0 0 0.25rem var(--blue2);
   border-bottom: 1px solid transparent;
@@ -386,28 +362,23 @@ h6 {
 .create-course .accordion-controller:focus {
   box-shadow: 0 0 0 0.25rem var(--blue2);
 }
-/* faq */
 .faq .accordion-controller:focus {
   outline-style: solid;
   outline-color: var(--blueLight);
 }
-
 .faq .active .accordion-controller {
   background-color: transparent;
 }
-/* shop */
 .shop .accordion.active p:first-child {
   margin-top: 8px;
   transform: translateX(0) rotate(90deg);
 }
 
-/* responsive */
+/* Responsive */
 @media screen and (min-width: 768px) {
-  /* testimonila swiper */
   .testimonial .swiper-button-prev {
     transform: translateX(-32px);
   }
-
   .testimonial .swiper-button-next {
     transform: translateX(32px);
   }
@@ -417,11 +388,9 @@ h6 {
   .testimonial2 .swiper-button-next {
     right: 32px;
   }
-  /* swiper pagination */
   .hero .swiper-pagination {
     bottom: 100px;
   }
-
   .kindergarden .swiper-pagination {
     bottom: 30px;
   }
@@ -436,11 +405,11 @@ h6 {
     border-width: 15px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .hero .swiper-pagination {
     bottom: 80px;
   }
-
   .kindergarden .swiper-pagination {
     bottom: 30px;
   }
@@ -451,8 +420,8 @@ h6 {
     bottom: -26px;
   }
 }
+
 @media screen and (min-width: 1366px) {
-  /* swiper slider */
   .hero .swiper-button-prev,
   .hero .swiper-button-next {
     width: 70px;
@@ -464,11 +433,9 @@ h6 {
     height: 70px;
     line-height: 70px;
   }
-  /* testimonila swiper */
   .testimonial .swiper-button-prev {
     transform: translateX(-48px);
   }
-
   .testimonial .swiper-button-next {
     transform: translateX(48px);
   }
@@ -480,7 +447,11 @@ h6 {
   }
 }
 
-/* // tailwind directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Custom Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

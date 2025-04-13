@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import MobileMenu from "./MobileMenu";
+import MobileMenu1 from "./MobileMenu1";
 import HeaderTop from "./HeaderTop";
-
 import useIsTrue from "@/hooks/useIsTrue";
 import Aos from "aos";
 import stickyHeader from "@/libs/stickyHeader";
@@ -12,6 +11,7 @@ import smoothScroll from "@/libs/smoothScroll";
 const Header = () => {
   const isHome2 = useIsTrue("/home-2");
   const isHome2Dark = useIsTrue("/home-2-dark");
+
   useEffect(() => {
     stickyHeader();
     smoothScroll();
@@ -23,15 +23,20 @@ const Header = () => {
       easing: "ease",
     });
   }, []);
+
   return (
     <header>
       <div>
         {/* header top */}
-        {isHome2Dark || isHome2 ? "" : <HeaderTop />}
+        {!(isHome2 || isHome2Dark) && (
+          <div className="hidden lg:block">
+            <HeaderTop />
+          </div>
+        )}
         {/* navbar */}
         <Navbar />
         {/* mobile menu */}
-        <MobileMenu />
+        <MobileMenu1/>
       </div>
     </header>
   );

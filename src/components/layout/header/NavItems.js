@@ -59,8 +59,8 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
         isMobile
           ? "flex flex-col space-y-4"
           : isMediumScreen
-          ? "flex flex-wrap items-center space-x-2 w-full"
-          : "hidden lg:flex justify-between items-center space-x-2"
+          ? "flex flex-wrap items-center space-x-7 w-full"
+          : "hidden lg:flex justify-between items-center space-x-7"
       }`}
     >
       {navItems.map((navItem, idx) => (

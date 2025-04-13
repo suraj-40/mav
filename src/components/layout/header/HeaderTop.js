@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Globe } from "lucide-react";
 import useIsTrue from "@/hooks/useIsTrue";
@@ -10,24 +9,26 @@ import { MdOutlineClose } from "react-icons/md";
 import { CgMenuCheese } from "react-icons/cg";
 import { useState } from "react";
 
-// Inline styles for ticker animation with improved responsiveness
+// Improved ticker styles for better performance and responsiveness
 const tickerStyles = `
   .ticker-wrap {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
+    position: relative;
   }
   .ticker {
     display: inline-block;
-    animation: ticker 15s linear infinite;
+    animation: ticker 20s linear infinite;
+    padding-left: 100%;
   }
   .ticker__item {
     display: inline-block;
-    padding-right: 2rem; /* Space between repeated ticker items */
+    padding-right: 2rem;
   }
   @keyframes ticker {
     0% {
-      transform: translateX(100%);
+      transform: translateX(0);
     }
     100% {
       transform: translateX(-100%);
@@ -38,7 +39,7 @@ const tickerStyles = `
   }
   @media (max-width: 768px) {
     .ticker {
-      animation: ticker 10s linear infinite; /* Faster animation on mobile */
+      animation: ticker 15s linear infinite;
     }
     .ticker__item {
       padding-right: 1rem;
@@ -71,18 +72,16 @@ const HeaderTop = () => {
         className="bg-blackColor dark:bg-lightGrey10-dark sticky top-0 z-50 border-b border-white/10"
         style={{ fontFamily: "var(--font-spartan), sans-serif" }}
       >
-        <div
-          className={`${containerClass} 4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-2 xl:py-3 px-4`}
-        >
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 md:gap-0">
+        <div className="4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-2 xl:py-3 px-4">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             {/* Left Side - Ticker */}
-            <div className="w-full md:w-2/6 overflow-hidden whitespace-nowrap">
+            <div className="w-full md:w-2/6 overflow-hidden">
               <div className="ticker-wrap">
                 <div className="ticker">
                   <div className="ticker__item">
                     <Link
                       href="https://av.school/application"
-                      className="text-[#FF4F1E] font-bold text-base md:text-lg lg:text-xl hover:text-[#FF4F1E]/80"
+                      className="text-secondaryColor md:text-lg lg:text-xl hover:text-[#FF4F1E]/80 transition-colors duration-300"
                     >
                       Admissions Open for Academic Year 2025 - 2026
                     </Link>
@@ -91,24 +90,24 @@ const HeaderTop = () => {
               </div>
             </div>
 
-            {/* Right Side - Contact Info & Social Icons */}
-            <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-start md:justify-end items-start md:items-center gap-3 md:gap-6">
+            {/* Right Side - Contact Info & Social + Buttons */}
+            <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-start md:justify-end items-start md:items-center gap-6 md:gap-10">
               {/* Contact Info */}
-              <div className="flex flex-wrap items-center gap-2 md:gap-4 text-sm md:text-base">
+              <div className="hidden md:flex items-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base">
                 <Link
                   href="tel:+91 7760776098"
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                 >
                   +91 7760776098
                 </Link>
-                <span className="text-gray-400 hidden md:block">|</span>
+                <span className="text-gray-400">|</span>
                 <Link
                   href="tel:+91 7760776046"
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                 >
                   +91 7760776046
                 </Link>
-                <span className="text-gray-400 hidden md:block">|</span>
+                <span className="text-gray-400">|</span>
                 <Link
                   href="mailto:info.sgk@av.school"
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
@@ -117,26 +116,16 @@ const HeaderTop = () => {
                 </Link>
               </div>
 
-              {/* SDK Integration and User Dropdown */}
-              <div className="flex items-center gap-2">
-                <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
-                <UserDropdown />
-                <button
-                  className="md:hidden"
-                  onClick={() => setMenuOpen(!menuOpen)}
-                >
-                  {!menuOpen ? (
-                    <CgMenuCheese size={24} className="text-whiteColor" />
-                  ) : (
-                    <MdOutlineClose size={24} className="text-whiteColor" />
-                  )}
-                </button>
-              </div>
+              {/* User Actions and Social Icons */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full md:w-auto gap-4 sm:gap-6">
+                {/* Buttons */}
+                <div className="flex items-center gap-4">
+                  <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
+                  <UserDropdown />
+                </div>
 
-              {/* Social Icons and User Actions */}
-              <div className="flex items-center gap-3">
                 {/* Social Icons */}
-                <div className="flex gap-2 md:gap-3">
+                <div className="flex gap-4">
                   <Link
                     href="https://www.facebook.com/@AgasthyaVidyaniketan/"
                     target="_blank"

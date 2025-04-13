@@ -8,6 +8,7 @@ import Hero9 from "@/components/sections/hero-banners/Hero9";
 import Instructors from "@/components/sections/instructors/Instructors";
 import Instructors2 from "@/components/sections/instructors/Instructors2";
 import Overview from "@/components/sections/overviews/Overview";
+import OverviewHome from "@/components/sections/overviews/OverviewHome";
 import PopularSubjects from "@/components/sections/popular-subjects/PopularSubjects";
 import PricingPlans from "@/components/sections/pricing-plans/PricingPlans";
 import Programs from "@/components/sections/programs/Programs";
@@ -22,7 +23,7 @@ const Home9 = () => {
       <NewAbout />
       {/* <Programs /> */}
       {/* <PopularSubjects /> */}
-      <Overview />
+      <OverviewHome/>
       {/* <FeatureCourses title="Our online courses" course="2" /> */}
       <Registration />
       <ImageGallery />
