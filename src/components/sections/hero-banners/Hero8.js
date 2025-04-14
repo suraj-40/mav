@@ -9,7 +9,7 @@ const Hero8 = () => {
   return (
     <section data-aos="fade-up">
       <banner section/>
-      <div className="hero bg-lightGrey11 dark:bg-lightGrey11-dark relative z-0 overflow-hidden">
+      <div className="hero relative z-0 overflow-hidden">
         <animated icons/>
         <div>
           {/* <BookImage /> */}

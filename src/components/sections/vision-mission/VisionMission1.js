@@ -60,7 +60,7 @@ const nepData = {
 
 const VisionMission1 = () => {
   return (
-    <div className="px-4 py-2 max-w-4xl mx-auto">
+    <div data-aos="fade-up" className="px-4 py-2 max-w-4xl mx-auto">
       {nepData.nep_alignment.map((item, index) => (
         <div key={index} className="mb-6">
           <h2 className="text-xl md:text-2xl font-bold text-av mb-2">{item.title}</h2>
@@ -73,7 +73,7 @@ const VisionMission1 = () => {
           {nepData.commitment_statement}
         </p>
       </div>
-      <div className="w-200 h-2 bg-orange md:mt-12 mx-auto hidden md:block"></div>
+      <div className="w-200 h-2 bg-avorange md:mt-12 mx-auto hidden md:block"></div>
     </div>
   );
 };

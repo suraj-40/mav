@@ -125,13 +125,13 @@ const CulturalActivityCard = ({ id, title, image }) => (
 const CulturalActivity = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-12  md:mx-24">
-      <header className="mb-8">
-          <h1 className="text-orange font-bold text-3xl text-center">AGASTHYA VIDYANIKETHAN</h1>
+      <header data-aos="fade-up" className="mb-8">
+          <h1 className="text-avorange font-bold text-3xl text-center">AGASTHYA VIDYANIKETHAN</h1>
           <h2 className="text-av text-5xl font-bold text-center">Regular Cultural Activities</h2>
-          <div className="w-200 h-2 bg-orange mt-2 mx-auto"></div>
+          <div className="w-200 h-2 bg-avorange mt-2 mx-auto"></div>
       </header>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {activities.map((activity) => (
           <CulturalActivityCard key={activity.id} {...activity} />
         ))}

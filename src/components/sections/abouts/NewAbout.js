@@ -8,8 +8,8 @@ const NewAbout = () => {
   return (
     <>
       <section>
-        <div className="container">
-          <div className="counter flex flex-wrap pb-8 pl-8 pr-8 pt-5 md:pb-12 lg:pb-5 2xl:pb-24 gap-y-8 bg-[#202745] lg:gap-y-0">
+      <div className="">
+          <div className="counter flex flex-wrap md:p-10  m-20 rounded-xl gap-y-8 bg-[#202745] lg:gap-y-0">
             {/* Students Section */}
             <div className="basis-full sm:basis-1/2 lg:basis-1/4" data-aos="fade-up">
               <div className="flex gap-4">
@@ -127,7 +127,7 @@ const NewAbout = () => {
               </div>
             </div>
           </div>
-        </div>
+          </div>
       </section>
     </>
   );

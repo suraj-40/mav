@@ -115,11 +115,11 @@ const HeaderTop = () => {
                   info.sgk@av.school
                 </Link>
               </div>
-
+              
               {/* User Actions and Social Icons */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full md:w-auto gap-4 sm:gap-6">
                 {/* Buttons */}
-                <div className="flex items-center gap-4">
+                <div className="w-[120px] font-bold">
                   <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
                   <UserDropdown />
                 </div>

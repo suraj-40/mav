@@ -43,7 +43,7 @@ import React from 'react';
   
   const VisionMission2 = () => {
     return (
-      <div className="px-4 py-2 max-w-4xl mx-auto">
+      <div data-aos="fade-up" className="px-4 py-2 max-w-4xl mx-auto">
         {technologyData.map((item, index) => (
           <div key={index} className="mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-av mb-2">{item.title}</h2>
@@ -53,7 +53,7 @@ import React from 'react';
         <div className="mt-10">
           <p className="text-base md:text-lg text-gray-800 font-medium">{conclusion}</p>
         </div>
-        <div className="w-200 h-2 bg-orange md:mt-12 mx-auto hidden md:block"></div>
+        <div className="w-200 h-2 bg-avorange md:mt-12 mx-auto hidden md:block"></div>
       </div>
     );
   };

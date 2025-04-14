@@ -7,7 +7,7 @@ import dinacharyaimg4 from "@/assets/images/dinacharya/Asset 13.png";
 
 const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
   return (
-    <div className="bg-gray-200 rounded-lg p-6 mb-6 relative rounded-xl shadow-xl">
+    <div data-aos="fade-up" className="bg-gray-200 rounded-lg p-6 mb-6 relative rounded-xl shadow-xl">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         {imagePosition === "left" && (
           <div className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
@@ -21,7 +21,7 @@ const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
               <div key={index} className="flex items-center justify-around mb-8">
                 {item.map((block, i) => (
                   <div key={i}>
-                    <div className="text-sm text-orange font-bold">{block.time}</div>
+                    <div className="text-sm text-avorange font-bold">{block.time}</div>
                     <div className={`md:w-[200px] w-[150px] p-2 text-white rounded-xl ${block.bgClass}`}>{block.label}</div>
                   </div>
                 ))}
@@ -47,12 +47,12 @@ export const SectionData = [
     imagePosition: "left",
     timelineData: [
       [
-        { time: "8:45 AM to 9:00 AM", label: "GURU VANDANA", bgClass: "bg-orange" },
+        { time: "8:45 AM to 9:00 AM", label: "GURU VANDANA", bgClass: "bg-avorange" },
         { time: "9:00 AM to 9:40 AM", label: "PERIOD 1", bgClass: "bg-av" },
       ],
       [
         { time: "9:40 AM to 10:20 AM", label: "PERIOD 2", bgClass: "bg-av" },
-        { time: "10:20 AM to 10:40 AM", label: "BREAKFAST", bgClass: "bg-orange" },
+        { time: "10:20 AM to 10:40 AM", label: "BREAKFAST", bgClass: "bg-avorange" },
       ]
     ]
   },
@@ -67,7 +67,7 @@ export const SectionData = [
       ],
       [
         { time: "12:00 PM to 12:40 PM", label: "PERIOD 5", bgClass: "bg-av" },
-        { time: "12:40 to 1:05 PM", label: "LUNCH BREAK", bgClass: "bg-orange" },
+        { time: "12:40 to 1:05 PM", label: "LUNCH BREAK", bgClass: "bg-avorange" },
       ]
     ]
   },
@@ -92,7 +92,7 @@ export const SectionData = [
     imagePosition: "right",
     timelineData: [
       [
-          { time: "3:15 PM", label: "EXIT TIME", bgClass: "bg-orange" }
+          { time: "3:15 PM", label: "EXIT TIME", bgClass: "bg-avorange" }
       ]
     ]
   }
@@ -113,18 +113,18 @@ export default Dinacharya;
 //   return (
 //     <div className="relative bg-gray-50 min-h-screen w-full overflow-hidden">
 //       {/* Background Decorative */}
-//       <div className="absolute top-0 right-0 w-16 h-16 bg-orange z-0"></div>
+//       <div className="absolute top-0 right-0 w-16 h-16 bg-avavorange z-0"></div>
 //       <div className="absolute top-0 right-16 w-16 h-16 bg-av z-0"></div>
 //       <div className="absolute bottom-0 left-0 w-16 h-16 bg-av z-0"></div>
-//       <div className="absolute bottom-0 left-16 w-16 h-16 bg-orange z-0"></div>
+//       <div className="absolute bottom-0 left-16 w-16 h-16 bg-avavorange z-0"></div>
 //       <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-transparent to-gray-200 -z-10"></div>
 
 //       <div className="container mx-auto px-4 py-8 relative z-10">
 //         {/* Header */}
 //         <header className="mb-8">
-//           <h1 className="text-orange font-bold text-3xl text-center">Agasthya Vidyanikethan</h1>
+//           <h1 className="text-avavorange font-bold text-3xl text-center">Agasthya Vidyanikethan</h1>
 //           <h2 className="text-av text-5xl font-bold text-center">Dinacharya</h2>
-//           <div className="w-200 h-2 bg-orange mt-2 mx-auto"></div>
+//           <div className="w-200 h-2 bg-avavorange mt-2 mx-auto"></div>
 //         </header>
 
 //         {/* First Section */}
@@ -137,22 +137,22 @@ export default Dinacharya;
 //               <div className="flex flex-col justify-center items-around">
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">8:45 AM to 9:00 AM</div>
-//                     <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">GURU VANDANA</div>
+//                     <div className="text-sm text-avavorange font-bold">8:45 AM to 9:00 AM</div>
+//                     <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">GURU VANDANA</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">9:00 AM to 9:40 AM</div>
+//                     <div className="text-sm text-avavorange font-bold">9:00 AM to 9:40 AM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 1</div>
 //                   </div>
 //                 </div>
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">9:40 AM to 10:20 AM</div>
+//                     <div className="text-sm text-avavorange font-bold">9:40 AM to 10:20 AM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 2</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">10:20 AM to 10:40 AM</div>
-//                     <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">BREAKFAST</div>
+//                     <div className="text-sm text-avavorange font-bold">10:20 AM to 10:40 AM</div>
+//                     <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">BREAKFAST</div>
 //                   </div>
 //                 </div>
 //               </div>
@@ -170,22 +170,22 @@ export default Dinacharya;
 //               <div className="flex flex-col justify-center items-around">
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">10:40 AM to 11:20 AM</div>
+//                     <div className="text-sm text-avavorange font-bold">10:40 AM to 11:20 AM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 3</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">11:20 AM to 12:00 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">11:20 AM to 12:00 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 4</div>
 //                   </div>
 //                 </div>
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">12:00 PM to 12:40 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">12:00 PM to 12:40 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 5</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">12:40 PM to 1:05 PM</div>
-//                     <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">LUNCH BREAK</div>
+//                     <div className="text-sm text-avavorange font-bold">12:40 PM to 1:05 PM</div>
+//                     <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">LUNCH BREAK</div>
 //                   </div>
 //                 </div>
 //               </div>
@@ -203,28 +203,28 @@ export default Dinacharya;
 //               <div className="flex flex-col justify-center items-around">
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">1:05 PM to 1:45 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">1:05 PM to 1:45 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 6</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">1:45 PM to 2:25 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">1:45 PM to 2:25 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 7</div>
 //                   </div>
 //                 </div>
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">2:25 PM to 3:05 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">2:25 PM to 3:05 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 8</div>
 //                   </div>
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">3:05 PM to 3:15 PM</div>
+//                     <div className="text-sm text-avavorange font-bold">3:05 PM to 3:15 PM</div>
 //                     <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">DIARY TIME</div>
 //                   </div>
 //                 </div>
 //                 <div className="flex justify-center items-center">
 //                   <div>
-//                     <div className="text-sm text-orange font-bold">3:15 PM</div>
-//                     <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">SCHOOL EXIT TIME</div>
+//                     <div className="text-sm text-avavorange font-bold">3:15 PM</div>
+//                     <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">SCHOOL EXIT TIME</div>
 //                   </div>
 //                 </div>
 //               </div>
@@ -257,10 +257,10 @@ export default Dinacharya;
 //   return (
 //     <div className="relative bg-gray-50 min-h-screen w-full overflow-hidden">
 //       {/* Background decorative elements */}
-//       <div className="absolute top-0 right-0 w-16 h-16 bg-orange z-0"></div>
+//       <div className="absolute top-0 right-0 w-16 h-16 bg-avavorange z-0"></div>
 //       <div className="absolute top-0 right-16 w-16 h-16 bg-av z-0"></div>
 //       <div className="absolute bottom-0 left-0 w-16 h-16 bg-av z-0"></div>
-//       <div className="absolute bottom-0 left-16 w-16 h-16 bg-orange z-0"></div>
+//       <div className="absolute bottom-0 left-16 w-16 h-16 bg-avavorange z-0"></div>
 
 //       {/* Diagonal background shape */}
 //       <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-transparent to-gray-200 -z-10"></div>
@@ -268,9 +268,9 @@ export default Dinacharya;
 //       <div className="container mx-auto px-4 py-8 relative z-10">
 //         {/* Header */}
 //         <header className="mb-8">
-//           <h1 className="text-orange font-bold text-3xl font-bold text-center">Agasthya Vidyanikethan</h1>
+//           <h1 className="text-avavorange font-bold text-3xl font-bold text-center">Agasthya Vidyanikethan</h1>
 //           <h2 className="text-av text-5xl font-bold text-center">Dinacharya</h2>
-//           <div className="w-200 h-2 bg-orange mt-2 mx-auto"></div>
+//           <div className="w-200 h-2 bg-avavorange mt-2 mx-auto"></div>
 //         </header>
 
 //         {/* First section */}
@@ -289,11 +289,11 @@ export default Dinacharya;
 //                 {/* Timeline item 1 */}
 //                 <div className="flex items-center justify-around  mb-8">
 //                   <div>
-//                   <div className="text-sm text-orange font-bold">8:45 AM to 9:00 AM</div>
-//                   <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">GURU VANDANA</div>
+//                   <div className="text-sm text-avavorange font-bold">8:45 AM to 9:00 AM</div>
+//                   <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">GURU VANDANA</div>
 //                   </div>
 //                   <div>
-//                   <div className="text-sm text-orange font-bold">9:00 AM to 9:40 AM</div>
+//                   <div className="text-sm text-avavorange font-bold">9:00 AM to 9:40 AM</div>
 //                   <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 1</div>
 //                   </div>
 //                 </div>
@@ -301,12 +301,12 @@ export default Dinacharya;
 //                 {/* Timeline item 2 */}
 //                 <div className="flex items-center justify-around mb-8">
 //                   <div>
-//                   <div className="text-sm text-orange font-bold">9:40 AM to 10:20 AM</div>
+//                   <div className="text-sm text-avavorange font-bold">9:40 AM to 10:20 AM</div>
 //                   <div className="md:w-[200px] w-[150px] p-2 bg-av text-white rounded-xl">PERIOD 2</div>
 //                   </div>
 //                   <div>
-//                   <div className="text-sm text-orange font-bold">10:20 AM to 10:40 AM</div>
-//                   <div className="md:w-[200px] w-[150px] p-2 bg-orange text-white rounded-xl">BREAKFAST</div>
+//                   <div className="text-sm text-avavorange font-bold">10:20 AM to 10:40 AM</div>
+//                   <div className="md:w-[200px] w-[150px] p-2 bg-avavorange text-white rounded-xl">BREAKFAST</div>
 //                   </div>
 //                 </div>
 //               </div>
@@ -321,13 +321,13 @@ export default Dinacharya;
 //               <div className="timeline-container">
 //                 {/* Timeline item 3 */}
 //                 <div className="flex items-center mb-8">
-//                   <div className="text-sm text-orange font-bold">10:40 AM to 11:20 AM</div>
+//                   <div className="text-sm text-avavorange font-bold">10:40 AM to 11:20 AM</div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 3</div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="timeline-line"></div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 4</div>
-//                   <div className="text-sm text-orange font-bold">11:20 AM to 12:00 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">11:20 AM to 12:00 PM</div>
 //                 </div>
 
 //                 {/* Timeline connector */}
@@ -336,13 +336,13 @@ export default Dinacharya;
 
 //                 {/* Timeline item 4 */}
 //                 <div className="flex items-center mb-8">
-//                   <div className="text-sm text-orange font-bold">12:00 PM to 12:40 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">12:00 PM to 12:40 PM</div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 5</div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="timeline-line"></div>
 //                   <div className="timeline-dot"></div>
-//                   <div className="mx-2 px-4 py-2 bg-orange text-white rounded-md">LUNCH BREAK</div>
-//                   <div className="text-sm text-orange font-bold">12:40 to 1:05 PM</div>
+//                   <div className="mx-2 px-4 py-2 bg-avavorange text-white rounded-md">LUNCH BREAK</div>
+//                   <div className="text-sm text-avavorange font-bold">12:40 to 1:05 PM</div>
 //                 </div>
 //               </div>
 //             </div>
@@ -374,13 +374,13 @@ export default Dinacharya;
 //               <div className="timeline-container">
 //                 {/* Timeline item 5 */}
 //                 <div className="flex items-center mb-8">
-//                   <div className="text-sm text-orange font-bold">1:05 PM to 1:45 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">1:05 PM to 1:45 PM</div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 6</div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="timeline-line"></div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 7</div>
-//                   <div className="text-sm text-orange font-bold">1:45 PM to 2:25 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">1:45 PM to 2:25 PM</div>
 //                 </div>
 
 //                 {/* Timeline connector */}
@@ -389,20 +389,20 @@ export default Dinacharya;
 
 //                 {/* Timeline item 6 */}
 //                 <div className="flex items-center mb-8">
-//                   <div className="text-sm text-orange font-bold">2:25 PM to 3:05 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">2:25 PM to 3:05 PM</div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">PERIOD 8</div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="timeline-line"></div>
 //                   <div className="timeline-dot"></div>
 //                   <div className="mx-2 px-4 py-2 bg-av text-white rounded-md">DIARY TIME</div>
-//                   <div className="text-sm text-orange font-bold">3:05 PM to 3:15 PM</div>
+//                   <div className="text-sm text-avavorange font-bold">3:05 PM to 3:15 PM</div>
 //                 </div>
 
 //                 {/* Final exit time */}
 //                 <div className="flex flex-col items-center ml-64">
 //                   <div className="timeline-connector h-8"></div>
-//                   <div className="text-sm text-orange font-bold">3:15 PM</div>
-//                   <div className="px-4 py-2 bg-orange text-white rounded-md">SCHOOL EXIT TIME</div>
+//                   <div className="text-sm text-avavorange font-bold">3:15 PM</div>
+//                   <div className="px-4 py-2 bg-avavorange text-white rounded-md">SCHOOL EXIT TIME</div>
 //                 </div>
 //               </div>
 //             </div>
@@ -457,7 +457,7 @@ export default Dinacharya;
 //           <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
 //             News & Blogs
 //           </p>
-//           <h2 className="mt-2 text-3xl font-bold tracking-tight text-orange font-bold-900 dark:text-white sm:text-4xl">
+//           <h2 className="mt-2 text-3xl font-bold tracking-tight text-avavorange font-bold-900 dark:text-white sm:text-4xl">
 //             Our Latest{" "}
 //             <span className="relative after:w-full after:h-[7px] z-0 after:bg-secondaryColor after:absolute after:left-0 after:bottom-3 md:after:bottom-5 after:z-[-1]">
 //               Research
@@ -489,10 +489,10 @@ export default Dinacharya;
 //               {/* Content Section */}
 //               <div className="w-full lg:w-1/2">
 //                 <div className="p-6">
-//                   <h3 className="mb-4 text-2xl font-bold text-orange font-bold-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
+//                   <h3 className="mb-4 text-2xl font-bold text-avavorange font-bold-900 hover:text-blue-600 dark:text-white dark:hover:text-blue-400">
 //                     <Link href="#">{post.title}</Link>
 //                   </h3>
-//                   <p className="text-orange font-bold-700 dark:text-orange font-bold-300">{post.desc}</p>
+//                   <p className="text-avavorange font-bold-700 dark:text-avavorange font-bold-300">{post.desc}</p>
 //                   <div className="mt-6">
 //                     <Link
 //                       href="#"

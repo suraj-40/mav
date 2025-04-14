@@ -96,12 +96,12 @@ const LifeSkillsCard = ({ id, title, image1,image2,description }) => (
 const LifeSkills = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-12  md:mx-24">
-      <h2 className="text-2xl md:text-4xl  font-extrabold text-center text-av mb-5 md:mb-10">
+      <h2 data-aos="fade-up" className="text-2xl md:text-4xl  font-extrabold text-center text-av mb-5 md:mb-10">
         LIFE SKILLS
-        <div className="w-200 h-2 bg-orange mt-2 mx-auto"></div>
+        <div className="w-200 h-2 bg-avorange mt-2 mx-auto"></div>
       </h2>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {activities.map((activity) => (
           <LifeSkillsCard key={activity.id} {...activity} />
         ))}

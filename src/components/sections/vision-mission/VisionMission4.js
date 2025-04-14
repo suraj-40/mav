@@ -33,7 +33,7 @@ import React from 'react';
   
   const VisionMission4 = () => {
     return (
-      <div className="px-4 py-2 max-w-4xl mx-auto">
+      <div data-aos="fade-up" className="px-4 py-2 max-w-4xl mx-auto">
         {lifelongSuccessData.map((item, index) => (
           <div key={index} className="mb-6">
             <h2 className="text-xl md:text-2xl font-bold text-av mb-2">{item.title}</h2>

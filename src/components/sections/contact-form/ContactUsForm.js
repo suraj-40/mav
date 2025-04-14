@@ -5,7 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
-import contact from '@/assets/images/ContactUs/4111242.jpg';
+
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 
 const ContactUs = () => {
