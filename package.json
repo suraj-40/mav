@@ -17,6 +17,7 @@
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.6.3",
+    "gsap": "^3.12.7",
     "isotope-layout": "^3.0.6",
     "lucide-react": "^0.486.0",
     "next": "14.2.3",

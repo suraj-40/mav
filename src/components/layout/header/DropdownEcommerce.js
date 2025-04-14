@@ -38,7 +38,11 @@ const DropdownEcommerce = () => {
     {
       name: "Vision & Mission",
       status: null,
+<<<<<<< Updated upstream
       path: "/about-us/vision&Mission",
+=======
+      path: "/about-us/vision-mission",
+>>>>>>> Stashed changes
       type: "secondary",
     },
     {

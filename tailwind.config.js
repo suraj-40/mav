@@ -38,6 +38,8 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
+        primary: "#1e2a78",
+        av:"#305A8B",
         blue: "#465fe9",
         darkBlue: "#212529",
         "blue-light": "#d5eaff",
@@ -83,7 +85,7 @@ module.exports = {
         greencolor: "#44CEA9",
         greencolor2: "#1EC902",
         greencolor3: "#2EC14A",
-        orange: "#FE2323",
+        orange: "#EF7C47",
         borderColor: "#eeeeee",
         borderColor1: "#E5E5E5",
         borderColor2: "#dddddd",

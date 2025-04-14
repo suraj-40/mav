@@ -1,14 +1,13 @@
 import PageWrapper from "@/components/shared/wrappers/PageWrapper"
-import About12 from "@/components/sections/abouts/About12";
-import dinacharya from"@/components/sections/dinacharya/dinacharya"
+import DinacharyaPage from"@/components/sections/dinacharya/DinacharyaPage"
 
-const Dinacharya  = () => {
+const NEPDinacharya  = () => {
     return (
         <>
         <PageWrapper>
-        <dinacharya/>
+        <DinacharyaPage/>
         </PageWrapper>
         </>
     );
   };
-  export default Dinacharya ;
+  export default NEPDinacharya ;

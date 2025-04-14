@@ -16,23 +16,23 @@ const DropdownDashboard = () => {
       type: "secondary",
     },
     {
-      name: "Electives",
+      name: "Cultural Activities",
       status: null,
-      path: "/NEP/electives",
+      path: "/NEP/cultural-activities",
       type: "secondary",
     },
     {
       name: "Life Skills",
       status: null,
-      path: "/NEP/life-Skills",
+      path: "/NEP/life-skills",
       type: "secondary",
     },
-    {
-      name: "Campus Activity",
-      status: null,
-      path: "/NEP/campus-Activity",
-      type: "secondary",
-    },
+    // {
+    //   name: "Campus Activity",
+    //   status: null,
+    //   path: "/NEP/campus-activity",
+    //   type: "secondary",
+    // },
   ];
   return <DropdownPrimary items={items} />;
 };
