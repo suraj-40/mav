@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import TabButtonSecondary from "@/components/shared/buttons/TabButtonSecondary";
 import TabContentWrapper from "@/components/shared/wrappers/TabContentWrapper";
 import useTab from "@/hooks/useTab";
@@ -10,128 +10,287 @@ import QualityEducationContent from "@/components/shared/overviews/whyAvContents
 import FuturisticApproachContent from "@/components/shared/overviews/whyAvContents/FuturisticApproachContent";
 import EcosystemContent from "@/components/shared/overviews/whyAvContents/EcosystemContent";
 import OurMissionContent from "@/components/shared/overviews/whyAvContents/OurMissionContent";
-
-// Remove cn import if not using classnames; use template literals instead
-// import { cn } from "@/lib/Utils"; // Commented out unless installed
+import { GraduationCap, Rocket, Globe, Heart } from "lucide-react";
 
 const OverviewsWhyAv = () => {
   const { currentIdx, handleTabClick } = useTab();
   const isAbout = useIsTrue("/about");
   const isAboutDark = useIsTrue("/about-dark");
   const tabRefs = useRef([]);
+  const [isMobile, setIsMobile] = useState(false);
+  const [tabsVisible, setTabsVisible] = useState(false);
 
   const tabButtons = [
-    { name: "Quality of Education", content: <QualityEducationContent /> },
-    { name: "Futuristic Approach", content: <FuturisticApproachContent /> },
-    { name: "Ecosystem", content: <EcosystemContent /> },
-    { name: "Our Mission", content: <OurMissionContent /> },
+    {
+      name: "Quality of Education",
+      content: <QualityEducationContent />,
+      icon: <GraduationCap className="w-5 h-5" />,
+    },
+    {
+      name: "Futuristic Approach",
+      content: <FuturisticApproachContent />,
+      icon: <Rocket className="w-5 h-5" />,
+    },
+    {
+      name: "Ecosystem",
+      content: <EcosystemContent />,
+      icon: <Globe className="w-5 h-5" />,
+    },
+    {
+      name: "Our Mission",
+      content: <OurMissionContent />,
+      icon: <Heart className="w-5 h-5" />,
+    },
   ];
 
-  // Update underline position based on active tab
-  useEffect(() => {
-    const currentTab = tabRefs.current[currentIdx];
-    if (currentTab) {
-      const underline = document.querySelector(".tab-underline");
-      if (underline) {
-        underline.style.left = `${currentTab.offsetLeft}px`;
-        underline.style.width = `${currentTab.offsetWidth}px`;
-      }
-    }
-  }, [currentIdx]);
-
-  // Handle resize to update underline
+  // Detect mobile on client side
   useEffect(() => {
     const handleResize = () => {
-      const currentTab = tabRefs.current[currentIdx];
-      if (currentTab) {
-        const underline = document.querySelector(".tab-underline");
-        if (underline) {
-          underline.style.left = `${currentTab.offsetLeft}px`;
-          underline.style.width = `${currentTab.offsetWidth}px`;
-        }
-      }
+      setIsMobile(window.innerWidth < 768);
     };
+    handleResize(); // Initial check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [currentIdx]);
+  }, []);
+
+  // Update underline position for desktop
+  useEffect(() => {
+    if (!isMobile) {
+      const tab = tabRefs.current[currentIdx];
+      const underline = document.querySelector(".tab-underline");
+      if (tab && underline) {
+        underline.style.left = `${tab.offsetLeft}px`;
+        underline.style.width = `${tab.offsetWidth}px`;
+      }
+    }
+  }, [currentIdx, isMobile]);
+
+  // Animation control for tabs visibility
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTabsVisible(true);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <section className="relative bg-white overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-orange-100 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute top-1/2 -left-24 w-80 h-80 bg-blue-100 rounded-full opacity-20 blur-3xl"></div>
+    <section className="relative bg-gradient-to-br from-white via-white to-blue-50 overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          className="absolute -top-24 -right-24 w-96 h-96 bg-orange-100 rounded-full opacity-30 blur-3xl"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2 }}
+        />
+        <motion.div
+          className="absolute top-1/2 -left-24 w-80 h-80 bg-blue-100 rounded-full opacity-30 blur-3xl"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
+        />
+        <motion.div
+          className="absolute bottom-0 right-1/3 w-64 h-64 bg-purple-50 rounded-full opacity-30 blur-3xl"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.4 }}
+        />
       </div>
 
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+      <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+        {/* Heading */}
         {!isAbout && !isAboutDark && (
           <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
+            className="text-center mb-16 relative"
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800 tracking-tight">
-              Why <span className="text-secondaryColor">Agasthya Vidhyanikethan?</span>
+            <motion.div
+              className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-gradient-to-br from-orange-100 to-blue-100 opacity-50 blur-3xl -z-10"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              style={{ transform: "translate(-50%, -50%)" }}
+            />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800 tracking-tight">
+              Why{" "}
+              <span className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent relative">
+                Agasthya Vidhyanikethan
+                
+              </span>
+              ?
             </h1>
-            <p className="max-w-3xl mx-auto text-gray-600 text-lg mb-8">
-              Discover the unique advantages that make our institution the preferred choice for holistic education and
-              future-ready learning.
-            </p>
-            <div className="flex justify-center">
-              <svg width={180} height={20} viewBox="0 0 180 20" className="fill-none">
+            <motion.p
+              className="max-w-3xl mx-auto text-gray-600 text-lg md:text-xl leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              Discover the unique advantages that make our institution the preferred choice for holistic education and future-ready learning.
+            </motion.p>
+            <motion.div
+              className="flex justify-center mt-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <svg width={200} height={30} viewBox="0 0 200 30">
+                <defs>
+                  <linearGradient id="underlineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#FF5722" stopOpacity="0.2" />
+                    <stop offset="50%" stopColor="#FF5722" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#FF5722" stopOpacity="0.2" />
+                  </linearGradient>
+                </defs>
                 <path
-                  d="M5,15 Q90,0 175,15"
-                  stroke="#FF5722"
+                  d="M5,20 Q100,0 195,20"
+                  fill="none"
+                  stroke="url(#underlineGradient)"
                   strokeWidth="4"
                   strokeLinecap="round"
-                />
+                >
+                  <animate
+                    attributeName="d"
+                    dur="5s"
+                    repeatCount="indefinite"
+                    values="M5,20 Q100,0 195,20; M5,15 Q100,25 195,15; M5,20 Q100,0 195,20"
+                    calcMode="spline"
+                    keySplines="0.5 0 0.5 1; 0.5 0 0.5 1"
+                  />
+                </path>
               </svg>
-            </div>
+            </motion.div>
           </motion.div>
         )}
 
-        {/* Tabs section */}
-        <div className="max-w-5xl mx-auto">
-          <div className="relative mb-2">
-            <div className="flex justify-between overflow-x-auto scrollbar-hide">
-              {tabButtons.map((tab, index) => (
-                <div key={tab.name} ref={(el) => (tabRefs.current[index] = el)} className="relative">
-                  <TabButtonSecondary
-                    name={tab.name}
-                    idx={index}
-                    currentIdx={currentIdx}
-                    handleTabClick={handleTabClick}
-                    button="icon" // Explicitly set to "icon" to show icons
-                    // Remove conflicting className to rely on TabButtonSecondary's logic
-                  />
+        {/* Desktop Tabs (Hidden on Mobile) */}
+        <motion.div
+          className="hidden md:block max-w-5xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: tabsVisible ? 1 : 0, y: tabsVisible ? 0 : 20 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+        >
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-md border border-gray-100">
+            <div className="flex justify-between gap-2 overflow-x-auto scrollbar-hide">
+              {tabButtons.map(({ name, icon }, idx) => (
+                <div key={name} ref={(el) => (tabRefs.current[idx] = el)} className="shrink-0">
+                  <button
+                    onClick={() => handleTabClick(idx)}
+                    className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium transition-all duration-300 ${
+                      currentIdx === idx
+                        ? "text-white bg-gradient-to-r from-[#FF5722] to-orange-600 shadow-md"
+                        : "text-gray-700 hover:bg-gray-100 hover:text-[#FF5722]"
+                    }`}
+                  >
+                    <span
+                      className={`transition-all duration-300 ${
+                        currentIdx === idx ? "text-white" : "text-[#FF5722]"
+                      }`}
+                    >
+                      {icon}
+                    </span>
+                    {name}
+                  </button>
                 </div>
               ))}
             </div>
-
-            {/* Animated underline */}
             <div
-              className="tab-underline absolute bottom-0 h-1 bg-secondaryColor transition-all duration-300 ease-in-out rounded-full"
+              className="tab-underline absolute bottom-2 h-1 bg-gradient-to-r from-[#FF5722] to-orange-600 rounded-full transition-all duration-300 ease-in-out"
               style={{ left: "0px", width: "0px" }}
             />
-            <div className="w-full h-px bg-gray-200 mt-3"></div>
+          </div>
+        </motion.div>
+
+        {/* Content */}
+        <div className="max-w-5xl mx-auto mt-8">
+          {/* Mobile Carousel (Visible on Mobile) */}
+          <div className="block md:hidden">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIdx}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white rounded-xl border border-gray-100 shadow-lg p-6"
+              >
+                <div className="mb-4 pb-2 border-b border-gray-100 flex items-center gap-2">
+                  <span className="text-[#FF5722]">{tabButtons[currentIdx].icon}</span>
+                  <h3 className="font-semibold text-lg">{tabButtons[currentIdx].name}</h3>
+                </div>
+                {tabButtons[currentIdx].content}
+              </motion.div>
+            </AnimatePresence>
+            {/* Carousel Navigation Buttons */}
+            <div className="flex justify-between mt-6 mb-2">
+              <button
+                onClick={() =>
+                  handleTabClick(currentIdx > 0 ? currentIdx - 1 : tabButtons.length - 1)
+                }
+                className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-500 hover:text-[#FF5722] transition-colors"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onClick={() => handleTabClick((currentIdx + 1) % tabButtons.length)}
+                className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-500 hover:text-[#FF5722] transition-colors"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            {/* Carousel Dots */}
+            <div className="flex justify-center mt-4 space-x-2">
+              {tabButtons.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleTabClick(idx)}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    currentIdx === idx ? "bg-[#FF5722] w-6" : "bg-gray-300"
+                  }`}
+                  aria-label={`Slide ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
 
-          {/* Tab content */}
-          <div className="mt-8">
-            {tabButtons.map((tab, index) => (
-              <TabContentWrapper
-                key={index}
-                idx={index}
-                isShow={index === currentIdx}
-              >
+          {/* Desktop Tab Content */}
+          <div className="hidden md:block">
+            {tabButtons.map(({ content }, idx) => (
+              <TabContentWrapper key={idx} idx={idx} isShow={idx === currentIdx}>
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
+                  transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
+                  className="bg-white rounded-xl border border-gray-100 shadow-lg p-6"
                 >
-                  {tab.content}
+                  {content}
                 </motion.div>
               </TabContentWrapper>
             ))}

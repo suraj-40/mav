@@ -15,9 +15,9 @@ const MobileItems3 = () => {
       dropdown: [
         { name: "About NEP", path: "/NEP/about" },
         { name: "Dinacharya", path: "/NEP/dinacharya" },
-        { name: "Electives", path: "/NEP/electives" },
+        { name: "Cultural Activities", path: "/NEP/cultural-activities" },
         { name: "Life Skills", path: "/NEP/life-Skills" },
-        { name: "Campus Activity", path: "/NEP/campus-Activity" },
+        // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
     {
@@ -36,7 +36,7 @@ const MobileItems3 = () => {
             { name: "Treasurer", path: "/about-us/our-Leaders/treasurer" },
           ],
         },
-        { name: "Vision & Mission", path: "/about-us/vision&Mission" },
+        { name: "Vision & Mission", path: "/about-us/vision-mission" },
         { name: "Contact Us", path: "/about-us/contact-Us" },
       ],
     },
