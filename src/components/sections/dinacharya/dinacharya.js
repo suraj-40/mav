@@ -7,10 +7,10 @@ import dinacharyaimg4 from "@/assets/images/dinacharya/Asset 13.png";
 
 const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
   return (
-    <div data-aos="fade-up" className="bg-gray-200 rounded-lg p-6 mb-6 relative rounded-xl shadow-xl">
+    <div className="bg-gray-200 rounded-lg p-6 mb-6 relative rounded-xl shadow-xl">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
         {imagePosition === "left" && (
-          <div className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+          <div  className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
             <Image src={image} alt={alt} className="rounded-xl w-[350px] h-[180px] object-cover mx-auto   transform group-hover:scale-105 transition-transform duration-300" />
           </div>
         )}
@@ -32,7 +32,7 @@ const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
 
         {imagePosition === "right" && (
           <div className="md:col-span-1 relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-            <Image src={image} alt={alt} className="rounded-xl w-[350px] h-[180px] object-cover mx-auto transform group-hover:scale-105 transition-transform duration-300" />
+            <Image src={image} alt={alt}  className="rounded-xl w-[350px] h-[180px] object-cover mx-auto transform group-hover:scale-105 transition-transform duration-300" />
           </div>
         )}
       </div>

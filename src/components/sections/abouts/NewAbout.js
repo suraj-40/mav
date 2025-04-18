@@ -9,7 +9,7 @@ const NewAbout = () => {
     <>
       <section>
       <div className="">
-          <div className="counter flex flex-wrap md:p-10  m-20 rounded-xl gap-y-8 bg-[#202745] lg:gap-y-0">
+          <div className="counter flex flex-wrap p-5 md:p-10 m-10 md:m-20 rounded-xl gap-y-8 bg-[#202745] lg:gap-y-0">
             {/* Students Section */}
             <div className="basis-full sm:basis-1/2 lg:basis-1/4" data-aos="fade-up">
               <div className="flex gap-4">
@@ -43,7 +43,7 @@ const NewAbout = () => {
                 </div>
                 <div>
                   <h1 className="text-[34px] leading-[1.1] text-white font-bold">
-                    <span data-countup-number="2000">2000</span>+
+                    <span data-countup-number="2000">1000</span>+
                   </h1>
                   <p className="uppercase text-white font-bold leading-[18px]">
                     Students
@@ -69,7 +69,7 @@ const NewAbout = () => {
                 </div>
                 <div>
                   <h1 className="text-[34px] leading-[1.1] text-white font-bold">
-                    <span data-countup-number="200">200</span>+
+                    <span data-countup-number="200">100</span>+
                   </h1>
                   <p className="uppercase text-white font-bold leading-[18px]">
                     Teachers

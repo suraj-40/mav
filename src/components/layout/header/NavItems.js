@@ -12,7 +12,7 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     {
       id: 1,
       name: "Home",
-      path: "/home-9",
+      path: "/",
       // dropdown: <DropdownDemoes />,
       isRelative: false,
     },

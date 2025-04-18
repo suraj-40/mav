@@ -28,7 +28,7 @@ const AboutFounder = () => {
                     <b>Mr. Manjunath Aradhya</b>
                 </p>
                 <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
-                    {/* Founder Trustee & President - Shree Aradhya Educational & Charitable Trust,<br/>     */}
+                    Founder Trustee & President - Shree Aradhya Educational & Charitable Trust,<br/>    
                     Founder Director & CEO - Agasthya EdTech Pvt. Ltd.
                 </p>
             </div>
@@ -39,7 +39,7 @@ const AboutFounder = () => {
           <div data-aos="fade-up" className="2xl:ml-65px">
             {/* <SectionName>About Us</SectionName> */}
             <HeadingSecondary>
-              Founder&apos;s Message
+              Founder and President&apos;s Message
             </HeadingSecondary>
             <p className="text-sm md:text-base leading-7 text-secondaryColor dark:text-secondaryColor-dark mb-25px">
             &quot;The essence of education is not just to transfer knowledge but to build character.&quot;<br/>- Dr. A.P.J. Abdul Kalam

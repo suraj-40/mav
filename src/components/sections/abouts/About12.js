@@ -4,7 +4,7 @@ import HeadingPrimary from "@/components/shared/headings/HeadingPrimary";
 
 const About12 = () => {
     return (
-        <main className="container flex flex-col items-center py-20 md:py-28 lg:py-32 2xl:py-40 bg-white dark:bg-gray-900 transition-colors duration-500">
+        <main className="container flex flex-col items-center py-10 md:py-20 text-justify  bg-white dark:bg-gray-900 transition-colors duration-500">
             <section className="flex flex-col gap-12 w-full max-w-5xl px-4 md:px-8">
                 <div data-aos="fade-up" className="2xl:ml-16">
                     <HeadingSecondary>

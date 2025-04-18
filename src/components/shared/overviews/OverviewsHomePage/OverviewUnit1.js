@@ -1,13 +1,18 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import overviewImage from "@/assets/images/about/AV-1.png";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Av11 from "@/assets/images/about/AV-11.png";
+import Av12 from "@/assets/images/about/AV-12.png";
+import Av13 from "@/assets/images/about/AV-13.jpeg";
+import Av14 from "@/assets/images/about/AV-14.png";
 
 
-
+const images = [Av11, Av12, Av13, Av14];
 const OverviewUnit1 = () => {
   const [showFullText, setShowFullText] = useState(false);
-  const visibleLines = 3;
+  const [current, setCurrent] = useState(0);
+  const visibleLines = 2;
 
   const paragraphs = [
     "AGASTHYA VIDYANIKETHAN, the educational arm of Shree Aradhya Educational & Charitable Trust, began humbly 13 years ago with 30+ students. Today, it serves over 1000+ students across its Srigandhakaval and Ullal branches in Bengaluru, Karnataka, delivering value-based, hands-on experiential education.",
@@ -16,50 +21,97 @@ const OverviewUnit1 = () => {
     "We are committed to holistic development, equipping students with confidence and skills for future success through a comprehensive educational approach.",
   ];
 
-  return (
-    <section className="relative bg-white py-12 md:py-16 transition-opacity duration-300">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
-          {/* Text Content */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              {paragraphs
-                .slice(0, showFullText ? paragraphs.length : visibleLines)
-                .map((para, index) => (
-                  <p
-                    key={index}
-                    className="text-gray-600 leading-relaxed text-base"
-                  >
-                    {para}
-                  </p>
-                ))}
-              {paragraphs.length > visibleLines && (
-                <button
-                  onClick={() => setShowFullText(!showFullText)}
-                  className="inline-block rounded-lg bg-orange-500 px-6 py-2 font-medium text-white shadow-md transition-all hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
-                  aria-label={showFullText ? "Show less content" : "Show more content"}
-                >
-                  {showFullText ? "Show Less" : "Know More"}
-                </button>
-              )}
-            </div>
-          </div>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Slide every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
 
-          {/* Image Section */}
-          <div className="relative">
-            <div className="overflow-hidden rounded-xl shadow-lg">
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  return (
+    <section className="relative bg-white pb-5 text-justify">
+      <div className="container">
+        {/* Carousel Section */}
+        <div className="relative w-full h-[300px] md:h-[500px] flex justify-center items-center overflow-hidden ">
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={current}
+              initial={{ x: 300, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -300, opacity: 0 }}
+              transition={{ duration: 0.6 }}
+              className="absolute"
+            >
               <Image
-                src={overviewImage}
-                alt="Srigandhakaval Branch Campus"
+                src={images[current]}
+                alt={`Slide ${current + 1}`}
                 width={600}
                 height={400}
-                className="h-auto w-full object-cover transition-transform duration-500 hover:scale-105"
+                className="rounded-xl shadow-xl object-cover"
                 placeholder="blur"
               />
-            </div>
-            <p className="mt-2 text-center text-sm italic text-gray-500">
-              Srigandhakaval Branch Campus
-            </p>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Control Buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-avorange text-white p-1 w-10 rounded-full shadow-md hover:text-avorange  hover:shadow-xl hover:bg-white z-20"
+            aria-label="Previous slide"
+          >
+            ◀
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-avorange text-white p-1 w-10 rounded-full shadow-md hover:text-avorange hover:shadow-xl hover:bg-white z-20"
+            aria-label="Next slide"
+          >
+            ▶
+          </button>
+
+          {/* Dots */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full ${
+                  index === current ? "bg-orange-500" : "bg-gray-300"
+                }`}
+                onClick={() => setCurrent(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Text Section */}
+        <div className="space-y-6">
+          <div className="space-y-4  ">
+            {paragraphs
+              .slice(0, showFullText ? paragraphs.length : visibleLines)
+              .map((para, index) => (
+                <p key={index} className="text-gray-600 leading-relaxed text-base">
+                  {para}
+                </p>
+              ))}
+            {paragraphs.length > visibleLines && (
+              <div className="text-center">
+              <button
+                onClick={() => setShowFullText(!showFullText)}
+                className="inline-block rounded-lg bg-orange-500 px-6 py-2 font-medium text-white shadow-md transition-all hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50"
+              >
+                {showFullText ? "Show Less" : "Know More"}
+              </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -68,3 +120,4 @@ const OverviewUnit1 = () => {
 };
 
 export default OverviewUnit1;
+

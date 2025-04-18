@@ -1,12 +1,139 @@
+"use client";
+
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import registrationImage1 from "@/assets/images/register/register__1.png";
 import registrationImage2 from "@/assets/images/register/register__2.png";
 import registrationImage3 from "@/assets/images/register/register__3.png";
-import PopupVideo from "@/components/shared/popup/PopupVideo";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import { CiCalendarDate } from "react-icons/ci";
+import { toast } from 'react-toastify';
+import axios from "axios";
+import PopupVideo from "@/components/shared/popup/PopupVideo";
+
 
 const Registration = () => {
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState(null);
+  const [scheduleDate, setScheduleDate] = useState('');
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const [formData, setFormData] = useState({
+    childName: '',
+    parentEmail: '',
+    fatherName: '',
+    fatherContact: '',
+    motherName: '',
+    motherContact: '',
+    dateOfBirth: '',
+    nationality: '',
+    branch: '',
+    admissionClass: '',
+    gender: '',
+    lastSchool: '',
+    acceptPolicy: false,
+    date: '',
+  });
+
+  const formatDate = (date) => {
+    if (!date) return '';
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}-${month}-${year}`;
+  };
+
+  const handleInputChange = (e) => {
+    setScheduleDate(e.target.value);
+  };
+
+  const handleDateChange = (newValue) => {
+    setValue(newValue);
+    setScheduleDate(formatDate(newValue));
+    setIsCalendarOpen(false);
+  };
+
+  const toggleCalendar = () => {
+    setIsCalendarOpen(!isCalendarOpen);
+  };
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setOpen(true);
+  };
+
+  const registractionSubmit = async () => {
+    try {
+      const [response] = await Promise.all([
+        axios.post('/api/registration', formData),
+        axios.post('/api/ScheduleGoogleSheet', formData)
+      ]);
+
+      if (response) {
+        toast.success('Form submitted successfully.');
+        setFormData({
+          childName: '',
+          parentEmail: '',
+          fatherName: '',
+          fatherContact: '',
+          motherName: '',
+          motherContact: '',
+          dateOfBirth: '',
+          nationality: '',
+          branch: '',
+          admissionClass: '',
+          gender: '',
+          lastSchool: '',
+          acceptPolicy: false,
+          date: '',
+        });
+        setScheduleDate('');
+        setOpen(false);
+        setLoading(false);
+      }
+    } catch (error) {
+      toast.error("Something went wrong, please try again.");
+      console.log("Error:", error);
+    }
+  };
+
+  const handlesubmitDate = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    if (/^\d{2}-\d{2}-\d{4}$/.test(scheduleDate)) {
+      const [day, month, year] = scheduleDate.split('-');
+      const newDate = new Date(year, month - 1, day);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      if (!isNaN(newDate.getTime()) && newDate >= today) {
+        setValue(newDate);
+        formData.date = formatDate(newDate);
+        registractionSubmit();
+      } else {
+        toast.error('Please enter a valid date.');
+        setValue(null);
+      }
+    } else {
+      setValue(null);
+      toast.error('Please enter a valid date in the format DD-MM-YYYY.');
+    }
+  };
+
+
   return (
     <section className="bg-register bg-cover bg-center bg-no-repeat lg:mb-150px">
       {/* registration overlay  */}
@@ -42,10 +169,8 @@ const Registration = () => {
                   Registration
                 </span> */}
                 <h3 className="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px">
-                  Create Your{" "}
-                  <span className="relative after:w-full after:h-[7px] after:bg-secondaryColor after:absolute after:left-0 after:bottom-2 md:after:bottom-4 z-0 after:z-[-1]">
-                    Account for Free,
-                  </span>{" "}
+                  Register now and 
+                  
                   Get access to{" "}
                   <span className="text-secondaryColor">ATOMs </span>
                   Features 
@@ -63,95 +188,137 @@ const Registration = () => {
             </div>
             {/* sbject right  */}
             <div className="overflow-visible lg:col-start-8 lg:col-span-5 relative z-1 lg:-mb-150px">
-              <form
-                className="p-35px pt-10 bg-lightGrey10 dark:bg-lightGrey10-dark rounded shadow-experience"
-                data-aos="fade-up"
-              >
-                {/* <h3 className="text-xl text-blackColor dark:text-blackColor-dark font-semibold mb-5 font-inter">
-                  Register for free
-                </h3> */}
-                Full Name of Child
-                <input
-                  type="text"
-                  placeholder="Enter Full Name In Capital Letters"
-                  className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                />  
-                
-                <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-30px">
-                <div>
-                <label htmlFor="branch" className="block text-sm font-medium text-gray-700 mb-1">
-                  Parent's Email
-                    </label>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="branch" className="block text-sm font-medium text-gray-700 mb-1">
-                    Parent's Contact Number
-                    </label>
-                  <input
-                    type="text"
-                    placeholder="Enter 10 Digit Phone number"
-                    className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                  />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-x-30px">
-                  <div>
-                    <label htmlFor="branch" className="block text-sm font-medium text-gray-700 mb-1">
-                      Branch
-                    </label>
-                    <select
-                      id="branch"
-                      className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                    >
-                      <option value="">Select Branch</option>
-                      <option value="branch1">AV Srigandhakavalu</option>
-                      <option value="branch2">AV Ullal</option>
-                    </select>
+            <div className="relative" data-aos="fade-left">
+            <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md">
+              {!open ? (
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  {/* Child Name */}
+                  <div className="">
+                    <label className="text-sm font-medium text-blue-800">Child's Full Name <span className="text-red-600">*</span></label>
+                    <input type="text" name="childName" value={formData.childName} onChange={handleChange} required placeholder="Full Name in CAPITAL" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
 
-                  <div>
-                    <label htmlFor="gender" className="block text-sm font-medium text-gray-700 mb-1">
-                      Gender
-                    </label>
-                    <select
-                      id="gender"
-                      className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                    >
-                      <option value="">Select Gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Date of Birth */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-800">Date of Birth <span className="text-red-600">*</span></label>
+                    <input type="date" name="dateOfBirth" value={formData.dateOfBirth} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                  </div>
+
+                  {/* Nationality */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-800">Nationality <span className="text-red-600">*</span></label>
+                    <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                  </div>
+                  </div>
+
+                  {/* Father's Name & Contact */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Father's Name <span className="text-red-600">*</span></label>
+                      <input type="text" name="fatherName" value={formData.fatherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Father's Contact <span className="text-red-600">*</span></label>
+                      <input type="text" name="fatherContact" value={formData.fatherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                  </div>
+
+                  {/* Mother's Name & Contact */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Mother's Name <span className="text-red-600">*</span></label>
+                      <input type="text" name="motherName" value={formData.motherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Mother's Contact <span className="text-red-600">*</span></label>
+                      <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                  </div>
+
+                  {/* Parent Email & Phone */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Parent's Email <span className="text-red-600">*</span></label>
+                      <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Gender <span className="text-red-600">*</span></label>
+                      <select name="gender" value={formData.gender} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  {/* Branch and Gender */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Branch <span className="text-red-600">*</span></label>
+                      <select name="branch" value={formData.branch} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
+                        <option value="">Select Branch</option>
+                        <option value="AV Srigandhakavalu">AV Srigandhakavalu</option>
+                        <option value="AV Ullal">AV Ullal</option>
+                      </select>
+                    </div>
+                    {/* Admission Class */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-800">Admission for Class <span className="text-red-600">*</span></label>
+                    <select name="admissionClass" value={formData.admissionClass} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
+                      <option value="">Select Class</option>
+                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 3 : formData.branch === 'AV Ullal' ? 3 : 0)].map((_, i) => (
+                        <option key={i} value={`Montessori ${i + 1}`}>Montessori {i + 1}</option>
+                      ))}
+                      
+                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 7 : 0)].map((_, i) => (
+                        <option key={i} value={`Class ${i + 1}`}>Class {i + 1}</option>
+                      ))}
                     </select>
                   </div>
-                </div>
-                Last School Attended
-                <input
-                  type="text"
-                  placeholder="Last School Attended (If Any)"
-                  className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                />
-                Admission for Class
-                <input
-                  type="text"
-                  placeholder="Montesssori 1, 2 or 3, Class 1,2,3..."
-                  className="w-full px-15px py-3 bg-lightGrey8 text-base mb-25px focus:outline-none"
-                />
-                {/* <textarea
-                  placeholder="Comment"
-                  className="w-full px-15px pb-3 pt-5 bg-lightGrey8 text-base mb-25px h-[155px] placeholder:text-blackColor"
-                  cols="30"
-                  rows="10"
-                /> */}
-                <div>
-                  <ButtonPrimary type="submit" arrow={true}>
-                    Next
-                  </ButtonPrimary>
-                </div>
-              </form>
+                  </div>
+
+                  {/* Last School */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-blue-800">Last School Attended</label>
+                    <input type="text" name="lastSchool" value={formData.lastSchool} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                  </div>
+
+
+                  {/* Accept Policy */}
+                  <div className="flex items-center space-x-2">
+                    <input type="checkbox" id="PrivacyPolicy" name="acceptPolicy" checked={formData.acceptPolicy} onChange={handleChange} required />
+                    <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700">
+                      I accept the <span className="text-blue-600 underline">Privacy Policy</span> for Agasthya Vidyanikethan
+                    </label>
+                  </div>
+
+                  <ButtonPrimary type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white">Next</ButtonPrimary>
+                </form>
+              ) : (
+                <form className="space-y-6 px-4 md:px-0" onSubmit={handlesubmitDate}>
+                  <p className="text-lg font-medium">Choose a date to schedule your visit to the school</p>
+                  <div className="relative flex items-center">
+                    <input type="text" value={scheduleDate} onChange={handleInputChange} placeholder="dd-mm-yyyy" className="input mr-2" />
+                    <button onClick={(e) => { e.preventDefault(); toggleCalendar(); }} className="p-2 border rounded-md">
+                      <CiCalendarDate className="w-5 h-5" />
+                    </button>
+                    {isCalendarOpen && (
+                      <div className="absolute top-full left-0 mt-2 z-10 w-full max-w-md">
+                        <Calendar onChange={handleDateChange} value={value} />
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex justify-center mt-4 w-full">
+                    <ButtonPrimary type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white">
+                      {loading ? "Please wait..." : "Submit"}
+                    </ButtonPrimary>
+                  </div>
+                </form>
+              )}
+            </div>
+          </div>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const DropdownEcommerce = () => {
       type: "secondary",
       dropdown: [
         {
-          name: "Founder",
+          name: "Founder - President",
           status: null,
           path: "/about-us/our-Leaders/founder",
           type: "secondary",

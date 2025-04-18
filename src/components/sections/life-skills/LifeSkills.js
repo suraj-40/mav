@@ -97,7 +97,7 @@ const LifeSkills = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-12  md:mx-24">
       <h2 data-aos="fade-up" className="text-2xl md:text-4xl  font-extrabold text-center text-av mb-5 md:mb-10">
-        LIFE SKILLS
+        SIX MANDATORY LIFE SKILLS
         <div className="w-200 h-2 bg-avorange mt-2 mx-auto"></div>
       </h2>
       

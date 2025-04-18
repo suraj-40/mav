@@ -25,8 +25,8 @@ const OverviewHome = () => {
   };
 
   const tabs = [
-    { name: "AV Ullal", key: "ullal", content: <OverviewUnit2 /> },
-    { name: "AV Srigandhakaval", key: "srigandhakaval", content: <OverviewUnit1 /> },
+    { name: "Agasthya Vidyanikethan Ullal Branch (Unit-2)", key: "ullal", content: <OverviewUnit2 /> },
+    { name: "Agasthya Vidyanikethan Srigandhakaval Branch (Unit-1)", key: "srigandhakaval", content: <OverviewUnit1 /> },
   ];
 
   const particleVariants = {
@@ -42,7 +42,7 @@ const OverviewHome = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-b from-gray-50 via-white to-gray-100 overflow-hidden">
+    <section className="relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-48 h-48 bg-orange-100 rounded-full opacity-20 blur-3xl" />
@@ -60,7 +60,7 @@ const OverviewHome = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
+      <div className="px-4 md:px-6 w-full z-10">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -69,7 +69,7 @@ const OverviewHome = () => {
           className="text-center mb-12"
         >
           <motion.span
-            className="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 font-medium text-sm rounded-full border border-orange-200 mb-4 shadow-md"
+            className="inline-block px-4 py-1.5 my-3 bg-orange-50 text-orange-600 font-medium text-sm rounded-full border border-orange-200 mb-4 shadow-md"
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
@@ -89,8 +89,8 @@ const OverviewHome = () => {
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex justify-center mb-12">
-          <div className="relative p-1 bg-white/70 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-50/50 max-w-md w-full">
+        <div className="flex justify-center m-5 md:m-30 md:my-12">
+          <div className="relative  p-1 bg-white/70 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-50/50  w-full">
             <motion.div
               className="absolute top-1 bottom-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl shadow-lg"
               initial={false}
@@ -105,7 +105,7 @@ const OverviewHome = () => {
                 key={tab.key}
                 ref={(el) => (tabRefs.current[index] = el)}
                 onClick={() => handleTabChange(tab.key, index)}
-                className={`relative z-10 w-1/2 py-3 text-center font-medium text-sm md:text-base rounded-xl transition-all duration-300 ${
+                className={`relative z-10 w-1/2 p-3 text-center font-medium text-size-20 justify-center items-center md:text-base rounded-xl transition-all duration-300 ${
                   activeTab === tab.key
                     ? "text-white"
                     : "text-gray-700 hover:text-gray-900"
@@ -123,7 +123,7 @@ const OverviewHome = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="relative min-h-[420px]">
+        <div className="relative md:mx-40">
           <AnimatePresence mode="wait">
             {tabs.map(
               (tab) =>
@@ -137,12 +137,12 @@ const OverviewHome = () => {
                     className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden"
                     role="tabpanel"
                   >
-                    <div className="bg-gradient-to-r from-orange-50 to-white py-5 px-6 border-b border-gray-100">
+                    <div className="text-center bg-gradient-to-r from-orange-50 to-white py-5 px-6 border-b border-gray-100">
                       <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
                         {tab.name} Campus
                       </h3>
                       <p className="text-gray-500 text-sm">
-                        Established in {tab.key === "srigandhakaval" ? "2010" : "2005"} • Premier Educational Institution
+                        Established in {tab.key === "srigandhakaval" ? "2010" : "2024"} • Premier Educational Institution
                       </p>
                     </div>
                     <div className="p-6 md:p-8">{tab.content}</div>

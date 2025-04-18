@@ -28,7 +28,7 @@ const HomeBlog = () => {
   ]
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="">
       <div className="container mx-auto px-4 py-16">
         <div className="mb-10 text-center" data-aos="fade-up">
           <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">

@@ -68,8 +68,9 @@ const HeaderTop = () => {
       {/* Inject ticker styles */}
       <style>{tickerStyles}</style>
 
+
       <div
-        className="bg-blackColor dark:bg-lightGrey10-dark sticky top-0 z-50 border-b border-white/10"
+        className="bg-gradient-to-r from-school-navy to-school-blue sticky top-0 z-50 border-b border-white/10"
         style={{ fontFamily: "var(--font-spartan), sans-serif" }}
       >
         <div className="4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-2 xl:py-3 px-4">
@@ -81,7 +82,7 @@ const HeaderTop = () => {
                   <div className="ticker__item">
                     <Link
                       href="https://av.school/application"
-                      className="text-secondaryColor md:text-lg lg:text-xl hover:text-[#FF4F1E]/80 transition-colors duration-300"
+                      className="text-secondaryColor md:text-lg lg:text-xl hover:text-[#FF4F1E]/80 transition-colors duration-50"
                     >
                       Admissions Open for Academic Year 2025 - 2026
                     </Link>
@@ -108,12 +109,12 @@ const HeaderTop = () => {
                   +91 7760776046
                 </Link>
                 <span className="text-gray-400">|</span>
-                <Link
+                {/* <Link
                   href="mailto:info.sgk@av.school"
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                 >
                   info.sgk@av.school
-                </Link>
+                </Link> */}
               </div>
               
               {/* User Actions and Social Icons */}

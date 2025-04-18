@@ -6,6 +6,8 @@ import NavbarRight from "./NavbarRight";
 import NavItems2 from "./NavItems2";
 import useIsTrue from "@/hooks/useIsTrue";
 import NavbarTop from "./NavbarTop";
+import SDKIntegration from "@/components/SDKIntegration";
+import UserDropdown from "./UserDropdown";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -17,6 +19,8 @@ const Navbar = () => {
   const isHome4Dark = useIsTrue("/home-4-dark");
   const isHome5 = useIsTrue("/home-5");
   const isHome5Dark = useIsTrue("/home-5-dark");
+  const lmsDomain = "https://atoms.abc.courses/";
+  const subdomain = "abc";
 
   const showTopNav = isHome4 || isHome4Dark || isHome5 || isHome5Dark;
   const isContainerLarge =
@@ -53,6 +57,10 @@ const Navbar = () => {
             {/* Navbar Left - Logo */}
             <div className="col-span-1 lg:col-span-2">
               <NavbarLogo className="transform hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="w-[120px] font-bold hidden">
+            <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
+            <UserDropdown />
             </div>
 
             {/* Main Menu - Center */}

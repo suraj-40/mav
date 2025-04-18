@@ -4,7 +4,7 @@ import MobileMenuItem from "./MobileMenuItem";
 
 const MobileItems3 = () => {
   const items = [
-    { id: 1, name: "Home", path: "/home-9", accordion: false, dropdown: null },
+    { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
     { id: 2, name: "Schedule", path: "/schedule", accordion: false, dropdown: null },
     { id: 3, name: "Atoms", path: "/atoms", accordion: false, dropdown: null },
     {
@@ -16,7 +16,7 @@ const MobileItems3 = () => {
         { name: "About NEP", path: "/NEP/about" },
         { name: "Dinacharya", path: "/NEP/dinacharya" },
         { name: "Cultural Activities", path: "/NEP/cultural-activities" },
-        { name: "Life Skills", path: "/NEP/life-Skills" },
+        { name: "Life Skills", path: "/NEP/life-skills" },
         // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
@@ -30,7 +30,7 @@ const MobileItems3 = () => {
           name: "Our Leaders",
           path: null,
           dropdown: [
-            { name: "Founder", path: "/about-us/our-Leaders/founder" },
+            { name: "Founder - President", path: "/about-us/our-Leaders/founder" },
             { name: "Vice President", path: "/about-us/our-Leaders/vice-president" },
             { name: "Secretary", path: "/about-us/our-Leaders/secretary" },
             { name: "Treasurer", path: "/about-us/our-Leaders/treasurer" },

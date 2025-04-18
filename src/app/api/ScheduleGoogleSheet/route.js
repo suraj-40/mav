@@ -6,32 +6,43 @@ export async function POST(req) {
     const {
       childName,
       parentEmail,
-      parentContact,
+      fatherName,
+      fatherContact,
+      motherName,
+      motherContact,
+      dateOfBirth,
+      nationality,
       branch,
-      gender,
-      lastSchool,
       admissionClass,
+      gender,
+      lastSchool,     
       acceptPolicy,
       date,
     } = body;
+
   
 
     try {
        
-     const endpoint ="https://script.google.com/macros/s/AKfycbzEP9zroD_r5-NgeFmh9K60Nq-0hifegCjxkrhTijDRH3G82tDONDmVOnuFuRTtQhs/exec"
+     const endpoint ="https://script.google.com/macros/s/AKfycbxOUp9zU1XrfXObYvA1JMzzIjPpeLgP6nOlRCuL0A_sQe90RYrtEBpEYpI6E-gUf463/exec"
           
-    const response =await axios.post(endpoint, {
-        childName,
-        parentEmail,
-        parentContact,
-        branch,
-        gender,
-        lastSchool,
-        admissionClass,
-        date
-    }) 
+    // const response =await axios.post(endpoint, {
+    //     childName,
+    //     parentEmail,
+    //     fatherName,
+    //     fatherContact,
+    //     motherName,
+    //     motherContact,
+    //     dateOfBirth,
+    //     nationality,
+    //     branch,
+    //     admissionClass,
+    //     gender,
+    //     lastSchool,
+    //     date
+    // }) 
 
-    
+    await axios.post(endpoint, {...body}) ;    
         return NextResponse.json({ message: "google sheets updated" }, { status: 200 });
      
     } catch (error) {

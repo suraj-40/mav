@@ -103,7 +103,7 @@ const activities = [
   ];
 
 const CulturalActivityCard = ({ id, title, image }) => (
-  <div className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
+  <div  data-aos="fade-up" className=" relative group overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
     <Image
       src={image}
       alt={title}

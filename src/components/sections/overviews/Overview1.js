@@ -413,7 +413,7 @@ const Overview = () => {
         </div>
       </div>
 
-      {!isAbout && !isAboutDark && <Counter2 />}
+      {/* {!isAbout && !isAboutDark && <Counter2 />} */}
     </section>
   );
 };
