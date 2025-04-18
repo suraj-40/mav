@@ -56,9 +56,9 @@ export default function UserDropdown() {
         <div className="relative group postLogin" style={{ display: "none" }}>
           <div className="flex items-center cursor-pointer">
             <div className="w-9 h-9 flex items-center justify-center bg-orange text-white rounded-full text-sm font-semibold transition-all duration-300 group-hover:scale-110 group-hover:orange group-hover:bg-white group-hover:text-orange border-2 border-orange">
-              {initial || (
-                <img prioriy="false" src={"/images/user.png"} alt="logo" />
-              )}
+              {initial}
+              {/* || (<img prioriy="false" src={"/images/user.png"} alt="logo" /> ) */}
+                  
             </div>
           </div>
 
@@ -73,6 +73,7 @@ export default function UserDropdown() {
                 <p className="font-semibold">{username}</p>
               </div>
             </div>
+            
             <hr />
             <div className="border-b ">
               {/* <a href="#" className="goToAccountButton cursor-pointer px-4 py-2 text-gray-700 hover:bg-gray-200 flex items-center border-l-2 border-white hover:border-l-2 hover:border-orange">

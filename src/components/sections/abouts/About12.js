@@ -23,7 +23,7 @@ const About12 = () => {
                         No doubt many changes have happened in Education, and India as a Country has transformed with the same kind of education system. 
                         We plan to be the third largest economy by 2025, it could not have happened, so definitely we have made those changes but 
                         the new National Education Policy, which has been in work since long time & definitely having made public after a public 
-                        consultation in 2020 and hence it's called the NEP 2020. It is a wonderful draft which lays out what really Educational 
+                        consultation in 2020 and hence its called the NEP 2020. It is a wonderful draft which lays out what really Educational 
                         institutes all across the Country should be doing to ensure that our Education system comes out of the colonial past 
                         and at least the next generation of students get to know what really India is or Bharat is all about.
                     </p>
@@ -88,9 +88,9 @@ const About12 = () => {
                         NEP in Agasthya Vidyanikethan
                     </HeadingSecondary> */}
                     <p className="text-center text-sm md:text-2xl text-black dark:text-white leading-snug">
-                        Developing Students' Capabilities,{" "}
+                        Developing Students Capabilities,{" "}
                         <span className="text-secondaryColor">
-                            To Create Solutions for Tomorrow's Challenges
+                            To Create Solutions for Tomorrow&apos;s Challenges
                         </span>
                     </p>
 

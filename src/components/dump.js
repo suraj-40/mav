@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import Counter from "../sub-section/Counter";
 import about2 from "@/assets/images/about/about_2.png";
 import about3 from "@/assets/images/about/about_3.png";
@@ -55,7 +56,7 @@ import TiltWrapper from "@/components/shared/wrappers/TiltWrapper";
   </div>
   {/* about right  */}
   <div data-aos="fade-up">
-    <SectionName>About Us</SectionName>
+    {/* <SectionName>About Us</SectionName> */}
     <h3 className="text-3xl md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
       {children ? (
         children

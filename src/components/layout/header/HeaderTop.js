@@ -123,6 +123,7 @@ const HeaderTop = () => {
                 <div className="w-[120px] font-bold">
                   <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
                   <UserDropdown />
+                  
                 </div>
 
                 {/* Social Icons */}

@@ -17,7 +17,7 @@ const About5 = () => {
               Welcome to the Online Learning Center
             </HeadingPrimaryXl>
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark mb-6 pl-3 border-l-2 border-primaryColor">
-            Agasthya Vidyanikethan stands as a beacon of educational excellence, having achieved significant milestones over the past 13 years. As a technocrats-driven educational trust, it has successfully integrated cutting-edge technology with robust educational frameworks. The school's unique Dinacharya brings structure and innovation to students’ daily routine, while its edutainment-based skilling approach ensures 21st century essential skills are woven seamlessly into the curriculum.
+            Agasthya Vidyanikethan stands as a beacon of educational excellence, having achieved significant milestones over the past 13 years. As a technocrats-driven educational trust, it has successfully integrated cutting-edge technology with robust educational frameworks. The school&apos;s unique Dinacharya brings structure and innovation to students&apos; daily routine, while its edutainment-based skilling approach ensures 21st century essential skills are woven seamlessly into the curriculum.
             </p>
             <ul className="space-y-5">
               <li className="flex items-center group">

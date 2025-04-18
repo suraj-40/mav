@@ -54,7 +54,7 @@ const ContactUs = () => {
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold">We're Always Eager to Hear From You!</h3>
+              <h3 className="text-2xl font-bold">We&apos;re Always Eager to Hear From You!</h3>
 
               <ul className="space-y-4">
                 {/* Branch 1 */}

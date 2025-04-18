@@ -160,7 +160,7 @@ const Schedule = () => {
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   {/* Child Name */}
                   <div className="">
-                    <label className="text-sm font-medium text-blue-800">Child's Full Name <span className="text-red-600">*</span></label>
+                    <label className="text-sm font-medium text-blue-800">Child&apos;s Full Name <span className="text-red-600">*</span></label>
                     <input type="text" name="childName" value={formData.childName} onChange={handleChange} required placeholder="Full Name in CAPITAL" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
 
@@ -182,11 +182,11 @@ const Schedule = () => {
                   {/* Father's Name & Contact */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Father's Name <span className="text-red-600">*</span></label>
+                      <label className="text-sm font-medium text-blue-800">Father&apos;s Name <span className="text-red-600">*</span></label>
                       <input type="text" name="fatherName" value={formData.fatherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Father's Contact <span className="text-red-600">*</span></label>
+                      <label className="text-sm font-medium text-blue-800">Father&apos;s Contact <span className="text-red-600">*</span></label>
                       <input type="text" name="fatherContact" value={formData.fatherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                   </div>
@@ -194,11 +194,11 @@ const Schedule = () => {
                   {/* Mother's Name & Contact */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Mother's Name <span className="text-red-600">*</span></label>
+                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Name <span className="text-red-600">*</span></label>
                       <input type="text" name="motherName" value={formData.motherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Mother's Contact <span className="text-red-600">*</span></label>
+                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact <span className="text-red-600">*</span></label>
                       <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                   </div>
@@ -206,7 +206,7 @@ const Schedule = () => {
                   {/* Parent Email & Phone */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Parent's Email <span className="text-red-600">*</span></label>
+                      <label className="text-sm font-medium text-blue-800">Parent&apos;s Email <span className="text-red-600">*</span></label>
                       <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">

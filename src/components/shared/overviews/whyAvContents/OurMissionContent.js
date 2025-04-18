@@ -51,7 +51,7 @@ const OurMissionContent = () => {
           </p>
           <p className="text-foreground leading-relaxed text-base md:text-lg">
             Agasthya Vidyanikethan is committed to a transformative educational journey — blending academic excellence with a holistic,
-            value-driven approach. We don't just teach subjects; we shape purpose-filled lives.
+            value-driven approach. We don&apos;t just teach subjects; we shape purpose-filled lives.
           </p>
         </motion.div>
 
@@ -280,7 +280,7 @@ const OurMissionContent = () => {
             <div className={`mt-3 text-foreground leading-relaxed text-sm md:text-base overflow-hidden transition-all duration-300 ${activeFeature === "global" ? "max-h-96" : "max-h-16 md:max-h-24 text-ellipsis overflow-hidden"}`}>
               <p>
                 We instill a global perspective grounded in local values. Our students are prepared to lead with awareness of their role in a
-                complex world — mindful of sustainability, equity, and humanity's shared future.
+                complex world — mindful of sustainability, equity, and humanity&apos;s shared future.
               </p>
               
               {activeFeature === "global" && (
@@ -307,7 +307,7 @@ const OurMissionContent = () => {
           <div className="space-y-3">
             <div className="flex items-center">
               <div className="w-3 h-3 bg-purple-400 rounded-full mr-3"></div>
-              <p className="text-sm text-gray-700">Cultivating ethical leadership for tomorrow's challenges</p>
+              <p className="text-sm text-gray-700">Cultivating ethical leadership for tomorrow&apos;s challenges</p>
             </div>
             <div className="flex items-center">
               <div className="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
