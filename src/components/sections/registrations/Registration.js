@@ -135,39 +135,16 @@ const Registration = () => {
 
 
   return (
-    <section className="bg-register bg-cover bg-center bg-no-repeat lg:mb-150px">
-      {/* registration overlay  */}
-      <div className="overlay bg-[#202745] bg-opacity-90 py-20 lg:pt-[90px] lg:pb-0 relative z-0">
-        {/* animate icons  */}
-        <div>
-          <Image
-            className="absolute top-0 left-0 lg:left-[8%] 2xl:top-10 animate-move-hor block z--1"
-            src={registrationImage1}
-            alt=""
-          />
-          <Image
-            className="absolute top-1/2 left-3/4 md:left-2/3 lg:left-1/2 2xl:left-[8%] md:top animate-spin-slow block z--1"
-            src={registrationImage2}
-            alt=""
-          />
-          <Image
-            className="absolute top-20 lg:top-3/4 md:top-14 right-20 md:right-20 lg:right-[90%] animate-move-var block z--1"
-            src={registrationImage3}
-            alt=""
-          />
-        </div>
-        <div className="container">
-          {/* about section   */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 pt-30px gap-x-30px">
-            {/* about left  */}
-            <div
-              className="mb-30px lg:mb-0 pb-0 md:pb-30px xl:pb-0 lg:col-start-1 lg:col-span-7"
-              data-aos="fade-up"
-            >
-              <div className="relative">
-                {/* <span className="text-sm font-semibold text-primaryColor bg-whitegrey3 px-6 py-5px mb-5 rounded-full inline-block">
-                  Registration
-                </span> */}
+    <section className="relative bg-[#202745] md:h-[750px] bg-cover bg-center bg-no-repeat overflow-hidden">
+      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="absolute inset-0 pointer-events-none">
+        <Image className="absolute top-10 left-10 lg:left-20 2xl:top-20 animate-pulse opacity-70" src={registrationImage1} alt="Decorative element 1" width={100} height={100} />
+        <Image className="absolute top-1/3 right-20 lg:right-32 animate-spin-slow opacity-60" src={registrationImage2} alt="Decorative element 2" width={120} height={120} />
+        <Image className="absolute bottom-20 left-16 lg:left-32 animate-bounce opacity-50" src={registrationImage3} alt="Decorative element 3" width={80} height={80} />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 py-16 lg:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12">
+          <div className="space-y-8" data-aos="fade-right">
                 <h3 className="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px">
                   Register now and 
                   
@@ -185,21 +162,17 @@ const Registration = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            {/* sbject right  */}
-            <div className="overflow-visible lg:col-start-8 lg:col-span-5 relative z-1 lg:-mb-150px">
-            <div className="relative" data-aos="fade-left">
-            <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md">
+            
+              <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md" data-aos="fade-left">
               {!open ? (
                 <form className="space-y-6" onSubmit={handleSubmit}>
-                  {/* Child Name */}    
-                  <div className="">
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Child Name */}
+                  <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Child&apos;s Full Name <span className="text-red-600">*</span></label>
                     <input type="text" name="childName" value={formData.childName} onChange={handleChange} required placeholder="Full Name in CAPITAL" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
-
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Date of Birth */}
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Date of Birth <span className="text-red-600">*</span></label>
@@ -212,12 +185,16 @@ const Registration = () => {
                     <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   </div>
-
-                  {/* Father's Name & Contact */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Father's Name & Contact */}
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Father&apos;s Name <span className="text-red-600">*</span></label>
                       <input type="text" name="fatherName" value={formData.fatherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Name <span className="text-red-600">*</span></label>
+                      <input type="text" name="motherName" value={formData.motherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Father&apos;s Contact <span className="text-red-600">*</span></label>
@@ -225,20 +202,12 @@ const Registration = () => {
                     </div>
                   </div>
 
-                  {/* Mother's Name & Contact */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Name <span className="text-red-600">*</span></label>
-                      <input type="text" name="motherName" value={formData.motherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
-                    </div>
+                  {/* Parent Email & Gender */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">                  
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact <span className="text-red-600">*</span></label>
                       <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
-                  </div>
-
-                  {/* Parent Email & Phone */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Parent&apos;s Email <span className="text-red-600">*</span></label>
                       <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
@@ -252,9 +221,9 @@ const Registration = () => {
                       </select>
                     </div>
                   </div>
-
-                  {/* Branch and Gender */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Branch*/}
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Branch <span className="text-red-600">*</span></label>
                       <select name="branch" value={formData.branch} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
@@ -277,14 +246,12 @@ const Registration = () => {
                       ))}
                     </select>
                   </div>
-                  </div>
-
                   {/* Last School */}
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Last School Attended</label>
                     <input type="text" name="lastSchool" value={formData.lastSchool} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
-
+                  </div>
 
                   {/* Accept Policy */}
                   <div className="flex items-center space-x-2">
@@ -294,7 +261,9 @@ const Registration = () => {
                     </label>
                   </div>
 
-                  <ButtonPrimary type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white">Next</ButtonPrimary>
+                  <div className="text-center">
+                    <ButtonPrimary type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white">Next</ButtonPrimary>
+                  </div>
                 </form>
               ) : (
                 <form className="space-y-6 px-4 md:px-0" onSubmit={handlesubmitDate}>
@@ -318,9 +287,7 @@ const Registration = () => {
                 </form>
               )}
             </div>
-          </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>

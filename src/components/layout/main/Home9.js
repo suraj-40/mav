@@ -26,10 +26,10 @@ const Home9 = () => {
       <OverviewHome/>
       {/* <FeatureCourses title="Our online courses" course="2" /> */}
       <Registration />
-      <ImageGallery />
+      {/* <ImageGallery /> */}
       {/* <Blogs /> */}
-      <HomeBlog/>
-      <CallToAction/>
+      {/* <HomeBlog/>  */}
+      {/* <CallToAction/> */}
       {/* <PricingPlans /> */}
       {/* <Instructors2 /> */}
       {/* <Instructors /> */}

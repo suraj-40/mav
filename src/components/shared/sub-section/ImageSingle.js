@@ -7,7 +7,7 @@ const ImageSingle = ({ image }) => {
       <Image
         src={image}
         alt="Image 1"
-        className="gallery-image w-full"
+        className="gallery-image w-[400px] h-[250px]"
         placeholder="blur"
       />
       <div className="absolute left-0 top-0 right-0 bottom-0 bg-blackColor bg-opacity-0 transition-all duration-300 group-hover:bg-opacity-60 text-whiteColor flex items-center justify-center">

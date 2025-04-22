@@ -2,6 +2,7 @@ import Registration1 from "@/components/sections/registrations/Registration1";
 import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import  Schedule  from "@/components/sections/registrations/Schedule";
+import ImageGallery from "@/components/sections/sub-section/ImageGallery";
 
 export const metadata = {
   title: "ATOMS | Agasthya Vidhyanikethan",
@@ -17,6 +18,7 @@ const application = async () => {
         {/* <AboutMain /> */}
         {/* <Registration1/> */}
         <Schedule/>
+        <ImageGallery />
         
         {/* <ThemeController /> */}
       </main>

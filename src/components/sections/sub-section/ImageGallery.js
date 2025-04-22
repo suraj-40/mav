@@ -1,77 +1,37 @@
 "use client";
-import blogImage15 from "@/assets/images/blog/blog_15.png";
-import blogImage16 from "@/assets/images/blog/blog_16.png";
-import blogImage17 from "@/assets/images/blog/blog_17.png";
-import blogImage18 from "@/assets/images/blog/blog_18.png";
-import blogImage19 from "@/assets/images/blog/blog_19.png";
-import blogImage20 from "@/assets/images/blog/blog_20.png";
-import blogImage29 from "@/assets/images/blog/blog_29.jpg";
-import blogImage30 from "@/assets/images/blog/blog_30.jpg";
-import gallaryImage1 from "@/assets/images/gallery/kids_1.png";
-import gallaryImage2 from "@/assets/images/gallery/kids_2.png";
-import gallaryImage3 from "@/assets/images/gallery/kids_3.png";
-import gallaryImage4 from "@/assets/images/gallery/kids_4.png";
-import gallaryImage5 from "@/assets/images/gallery/kids_5.png";
-import gallaryImage6 from "@/assets/images/gallery/kids_6.png";
-import gallaryImage7 from "@/assets/images/gallery/kids_7.png";
-import gallaryImage8 from "@/assets/images/gallery/kids_8.png";
-import gallaryAiImage1 from "@/assets/images/gallery/ai_1.jpg";
-import gallaryAiImage2 from "@/assets/images/gallery/ai_2.jpg";
-import gallaryAiImage3 from "@/assets/images/gallery/ai_3.jpg";
-import gallaryAiImage4 from "@/assets/images/gallery/ai_4.jpg";
-import gallaryAiImage5 from "@/assets/images/gallery/ai_5.jpg";
-import gallaryAiImage6 from "@/assets/images/gallery/ai_6.jpg";
-import gallaryAiImage7 from "@/assets/images/gallery/ai_7.jpg";
-import gallaryAiImage8 from "@/assets/images/gallery/ai_8.jpg";
+import avecosystemImage15 from "@/assets/images/avecosystem/Asset 1@4x.png";
+import avecosystemImage16 from "@/assets/images/avecosystem/Asset 2@4x.png";
+import avecosystemImage17 from "@/assets/images/avecosystem/Asset 3@4x.png";
+import avecosystemImage18 from "@/assets/images/avecosystem/Asset 4@4x.png";
+import avecosystemImage19 from "@/assets/images/avecosystem/Asset 5@4x.png";
+import avecosystemImage20 from "@/assets/images/avecosystem/Asset 6@4x.png";
+import avecosystemImage29 from "@/assets/images/avecosystem/Asset 7@4x.png";
+import avecosystemImage30 from "@/assets/images/avecosystem/Asset 8@4x.png";
+
 
 import ImageSingle from "@/components/shared/sub-section/ImageSingle";
 import useIsTrue from "@/hooks/useIsTrue";
 import popup from "@/libs/popup";
 import { useEffect } from "react";
 const ImageGallery = ({ gallary }) => {
-  const isHome9 = useIsTrue("/home-9");
-  const isHome9Dark = useIsTrue("/home-9-dark");
   const isHome10 = useIsTrue("/home-10");
   const isHome10Dark = useIsTrue("/home-10-dark");
   useEffect(() => {
     popup();
   }, []);
-  const allImages =
-    isHome9 || isHome9Dark
-      ? [
-          gallaryImage1,
-          gallaryImage2,
-          gallaryImage3,
-          gallaryImage4,
-          gallaryImage5,
-          gallaryImage6,
-          gallaryImage7,
-          gallaryImage8,
-        ]
-      : isHome10 || isHome10Dark
-      ? [
-          gallaryAiImage4,
-          gallaryAiImage2,
-          gallaryAiImage3,
-          gallaryAiImage5,
-          gallaryAiImage7,
-          gallaryAiImage8,
-          gallaryAiImage1,
-          gallaryAiImage6,
-        ]
-      : [
-          blogImage15,
-          blogImage16,
-          blogImage17,
-          blogImage18,
-          blogImage19,
-          blogImage20,
-          blogImage29,
-          blogImage30,
+  const allImages = [
+          avecosystemImage15,
+          avecosystemImage17,
+          avecosystemImage18,
+          avecosystemImage19,
+          avecosystemImage20,
+          avecosystemImage29,
+          avecosystemImage30,
+          avecosystemImage16,
         ];
   const images = gallary ? allImages.slice(0, 6) : [...allImages];
   return (
-    <div>
+    <div className= "md:my-20">
       <div
         className={`${gallary ? "" : "container-fluid-2"} ${
           isHome10 || isHome10Dark
@@ -97,7 +57,7 @@ const ImageGallery = ({ gallary }) => {
             className={
               gallary
                 ? "grid grid-cols-3 gap-5px"
-                : "grid grid-cols-2 md:grid-cols-4 gap-10px p-5 md:p-30px lg:p-5 2xl:p-30px "
+                : "grid grid-cols-1 md:grid-cols-4 gap-10px p-5 md:p-30px lg:p-5 2xl:p-30px "
             }
           >
             {images.map((image, idx) => (

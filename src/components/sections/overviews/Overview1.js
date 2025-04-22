@@ -154,7 +154,7 @@ const Overview = () => {
       {/* Heading with animated entry and visual effects */}
 {!isAbout && !isAboutDark && (
   <motion.div 
-    className="mt-16 mb-20 text-center relative z-10" 
+    className=" mb-20 text-center relative z-10" 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.8 }}
