@@ -1,4 +1,4 @@
-import Dinacharya, { SectionData } from "@/components/sections/dinacharya/Dinacharya";
+import Dinacharya, { SectionData } from "@/components/sections/dinacharya/dinacharya";
 
 export default function DinacharyaPage() {
   return (

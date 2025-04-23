@@ -7,6 +7,7 @@ export const metadata = {
   description: "Cart | Edurock - Education LMS Template",
 };
 
+
 const Cart = async () => {
   return (
     <PageWrapper>
