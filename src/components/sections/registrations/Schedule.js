@@ -130,7 +130,7 @@ const Schedule = () => {
   };
 
   return (
-    <section className="relative h-[750px] bg-cover bg-center bg-no-repeat overflow-hidden" style={{ backgroundImage: "url('/images/school-background.webp')" }}>
+    <section className="relative bg-[#202745] md:h-[750px] bg-cover bg-center bg-no-repeat overflow-hidden">
       <div className="absolute inset-0 bg-black/50 z-0" />
       <div className="absolute inset-0 pointer-events-none">
         <Image className="absolute top-10 left-10 lg:left-20 2xl:top-20 animate-pulse opacity-70" src={registrationImage1} alt="Decorative element 1" width={100} height={100} />

@@ -45,7 +45,7 @@ export default function UserDropdown() {
       <div className="md:flex justify-between space-x-1 md:space-x-4">
         <a
           href="#"
-          className="loginButton login text-xs sm:text-sm md:text-md lg:text-md flex  bg-[#FF5B00] text-white rounded px-1 md:px-3 py-2 hover:bg-white hover:text-[#FF4F1E]/80  border-orange "
+          className="loginButton login text-xs font-normal sm:text-sm md:text-md lg:text-md  bg-avorange text-white rounded px-1 md:px-3 py-2 hover:bg-white hover:text-avorange border-2 border-avorange "
         >
           {/* <Globe className="mr-2" size={18} /> */}
           ATOMS

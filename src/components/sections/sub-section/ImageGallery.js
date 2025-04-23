@@ -1,12 +1,12 @@
 "use client";
-import avecosystemImage15 from "@/assets/images/avecosystem/Asset 1@4x.png";
-import avecosystemImage16 from "@/assets/images/avecosystem/Asset 2@4x.png";
-import avecosystemImage17 from "@/assets/images/avecosystem/Asset 3@4x.png";
-import avecosystemImage18 from "@/assets/images/avecosystem/Asset 4@4x.png";
-import avecosystemImage19 from "@/assets/images/avecosystem/Asset 5@4x.png";
-import avecosystemImage20 from "@/assets/images/avecosystem/Asset 6@4x.png";
-import avecosystemImage29 from "@/assets/images/avecosystem/Asset 7@4x.png";
-import avecosystemImage30 from "@/assets/images/avecosystem/Asset 8@4x.png";
+import avecosystemImage15 from "@/assets/images/avecosystem/avecosystem1.png";
+import avecosystemImage16 from "@/assets/images/avecosystem/avecosystem2.png";
+import avecosystemImage17 from "@/assets/images/avecosystem/avecosystem3.png";
+import avecosystemImage18 from "@/assets/images/avecosystem/avecosystem4.png";
+import avecosystemImage19 from "@/assets/images/avecosystem/avecosystem5.png";
+import avecosystemImage20 from "@/assets/images/avecosystem/avecosystem6.png";
+import avecosystemImage29 from "@/assets/images/avecosystem/avecosystem7.png";
+import avecosystemImage30 from "@/assets/images/avecosystem/avecosystem8.png";
 
 
 import ImageSingle from "@/components/shared/sub-section/ImageSingle";
@@ -35,7 +35,7 @@ const ImageGallery = ({ gallary }) => {
       <div
         className={`${gallary ? "" : "container-fluid-2"} ${
           isHome10 || isHome10Dark
-            ? "pt-100px pb-30px lg:pb-10px"
+            ? "md:pt-100px md:pb-30px lg:pb-10px"
             : gallary
             ? ""
             : "mb-10"
@@ -57,7 +57,7 @@ const ImageGallery = ({ gallary }) => {
             className={
               gallary
                 ? "grid grid-cols-3 gap-5px"
-                : "grid grid-cols-1 md:grid-cols-4 gap-10px p-5 md:p-30px lg:p-5 2xl:p-30px "
+                : "grid grid-cols-1 md:grid-cols-4 gap-10px  md:p-30px p-5 lg:p-5 2xl:p-30px "
             }
           >
             {images.map((image, idx) => (

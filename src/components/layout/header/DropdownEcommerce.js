@@ -6,7 +6,7 @@ const DropdownEcommerce = () => {
     {
       name: "Our Leaders",
       status: null,
-      path: "/about-us/our-Leaders",
+      path: "/about-us/our-Leaders/founder",
       type: "secondary",
       dropdown: [
         {

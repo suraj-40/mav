@@ -10,14 +10,14 @@ const Hero8 = () => {
     <section data-aos="fade-up">
       <banner section/>
       <div className="hero relative z-0 overflow-hidden">
-        <animated icons/>
-        <div>
+        {/* <animated icons/> */}
+        {/* <div> */}
           {/* <BookImage /> */}
-          <GlobImage />
+          {/* <GlobImage /> */}
           {/* <BalbImage /> */}
-          <AppleImage />
-          <TriangleImage />
-        </div>
+          {/* <AppleImage /> */}
+          {/* <TriangleImage /> */}
+        {/* </div> */}
 
         {/* Swiper */}
         <HeroSlider3 />
