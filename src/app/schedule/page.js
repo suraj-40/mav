@@ -18,8 +18,6 @@ const application = async () => {
         {/* <AboutMain /> */}
         {/* <Registration1/> */}
         <Schedule/>
-        <ImageGallery />
-        
         {/* <ThemeController /> */}
       </main>
     </PageWrapper>

@@ -11,27 +11,21 @@ import TiltWrapper from "@/components/shared/wrappers/TiltWrapper";
 const AboutSecretary = () => {
   return (
     <section>
-      <div className="container py-50px md:py-70px lg:py-20 2xl:py-100px pt-0px">
+      <div className="container py-50px md:py-70px lg:py-20 2xl:py-100px pt-0px text-justify">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-30px">
           {/* about left */}
           <div data-aos="fade-up">
             <TiltWrapper>
               <div className="tilt relative overflow-hidden z-0 flex flex-col items-center justify-center text-center">
-                <Image
-                  className="absolute left-0 top-0 lg:top-4 right-0 mx-auto -z-1"
-                  src={aboutImage8}
-                  alt=""
-                />
-                <Image className="w-full" src={Secretary} alt="" />
+              
+                <Image className="bg-av w-full" src={Secretary} alt="" />
 
                 <p className="text-sm md:text-base leading-7 text-blackColor dark:text-blackColor-dark">
                   <b>Mrs. Nagarathna Aradhya</b>
                 </p>
                 <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                   {/* Founder Trustee & President - Shree Aradhya Educational & Charitable Trust,<br/>     */}
-                  Secretary - Shree Aradhya Educational & Charitable Trust{" "}
-                  <br />
-                  Director - Agasthya EdTech Pvt. Ltd.
+                  Secretary <br />Shree Aradhya Educational & Charitable Trust{" "}
                 </p>
               </div>
             </TiltWrapper>

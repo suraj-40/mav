@@ -41,12 +41,6 @@ const DropdownEcommerce = () => {
       path: "/about-us/vision-mission",
       type: "secondary",
     },
-    {
-      name: "Contact Us",
-      status: null,
-      path: "/about-us/contact-Us",
-      type: "secondary",
-    },
   ];
   return <DropdownPrimary items={items} />;
 };

@@ -36,6 +36,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        samarkan: ['Samarkan', 'cursive'],
       },
       colors: {
         primary: "#1e2a78",

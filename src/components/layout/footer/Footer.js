@@ -81,7 +81,7 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <div>
-                  <p className="text-[#000008] font-medium">Unit-1:</p>
+                  <p className="text-[#000008] font-medium">AV-1 Srigandhakaval Branch</p>
                   <p className="text-[#000008]">9880906633 | 9972342144</p>
                   <p className="text-[#000008]">info@av.school</p>
                 </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <div>
-                  <p className="text-[#000008] font-medium">Unit-2:</p>
+                  <p className="text-[#000008] font-medium">AV-2 Ullal Branch</p>
                   <p className="text-[#000008] ">7760776098 | 7760776046</p>
                   <p className="text-[#000008]">info@av.school</p>
                 </div>
@@ -119,7 +119,7 @@ const Footer = () => {
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
                 <a href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8" className="text-[#000008] hover:text-school-orange transition-colors duration-300">
-                  Unit-1, Srigandhakaval Branch, #1566, ‘D’ Group Layout, Bengaluru - 560091
+                  AV-1, Srigandhakaval Branch, #1566, ‘D’ Group Layout, Bengaluru - 560091
                 </a>
               </li>
               <li className="flex items-start space-x-3">
@@ -127,7 +127,7 @@ const Footer = () => {
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
                 <a href="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6" className="text-[#000008] hover:text-school-orange transition-colors duration-300">
-                  Unit-2, Ullal Branch, #170/3, 6th Block, Ullal Ring Road, Bengaluru – 560110
+                  AV-2, Ullal Branch, #170/3, 6th Block, Ullal Ring Road, Bengaluru – 560110
                 </a>
               </li>
             </ul>

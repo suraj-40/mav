@@ -13,6 +13,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { toast } from 'react-toastify';
 import axios from "axios";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
+import chess from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.png";
 
 
 const Registration = () => {
@@ -135,7 +136,7 @@ const Registration = () => {
 
 
   return (
-    <section className="relative bg-[#202745] md:h-[750px] bg-cover bg-center bg-no-repeat overflow-hidden">
+    <section className="relative bg-[#202745] md:min-h-[750px] bg-cover bg-center bg-no-repeat overflow-hidden ">
       <div className="absolute inset-0 bg-black/50 z-0" />
       <div className="absolute inset-0 pointer-events-none">
         <Image className="absolute top-10 left-10 lg:left-20 2xl:top-20 animate-pulse opacity-70" src={registrationImage1} alt="Decorative element 1" width={100} height={100} />
@@ -144,22 +145,33 @@ const Registration = () => {
       </div>
       <div className="relative z-10 container mx-auto px-4 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12">
-          <div className="space-y-8" data-aos="fade-right">
+          <div className="space-y-8 text-justify" data-aos="fade-right">
                 <h3 className="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px">
                   Register now and 
                   
                   Get access to{" "}
                   <span className="text-secondaryColor">ATOMs </span>
                   Features 
-                </h3> 
-                <div className="flex gap-x-5 items-center"> 
-                  <PopupVideo />
+                </h3>
 
-                  <div>
+                
+                <div className="mx-auto inline-block px-4 relative">
+                <Image
+                    src={chess}
+                    alt="Chess Playing Image"
+                    width={300}
+                    height={200}
+                    className="object-contain"
+                  />
+                  <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+                    <PopupVideo videoUrl="https://www.youtube.com/watch?v=d136P2DNDxc" />
+                  </div>  
+                  </div>               
+                
+                <div>
                     <p className="text-size-15 md:text-[22px] lg:text-lg 2xl:text-[22px] leading-6 md:leading-9 lg:leading-8 2xl:leading-9 font-semibold text-white">
                     Join us on a journey where your <span className="text-secondaryColor">potential </span>  becomes your strength and your dreams are at the forefront of your <span className="text-secondaryColor">success</span>.
                     </p>
-                  </div>
                 </div>
               </div>
             

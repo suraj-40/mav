@@ -138,14 +138,14 @@ const Overview = () => {
 
   return (
     <section className="bg-white relative overflow-hidden">
-      {/* Background decoration */}
+      {/* Background decoration
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full opacity-30 blur-3xl -z-10 transform translate-x-1/2 -translate-y-1/4"></div>
-      <div className="absolute bottom-20 left-0 w-72 h-72 bg-blue-50 rounded-full opacity-30 blur-3xl -z-10 transform -translate-x-1/2"></div>
+      <div className="absolute bottom-20 left-0 w-72 h-72 bg-blue-50 rounded-full opacity-30 blur-3xl -z-10 transform -translate-x-1/2"></div> */}
 
       <div
         className={`mx-auto px-4 ${
           isHome9 || isHome9Dark
-            ? "pt-20 md:pt-24"
+            ? "pt-10 md:pt-14"
             : isAbout || isAboutDark
             ? "pb-5 md:pb-10 lg:pb-12"
             : "py-8 md:py-12"
@@ -154,13 +154,13 @@ const Overview = () => {
       {/* Heading with animated entry and visual effects */}
 {!isAbout && !isAboutDark && (
   <motion.div 
-    className=" mb-20 text-center relative z-10" 
+    className=" mb-10 text-center relative z-10" 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.8 }}
   >
     {/* Decorative elements */}
-    <motion.div 
+    {/* <motion.div 
       className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full bg-gradient-to-br from-orange-100 to-pink-100 opacity-60 blur-3xl -z-10"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
@@ -180,10 +180,10 @@ const Overview = () => {
       initial={{ scale: 0, x: -20, y: 20 }}
       animate={{ scale: 1, x: 0, y: 0 }}
       transition={{ duration: 1, delay: 0.5 }}
-    />
+    /> */}
     
     {/* Animated atom icon */}
-    <motion.div 
+    {/* <motion.div 
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, delay: 0.2 }}
@@ -202,7 +202,7 @@ const Overview = () => {
           <div className="absolute w-3 h-3 bg-[#FF5722] rounded-full shadow-md bottom-1 left-1" />
         </div>
       </div>
-    </motion.div>
+    </motion.div> */}
     
     {/* Text content with staggered animation */}
     <motion.div
@@ -219,29 +219,16 @@ const Overview = () => {
       }}
     >
       <motion.h1 
-        className="text-3xl md:text-7xl font-bold mb-3 tracking-tight"
+        className="text-3xl md:text-7xl font-bold  tracking-tight"
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
         }}
       >
-        <span className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent">A</span>
-        <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">T</span>
-        <span className="bg-gradient-to-r from-orange-700 to-orange-800 bg-clip-text text-transparent">O</span>
-        <span className="bg-gradient-to-r from-orange-800 to-orange-900 bg-clip-text text-transparent">M</span>
-        <span className="bg-gradient-to-r from-orange-900 to-red-900 bg-clip-text text-transparent">S</span>
+        <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">ATOMS</span>
       </motion.h1>
-      
-      <motion.p 
-        className="text-gray-600 mb-6 max-w-lg mx-auto text-lg md:text-xl font-light"
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-        }}
-      >
-        The modern learning platform for the <span className="italic">atomic age</span> of education
-      </motion.p>
-      
+
+
       <motion.div 
         className="flex justify-center"
         variants={{
@@ -279,6 +266,18 @@ const Overview = () => {
           </path>
         </svg>
       </motion.div>
+
+      
+      <motion.p 
+        className="text-gray-600 mb-6 max-w-lg mx-auto text-lg md:text-xl font-light"
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+        }}
+      >
+        The modern learning platform for the <span className="italic">atomic age</span> of education
+      </motion.p>
+      
       
       {/* Action buttons */}
       {/* <motion.div 

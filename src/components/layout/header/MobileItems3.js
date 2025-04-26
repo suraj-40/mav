@@ -5,10 +5,9 @@ import MobileMenuItem from "./MobileMenuItem";
 const MobileItems3 = () => {
   const items = [
     { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
-    { id: 2, name: "Schedule", path: "/schedule", accordion: false, dropdown: null },
-    { id: 3, name: "Atoms", path: "/atoms", accordion: false, dropdown: null },
+    { id: 2, name: "AV Atoms Overview", path: "/atoms", accordion: false, dropdown: null },
     {
-      id: 4,
+      id: 3,
       name: "NEP",
       path: null,
       accordion: true,
@@ -21,7 +20,7 @@ const MobileItems3 = () => {
       ],
     },
     {
-      id: 5,
+      id: 4,
       name: "About Us",
       path: null,
       accordion: true,
@@ -37,10 +36,10 @@ const MobileItems3 = () => {
           ],
         },
         { name: "Vision & Mission", path: "/about-us/vision-mission" },
-        { name: "Contact Us", path: "/about-us/contact-Us" },
       ],
     },
-    { id: 6, name: "Why AV?", path: "/whyav", accordion: false, dropdown: null },
+    { id: 5, name: "Why AV?", path: "/whyav", accordion: false, dropdown: null },
+    { id: 6, name: "Contact Us", path: "/contact-us", accordion: false, dropdown: null },
   ];
 
   return (
