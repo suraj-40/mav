@@ -9,7 +9,7 @@ export const metadata = {
   description: "ATOMS | Agasthya Vidhyanikethan",
   icon: "icon2.ico",
 };
-
+ 
 const Atoms = async () => {
   return (
     <PageWrapper>

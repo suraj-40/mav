@@ -3,7 +3,7 @@ import AboutFounder from "@/components/layout/main/AboutFounder";
 import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
-export const metadata = {
+export const metadata = { 
   title: "About | Founder",
   description: "About | Founder",
 };
