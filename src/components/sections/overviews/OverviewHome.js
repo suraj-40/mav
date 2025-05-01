@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import OverviewUnit2 from "@/components/shared/overviews/OverviewsHomePage/OverviewUnit2";
 import OverviewUnit1 from "@/components/shared/overviews/OverviewsHomePage/OverviewUnit1";
+import HeroName from "@/components/shared/section-names/HeroName";
 
 const OverviewHome = () => {
   const [activeTab, setActiveTab] = useState("ullal");
@@ -25,8 +26,8 @@ const OverviewHome = () => {
   };
 
   const tabs = [
-    { name: "Agasthya Vidyanikethan Ullal Branch (Unit-2)", key: "ullal", content: <OverviewUnit2 /> },
-    { name: "Agasthya Vidyanikethan Srigandhakaval Branch (Unit-1)", key: "srigandhakaval", content: <OverviewUnit1 /> },
+    { name: "Agasthya Vidyanikethan Ullal Branch", key: "ullal", content: <OverviewUnit2 /> },
+    { name: "Agasthya Vidyanikethan Srigandhakaval Branch", key: "srigandhakaval", content: <OverviewUnit1 /> },
   ];
 
   const particleVariants = {
@@ -60,13 +61,14 @@ const OverviewHome = () => {
         />
       </div>
 
-      <div className="px-4 md:px-6 w-full z-10">
+      <div className="px-4 md:px-6 w-full z-10" data-aos="fade-up">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={isLoaded ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-center mb-12"
+          data-aos="fade-up"
         >
           <motion.span
             className="inline-block px-4 py-1.5 my-3 bg-orange-50 text-orange-600 font-medium text-sm rounded-full border border-orange-200 mb-4 shadow-md"
@@ -75,11 +77,12 @@ const OverviewHome = () => {
           >
             Our Campuses
           </motion.span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-orange-600 to-orange-800">
-            Agasthya Vidyanikethan
+          <h2 className="text-4xl md:text-3xl lg:text-6xl py-2 md:py-3 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-av  via-orange-800 to-orange-600"  style={{fontFamily: 'Samarkan, cursive',}} data-aos="fade-up">
+          Agasthya Vidyanikethan
           </h2>
           <motion.p
             className="mt-4 text-gray-600 text-base md:text-lg max-w-2xl mx-auto"
+            data-aos="fade-up"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -89,7 +92,7 @@ const OverviewHome = () => {
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex justify-center m-5 md:m-30 md:my-12">
+        <div className="flex justify-center m-5 md:m-30 md:my-12" data-aos="fade-up">
           <div className="relative  p-1 bg-white/70 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-50/50  w-full">
             <motion.div
               className="absolute top-1 bottom-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl shadow-lg"
@@ -123,7 +126,7 @@ const OverviewHome = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="relative md:mx-40">
+        <div className="relative md:mx-40" data-aos="fade-up">
           <AnimatePresence mode="wait">
             {tabs.map(
               (tab) =>
@@ -155,6 +158,7 @@ const OverviewHome = () => {
         {/* Bottom Accent Line */}
         <motion.div
           className="flex justify-center mt-12"
+          data-aos="fade-up"
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 0.8, width: 128 }}
           transition={{ duration: 0.8, delay: 0.6 }}

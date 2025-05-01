@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Globe } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Globe, Youtube } from "lucide-react";
 import useIsTrue from "@/hooks/useIsTrue";
 import "../../../assets/css/ticker.css";
 import SDKIntegration from "@/components/SDKIntegration";
@@ -70,7 +70,7 @@ const HeaderTop = () => {
 
 
       <div
-        className="bg-gradient-to-r from-school-navy to-school-blue sticky top-0 z-50 border-b border-white/10"
+        className="bg-gradient-to-r from-av to-av sticky top-0 z-50 border-b border-white/10"
         style={{ fontFamily: "var(--font-spartan), sans-serif" }}
       >
         <div className="4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-2 xl:py-3 px-4">
@@ -151,6 +151,14 @@ const HeaderTop = () => {
                     className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                   >
                     <Linkedin size={18} className="md:w-5 md:h-5" />
+                  </Link>
+                  <Link
+                    href="#G"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
+                  >
+                    <Youtube size={18} className="md:w-5 md:h-5" />
                   </Link>
                 </div>
               </div>

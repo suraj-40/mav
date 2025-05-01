@@ -126,9 +126,9 @@ const CulturalActivity = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-12  md:mx-24">
       <header data-aos="fade-up" className="mb-8">
-          <h1 className="text-avorange font-bold text-3xl text-center">AGASTHYA VIDYANIKETHAN</h1>
-          <h2 className="text-av text-5xl font-bold text-center">Regular Cultural Activities</h2>
-          <div className="w-200 h-2 bg-avorange mt-2 mx-auto"></div>
+          <h1 className="text-avorange font-bold text-3xl md:text-5xl md:pb-2 text-center"  style={{fontFamily: 'Samarkan, cursive',}}>AGASTHYA VIDYANIKETHAN</h1>
+          <h2 className="text-av text-2xl md:text-4xl font-bold text-center">Regular Cultural Activities</h2>
+          <div className="w-200 h-1 bg-avorange mt-2 mx-auto"></div>
       </header>
 
       <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">

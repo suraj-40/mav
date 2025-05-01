@@ -20,15 +20,13 @@ export async function POST(req) {
       date,
   } = body;
 
-  console.log(fatherName)
-
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
     auth: {
-      user: "jeevan.raj@abc.courses", 
-      pass: "ojbe ynss ufta dnme",    
+      user: "sharath.kr@abc.courses",    //change personal email to school email
+      pass: "vzot jaxd ogln ofid",       //change app password
     },
   });
 
@@ -61,14 +59,14 @@ export async function POST(req) {
 
   try {
     const info1 = await transporter.sendMail({
-      from: '"Your LMS Platform" <jeevan.raj@abc.courses>',
+      from: '"Agasthya Vidhyanikethan" <sharath.kr@abc.courses>', //change personal email to school email
       to: parentEmail,
-      subject: "Your School Visit Confirmation",
+      subject: "Agasthya Vidhyanikethan School Visit Confirmation",
       html: studentEmailTemplate(childName, date),
     });
 
     const info2 = await transporter.sendMail({
-      from: '"Your LMS Platform" <jeevan.raj@abc.courses>',
+      from: '"Agasthya Vidhyanikethan" <sharath.kr@abc.courses>',  //change personal email to school email
       to: "sharath.kr@abc.courses",
       subject: "New Student Visit Scheduled",
       html: schoolEmailTemplate,

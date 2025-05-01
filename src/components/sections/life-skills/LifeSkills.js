@@ -59,7 +59,7 @@ const activities = [
   ];
 
 const LifeSkillsCard = ({ id, title, image1,image2,description }) => (
-  <div className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300">
+  <div className="relative group overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300" data-aos="fade-up">
     <Image
       src={image1}
       alt={title}
@@ -96,10 +96,11 @@ const LifeSkillsCard = ({ id, title, image1,image2,description }) => (
 const LifeSkills = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-12  md:mx-24">
-      <h2 data-aos="fade-up" className="text-2xl md:text-4xl  font-extrabold text-center text-av mb-5 md:mb-10">
-        SIX MANDATORY LIFE SKILLS
-        <div className="w-200 h-2 bg-avorange mt-2 mx-auto"></div>
-      </h2>
+      <header data-aos="fade-up" className="mb-8">
+          <h1 className="text-avorange font-bold text-3xl md:text-5xl md:pb-2 text-center"  style={{fontFamily: 'Samarkan, cursive',}}>AGASTHYA VIDYANIKETHAN</h1>
+          <h2 className="text-av text-2xl md:text-4xl font-bold text-center">SIX MANDATORY LIFE SKILLS</h2>
+          <div className="w-200 h-1 bg-avorange mt-2 mx-auto"></div>
+      </header>
       
       <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {activities.map((activity) => (

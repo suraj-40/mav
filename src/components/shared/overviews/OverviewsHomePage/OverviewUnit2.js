@@ -6,8 +6,7 @@ import Av21 from "@/assets/images/about/AV-21.png";
 import Av22 from "@/assets/images/about/AV-2.png";
 import Av23 from "@/assets/images/about/AV-23.png";
 import Av24 from "@/assets/images/about/AV-13.jpeg";
-
-
+import PopupVideo from "@/components/shared/popup/PopupVideo";
 
 const images = [Av21,  Av23, Av22, Av24];
 const OverviewUnit2 = () => {
@@ -52,7 +51,8 @@ const OverviewUnit2 = () => {
               exit={{ x: -300, opacity: 0 }}
               transition={{ duration: 0.6 }}
               className="absolute"
-            >
+            >              
+              <div className="inline-block px-4 relative">
               <Image
                 src={images[current]}
                 alt={`Slide ${current + 1}`}
@@ -61,6 +61,10 @@ const OverviewUnit2 = () => {
                 className="rounded-xl shadow-xl object-cover"
                 placeholder="blur"
               />
+              <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+                  <PopupVideo videoUrl="https://www.youtube.com/embed/d136P2DNDxc?autoplay=1&rel=0" />
+              </div>  
+              </div>
             </motion.div>
           </AnimatePresence>
 

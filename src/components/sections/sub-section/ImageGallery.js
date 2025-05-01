@@ -2,10 +2,8 @@
 import avecosystemImage15 from "@/assets/images/avecosystem/avecosystem1.png";
 import avecosystemImage16 from "@/assets/images/avecosystem/avecosystem2.png";
 import avecosystemImage17 from "@/assets/images/avecosystem/avecosystem3.png";
-import avecosystemImage18 from "@/assets/images/avecosystem/avecosystem4.png";
 import avecosystemImage19 from "@/assets/images/avecosystem/avecosystem5.png";
 import avecosystemImage20 from "@/assets/images/avecosystem/avecosystem6.png";
-import avecosystemImage29 from "@/assets/images/avecosystem/avecosystem7.png";
 import avecosystemImage30 from "@/assets/images/avecosystem/avecosystem8.png";
 
 
@@ -22,10 +20,8 @@ const ImageGallery = ({ gallary }) => {
   const allImages = [
           avecosystemImage15,
           avecosystemImage17,
-          avecosystemImage18,
           avecosystemImage19,
           avecosystemImage20,
-          avecosystemImage29,
           avecosystemImage30,
           avecosystemImage16,
         ];
@@ -57,7 +53,7 @@ const ImageGallery = ({ gallary }) => {
             className={
               gallary
                 ? "grid grid-cols-3 gap-5px"
-                : "grid grid-cols-1 md:grid-cols-4 gap-10px  md:p-30px p-5 lg:p-5 2xl:p-30px "
+                : "grid grid-cols-1 md:grid-cols-3 gap-10px  md:p-30px p-5 lg:p-5 2xl:p-30px "
             }
           >
             {images.map((image, idx) => (

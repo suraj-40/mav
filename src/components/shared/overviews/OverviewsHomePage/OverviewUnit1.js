@@ -6,7 +6,7 @@ import Av11 from "@/assets/images/about/AV-11.png";
 import Av12 from "@/assets/images/about/AV-12.png";
 import Av13 from "@/assets/images/about/AV-13.jpeg";
 import Av14 from "@/assets/images/about/AV-14.png";
-
+import PopupVideo from "@/components/shared/popup/PopupVideo";
 
 const images = [Av11, Av12, Av13, Av14];
 const OverviewUnit1 = () => {
@@ -37,10 +37,10 @@ const OverviewUnit1 = () => {
   };
 
   return (
-    <section className="relative bg-white pb-5 text-justify">
+    <section className="relative bg-white pb-5 text-justify" >
       <div className="container">
         {/* Carousel Section */}
-        <div className="relative w-full h-[300px] md:h-[500px] flex justify-center items-center overflow-hidden ">
+        <div className="relative w-full h-[300px] md:h-[500px] flex justify-center items-center overflow-hidden" data-aos="fade-up">
           <AnimatePresence initial={false}>
             <motion.div
               key={current}
@@ -49,15 +49,21 @@ const OverviewUnit1 = () => {
               exit={{ x: -300, opacity: 0 }}
               transition={{ duration: 0.6 }}
               className="absolute"
+              
             >
+              <div className="mx-auto inline-block px-4 relative">
               <Image
                 src={images[current]}
                 alt={`Slide ${current + 1}`}
                 width={600}
                 height={400}
-                className="rounded-xl shadow-xl object-cover"
+                className="rounded-xl shadow-xl object-contain"
                 placeholder="blur"
               />
+              <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
+                  <PopupVideo videoUrl="https://www.youtube.com/embed/d136P2DNDxc?autoplay=1&rel=0" />
+              </div>  
+              </div>
             </motion.div>
           </AnimatePresence>
 
@@ -93,7 +99,7 @@ const OverviewUnit1 = () => {
         </div>
 
         {/* Text Section */}
-        <div className="space-y-6">
+        <div className="space-y-6" >
           <div className="space-y-4  ">
             {paragraphs
               .slice(0, showFullText ? paragraphs.length : visibleLines)

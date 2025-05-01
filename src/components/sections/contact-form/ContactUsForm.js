@@ -3,7 +3,7 @@ import React from 'react';
 import image from 'next/image';
 import { useState } from 'react';
 import axios from 'axios';
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
@@ -39,12 +39,13 @@ const ContactUs = () => {
             alert("Submission failed!");
           }
     }
+    
   return (
-    <section className="contact-us-area mb-5">
-      <div className="container mx-auto px-4">
+    <section className="contact-us-area m-4 md:my-10 md:mx-30 bg-white rounded-xl shadow-xl" data-aos="fade-up">
+      <div className="container mx-auto px-4 md:px-20">
         <div className="flex flex-wrap items-center gap-5">
           {/* Left Side - Contact Info */}
-          <div className="w-full lg:w-1/2 xl:w-1/3">
+          <div className="w-full lg:w-1/2 xl:w-1/3" data-aos="fade-up">
             <div className="mb-6">
               {/* <image
                 src={contact}
@@ -59,7 +60,7 @@ const ContactUs = () => {
               <ul className="space-y-4">
                 {/* Branch 1 */}
                 <li>
-                  <h6 className="font-semibold">Agasthya Vidyanikethan Srigandhakaval (Unit-1)</h6>
+                  <h6 className="font-semibold">Agasthya Vidyanikethan Srigandhakaval</h6>
                   <div className="flex text-sm mt-1 " style={{ color: "grey" }}>
                     <p className="pr-2 border-r border-black">
                       <a href="tel:+919880906633">+91 9880906633</a>
@@ -72,7 +73,7 @@ const ContactUs = () => {
 
                 {/* Branch 2 */}
                 <li>
-                  <h6 className="font-semibold">Agasthya Vidyanikethan Ullal (Unit-2)</h6>
+                  <h6 className="font-semibold">Agasthya Vidyanikethan Ullal</h6>
                   <div className="flex text-sm mt-1" style={{ color: "grey" }}>
                     <p className="pr-2 border-r border-black">
                       <a href="tel:+917760776098">+91 7760776098</a>
@@ -99,20 +100,25 @@ const ContactUs = () => {
               </ul>
 
               {/* Social Links */}
-              <ul className="flex space-x-4 mt-4">
+              <ul className="flex space-x-4 mt-4 text-2xl">
                 <li>
                     <a href="https://www.facebook.com/@AgasthyaVidyaniketan/" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookF className="hover:text-blue-600 transition" />
+                    <FaFacebookF className="hover:text-avorange transition" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/agasthyavidyanikethan/" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="hover:text-pink-500 transition" />
+                    <FaInstagram className="hover:text-avorange transition" />
                     </a>
                 </li>
                 <li>
                     <a href="https://in.linkedin.com/company/agasthya-vidyanikethan" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedinIn className="hover:text-blue-800 transition" />
+                    <FaLinkedinIn className="hover:text-avorange transition" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube className="hover:text-avorange transition" />
                     </a>
                 </li>
               </ul>
@@ -120,8 +126,8 @@ const ContactUs = () => {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="w-full lg:w-1/2 xl:w-2/5 lg:ml-auto py-5">
-            <div className="bg-white dark:bg-gray-900 shadow-md rounded-md p-6">
+          <div className="w-full lg:w-1/2 xl:w-2/5 lg:ml-auto py-5" data-aos="fade-up">
+            <div className="bg-white dark:bg-gray-900 shadow-xl rounded-md p-6 border border-5 border-avorange">
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-2">Get In Touch</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Fill out this form for any queries.</p>

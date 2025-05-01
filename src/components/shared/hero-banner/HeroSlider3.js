@@ -57,10 +57,10 @@ const HeroSlider3 = () => {
       modules={[Navigation, Pagination, Autoplay]}
       className={`ecommerce-slider ${
         isHome9 || isHome9Dark ? "kindergarden" : ""
-      } py-50px md:py-100px lg:pt-100px lg:pb-150px 2xl:pt-70px 2xl:pb-30 4xl:pt-155px 4xl:pb-250px overflow-hidden`}
+      }  overflow-hidden`}
     >
       {slides.map((slide, idx) => (
-        <SwiperSlide className="px-15px" key={idx}>
+        <SwiperSlide className="" key={idx}>
           <HeroSlide3 idx={idx} slide={slide} />
         </SwiperSlide>
       ))}

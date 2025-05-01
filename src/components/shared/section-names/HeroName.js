@@ -5,5 +5,5 @@ const HeroName = ({ children }) => {
     </span>
   );
 };
-
+ 
 export default HeroName;

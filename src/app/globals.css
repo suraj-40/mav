@@ -138,10 +138,10 @@
 .featured-courses .swiper-button-prev::after,
 .featured-courses .swiper-button-next::after {
   font-size: 20px;
-  color: var(--lightGrey4);
+  color: #ff5b00;
   width: 50px;
   height: 50px;
-  border: 1px solid var(--lightGrey4);
+  border: 1px solid #ff5b00;
   line-height: 50px;
   border-radius: 100%;
   transition: 0.3s;
@@ -160,8 +160,8 @@
 .featured-courses .swiper-button-prev:hover::after,
 .featured-courses .swiper-button-next:hover::after {
   color: var(--whiteColor);
-  background: var(--primaryColor);
-  border-color: var(--primaryColor);
+  background: #ff5b00;
+  border-color: #ff5b00;
 }
 .hero:hover .swiper-button-prev::after,
 .hero:hover .swiper-button-next::after {
@@ -266,7 +266,7 @@
   width: 8px;
   height: 8px;
   background: transparent;
-  outline: 2px solid var(--blackColor);
+  outline: 3px solid var(--whiteColor);
   outline-offset: 2px;
   margin: 0 8px;
 }
@@ -279,8 +279,8 @@
 }
 .hero .swiper-pagination .swiper-pagination-bullet-active,
 .dark .hero .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--primaryColor);
-  outline-color: var(--primaryColor);
+  background: var(--whiteColor);
+  outline-color: var(--whiteColor);
 }
 .machine-learning .swiper-pagination .swiper-pagination-bullet-active,
 .dark .machine-learning .swiper-pagination .swiper-pagination-bullet-active {

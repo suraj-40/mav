@@ -308,8 +308,8 @@ const Overview = () => {
           }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
         >
-          <div className="relative bg-gray-50 rounded-xl p-2 shadow-md">
-            <div className="flex justify-between gap-2 whitespace-nowrap">
+          <div className="relative bg-gray-50 rounded-xl p-2 shadow-md" data-aos="fade-up">
+            <div className="flex justify-between gap-2 whitespace-nowrap" data-aos="fade-up">
               {tabButtons.map(({ name, icon }, idx) => (
                 <div
                   key={name}
@@ -395,7 +395,7 @@ const Overview = () => {
           </div>
 
           {/* Desktop Tab Content with Animation */}
-          <div className="hidden md:block">
+          <div className="hidden md:block" data-aos="fade-up">
             {tabButtons.map(({ content }, idx) => (
               <TabContentWrapper key={idx} idx={idx} isShow={idx === currentIdx}>
                 <motion.div

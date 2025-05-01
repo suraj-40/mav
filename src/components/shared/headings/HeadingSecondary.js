@@ -1,6 +1,6 @@
 const HeadingSecondary = ({ children }) => {
   return (
-    <h3 className="text-3xl text-center md:text-size-45 leading-10 md:leading-2xl font-bold text-blackColor dark:text-blackColor-dark pb-25px">
+    <h3 className="text-3xl text-center md:text-4xl leading-tight md:leading-tight  text-blackColor dark:text-blackColor-dark pb-25px">
       {children}
     </h3>
   );
