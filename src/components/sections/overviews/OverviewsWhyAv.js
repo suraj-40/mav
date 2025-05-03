@@ -74,7 +74,7 @@ const OverviewsWhyAv = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-white via-white to-blue-50 overflow-hidden">
+    <section className="relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -97,7 +97,7 @@ const OverviewsWhyAv = () => {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+      <div className="container mx-auto px-4 py-10 md:py-20 relative z-10">
         {/* Heading */}
         {!isAbout && !isAboutDark && (
           <motion.div

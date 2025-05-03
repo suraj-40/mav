@@ -39,10 +39,10 @@ const Navbar = () => {
         <div
           className={`px-4 py-4 lg:py-0 lg:px-0 ${
             isContainerLarge
-              ? "lg:container 3xl:max-w-7xl"
+              ? " 3xl:max-w-7xl"
               : isContainerSecondary
-              ? "container sm:container-fluid lg:container 3xl:max-w-8xl"
-              : "lg:container 3xl:max-w-8xl"
+              ? "container sm:container-fluid  3xl:max-w-8xl"
+              : "3xl:max-w-8xl"
           } 4xl:max-w-[1920px] mx-auto relative`}
         >
           {/* Top Navbar (Hidden on Smaller Screens) */}
@@ -53,15 +53,15 @@ const Navbar = () => {
           )}
 
           {/* Main Navbar */}
-          <div className="grid grid-cols-2 lg:grid-cols-12 items-center gap-4 lg:gap-6">
+          <div className="grid grid-cols-3 lg:grid-cols-12 items-center gap-4 lg:gap-6 md:bg-lightorange md:shadow-2xl">
             {/* Navbar Left - Logo */}
-            <div className="col-span-1 lg:col-span-2">
+            <div className="col-span-1 lg:col-span-2 md:ml-30">
               <NavbarLogo className="transform hover:scale-105 transition-transform duration-300" />
             </div>
-            <div className="w-[120px] font-bold hidden">
+            <div className="w-[120px] font-bold block md:hidden">
             <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
             <UserDropdown />
-            </div>
+            </div> 
 
             {/* Main Menu - Center */}
             <div className="hidden lg:col-span-8 lg:flex justify-center">
@@ -73,7 +73,7 @@ const Navbar = () => {
             </div>
 
             {/* Navbar Right */}
-            <div className="col-span-1 lg:col-span-2 flex justify-end ">
+            <div className="col-span-1 lg:col-span-2 flex justify-end md:mr-30">
               <NavbarRight
                 isHome2Dark={isHome2Dark}
                 className="transform hover:scale-105 transition-transform duration-300"

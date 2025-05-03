@@ -29,11 +29,14 @@ const AboutTreasurer = () => {
             <TiltWrapper>
             <div className="relative overflow-hidden z-0 flex flex-col items-center justify-center text-center">
               
-                <Image className=" w-full md:mt-10" src={Treasurer} alt="" />
+                <Image className=" w-full md:mt-5" src={Treasurer} alt="" />
 
                 <p className="text-justify text-sm md:text-base text-avorange dark:text-secondaryColor-dark mt-10">
-                &quot;We thoughtfully shape our resources to give every student the best chance to learn and grow. With care and planning, we're building an environment that supports their success today and for generations to come.&quot;
+                &quot;Investing in every child&apos;s growth is at the core of what we do at Agasthya Vidyanikethan.&quot;
                 </p>
+                <div className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark text-justify my-3" >
+                Great learning begins with the right surroundings, and building an effective environment is as important as teaching the right lessons. Every corner of our school is thoughtfully designed, from sunlit classrooms to modern labs and open grounds—everything is created with purpose. These spaces enhance focus, stimulate imagination, and foster self-assurance as students develop their unique abilities. By investing in meaningful learning environments today, we help young minds develop capabilities they&apos;ll carry into tomorrow&apos;s achievements. Our commitment is to create not just facilities, but foundations for lasting student success.
+                </div>
                 <div className=" ml-auto text-sm md:text-base text-av font-semibold">
                   - Mrs. Vinutha Thejaswi Aradhya
                 </div>
@@ -54,6 +57,7 @@ const AboutTreasurer = () => {
             </div>
             </div>
             </div>
+            <div className="md:mt-3">
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark"> 
               Mrs. Vinutha Thejaswi Aradhya embodies the spirit of transformative leadership as
               the Treasurer of the trust. An investor, influencer, and devoted social activist, she
@@ -92,6 +96,7 @@ const AboutTreasurer = () => {
               Her leadership ensures that Agasthya Vidyanikethan not only educates but also
               prepares successful future citizens equipped to contribute positively to society.
             </p>
+            </div>
             {/* <p className="flex items-center gap-x-4 text-lg text-blackColor dark:text-blackColor-dark mb-25px">
               <Image loading="lazy" src={aboutImage15} alt="about" />
                 <b>10+ Years ExperienceIn</b>

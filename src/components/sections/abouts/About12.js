@@ -9,7 +9,7 @@ const About12 = () => {
                 <div data-aos="fade-up" className="2xl:ml-16">
                     <HeadingSecondary>
                         About{" "}
-                        <span className="relative after:w-full after:h-1.5 after:bg-secondaryColor z-0 after:absolute after:left-0 after:bottom-1 md:after:bottom-2 md:after:-z-1">
+                        <span className="after:w-full after:h-1.5 after:bg-secondaryColor z-0 after:absolute after:left-0 after:bottom-1 md:after:bottom-2 md:after:-z-1">
                             NEP
                         </span>
                     </HeadingSecondary>

@@ -32,8 +32,11 @@ const AboutVicePresident = () => {
                 <Image className="w-full md:mt-10" src={VicePresident} alt="" />
 
                 <p className="text-justify text-sm md:text-base text-avorange dark:text-secondaryColor-dark mt-10">
-                  &quot;Agasthya Vidyaniketan is focused on building an environment where learning grows stronger every day — supported by good planning, the right resources, and a vision that keeps every child's future at the center.&quot;
+                  &quot;Every child&apos;s future is the heart of our mission at Agasthya Vidyanikethan.&quot;
                 </p>
+                <div className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark text-justify my-3" >
+                A great school doesn&apos;t just teach — it inspires, encourages, and builds a path for lifelong growth. At Agasthya Vidyanikethan, we have created an environment where learning deepens each day, supported by thoughtful planning and the right resources. Our vision is simple yet powerful: every child deserves an education that prepares them not only for exams but for life. Here, we place every student&apos;s future at the center of our efforts, ensuring they leave our care not just smarter, but stronger, more capable, and ready for tomorrow.
+              </div>
                 <div className=" ml-auto text-sm md:text-base text-av font-semibold">
                   - Mr. Thejaswi Aradhya J K
                 </div>

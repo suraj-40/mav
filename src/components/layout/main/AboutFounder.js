@@ -30,12 +30,16 @@ const AboutFounder = () => {
             <TiltWrapper>
             <div className="relative overflow-hidden z-0 flex flex-col items-center justify-center text-center">
 
-                <Image className=" w-full md:mt-10" src={founder} alt="" />
+                <Image className=" w-full" src={founder} alt="" />
 
-              <p className="text-justify text-sm md:text-base text-avorange dark:text-secondaryColor-dark mt-10">
-                &quot;Education is not just about shaping bright minds — it's about building strong character. At Agasthya Vidyaniketan we nurture children to grow with strong values, rooted in tradition, and ready to face the world with knowledge and confidence.&quot;
+              <p className="text-justify text-sm md:text-base text-avorange dark:text-secondaryColor-dark mt-5">
+                &quot;Education is not just about academic intelligence, we shape individuals with confidence and resilience.&quot;
               </p>
-              <div className=" ml-auto text-sm md:text-base text-av font-semibold ">
+              
+              <div className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark text-justify my-3" >
+                Our education is not just about marks or medals — it&apos;s about building character, confidence, and resilience. We believe that every child carries within them great potential, and our role is to nurture it with care and wisdom. Here, knowledge empowers, values strengthen, and traditions guide the way forward. Our classrooms spark curiosity, our activities build discipline, and our environment helps every child grow into someone ready to face life&apos;s challenges with courage and grace. This is where bright minds and strong hearts are shaped.
+              </div>
+              <div className=" ml-auto text-sm md:text-base text-av font-semibold">
               - Mr. Manjunath Aradhya
               </div>
                
@@ -49,7 +53,7 @@ const AboutFounder = () => {
           {/* about right */}
           <div data-aos="fade-up" className="2xl:ml-65px">
             {/* <SectionName>About Us</SectionName> */}
-            <div className="text-center text-2xl md:text-3xl md:mt-5 leading-7 text-avorange dark:text-blackColor-dark"> 
+            <div className="text-center text-2xl md:text-3xl md:mt-12 leading-7 text-avorange dark:text-blackColor-dark"> 
                     Mr. Manjunath Aradhya
             </div>
             <div className="text-center font-bold">
@@ -65,6 +69,7 @@ const AboutFounder = () => {
              Having over twenty-four years of experience in providing high-quality engineering education, he has personally transformed 
              60,000+ freshers to successful IT professionals.
             </p> */}
+            <div className="md:mt-10">
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
             The vision of our founder president, Mr. Manjunath Aradhya, a Computer Science
             Engineer & a Technocrat by profession as well as a Teacher by passion has played
@@ -98,6 +103,7 @@ const AboutFounder = () => {
             a hands-on approach to prepare Agasth&apos;ians as the leaders of the future
             knowledge economy.
             </p>
+            </div>
             {/* <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
                 Man with a great Mission building the Nation through Students is only his Mission who believes Intelligence and Character is the goal of true Education.
             </p> */}

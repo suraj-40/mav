@@ -12,6 +12,7 @@ import FixedShadow from "@/components/shared/others/FixedShadow";
 import PreloaderPrimary from "@/components/shared/others/PreloaderPrimary";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
+import PopupWrapper from "@/components/shared/wrappers/PopupWrapper";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -48,10 +49,12 @@ export default function RootLayout({ children }) {
       >
         <PreloaderPrimary />
         <ToastContainer position="top-right" autoClose={3000} />
+        <PopupWrapper/>
         {children}
         <div>
           <FixedShadow />
           <FixedShadow align={"right"} />
+
         </div>
       </body>
     </html>

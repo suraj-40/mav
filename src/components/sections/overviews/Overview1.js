@@ -137,7 +137,7 @@ const Overview = () => {
   }, []);
 
   return (
-    <section className="bg-white relative overflow-hidden">
+    <section className=" relative overflow-hidden">
       {/* Background decoration
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-50 rounded-full opacity-30 blur-3xl -z-10 transform translate-x-1/2 -translate-y-1/4"></div>
       <div className="absolute bottom-20 left-0 w-72 h-72 bg-blue-50 rounded-full opacity-30 blur-3xl -z-10 transform -translate-x-1/2"></div> */}

@@ -31,16 +31,16 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     },
     {
       id: 3,
-      name: "NEP",
-      path: "/NEP/about",
-      dropdown: <DropdownDashboard />,
+      name: "About Us",
+      path: "/about-us/our-Leaders/founder",
+      dropdown: <DropdownEcommerce />,
       isRelative: true,
     },
     {
       id: 4,
-      name: "About Us",
-      path: "/about-us/our-Leaders/founder",
-      dropdown: <DropdownEcommerce />,
+      name: "NEP",
+      path: "/NEP/about",
+      dropdown: <DropdownDashboard />,
       isRelative: true,
     },
     {

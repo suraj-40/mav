@@ -32,8 +32,11 @@ const AboutSecretary = () => {
                 <Image className=" w-full md:mt-10" src={Secretary} alt="" />
 
                 <p className="text-justify text-sm md:text-base text-avorange dark:text-secondaryColor-dark mt-10">
-                &quot;We cultivate critical thinking and clear understanding through meaningful learning experiences that prepare each child not just for exams, but for life itself.&quot;
+                &quot;At Agasthya Vidyanikethan, we prepare children not just for exams, but for life itself.&quot;
               </p>
+              <div className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark text-justify my-3" >
+              We believe learning should be clear, real, and lifelong. It&apos;s not just about scoring well in exams, but about building the ability to think independently, ask the right questions, and approach challenges with confidence. We encourage each child to explore through active learning while developing their self-confidence. Our education prepares students for life&apos;s challenges by providing them with essential knowledge, practical skills, and a clear sense of personal identity.
+              </div>
               <div className=" ml-auto text-sm md:text-base text-av font-semibold">
               - Mrs. Nagarathna Aradhya
               </div>
@@ -97,9 +100,9 @@ const AboutSecretary = () => {
             <br />
             <p className="text-sm md:text-base leading-7 text-contentColor dark:text-contentColor-dark">
               Under her able leadership, our children have been able to not only excel academically
-              but also have won various awards, titles, and rewards in 'Prathibha Karanji', 'SOF
-              Olympiad', and many other district, state, and national level competitions. She has also
-              been awarded the 'SHIKSHA RATNA Award' in the year 2022 for her excellent leadership
+              but also have won various awards, titles, and rewards in &apos;Prathibha Karanji&apos;, &apos;SOF
+              Olympiad&apos;, and many other district, state, and national level competitions. She has also
+              been awarded the &apos;SHIKSHA RATNA Award&apos; in the year 2022 for her excellent leadership
               qualities.
             </p>
             <br />

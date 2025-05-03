@@ -42,6 +42,7 @@ module.exports = {
         primary: "#1e2a78",
         av:"#1b204c",
         avorange:"#ff5b00",
+        lightorange:"#FDEEEC",
         blue: "#465fe9",
         darkBlue: "#212529",
         "blue-light": "#d5eaff",
@@ -586,6 +587,7 @@ module.exports = {
       zIndex: {
         "-1": "-1",
         1: "1",
+        99: '99',
         xxsmall: "1000",
         xsmall: "10000",
         small: "100000",
