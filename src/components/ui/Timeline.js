@@ -78,7 +78,7 @@ export const Timeline = ({ data }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Explore the significant milestones and achievements in our institution's history.
+          Explore the significant milestones and achievements in our institution&apos;s history.
         </motion.p>
         <div className="flex justify-center mt-6 relative z-30">
           <svg width="200" height="30" viewBox="0 0 200 30" style={{ zIndex: 30 }}>
