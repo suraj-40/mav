@@ -3,28 +3,23 @@ import DropdownPrimary from "./DropdownPrimary";
 
 const DropdownDashboard = () => {
   const items = [
-    {
-      name: "About NEP",
-      status: null,
-      path: "/NEP/about",
-      type: "secondary",      
-    },
+   
     {
       name: "Dinacharya",
       status: null,
-      path: "/NEP/dinacharya",
+      path: "/student-life/dinacharya",
       type: "secondary",
     },
     {
       name: "Cultural Activities",
       status: null,
-      path: "/NEP/cultural-activities",
+      path: "/student-life/cultural-activities",
       type: "secondary",
     },
     {
       name: "Life Skills",
       status: null,
-      path: "/NEP/life-skills",
+      path: "/student-life/life-skills",
       type: "secondary",
     },
     // {

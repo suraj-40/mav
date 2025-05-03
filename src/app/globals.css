@@ -267,8 +267,8 @@
   height: 8px;
   background: transparent;
   outline: 3px solid var(--whiteColor);
-  outline-offset: 2px;
-  margin: 0 8px;
+  outline-offset: 1px;
+  margin: 0 10px;
 }
 .machine-learning .swiper-pagination .swiper-pagination-bullet,
 .dark .machine-learning .swiper-pagination .swiper-pagination-bullet {

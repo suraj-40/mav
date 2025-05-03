@@ -31,18 +31,19 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     },
     {
       id: 3,
-      name: "About Us",
-      path: "/about-us/our-Leaders/founder",
-      dropdown: <DropdownEcommerce />,
+      name: "Student Life",
+      path: "",
+      dropdown: <DropdownDashboard />,
       isRelative: true,
     },
     {
       id: 4,
-      name: "NEP",
-      path: "/NEP/about",
-      dropdown: <DropdownDashboard />,
+      name: "About Us",
+      path: "",
+      dropdown: <DropdownEcommerce />,
       isRelative: true,
     },
+  
     {
       id: 5,
       name: "Why AV?",

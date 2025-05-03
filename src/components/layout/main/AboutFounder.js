@@ -15,7 +15,7 @@ const AboutFounder = () => {
        
         <HeadingSecondary>
             <span className="text-av relative">
-                Founder and {" "}
+                Founder and &apos;
               <span className="absolute left-0 right-0 bottom-0 h-1 bg-av"></span>
             </span>
             <span className="text-avorange relative ">

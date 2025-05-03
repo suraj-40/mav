@@ -8,14 +8,13 @@ const MobileItems3 = () => {
     { id: 2, name: "AV Atoms Overview", path: "/atoms", accordion: false, dropdown: null },
     {
       id: 3,
-      name: "NEP",
+      name: "Student Life",
       path: null,
       accordion: true,
       dropdown: [
-        { name: "About NEP", path: "/NEP/about" },
-        { name: "Dinacharya", path: "/NEP/dinacharya" },
-        { name: "Cultural Activities", path: "/NEP/cultural-activities" },
-        { name: "Life Skills", path: "/NEP/life-skills" },
+        { name: "Dinacharya", path: "/student-life/dinacharya" },
+        { name: "Cultural Activities", path: "/student-life/cultural-activities" },
+        { name: "Life Skills", path: "/student-life/life-skills" },
         // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },

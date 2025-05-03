@@ -8,7 +8,7 @@ import HeroSlider3 from "@/components/shared/hero-banner/HeroSlider3";
 const Hero8 = () => {
   return (
     <section data-aos="fade-up">
-      <banner section/>
+      {/* <banner section/> */}
       <div className="hero relative z-0 overflow-hidden">
         {/* <animated icons/> */}
         {/* <div> */}
