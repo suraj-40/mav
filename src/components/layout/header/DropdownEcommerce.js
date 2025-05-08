@@ -44,7 +44,7 @@ const DropdownEcommerce = () => {
     {
       name: "Gallery",
       status: null,
-      path: "",  ///gallery
+      path: "/about-us/gallery",
       type: "secondary",
     },
   ];

@@ -121,7 +121,7 @@ const OverviewsWhyAv = () => {
           }}
         >
           <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-           Why Agasthya Vidyanikethan?
+           Why <span className="font-samarkan">Agasthya Vidyanikethan </span>?
           </span>
         </motion.h1>
             <motion.p
