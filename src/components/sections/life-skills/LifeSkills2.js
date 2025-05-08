@@ -95,49 +95,37 @@ const LifeSkills2 = () => {
           </div>
         </div>
 
-        {/* NEP Alignment */}
-        <div className="max-w-3xl mx-auto">
-          <AnimatePresence>
-            <motion.div
-              className="bg-white rounded-xl shadow-lg p-6 mb-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex items-start gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-[#4CAF50] to-[#81C784] text-white text-2xl shadow-md flex-shrink-0">
-                {kalaripayattuData.alignment_info.icon}
-              </div>
-              <div className="flex-1">
-                <h2 className="text-xl font-semibold text-gray-800 mb-2">
-                  {kalaripayattuData.alignment_info.title}
-                </h2>
-                <p className="text-gray-600 text-base leading-relaxed">
-                  {kalaripayattuData.alignment_info.description}
-                </p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* About Kalaripayattu */}
         <motion.div
-          className="mt-8 max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-        >
-          <div className="relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 overflow-hidden">
-            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#4CAF50] to-[#81C784]"></div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              About Kalaripayattu
-            </h2>
-            <p className="text-gray-700 text-lg leading-relaxed relative z-10">
-              {kalaripayattuData.kalaripayattu_description}
-            </p>
-            <div className="absolute bottom-0 right-0 w-40 h-40 bg-green-50 rounded-full opacity-30 -mr-10 -mb-10"></div>
-          </div>
-        </motion.div>
+  className="mt-8 max-w-4xl mx-auto"
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.5 }}
+>
+  <div className="relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 overflow-hidden">
+    <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#4CAF50] to-[#81C784]"></div>
+    <div className="flex items-center gap-4 mb-6">
+      <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-[#4CAF50] to-[#81C784] text-white text-2xl shadow-md flex-shrink-0">
+      {kalaripayattuData.alignment_info.icon}
+      </div>
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+      About Kalaripayattu
+      </h2>
+    </div>
+    <p className="text-gray-700 text-lg leading-relaxed relative z-10 mb-6">
+    {kalaripayattuData.kalaripayattu_description}
+    </p>
+    <div className="bg-gray-50 rounded-lg p-6 shadow-inner border border-gray-200">
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">
+      {kalaripayattuData.alignment_info.title}
+      </h3>
+      <p className="text-gray-600 text-base leading-relaxed">
+      {kalaripayattuData.alignment_info.description}
+      </p>
+    </div>
+    <div className="absolute bottom-0 right-0 w-40 h-40 bg-orange-50 rounded-full opacity-30 -mr-10 -mb-10"></div>
+  </div>
+</motion.div>
+
       </div>
     </section>
   );
