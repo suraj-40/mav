@@ -92,7 +92,7 @@ const HeaderTop = () => {
             </div>
 
             {/* Right Side - Contact Info & Social + Buttons */}
-            <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-start md:justify-end items-start md:items-center gap-6 md:gap-10">
+            <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-start md:justify-end items-start md:items-center gap-6 md:gap-12">
               {/* Contact Info */}
               <div className="hidden md:flex items-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base">
                 <Link
@@ -116,16 +116,17 @@ const HeaderTop = () => {
                   info.sgk@av.school
                 </Link> */}
               </div>
+
+              <div className=" font-bold">
+                  <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
+                  <UserDropdown />
+                </div>
               
               {/* User Actions and Social Icons */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full md:w-auto gap-4 sm:gap-6">
                 {/* Buttons */}
-                <div className="w-[120px] font-bold">
-                  <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
-                  <UserDropdown />
-                  
-                </div>
-
+                
+                <span className="text-gray-400">|</span>
                 {/* Social Icons */}
                 <div className="flex gap-4">
                   <Link

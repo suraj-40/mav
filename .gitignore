@@ -37,3 +37,7 @@ next-env.d.ts
 
 .vercel
 .qodo
+
+# Docker files
+Dockerfile
+.dockerignore

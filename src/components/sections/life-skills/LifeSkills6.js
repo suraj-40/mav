@@ -1,0 +1,146 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import img61 from "@/assets/images/life-skills/06. Sangeeta Siddhi/1.png";
+import img62 from "@/assets/images/life-skills/06. Sangeeta Siddhi/2.png";
+
+const sangeetaData = {
+  school: "Agasthya Vidyaniketan",
+  alignment_info: {
+    title: "Alignment with NEP 2020",
+    description:
+      "Sangeeta Siddhi supports NEP 2020's emphasis on creativity and emotional development. Through music, students cultivate artistic skills and emotional resilience, aligning with the policy's goal of fostering holistic and experiential learning.",
+    icon: "🎶"
+  },
+  sangeeta_description:
+    "Sangeeta Siddhi at Agasthya Vidyaniketan immerses students in the art of music, fostering creativity and emotional resilience. This program enhances artistic skills and supports NEP 2020's vision of holistic development through experiential learning."
+};
+
+const LifeSkills6 = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile on client side
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <section className="relative bg-gradient-to-b overflow-hidden">
+      {/* Background Decorations */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-pink-100 opacity-20 blur-3xl"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2 }}
+        />
+        <motion.div
+          className="absolute top-1/2 -left-24 w-80 h-80 bg-red-100 rounded-full opacity-20 blur-3xl"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
+        />
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Images Row - Side by Side */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <motion.div
+              className="overflow-hidden rounded-xl shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={img61}
+                  alt="Sangeeta Siddhi Practice"
+                  className="w-full h-full object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white drop-shadow-lg">
+                  Musical Arts
+                </h3>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="overflow-hidden rounded-xl shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={img62}
+                  alt="Sangeeta Siddhi Performance"
+                  className="w-full h-full object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <h3 className="absolute bottom-6 left-6 text-2xl font-bold text-white drop-shadow-lg">
+                  Creative Expression
+                </h3>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* NEP Alignment */}
+        <div className="max-w-3xl mx-auto">
+          <AnimatePresence>
+            <motion.div
+              className="bg-white rounded-xl shadow-lg p-6 mb-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex items-start gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-[#E91E63] to-[#F06292] text-white text-2xl shadow-md flex-shrink-0">
+                {sangeetaData.alignment_info.icon}
+              </div>
+              <div className="flex-1">
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                  {sangeetaData.alignment_info.title}
+                </h2>
+                <p className="text-gray-600 text-base leading-relaxed">
+                  {sangeetaData.alignment_info.description}
+                </p>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* About Sangeeta Siddhi */}
+        <motion.div
+          className="mt-8 max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+        >
+          <div className="relative bg-white rounded-xl p-8 shadow-lg border border-gray-100 overflow-hidden">
+            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-[#E91E63] to-[#F06292]"></div>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              About Sangeeta Siddhi
+            </h2>
+            <p className="text-gray-700 text-lg leading-relaxed relative z-10">
+              {sangeetaData.sangeeta_description}
+            </p>
+            <div className="absolute bottom-0 right-0 w-40 h-40 bg-pink-50 rounded-full opacity-30 -mr-10 -mb-10"></div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default LifeSkills6;

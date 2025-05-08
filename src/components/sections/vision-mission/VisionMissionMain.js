@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timeline } from "@/components/ui/Timeline";
+import { Timeline } from "@/components/ui/VisionMissionTimeline";
 import VisionMission1 from './VisionMission1';
 import VisionMission2 from "./VisionMission2";
 import VisionMission3 from "./VisionMission3";

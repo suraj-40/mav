@@ -113,14 +113,17 @@ const OverviewsWhyAv = () => {
               transition={{ duration: 1, delay: 0.2 }}
               style={{ transform: "translate(-50%, -50%)" }}
             />
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800 tracking-tight">
-              Why{" "}
-              <span className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent relative font-samarkan">
-                Agasthya Vidhyanikethan
-                
-              </span>
-              ?
-            </h1>
+            <motion.h1
+          className="text-3xl md:text-7xl font-bold  tracking-tight"
+          variants={{
+            hidden: { opacity: 0, y: -20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+          }}
+        >
+          <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
+           Why Agasthya Vidyanikethan?
+          </span>
+        </motion.h1>
             <motion.p
               className="max-w-3xl mx-auto text-gray-600 text-lg md:text-xl leading-relaxed"
               initial={{ opacity: 0, y: 20 }}

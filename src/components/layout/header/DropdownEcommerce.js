@@ -12,7 +12,7 @@ const DropdownEcommerce = () => {
     {
       name: "Our Leaders",
       status: null,
-      path: "/about-us/our-Leaders/founder",
+      path: "",
       type: "secondary",
       dropdown: [
         {

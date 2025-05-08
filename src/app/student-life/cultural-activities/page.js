@@ -1,11 +1,14 @@
 import PageWrapper from "@/components/shared/wrappers/PageWrapper"
-import CulturalActivities from"@/components/sections/cultural-activities/CulturalActivities"
+import CulturalActivitiesMain from"@/components/sections/cultural-activities/CulturalActivitiesMain"
+
 
 const NEPCulturalActivities  = () => {
     return (
         <>
         <PageWrapper>
-        <CulturalActivities/>
+        {/* <CulturalActivities/> */}
+        
+        <CulturalActivitiesMain/>
         </PageWrapper>
         </>
     );
