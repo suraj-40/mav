@@ -52,6 +52,13 @@
   --ring: 16 100% 50%;
 }
 
+@font-face {
+  font-family: 'Samarkan';
+  src: url('/fonts/SAMAN___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Base Styles */
 @layer base {
   * {

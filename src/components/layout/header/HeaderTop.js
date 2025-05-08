@@ -152,14 +152,14 @@ const HeaderTop = () => {
                   >
                     <Linkedin size={18} className="md:w-5 md:h-5" />
                   </Link>
-                  <Link
-                    href="#G"
+                  <a
+                    href="https://www.youtube.com/@agasthyavidyanikethan6692"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                   >
                     <Youtube size={18} className="md:w-5 md:h-5" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

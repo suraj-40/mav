@@ -27,10 +27,9 @@ const Footer = () => {
               />
             </Link>
             <p className="text-[#000008] mb-6 text-lg font-medium">
-              Discover Your Limitless Potential at{" "}
+                Samskara Inspires Global Success at{" "}
               <span
-                className="text-school-orange text-2xl"
-                style={{ fontFamily: "Samarkan, cursive" }}
+                className="text-school-orange text-2xl font-samarkan"
               >
                 Agasthya Vidyanikethan
               </span>
@@ -76,7 +75,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@agasthyavidyanikethan6692"
+                target="_blank"
                 className="text-black hover:text-school-orange transition-colors duration-300"
               >
                 <svg
@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/nep"
+                  href="/NEP"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   NEP
@@ -149,18 +149,18 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/policy/tnc"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  Privacy Policy
+                  Terms & Conditions
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/policy/privacy"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  Terms & Conditions
+                  Privacy Policy
                 </a>
               </li>
             </ul>
@@ -183,7 +183,10 @@ const Footer = () => {
                 </svg>
                 <div>
                   <p className="text-[#000008] font-medium">
-                    AV-1 Srigandhakaval Branch
+                  Agasthya Vidyanikethan
+                  </p>
+                  <p className="text-[#000008] font-medium">
+                    Srigandhakaval Branch
                   </p>
                   <p className="text-[#000008]">9880906633 | 9972342144</p>
                   <p className="text-[#000008]">info@av.school</p>
@@ -200,7 +203,10 @@ const Footer = () => {
                 </svg>
                 <div>
                   <p className="text-[#000008] font-medium">
-                    AV-2 Ullal Branch
+                  Agasthya Vidyanikethan
+                  </p>
+                  <p className="text-[#000008] font-medium">
+                   Ullal Branch
                   </p>
                   <p className="text-[#000008] ">7760776098 | 7760776046</p>
                   <p className="text-[#000008]">info@av.school</p>
@@ -258,7 +264,7 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  AV-1, Srigandhakaval Branch, #1566, ‘D’ Group Layout,
+                  Agasthya Vidyanikethan, Srigandhakaval Branch, #1566, ‘D’ Group Layout,
                   Bengaluru - 560091
                 </a>
               </li>
@@ -279,7 +285,7 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  AV-2, Ullal Branch, #170/3, 6th Block, Ullal Ring Road,
+                  Agasthya Vidyanikethan, Ullal Branch, #170/3, 6th Block, Ullal Ring Road,
                   Bengaluru – 560110
                 </a>
               </li>
@@ -294,24 +300,18 @@ const Footer = () => {
               © 2025 Agasthya Vidyanikethan. All rights reserved.
             </p>
             <div className="flex space-x-6">
+            <a
+                href="/policy/tnc"
+                className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
+              >
+                Terms & Conditions
+              </a>
               <a
-                href="#"
-                className="text-[#000008] hover:text-white text-sm transition-colors duration-300"
+                href="/policy/privacy"
+                className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-[#000008] hover:text-white text-sm transition-colors duration-300"
-              >
-                Terms of Service
-              </a>
-              <a
-                href="#"
-                className="text-[#000008] hover:text-white text-sm transition-colors duration-300"
-              >
-                Cookie Policy
-              </a>
+              </a>             
             </div>
           </div>
         </div>

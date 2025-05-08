@@ -24,26 +24,25 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     // },
     {
       id: 2,
-      name: "AV Atoms Overview",
+      name: "AV-ATOMS",
       path: "/atoms",
       // dropdown: <DropdownCourses />,
       isRelative: false,
     },
     {
       id: 3,
-      name: "Student Life",
-      path: "",
-      dropdown: <DropdownDashboard />,
-      isRelative: true,
-    },
-    {
-      id: 4,
       name: "About Us",
       path: "",
       dropdown: <DropdownEcommerce />,
       isRelative: true,
     },
-  
+    {
+      id: 4,
+      name: "Life@AV",
+      path: "",
+      dropdown: <DropdownDashboard />,
+      isRelative: true,
+    },  
     {
       id: 5,
       name: "Why AV?",

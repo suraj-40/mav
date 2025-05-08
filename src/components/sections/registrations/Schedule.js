@@ -15,6 +15,7 @@ const Schedule = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [scheduleDate, setScheduleDate] = useState('');
+  const [selectedTime, setSelectedTime] = useState("");
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -33,6 +34,7 @@ const Schedule = () => {
     lastSchool: '',   
     acceptPolicy: false,
     date: '',
+    selectedTime:''
   });
 
   const formatDate = (date) => {
@@ -72,9 +74,14 @@ const Schedule = () => {
 
   const registractionSubmit = async () => {
     try {
+      const payload = {
+        ...formData,
+        selectedTime, // ensure selectedTime is up-to-date
+      };
+
       const [response] = await Promise.all([
-        axios.post('/api/registration', formData),
-        axios.post('/api/ScheduleGoogleSheet', formData)
+        axios.post('/api/registration', payload),
+        axios.post('/api/ScheduleGoogleSheet', payload)
       ]);
 
       if (response) {
@@ -94,6 +101,7 @@ const Schedule = () => {
           lastSchool: '',   
           acceptPolicy: false,
           date: '',
+          selectedTime:''
         });
         setScheduleDate('');
         setOpen(false);
@@ -194,12 +202,12 @@ const Schedule = () => {
                   {/* Parent Email & Gender */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">                  
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact<span className="text-red-600">*</span></label>
-                      <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                      <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact</label>
+                      <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange}  pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-medium text-blue-800">Parent&apos;s Email <span className="text-red-600">*</span></label>
-                      <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                      <label className="text-sm font-medium text-blue-800">Parent&apos;s Email </label>
+                      <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange}  className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-blue-800">Gender <span className="text-red-600">*</span></label>
@@ -257,8 +265,8 @@ const Schedule = () => {
               ) : (
                 <form className="space-y-6 px-4 md:px-0 " onSubmit={handlesubmitDate}>
                   <p className="text-lg font-medium">Choose a date to schedule your visit to the school</p>
-                  <div className="relative flex items-center">
-                    <input type="text" value={scheduleDate} onChange={handleInputChange} placeholder="dd-mm-yyyy" className="input mr-2" />
+                  <div className="relative flex justify-center items-center">
+                    <input type="text" value={scheduleDate} onChange={handleInputChange} placeholder="dd-mm-yyyy" className="input mr-2 border border-1 p-[9px] rounded-md" />
                     <button onClick={(e) => { e.preventDefault(); toggleCalendar(); }} className="p-2 border rounded-md">
                       <CiCalendarDate className="w-full h-full" />
                     </button>
@@ -267,7 +275,26 @@ const Schedule = () => {
                         <Calendar onChange={handleDateChange} value={value} />
                       </div>
                     )}
+                      <div className="mt-4 md:mt-0 md:ml-10">                      
+                      <select
+                        value={selectedTime}
+                        onChange={(e) => setSelectedTime(e.target.value)}
+                        className="input w-full border border-1 p-[12px] rounded-md"
+                        required
+                      >
+                        <option value="" disabled>Select a time slot</option>
+                        <option>9:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 12:00 PM</option>
+                        <option>12:00 PM - 1:00 PM</option>
+                        <option>1:00 PM - 2:00 PM</option>
+                        <option>2:00 PM - 3:00 PM</option>
+                        <option>3:00 PM - 4:00 PM</option>
+                        <option>4:00 PM - 5:00 PM</option>
+                      </select>
+                    </div>
                   </div>
+
                   <div className="flex justify-center mt-4 w-full">
                     <ButtonPrimary type="submit" className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white">
                       {loading ? "Please wait..." : "Submit"}

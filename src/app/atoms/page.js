@@ -3,6 +3,7 @@ import Registration1 from "@/components/sections/registrations/Registration1";
 import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import AtomsNavCard from "@/components/sections/atomsNavCard/atomsNavCard";
+import OverviewlandingonlineFullStack from '@/components/sections/overviews/OverviewlandingonlineFullStack';
 
 export const metadata = {
   title: "ATOMS | Agasthya Vidhyanikethan",
@@ -15,7 +16,7 @@ const Atoms = async () => {
     <PageWrapper>
       <main>
         <Overview1 />
-        
+        <OverviewlandingonlineFullStack />
       </main>
     </PageWrapper>
   );

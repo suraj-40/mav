@@ -18,13 +18,15 @@ export async function POST(req) {
       lastSchool,     
       acceptPolicy,
       date,
+      time,
+      selectedTime
     } = body;
 
   
 
     try {
        
-     const endpoint ="https://script.google.com/macros/s/AKfycbxOUp9zU1XrfXObYvA1JMzzIjPpeLgP6nOlRCuL0A_sQe90RYrtEBpEYpI6E-gUf463/exec"
+     const endpoint ="https://script.google.com/macros/s/AKfycbwe13b6ooz__9mTGJd6fwQyiXB6KA2jGXcXHDwqj-RMRXR9Ke9rn6fHk8RnZagJhJkM/exec"
           
     // const response =await axios.post(endpoint, {
     //     childName,

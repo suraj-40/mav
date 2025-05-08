@@ -11,17 +11,18 @@ const DropdownDashboard = () => {
       type: "secondary",
     },
     {
+      name: "Mandatory Life Skills",
+      status: null,
+      path: "/student-life/life-skills",
+      type: "secondary",
+    },
+    {
       name: "Cultural Activities",
       status: null,
       path: "/student-life/cultural-activities",
       type: "secondary",
     },
-    {
-      name: "Life Skills",
-      status: null,
-      path: "/student-life/life-skills",
-      type: "secondary",
-    },
+    
     // {
     //   name: "Campus Activity",
     //   status: null,

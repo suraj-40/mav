@@ -61,7 +61,7 @@ const OverviewUnit1 = () => {
                 placeholder="blur"
               />
               <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
-                  <PopupVideo videoUrl="https://www.youtube.com/embed/d136P2DNDxc?autoplay=1&rel=0" />
+                  <PopupVideo videoUrl="https://youtu.be/ZxUeiNTYHfA" />
               </div>  
               </div>
             </motion.div>

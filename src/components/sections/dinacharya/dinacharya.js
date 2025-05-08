@@ -7,7 +7,7 @@ import dinacharyaimg4 from "@/assets/images/dinacharya/Asset 13.png";
 
 const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
   return (
-    <div className="bg-gray-200 rounded-lg p-6 mb-6 relative rounded-xl shadow-xl" data-aos="fade-up">
+    <div className="bg-gray-200  p-6 mb-6 relative rounded-xl shadow-xl" data-aos="fade-up">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center" data-aos="fade-up">
         {imagePosition === "left" && (
           <div  className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
@@ -47,7 +47,7 @@ export const SectionData = [
     imagePosition: "left",
     timelineData: [
       [
-        { time: "8:45 AM to 9:00 AM", label: "GURU VANDANA", bgClass: "bg-avorange" },
+        { time: "8:40 AM to 9:00 AM", label: "GURU VANDANA", bgClass: "bg-avorange" },
         { time: "9:00 AM to 9:40 AM", label: "PERIOD 1", bgClass: "bg-av" },
       ],
       [

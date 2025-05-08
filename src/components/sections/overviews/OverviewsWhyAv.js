@@ -115,7 +115,7 @@ const OverviewsWhyAv = () => {
             />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-800 tracking-tight">
               Why{" "}
-              <span className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent relative" style={{fontFamily: 'Samarkan, cursive',}}>
+              <span className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent relative font-samarkan">
                 Agasthya Vidhyanikethan
                 
               </span>

@@ -1,11 +1,10 @@
 "use client";
 import React from 'react';
 import image from 'next/image';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import axios from 'axios';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-
-
+import { toast } from 'react-toastify';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 
 const ContactUs = () => {
@@ -14,6 +13,7 @@ const ContactUs = () => {
       const [phone, setPhone] = useState("");
       const [query, setQuery] = useState("");
       const [message, setMessage] = useState("");
+      const formRef = useRef(null);
     const handleSubmit = async (e) => {
         await e.preventDefault();
         const formData = {
@@ -23,21 +23,21 @@ const ContactUs = () => {
             query,
             message,
           };
-          console.log("Form submitted:", formData);
           try {
             const response = await axios.post(`/api/ContactGoogleSheet`, formData);
             console.log("Response:", response.data);
             await axios.post(`/api/ContactMail`, formData); 
             if(response.status === 200) {
-              alert("Form submitted successfully!");
+              toast.success('Form submitted successfully!');
             }
             else {
-              alert("Form submission failed!");
+              toast.success("Form submission failed!");
             }
           } catch (error) {
             console.error("Error submitting form:", error);
-            alert("Submission failed!");
+            toast.success("Submission failed!");
           }
+          formRef.current.reset();
     }
     
   return (
@@ -117,7 +117,7 @@ const ContactUs = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/@agasthyavidyanikethan6692" target="_blank" rel="noopener noreferrer">
                     <FaYoutube className="hover:text-avorange transition" />
                     </a>
                 </li>
@@ -133,7 +133,7 @@ const ContactUs = () => {
                 <p className="text-sm text-gray-600 dark:text-gray-300">Fill out this form for any queries.</p>
               </div>
 
-              <form  id="contact-form" onSubmit={handleSubmit} className="space-y-4">
+              <form  id="contact-form" ref={formRef} onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4">
                   <input type="hidden"  />
 

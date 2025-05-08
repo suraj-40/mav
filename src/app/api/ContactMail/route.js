@@ -16,8 +16,8 @@ export async function POST(req) {
     port: 587,
     secure: false,
     auth: {
-      user: "jeevan.raj@abc.courses", 
-      pass: "ojbe ynss ufta dnme",    
+      user: "sharath.kr@abc.courses", 
+      pass: "vzot jaxd ogln ofid",    
     },
   });
  
@@ -35,8 +35,8 @@ export async function POST(req) {
 
   try {
     const info = await transporter.sendMail({
-      from: '"New Message" <jeevan.raj@abc.courses>',
-      to: "vinanth_b@abc.courses",
+      from: '"New Message" <sharath.kr@abc.courses>',
+      to: "sharath.kr@abc.courses",
       subject: "New Student Visit Scheduled",
       html: schoolEmailTemplate,
     });

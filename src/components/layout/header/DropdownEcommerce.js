@@ -4,6 +4,12 @@ import DropdownPrimary from "./DropdownPrimary";
 const DropdownEcommerce = () => {
   const items = [
     {
+      name: "Vision & Mission",
+      status: null,
+      path: "/about-us/vision-mission",
+      type: "secondary",
+    },
+    {
       name: "Our Leaders",
       status: null,
       path: "/about-us/our-Leaders/founder",
@@ -36,9 +42,9 @@ const DropdownEcommerce = () => {
       ],
     },
     {
-      name: "Vision & Mission",
+      name: "Gallery",
       status: null,
-      path: "/about-us/vision-mission",
+      path: "",  ///gallery
       type: "secondary",
     },
   ];

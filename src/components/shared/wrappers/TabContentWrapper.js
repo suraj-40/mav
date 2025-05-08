@@ -25,3 +25,4 @@ const TabContentWrapper = ({ children, isShow }) => {
 };
 
 export default TabContentWrapper;
+

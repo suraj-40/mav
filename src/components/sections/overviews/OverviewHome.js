@@ -26,8 +26,8 @@ const OverviewHome = () => {
   };
 
   const tabs = [
-    { name: "Agasthya Vidyanikethan Ullal Branch", key: "ullal", content: <OverviewUnit2 /> },
-    { name: "Agasthya Vidyanikethan Srigandhakaval Branch", key: "srigandhakaval", content: <OverviewUnit1 /> },
+    { name: "Agasthya Vidyanikethan - Ullal Branch", key: "ullal", content: <OverviewUnit2 /> },
+    { name: "Agasthya Vidyanikethan - Srigandhakaval Branch", key: "srigandhakaval", content: <OverviewUnit1 /> },
   ];
 
   const particleVariants = {
@@ -77,7 +77,7 @@ const OverviewHome = () => {
           >
             Our Campuses
           </motion.span>
-          <h2 className="text-4xl md:text-3xl lg:text-6xl py-2 md:py-3 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-av  via-orange-800 to-orange-600"  style={{fontFamily: 'Samarkan, cursive',}} data-aos="fade-up">
+          <h2 className="text-4xl md:text-3xl lg:text-6xl py-2 md:py-3 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-av  via-orange-800 to-orange-600 font-samarkan"  data-aos="fade-up">
           Agasthya Vidyanikethan
           </h2>
           <motion.p

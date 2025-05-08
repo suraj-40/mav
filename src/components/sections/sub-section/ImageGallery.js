@@ -1,10 +1,10 @@
 "use client";
-import avecosystemImage15 from "@/assets/images/avecosystem/avecosystem1.png";
-import avecosystemImage16 from "@/assets/images/avecosystem/avecosystem2.png";
-import avecosystemImage17 from "@/assets/images/avecosystem/avecosystem3.png";
-import avecosystemImage19 from "@/assets/images/avecosystem/avecosystem5.png";
-import avecosystemImage20 from "@/assets/images/avecosystem/avecosystem6.png";
-import avecosystemImage30 from "@/assets/images/avecosystem/avecosystem8.png";
+import avecosystemImage1 from "@/assets/images/avecosystem/avecosystem1.png";
+import avecosystemImage2 from "@/assets/images/avecosystem/Kalaripayattu.jpg";
+import avecosystemImage3 from "@/assets/images/avecosystem/avecosystem3.png";
+import avecosystemImage4 from "@/assets/images/avecosystem/avecosystem5.png";
+import avecosystemImage5 from "@/assets/images/avecosystem/avecosystem6.png";
+import avecosystemImage6 from "@/assets/images/avecosystem/avecosystem8.png";
 
 
 import ImageSingle from "@/components/shared/sub-section/ImageSingle";
@@ -18,12 +18,12 @@ const ImageGallery = ({ gallary }) => {
     popup();
   }, []);
   const allImages = [
-          avecosystemImage15,
-          avecosystemImage17,
-          avecosystemImage19,
-          avecosystemImage20,
-          avecosystemImage30,
-          avecosystemImage16,
+          avecosystemImage1,
+          avecosystemImage2,
+          avecosystemImage3,
+          avecosystemImage4,
+          avecosystemImage5,
+          avecosystemImage6,
         ];
   const images = gallary ? allImages.slice(0, 6) : [...allImages];
   return (
