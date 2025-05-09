@@ -13,7 +13,7 @@ const HeroSlide3 = ({ slide, idx }) => {
     <ErrorBoundary componentName={`HeroSlide3-${idx}`}>
       <div className="w-full h-[500px] md:h-[550px] relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${image.src})` }}>
   {/* Dark overlay */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 via-black/20 to-black/0 z-0"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/0 z-0"></div>
 
   {/* Your content here */}
   <div className="relative z-10 container 2xl:container-secondary-md h-full flex items-center">

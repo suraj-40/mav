@@ -1,6 +1,6 @@
 "use client";
 import avecosystemImage1 from "@/assets/images/avecosystem/avecosystem1.png";
-import avecosystemImage2 from "@/assets/images/avecosystem/Kalaripayattu.jpg";
+import avecosystemImage2 from "@/assets/images/avecosystem/01.jpg";
 import avecosystemImage3 from "@/assets/images/avecosystem/avecosystem3.png";
 import avecosystemImage4 from "@/assets/images/avecosystem/avecosystem5.png";
 import avecosystemImage5 from "@/assets/images/avecosystem/avecosystem6.png";
