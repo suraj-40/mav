@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Av11 from "@/assets/images/about/AV-11.png";
 import Av12 from "@/assets/images/about/AV-12.png";
 import Av13 from "@/assets/images/about/AV-13.jpeg";
-import Av14 from "@/assets/images/about/AV-14.png";
+import Av14 from "@/assets/images/about/AV-13.jpeg";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
 
 const images = [Av11, Av12, Av13, Av14];
