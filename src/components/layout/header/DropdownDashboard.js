@@ -19,8 +19,22 @@ const DropdownDashboard = () => {
     {
       name: "Cultural Activities",
       status: null,
-      path: "/student-life/cultural-activities",
+      path: "",
       type: "secondary",
+      dropdown: [
+        {
+          name: "Srigandhakaval",
+          status: null,
+          path: "/student-life/cultural-activities/srigandhakaval",
+          type: "secondary",
+        },
+        {
+          name: "Ullal",
+          status: null,
+          path: "/student-life/cultural-activities/ullal",
+          type: "secondary",
+        }
+      ]
     },
     
     // {
