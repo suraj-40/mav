@@ -176,7 +176,7 @@ const ScheduleForm = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="space-y-1">
               <label className="text-sm font-medium text-blue-800">
-                Child's Full Name <span className="text-red-600">*</span>
+                Child&apos;s Full Name <span className="text-red-600">*</span>
               </label>
               <input
                 type="text"
@@ -216,7 +216,7 @@ const ScheduleForm = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Father's Name <span className="text-red-600">*</span>
+                Father&apos;s Name <span className="text-red-600">*</span>
               </label>
               <input
                 type="text"
@@ -231,7 +231,7 @@ const ScheduleForm = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Mother's Name <span className="text-red-600">*</span>
+                Mother&apos;s Name <span className="text-red-600">*</span>
               </label>
               <input
                 type="text"
@@ -244,7 +244,7 @@ const ScheduleForm = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Father's Contact <span className="text-red-600">*</span>
+                Father&apos;s Contact <span className="text-red-600">*</span>
               </label>
               <input
                 type="text"
@@ -258,7 +258,7 @@ const ScheduleForm = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Mother's Contact
+                Mother&apos;s Contact
               </label>
               <input
                 type="text"
@@ -271,7 +271,7 @@ const ScheduleForm = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Parent's Email
+                Parent&apos;s Email
               </label>
               <input
                 type="email"

@@ -265,7 +265,7 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  # 1566, 'D' Group Layout, 60 ft. Road, Near 2nd
+                  # 1566, &apos;D&apos; Group Layout, 60 ft. Road, Near 2nd
                   Water Tank, Srigandhakaval, Bengaluru - 560091.
                   Landmark: Nagarabhavi Ring Road             
                 </a>
