@@ -126,7 +126,7 @@ const OverviewHome = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="relative md:mx-40" data-aos="fade-up">
+        <div className="relative md:mx-20" data-aos="fade-up">
           <AnimatePresence mode="wait">
             {tabs.map(
               (tab) =>

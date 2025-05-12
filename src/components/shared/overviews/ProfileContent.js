@@ -11,7 +11,7 @@ const ProfileContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const ProfileContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Pro<span className="text-[#FF5722]">file</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Access and manage personal, parent, educational, contact, and other essential details in your profile. Stay organized and keep your information up to date with ease.
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,10 @@ const ProfileContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+          The Profile shows all your child&apos;s school-related information, from name and class to the contact details and admission number. Keep your child&apos;s details updated to make sure you never miss important school communication. It&apos;s simple to view and manage, giving parents an easy way to check and confirm personal records. A well-maintained profile means smoother coordination with your kid&apos;s teachers and the school office.
+          </p>
+          
         </div>
         <div
           className="w-full lg:w-1/2"

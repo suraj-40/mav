@@ -1,10 +1,9 @@
-'use client'
+"use client";
 import RegistrationForm from "@/components/sections/registrations/ScheduleForm";
 import { useState, useEffect } from "react";
 
 const PopupModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -19,14 +18,6 @@ const PopupModal = () => {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
-
-  const handleSuccess = () => {
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setIsOpen(false);
-      setFormSubmitted(false);
-    }, 2000);
-  };
 
   return (
     <>
@@ -52,13 +43,7 @@ const PopupModal = () => {
                 </span>
               </div>
 
-              {formSubmitted ? (
-                <div className="text-green-600 text-xl font-semibold py-10">
-                  Form Submitted Successfully
-                </div>
-              ) : (
-                <RegistrationForm onSuccess={handleSuccess} />
-              )}
+              <RegistrationForm />
             </div>
           </div>
         </div>

@@ -40,30 +40,30 @@ const DashboardContent = () => {
           variants={fadeInUp}
         >
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Dash<span className="text-[#FF5722]">boards</span>
+            Dash<span className="text-[#FF5722]">board</span>
           </h1>
 
-          <div className="mt-2">
+          <div className="">
             <svg
-              width={100}
-              height={8}
-              viewBox="0 0 100 8"
+              width={160}
+              height={20}
+              viewBox="0 0 160 20"
               xmlns="http://www.w3.org/2000/svg"
+              className="mx-auto lg:mx-0"
             >
               <path
-                d="M1,4 Q50,0 99,4"
+                d="M5,15 Q80,0 155,15"
                 fill="none"
                 stroke="#FF5722"
-                strokeWidth="3"
+                strokeWidth="4"
                 strokeLinecap="round"
               />
             </svg>
           </div>
 
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Get a clear overview of enrolled courses, track progress, and stay
-            on top of course timelines. Stay organized and manage your learning
-            journey with ease and efficiency.
+          <p className="mt-6 text-md md:text-lg text-gray-600 text-justify leading-relaxed">
+          Think of the ATOMS Dashboard as your daily briefing room. It brings all the important updates and tasks related to your child. From daily assignments and announcements to events, everything will be right at your fingertips. As a parent, you can glance at today&apos;s tasks, check upcoming deadlines, monitor key activities, and track your child&apos;s progress easily in real time. No more wondering what&apos;s due tomorrow or missing out on important updates, you&apos;ll always be one step ahead, ready to support and encourage your child each day.
+
           </p>
 
           {/* Stats section */}

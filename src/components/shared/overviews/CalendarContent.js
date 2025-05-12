@@ -11,7 +11,7 @@ const CalendarContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const CalendarContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Calen<span className="text-[#FF5722]">dar</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Stay on top of all upcoming events with a clear view of your schedule for the day, week, & month, along with a detailed event list. Never miss an important date
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,15 @@ const CalendarContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+          The ATOMS Calendar offers a bird&apos;s-eye view of all important dates, from exams and school events to special celebrations and parent-teacher meetings. See your child&apos;s schedule for the day, week, or month, all at one glance.
+          </p>
+          <p className="mt-3 text-md md:text-lg text-gray-600 leading-relaxed">
+          No more last-minute rushes or forgotten days!
+          </p>
+          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+          Mark key dates, set reminders, and help your child stay prepared and confident, every step of the way. It&apos;s your personal school planner, keeping everything in order and easy to follow.
+          </p>
         </div>
         <div
           className="w-full lg:w-1/2"

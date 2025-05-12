@@ -11,7 +11,7 @@ const AnnouncementContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         {/* Left side text */}
         <div
@@ -22,14 +22,7 @@ const AnnouncementContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Announce<span className="text-[#FF5722]">ments</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Stay updated with important information through customizable date
-            ranges, with easy filters for status, urgency, and course. A
-            title-based search ensures quick access to the most relevant
-            updates.
-          </p>
-          {/* Curved line below the paragraph */}
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -46,6 +39,11 @@ const AnnouncementContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+          Never miss a beat with the ATOMS Announcements section. From holiday notices and exam alerts to competition updates and new activity launches, every school communication reaches you instantly. Now, you can monitor your child&apos;s performance over time and spot areas where they may need a little extra help, all from the comfort of your home. As a parent, this means you&apos;re always informed and can prepare your child well in advance. It&apos;s your school&apos;s news board, modernized, simplified, and made for today&apos;s busy families. 
+          </p>
+          {/* Curved line below the paragraph */}
+          
         </div>
 
         {/* Right side image */}

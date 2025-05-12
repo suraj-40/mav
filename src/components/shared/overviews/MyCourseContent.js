@@ -11,7 +11,7 @@ const MyCourseContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const MyCourseContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             My <span className="text-[#FF5722]">Courses</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Access all your active and completed courses effortlessly, with a powerful search feature to quickly find specific courses.
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,16 @@ const MyCourseContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+          Keep track of all your child&apos;s subjects and lessons in the My Courses section. Here, you&apos;ll find your enrolled subjects, assignments, study materials, and progress reports. Whether you&apos;re checking what chapter to study next or seeing which tasks are pending, this is where your learning stays on track. Parents can also view their child&apos;s course status, making it easier to support learning at home. Everything you need for your studies, neatly organized in one spot!
+          </p>
+          <p className="mt-3 font-bold text-center text-md md:text-lg text-gray-600 leading-relaxed">
+          My subject sections
+          </p>
+          <p className="mt-3 font-bold text-center text-md md:text-lg text-gray-600 leading-relaxed">
+          Find your enrolled academic subjects
+          </p>
+          
         </div>
         <div
           className="w-full lg:w-1/2"

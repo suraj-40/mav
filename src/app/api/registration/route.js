@@ -1,5 +1,7 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
+import Image from "next/image";
+import logoImage from "@/assets/images/logo/logo_2.png";
 
 export async function POST(req) {
   const body = await req.json();
@@ -40,6 +42,16 @@ export async function POST(req) {
   // `;
 
   const studentEmailTemplate = (fatherName, motherName, childName, date, selectedTime, address, phone, email, link) => `
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="center">
+      <img src=" https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747049003/logo_1_fqzip3.png"
+           style="max-width: 600px; width: 60%; height: auto; display: block;" 
+           alt="Logo" />
+    </td>
+  </tr>
+</table>
+
   <h2>Dear ${fatherName} and ${motherName}</h2>
 
   <p>Thank you!</p>
@@ -70,7 +82,15 @@ export async function POST(req) {
     Need to adjust your appointment or have pre-visit questions?<br/>
     Our dedicated admissions team is standing by at <strong>${phone}</strong> or <a href="mailto:${email}">${email}</a>.
   </p>
-
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="center">
+      <img src="https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747045900/email-image_r4gn4t.jpg"
+           style="max-width: 600px; width: 100%; height: auto; display: block;" 
+           alt="Logo" />
+    </td>
+  </tr>
+  </table>
   <p>
     We look forward to welcoming your family to AV School on <strong>${date}</strong> and sharing how our educational approach can support <strong>${childName}</strong>'s development.
   </p>
@@ -113,12 +133,12 @@ export async function POST(req) {
       if (branch === "AV Ullal") {
         email = "info@av.school";
         phone = "7760776098 | 7760776046";
-        address = "Agasthya Vidyanikethan, Ullal Branch, #170/3, 6th Block, Ullal Ring Road, Bengaluru - 560110";
+        address = "#170/3, 6th block, Sir M. Vishweshwaraiah Layout, Ullal Ring road, Bengaluru-560110";
         link="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
       } else {
         email = "info@av.school";
         phone = "9880906633 | 9972342144";
-        address = "Agasthya Vidyanikethan, Srigandhakaval Branch, #1566, 'D' Group Layout, Bengaluru - 560091";
+        address = "# 1566, 'D' Group Layout, 60 ft. Road, Near 2nd Water Tank, Srigandhakaval, Bengaluru - 560091. Landmark: Nagarabhavi Ring Road   ";
         link="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
       }
       const info1 = await transporter.sendMail({

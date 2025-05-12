@@ -11,7 +11,7 @@ const ExamsContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const ExamsContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Ex<span className="text-[#FF5722]">ams</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Stay on top of all upcoming events with a clear view of your schedule for the day, week, & month, along with a detailed event list. Never miss an important date
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,13 @@ const ExamsContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg  text-gray-600 leading-relaxed">
+          Get exam-ready with all the details in one place!
+          </p>
+          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">        
+            In the Exams section, you can view your test schedules, syllabus details, exam dates, and even results. No more confusion about timings or subjects. Parents can track readiness, review performance, and step in with timely support when it&apos;s needed most. No more confusion or last-minute scrambling, knowing you have all the exam information handy, so you can focus more on studying and less on searching.
+          </p>
+          
         </div>
         <div
           className="w-full lg:w-1/2"

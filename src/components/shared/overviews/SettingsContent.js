@@ -11,7 +11,7 @@ const SettingsContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const SettingsContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Set<span className="text-[#FF5722]">tings</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Easily update your password, personalize login preferences, and set your timezone for accurate class notifications and reminders. Stay connected and organized, ensuring you’re always in the loop!
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,13 @@ const SettingsContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-gray-600 leading-relaxed">
+          Make the ATOMS portal work just the way you like it!
+          </p>
+          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
+            In Settings, parents can customize how and when they receive updates — from instant announcements to exam reminders. Manage security features, update passwords, and control your notification preferences, so you always get the information that matters most, delivered how you like it. Safe, secure, and personalized for your convenience.
+          </p>
+          
         </div>
         <div
           className="w-full lg:w-1/2"

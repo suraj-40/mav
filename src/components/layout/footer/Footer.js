@@ -26,22 +26,23 @@ const Footer = () => {
                 className="w-40 lg:w-48"
               />
             </Link>
-            <p className="text-[#000008] mb-6 text-lg font-medium">
-                Samskara Inspires Global Success at{" "}
+            <p className="text-[#000008] mb-6 text-[16px] md:text-center leading-tight font-medium">
+                Educating the Future and <br/>
+                Nurturing our Culture at<br/>
               <span
                 className="text-school-orange text-2xl font-samarkan"
               >
                 Agasthya Vidyanikethan
               </span>
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 md:justify-center md:mt-10">
               <a
                 href="https://www.facebook.com/@AgasthyaVidyaniketan/"
                 className="text-black hover:text-school-orange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-7 w-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -54,7 +55,7 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-7 w-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -67,7 +68,7 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-7 w-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -81,7 +82,7 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-7 w-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -116,7 +117,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/NEP"
+                  href="/nep"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   NEP
@@ -264,8 +265,9 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  Agasthya Vidyanikethan, Srigandhakaval Branch, #1566, ‘D’ Group Layout,
-                  Bengaluru - 560091
+                  # 1566, 'D' Group Layout, 60 ft. Road, Near 2nd
+                  Water Tank, Srigandhakaval, Bengaluru - 560091.
+                  Landmark: Nagarabhavi Ring Road             
                 </a>
               </li>
               <li className="flex items-start space-x-3">
@@ -285,8 +287,8 @@ const Footer = () => {
                   href="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
-                  Agasthya Vidyanikethan, Ullal Branch, #170/3, 6th Block, Ullal Ring Road,
-                  Bengaluru – 560110
+                  #170/3, 6th block, Sir M. Vishweshwaraiah Layout,
+                  Ullal Ring road, Bengaluru-560110
                 </a>
               </li>
             </ul>

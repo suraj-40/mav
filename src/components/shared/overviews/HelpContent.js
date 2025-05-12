@@ -11,7 +11,7 @@ const HelpContent = () => {
   const isAboutDark = useIsTrue("/about-dark");
 
   return (
-    <div className="pt-10 relative">
+    <div className="py-10 relative">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <div
           className="w-full lg:w-1/2"
@@ -21,10 +21,7 @@ const HelpContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             He<span className="text-[#FF5722]">lp</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Support at your fingertips—reach out with any queries and receive assistance from our team.
-          </p>
-          <div className="mt-4">
+          <div className="">
             <svg
               width={160}
               height={20}
@@ -41,6 +38,12 @@ const HelpContent = () => {
               />
             </svg>
           </div>
+          <p className="mt-6 text-md md:text-lg text-gray-600 leading-relaxed">
+          Need a hand?
+          </p>
+          <p className="mt-3 text-md md:text-lg text-gray-600 leading-relaxed">
+            The Help section is a go-to place whenever you have a question or face a problem while using the ATOMS portal. Whether it&apos;s about logging in, forgetting the password, checking courses, or finding exam details, our support team is just a click away. As a parent, you can rely on quick, friendly assistance to keep your ATOMS experience smooth, simple, and worry-free          
+          </p>          
         </div>
         <div
           className="w-full lg:w-1/2"

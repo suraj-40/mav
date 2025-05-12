@@ -253,8 +253,8 @@ const Schedule = () => {
                   {/* Accept Policy */}
                   <div className="flex items-center space-x-2">
                     <input type="checkbox" id="PrivacyPolicy" name="acceptPolicy" checked={formData.acceptPolicy} onChange={handleChange} required />
-                    <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700">
-                      I accept the <span className="text-blue-600 underline">Privacy Policy</span> for Agasthya Vidyanikethan
+                    <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700 text-center">
+                      I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
                     </label>
                   </div>
 
@@ -266,7 +266,7 @@ const Schedule = () => {
                 <form className="space-y-6 px-4 md:px-0 " onSubmit={handlesubmitDate}>
                   <p className="text-lg font-medium">Choose a date to schedule your visit to the school</p>
                   <div className="relative flex justify-center items-center">
-                    <input type="text" value={scheduleDate} onChange={handleInputChange} placeholder="dd-mm-yyyy" className="input mr-2 border border-1 p-[9px] rounded-md" />
+                    <input type="text" value={scheduleDate} onChange={handleInputChange} placeholder="dd-mm-yyyy" className="input mr-2 border border-1 p-[9px] rounded-md" required />
                     <button onClick={(e) => { e.preventDefault(); toggleCalendar(); }} className="p-2 border rounded-md">
                       <CiCalendarDate className="w-full h-full" />
                     </button>
