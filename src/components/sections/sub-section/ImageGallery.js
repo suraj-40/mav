@@ -12,8 +12,8 @@ import {
 } from "lucide-react";
 import avecosystemImage1 from "@/assets/images/avecosystem/avecosystem1.jpg";
 import avecosystemImage2 from "@/assets/images/avecosystem/01.jpg";
-import avecosystemImage3 from "@/assets/images/avecosystem/avecosystem3.jpg";
-import avecosystemImage4 from "@/assets/images/avecosystem/avecosystem5.jpg";
+import avecosystemImage3 from "@/assets/images/avecosystem/03.jpg";
+import avecosystemImage4 from "@/assets/images/avecosystem/02.jpg";
 import avecosystemImage5 from "@/assets/images/avecosystem/avecosystem6.jpg";
 import avecosystemImage6 from "@/assets/images/avecosystem/avecosystem8.jpg";
 import useIsTrue from "@/hooks/useIsTrue";

@@ -15,7 +15,7 @@ import UBaalaKautukam5 from "@/assets/images/gallery/ullal/BaalaKauthukam/img5.j
 import UBaalaKautukam6 from "@/assets/images/gallery/ullal/BaalaKauthukam/img6.jpg";
 import UBaalaKautukam7 from "@/assets/images/gallery/ullal/BaalaKauthukam/img7.jpg";
 import UBaalaKautukam8 from "@/assets/images/gallery/ullal/BaalaKauthukam/img8.jpg";
-import UBaalaKautukam9 from "@/assets/images/gallery/ullal/BaalaKauthukam/img9.jpg";
+// import UBaalaKautukam9 from "@/assets/images/gallery/ullal/BaalaKauthukam/img9.jpg";
 import UBaalaKautukam10 from "@/assets/images/gallery/ullal/BaalaKauthukam/img10.jpg";
 
 // Bhashaavali
@@ -247,7 +247,7 @@ const ullalActivities = [
     id: 4,
     title: "Baala kauthukam",
     image: img4,
-    images: [UBaalaKautukam1, UBaalaKautukam2, UBaalaKautukam3, UBaalaKautukam4, UBaalaKautukam5, UBaalaKautukam6, UBaalaKautukam7, UBaalaKautukam8, UBaalaKautukam9, UBaalaKautukam10],
+    images: [UBaalaKautukam1, UBaalaKautukam2, UBaalaKautukam3, UBaalaKautukam4, UBaalaKautukam5, UBaalaKautukam6, UBaalaKautukam7, UBaalaKautukam8, UBaalaKautukam10],
     description: "A joyful children's festival celebrating creativity and talent.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     videoDisabled: true
