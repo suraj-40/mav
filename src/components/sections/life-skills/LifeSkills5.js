@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import img51 from "@/assets/images/life-skills/05. Naatya Siddhi/1.png";
-import img52 from "@/assets/images/life-skills/05. Naatya Siddhi/2.png";
+import img51 from "@/assets/images/life-skills/05. Naatya Siddhi/1.jpg";
+import img52 from "@/assets/images/life-skills/05. Naatya Siddhi/2.jpg";
 
 const naatyaData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Naatya Siddhi's alignment with NEP 2020",
     description:
       "Naatya Siddhi aligns with NEP 2020's promotion of creativity and artistic expression. Through dance, students develop emotional intelligence and cultural awareness, supporting the policy's vision of holistic and experiential learning.",
     icon: "💃"

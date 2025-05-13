@@ -13,7 +13,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { toast } from 'react-toastify';
 import axios from "axios";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
-import chess from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.png";
+import chess from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.jpg";
 
 
 const Registration = () => {

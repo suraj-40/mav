@@ -4,12 +4,12 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import img11 from "@/assets/images/life-skills/01. Yoga Siddhi/1.png";
-import img12 from "@/assets/images/life-skills/01. Yoga Siddhi/2.png";
+import img12 from "@/assets/images/life-skills/01. Yoga Siddhi/2.jpg";
 
 const yogaData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Yoga Siddhi's alignment with NEP 2020",
     description:
       "Yoga Siddhi supports NEP 2020's vision of holistic education by nurturing physical health, mental clarity, and emotional resilience through experiential yoga practices, empowering students to thrive in a balanced learning environment.",
     icon: "🧘"

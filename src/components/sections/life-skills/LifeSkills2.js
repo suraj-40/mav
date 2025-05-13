@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import img21 from "@/assets/images/life-skills/02. Kalaripayattu/1.png";
-import img22 from "@/assets/images/life-skills/02. Kalaripayattu/2.png";
+import img21 from "@/assets/images/life-skills/02. Kalaripayattu/1.jpg";
+import img22 from "@/assets/images/life-skills/02. Kalaripayattu/2.jpg";
 
 const kalaripayattuData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Kalaripayattu's alignment with NEP 2020",
     description:
       "Kalaripayattu aligns with NEP 2020's focus on physical education and experiential learning. This ancient martial art promotes physical fitness, discipline, and mental agility, fostering holistic development and preparing students for real-world challenges.",
     icon: "🥋"

@@ -98,71 +98,70 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3">
-              
               <li>
-                <a
+                <Link
                   href="/schedule"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Schedule
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/aboutus"
+                <Link
+                  href="/about-us/our-Leaders/founder"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/nep"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   NEP
-                </a>
+                </Link>
               </li>
 
-              <li>
-                <a
+              {/* <li>
+                <Link
                   href="#"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Help (FAQ)
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li>
-                <a
-                  href="/contactus"
+                <Link
+                  href="/contact-us"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
-              <li>
-                <a
-                  href="/contactus"
+              {/* <li>
+                <Link
+                  href="/contact-us"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Our Locations
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li>
-                <a
+                <Link
                   href="/policy/tnc"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/policy/privacy"
                   className="text-[#000008] hover:text-school-orange transition-colors duration-300"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -184,7 +183,7 @@ const Footer = () => {
                 </svg>
                 <div>
                   <p className="text-[#000008] font-medium">
-                  Agasthya Vidyanikethan
+                    Agasthya Vidyanikethan
                   </p>
                   <p className="text-[#000008] font-medium">
                     Srigandhakaval Branch
@@ -204,11 +203,9 @@ const Footer = () => {
                 </svg>
                 <div>
                   <p className="text-[#000008] font-medium">
-                  Agasthya Vidyanikethan
+                    Agasthya Vidyanikethan
                   </p>
-                  <p className="text-[#000008] font-medium">
-                   Ullal Branch
-                  </p>
+                  <p className="text-[#000008] font-medium">Ullal Branch</p>
                   <p className="text-[#000008] ">7760776098 | 7760776046</p>
                   <p className="text-[#000008]">info@av.school</p>
                 </div>
@@ -302,7 +299,7 @@ const Footer = () => {
               © 2025 Agasthya Vidyanikethan. All rights reserved.
             </p>
             <div className="flex space-x-6">
-            <a
+              <a
                 href="/policy/tnc"
                 className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
               >
@@ -313,7 +310,7 @@ const Footer = () => {
                 className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
               >
                 Privacy Policy
-              </a>             
+              </a>
             </div>
           </div>
         </div>

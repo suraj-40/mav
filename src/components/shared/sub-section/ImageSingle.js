@@ -1,12 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-const ImageSingle = ({ image }) => {
+const ImageSingle = ({ image, onClick }) => {
   return (
-    <div className="image-wrapper relative group" data-aos="fade-up">
+    <div
+      className="image-wrapper relative group cursor-pointer"
+      onClick={onClick}
+    >
       <Image
-        src={image}
-        alt="Image 1"
+        src={image.src}
+        alt={image.title}
         className="gallery-image w-[400px] h-[250px]"
         placeholder="blur"
       />

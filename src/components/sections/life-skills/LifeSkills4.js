@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import img41 from "@/assets/images/life-skills/04. Samskrita Siddhi/1.png";
-import img42 from "@/assets/images/life-skills/04. Samskrita Siddhi/2.png";
+import img41 from "@/assets/images/life-skills/04. Samskrita Siddhi/1.jpg";
+import img42 from "@/assets/images/life-skills/04. Samskrita Siddhi/2.jpg";
 
 const samskritaData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Samskrita Siddhi's alignment with NEP 2020",
     description:
       "Samskrita Siddhi aligns with NEP 2020's emphasis on cultural rootedness and multidisciplinary learning. By teaching Sanskrit, it preserves India's linguistic heritage and enhances cognitive flexibility, supporting the policy's vision of a culturally grounded education.",
     icon: "📜"

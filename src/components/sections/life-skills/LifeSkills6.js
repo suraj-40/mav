@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import img61 from "@/assets/images/life-skills/06. Sangeeta Siddhi/1.png";
-import img62 from "@/assets/images/life-skills/06. Sangeeta Siddhi/2.png";
+import img61 from "@/assets/images/life-skills/06. Sangeeta Siddhi/1.jpg";
+import img62 from "@/assets/images/life-skills/06. Sangeeta Siddhi/2.jpg";
 
 const sangeetaData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Sangeeta Siddhi's alignment with NEP 2020",
     description:
       "Sangeeta Siddhi supports NEP 2020's emphasis on creativity and emotional development. Through music, students cultivate artistic skills and emotional resilience, aligning with the policy's goal of fostering holistic and experiential learning.",
     icon: "🎶"

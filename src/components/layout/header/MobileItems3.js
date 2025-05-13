@@ -5,25 +5,15 @@ import MobileMenuItem from "./MobileMenuItem";
 const MobileItems3 = () => {
   const items = [
     { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
-    { id: 2, name: "AV Atoms Overview", path: "/atoms", accordion: false, dropdown: null },
+    { id: 2, name: "AV-ATOMS", path: "/atoms", accordion: false, dropdown: null },
+    
     {
       id: 3,
-      name: "Student Life",
-      path: null,
-      accordion: true,
-      dropdown: [
-        { name: "Dinacharya", path: "/student-life/dinacharya" },
-        { name: "Cultural Activities", path: "/student-life/cultural-activities" },
-        { name: "Life Skills", path: "/student-life/life-skills" },
-        // { name: "Campus Activity", path: "/NEP/campus-Activity" },
-      ],
-    },
-    {
-      id: 4,
       name: "About Us",
       path: null,
       accordion: true,
       dropdown: [
+        { name: "Vision & Mission", path: "/about-us/vision-mission" },
         {
           name: "Our Leaders",
           path: null,
@@ -34,7 +24,28 @@ const MobileItems3 = () => {
             { name: "Treasurer", path: "/about-us/our-Leaders/treasurer" },
           ],
         },
-        { name: "Vision & Mission", path: "/about-us/vision-mission" },
+        { name: "Gallery", path: "/about-us/gallery" },
+        
+      ],
+    },
+    {
+      id: 4,
+      name: "Life@AV",
+      path: null,
+      accordion: true,
+      dropdown: [
+        { name: "Dinacharya", path: "/student-life/dinacharya" },
+        { name: "Mandatory Life Skills", path: "/student-life/life-skills" },
+        {
+          name: "Cultural Activities",
+          path: null,
+          dropdown: [
+            { name: "Srigandhakaval", path: "/student-life/cultural-activities/srigandhakaval" },
+            { name: "Ullal", path: "/student-life/cultural-activities/ullal" },
+          ],
+        },
+        
+        // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
     { id: 5, name: "Why AV?", path: "/whyav", accordion: false, dropdown: null },

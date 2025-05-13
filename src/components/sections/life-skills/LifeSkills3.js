@@ -3,13 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import img31 from "@/assets/images/life-skills/03. Chaduranga Siddhi/1.png";
-import img32 from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.png";
+import img31 from "@/assets/images/life-skills/03. Chaduranga Siddhi/1.jpg";
+import img32 from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.jpg";
 
 const chadurangaData = {
   school: "Agasthya Vidyaniketan",
   alignment_info: {
-    title: "Alignment with NEP 2020",
+    title: "Chaduranga Siddhi's alignment with NEP 2020",
     description:
       "Chaduranga Siddhi supports NEP 2020's focus on critical thinking and problem-solving. By engaging in strategic games like chess, students develop cognitive prowess and analytical skills, fostering intellectual growth and decision-making abilities.",
     icon: "♟️"
