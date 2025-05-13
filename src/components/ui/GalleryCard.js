@@ -187,6 +187,7 @@ const GalleryCard = ({
               <button
                 onClick={handleCloseModal}
                 className="absolute -top-4 -right-4 bg-avorange text-white rounded-full p-2 hover:bg-avorange/90 transition-colors"
+                 style={{ zIndex: 10 }}
               >
                 <X className="h-5 w-5" />
               </button>
