@@ -102,8 +102,6 @@ import URamayanotsavam8 from "@/assets/images/gallery/ullal/Ramayanotsavam/img8.
 import URamayanotsavam9 from "@/assets/images/gallery/ullal/Ramayanotsavam/img9.jpg";
 import URamayanotsavam10 from "@/assets/images/gallery/ullal/Ramayanotsavam/img10.jpg";
 
-
-
 // Gallery images for Srigandhkaval Branch
 // Deepothsavam
 import SDeepothsavam1 from "@/assets/images/gallery/srigandhakaval/Deepothsavam/img1.jpg";
@@ -127,7 +125,6 @@ import SEnvironmentDay6 from "@/assets/images/gallery/srigandhakaval/Environment
 import SEnvironmentDay7 from "@/assets/images/gallery/srigandhakaval/EnvironmentDay/img7.jpg";
 import SEnvironmentDay8 from "@/assets/images/gallery/srigandhakaval/EnvironmentDay/img8.jpg";
 import SEnvironmentDay9 from "@/assets/images/gallery/srigandhakaval/EnvironmentDay/img9.jpg";
-// import SEnvironmentDay10 from "@/assets/images/gallery/srigandhakaval/EnvironmentDay/img10.jpg";
 
 // Ganeshostova
 import SGaneshostova1 from "@/assets/images/gallery/srigandhakaval/Ganeshostova/img1.jpg";
@@ -152,7 +149,6 @@ import SGuruPoornima7 from "@/assets/images/gallery/srigandhakaval/GuruPoornima/
 import SGuruPoornima8 from "@/assets/images/gallery/srigandhakaval/GuruPoornima/img8.jpg";  
 import SGuruPoornima9 from "@/assets/images/gallery/srigandhakaval/GuruPoornima/img9.jpg";
 import SGuruPoornima10 from "@/assets/images/gallery/srigandhakaval/GuruPoornima/img10.jpg";
-
 
 // Independence Day
 import SIndependenceDay1 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img1.jpg";
@@ -202,20 +198,6 @@ import SYogaDay8 from "@/assets/images/gallery/srigandhakaval/YogaDay/img8.jpg";
 import SYogaDay9 from "@/assets/images/gallery/srigandhakaval/YogaDay/img9.jpg";
 import SYogaDay10 from "@/assets/images/gallery/srigandhakaval/YogaDay/img10.jpg";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import img1 from "@/assets/images/cultural/01. Ramayanotsavam.jpg";
 import img2 from "@/assets/images/cultural/02. Gita Jayanti.jpg";
 import img3 from "@/assets/images/cultural/03. Guru Charana Pooja.jpg";
@@ -238,73 +220,73 @@ const ullalActivities = [
     id: 1,
     title: "Ramayanotsavam",
     image: img1,
-    images: [URamayanotsavam1, URamayanotsavam2, URamayanotsavam3, URamayanotsavam4, URamayanotsavam5, URamayanotsavam6, URamayanotsavam7, URamayanotsavam8, URamayanotsavam9, URamayanotsavam10], // Replace with actual event images
-    description:
-      "A celebration of the epic Ramayana through cultural performances and storytelling.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    images: [URamayanotsavam1, URamayanotsavam2, URamayanotsavam3, URamayanotsavam4, URamayanotsavam5, URamayanotsavam6, URamayanotsavam7, URamayanotsavam8, URamayanotsavam9, URamayanotsavam10],
+    description: "A celebration of the epic Ramayana through cultural performances and storytelling.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 2,
     title: "Gita Jayanti",
     image: img2,
     images: [UGitaJayanti1, UGitaJayanti2, UGitaJayanti3, UGitaJayanti4, UGitaJayanti5, UGitaJayanti6, UGitaJayanti7, UGitaJayanti8, UGitaJayanti9, UGitaJayanti10],
-    description:
-      "Commemorating the sacred Bhagavad Gita through recitations and spiritual discussions.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Commemorating the sacred Bhagavad Gita through recitations and spiritual discussions.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 3,
     title: "Guru Charana Pooja",
     image: img3,
     images: [UGuruCharanaPooja1, UGuruCharanaPooja2, UGuruCharanaPooja3, UGuruCharanaPooja4, UGuruCharanaPooja5, UGuruCharanaPooja6, UGuruCharanaPooja7, UGuruCharanaPooja8, UGuruCharanaPooja9, UGuruCharanaPooja10],
-    description:
-      "A traditional ceremony honoring teachers and their invaluable guidance.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "A traditional ceremony honoring teachers and their invaluable guidance.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 4,
     title: "Baala kauthukam",
     image: img4,
     images: [UBaalaKautukam1, UBaalaKautukam2, UBaalaKautukam3, UBaalaKautukam4, UBaalaKautukam5, UBaalaKautukam6, UBaalaKautukam7, UBaalaKautukam8, UBaalaKautukam9, UBaalaKautukam10],
-    description:
-      "A joyful children's festival celebrating creativity and talent.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "A joyful children's festival celebrating creativity and talent.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 5,
     title: "Jnanatarang",
     image: img5,
     images: [UJnanatarang1, UJnanatarang2, UJnanatarang3, UJnanatarang4, UJnanatarang5, UJnanatarang6, UJnanatarang7, UJnanatarang8, UJnanatarang9, UJnanatarang10],
-    description:
-      "An intellectual event promoting knowledge sharing and academic excellence.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "An intellectual event promoting knowledge sharing and academic excellence.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 6,
     title: "Market Day",
     image: img6,
     images: [UMarketDay1, UMarketDay2, UMarketDay3, UMarketDay4, UMarketDay5, UMarketDay6, UMarketDay7, UMarketDay8, UMarketDay9, UMarketDay10],
-    description:
-      "Students learn entrepreneurship through organizing and participating in a market.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Students learn entrepreneurship through organizing and participating in a market.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 7,
     title: "Bhashaavali",
     image: img7,
     images: [UBhashaavali1, UBhashaavali2, UBhashaavali3, UBhashaavali4, UBhashaavali5, UBhashaavali6, UBhashaavali7, UBhashaavali8, UBhashaavali9, UBhashaavali10],
-    description:
-      "A celebration of languages promoting multilingual skills and cultural diversity.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "A celebration of languages promoting multilingual skills and cultural diversity.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 8,
     title: "Montessori Observation",
     image: img8,
     images: [UMontessoriObservation1, UMontessoriObservation2, UMontessoriObservation3, UMontessoriObservation4, UMontessoriObservation5, UMontessoriObservation6, UMontessoriObservation7, UMontessoriObservation8, UMontessoriObservation9, UMontessoriObservation10],
-    description:
-      "Showcasing the Montessori methodology in practice for parents and educators.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Showcasing the Montessori methodology in practice for parents and educators.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   }
 ];
 
@@ -314,44 +296,45 @@ const srigandhkavalActivities = [
     title: "Guru Poornima",
     image: img9,
     images: [SGuruPoornima1, SGuruPoornima2, SGuruPoornima3, SGuruPoornima4, SGuruPoornima5, SGuruPoornima6, SGuruPoornima7, SGuruPoornima8, SGuruPoornima9, SGuruPoornima10],
-    description:
-      "A sacred day dedicated to honoring teachers and spiritual guides.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "A sacred day dedicated to honoring teachers and spiritual guides.",
+    videoUrl: "https://www.youtube.com/embed/x7TWTfPSMYc",
+    videoDisabled: false
   },
   {
     id: 2,
     title: "Ganeshostova",
     image: img10,
     images: [SGaneshostova1, SGaneshostova2, SGaneshostova3, SGaneshostova4, SGaneshostova5, SGaneshostova6, SGaneshostova7, SGaneshostova8, SGaneshostova9, SGaneshostova10],
-    description:
-      "Celebrating Lord Ganesha through prayers, music, and cultural programs.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Celebrating Lord Ganesha through prayers, music, and cultural programs.",
+    videoUrl: "https://www.youtube.com/embed/T0MvJYbd01s",
+    videoDisabled: false
   },
   {
     id: 3,
-    title: "Yoga Day",
-    image: img11,
-    images: [SYogaDay1, SYogaDay2, SYogaDay3, SYogaDay4, SYogaDay5, SYogaDay6, SYogaDay7, SYogaDay8, SYogaDay9, SYogaDay10],
-    description:
-      "Promoting holistic wellness through yoga practices and mindfulness.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    id: 4,
     title: "Independence Day",
     image: img12,
     images: [SIndependenceDay1, SIndependenceDay2, SIndependenceDay3, SIndependenceDay4, SIndependenceDay5, SIndependenceDay6, SIndependenceDay7, SIndependenceDay8, SIndependenceDay9, SIndependenceDay10],
-    description:
-      "Patriotic celebrations commemorating India's independence and heritage.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Patriotic celebrations commemorating India's independence and heritage.",
+    videoUrl: "https://www.youtube.com/embed/v3uHbojsC7E",
+    videoDisabled: false
   },
   {
-    id: 5,
+    id: 4,
     title: "Karnataka Rajyothsava",
     image: img13,
     images: [SKarnatakaRajyothsava1, SKarnatakaRajyothsava2, SKarnatakaRajyothsava3, SKarnatakaRajyothsava4, SKarnatakaRajyothsava5, SKarnatakaRajyothsava6, SKarnatakaRajyothsava7, SKarnatakaRajyothsava8, SKarnatakaRajyothsava9, SKarnatakaRajyothsava10],
     description: "Honoring the rich culture and formation of Karnataka state.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed/V6L70fZdr24",
+    videoDisabled: false
+  },
+   {
+    id: 5,
+    title: "Yoga Day",
+    image: img11,
+    images: [SYogaDay1, SYogaDay2, SYogaDay3, SYogaDay4, SYogaDay5, SYogaDay6, SYogaDay7, SYogaDay8, SYogaDay9, SYogaDay10],
+    description: "Promoting holistic wellness through yoga practices and mindfulness.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 6,
@@ -359,16 +342,17 @@ const srigandhkavalActivities = [
     image: img14,
     images: [SInvestitureCeremony1, SInvestitureCeremony2, SInvestitureCeremony3, SInvestitureCeremony4, SInvestitureCeremony5, SInvestitureCeremony6, SInvestitureCeremony7, SInvestitureCeremony8, SInvestitureCeremony9, SInvestitureCeremony10],
     description: "Formal installation of student leaders and representatives.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 7,
     title: "Deepothsavam",
     image: img15,
     images: [SDeepothsavam1, SDeepothsavam2, SDeepothsavam3, SDeepothsavam4, SDeepothsavam5, SDeepothsavam6, SDeepothsavam7, SDeepothsavam8, SDeepothsavam9, SDeepothsavam10],
-    description:
-      "Festival of lights celebrating the triumph of good over evil.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    description: "Festival of lights celebrating the triumph of good over evil.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   },
   {
     id: 8,
@@ -376,16 +360,18 @@ const srigandhkavalActivities = [
     image: img16,
     images: [SEnvironmentDay1, SEnvironmentDay2, SEnvironmentDay3, SEnvironmentDay4, SEnvironmentDay5, SEnvironmentDay6, SEnvironmentDay7, SEnvironmentDay8, SEnvironmentDay9],
     description: "Promoting environmental awareness and sustainable practices.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoDisabled: true
   }
 ];
 
 const videoActivities = [
-  ...ullalActivities.map((activity) => ({ ...activity, branch: "ullal" })),
+  
   ...srigandhkavalActivities.map((activity) => ({
     ...activity,
     branch: "srigandhkaval"
-  }))
+  })), 
+  ...ullalActivities.map((activity) => ({ ...activity, branch: "ullal" })),
 ];
 
 // Animation variants
@@ -646,7 +632,7 @@ const GalleryMain = () => {
                     }
                     toggleExpand={toggleCardExpand}
                     showVideo={false}
-                    videoDisabled={true}
+                    videoDisabled={activity.videoDisabled}
                   />
                 ))
               : videoActivities.map((activity) => (
@@ -659,7 +645,7 @@ const GalleryMain = () => {
                     }
                     toggleExpand={toggleCardExpand}
                     showVideo={true}
-                    videoDisabled={true}
+                    videoDisabled={activity.videoDisabled}
                   />
                 ))}
           </motion.div>
