@@ -163,13 +163,13 @@ const Schedule = () => {
           <div className="space-y-8" data-aos="fade-right">
             <span className="text-white inline-block px-4 py-2 bg-yellow-200/80 text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm bg-av">Academic Year 2025 - 2026</span>
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
-              Begin Your Child's Journey at
+              Begin Your Child&apos;s Journey at
               <span className="block text-avorange relative">
                 Agasthya Vidyanikethan
                 <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-yellow-400 rounded-full" />
               </span>
             </h3>
-            <p className="text-lg text-white/90 max-w-xl drop-shadow-md">We're thrilled to welcome your child to our community! Complete the form to start their educational adventure with us.</p>
+            <p className="text-lg text-white/90 max-w-xl drop-shadow-md">We&apos;re thrilled to welcome your child to our community! Complete the form to start their educational adventure with us.</p>
           </div>
 
           <div className="bg-white/95 p-8 rounded-2xl shadow-xl transform lg:-translate-y-12 border border-gray-100/50 backdrop-blur-md" data-aos="fade-left">
@@ -177,7 +177,7 @@ const Schedule = () => {
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Child's Full Name <span className="text-red-600">*</span></label>
+                    <label className="text-sm font-medium text-blue-800">Child&apos;s Full Name <span className="text-red-600">*</span></label>
                     <input type="text" name="childName" value={formData.childName} onChange={handleChange} required placeholder="Full Name in CAPITAL" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
@@ -191,25 +191,25 @@ const Schedule = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Father's Name <span className="text-red-600">*</span></label>
+                    <label className="text-sm font-medium text-blue-800">Father&apos;s Name <span className="text-red-600">*</span></label>
                     <input type="text" name="fatherName" value={formData.fatherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Mother's Name <span className="text-red-600">*</span></label>
+                    <label className="text-sm font-medium text-blue-800">Mother&apos;s Name <span className="text-red-600">*</span></label>
                     <input type="text" name="motherName" value={formData.motherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Father's Contact <span className="text-red-600">*</span></label>
+                    <label className="text-sm font-medium text-blue-800">Father&apos;s Contact <span className="text-red-600">*</span></label>
                     <input type="text" name="fatherContact" value={formData.fatherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Mother's Contact</label>
+                    <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact</label>
                     <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Parent's Email</label>
+                    <label className="text-sm font-medium text-blue-800">Parent&apos;s Email</label>
                     <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
