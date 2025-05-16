@@ -40,7 +40,7 @@ const AnnouncementContent = () => {
             </svg>
           </div>
           <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          Never miss a beat with the ATOMS Announcements section. From holiday notices and exam alerts to competition updates and new activity launches, every school communication reaches you instantly. Now, you can monitor your child&apos;s performance over time and spot areas where they may need a little extra help, all from the comfort of your home. As a parent, this means you&apos;re always informed and can prepare your child well in advance. It&apos;s your school&apos;s news board, modernized, simplified, and made for today&apos;s busy families. 
+          Never miss a beat with the ATOMS Announcements section. From holiday notices and exam alerts to competition updates and new activity launches, every school communication reaches you instantly. Now, you can monitor your child&apos;s performance over time and spot areas where they may need a little extra help, all from the comfort of your home. As a parent, this means you&apos;re always informed and can prepare your child well in advance. It&apos;s your school&apos;s news board, modernized, simplified, and made for today&apos;s busy families.  
           </p>
           {/* Curved line below the paragraph */}
           

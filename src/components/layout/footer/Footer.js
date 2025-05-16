@@ -1,32 +1,32 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logoImage from "@/assets/images/logo/logo_2.png";
+import logoImage from "@/assets/images/logo/logo_5.png";
 
 const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-school-grey text-white pt-16 pb-8 relative overflow-hidden"
+      className="bg-av text-white pt-16 pb-8 relative overflow-hidden"
     >
       {/* Subtle background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#F0F4F5] to-[#F0F4F5] opacity-80 z-0"></div>
+      <div className="absolute inset-0 bg-av  text-white opacity-80 z-0"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* School Info */}
           <div data-aos="fade-up">
             <Link
               href="/"
-              className="inline-block mb-6 transition-transform hover:scale-105"
+              className="inline-block mb-6"
             >
               <Image
                 src={logoImage}
                 alt="Agasthya Vidyanikethan"
                 placeholder="blur"
-                className="w-40 lg:w-48"
+                className=""
               />
             </Link>
-            <p className="text-[#000008] mb-6 text-[16px] md:text-center leading-tight font-medium">
+            <p className="mb-6 text-[16px] md:text-center leading-tight font-medium">
                 Educating the Future and <br/>
                 Nurturing our Culture at<br/>
               <span
@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="flex space-x-4 md:justify-center md:mt-10">
               <a
                 href="https://www.facebook.com/@AgasthyaVidyaniketan/"
-                className="text-black hover:text-school-orange transition-colors duration-300"
+                className=" hover:text-school-orange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/agasthyavidyanikethan/"
-                className="text-black hover:text-school-orange transition-colors duration-300"
+                className=" hover:text-school-orange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://in.linkedin.com/company/agasthya-vidyanikethan"
-                className="text-black hover:text-school-orange transition-colors duration-300"
+                className=" hover:text-school-orange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const Footer = () => {
               <a
                 href="https://www.youtube.com/@agasthyavidyanikethan6692"
                 target="_blank"
-                className="text-black hover:text-school-orange transition-colors duration-300"
+                className=" hover:text-school-orange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/schedule"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Schedule
                 </Link>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about-us/our-Leaders/founder"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   About Us
                 </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/nep"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   NEP
                 </Link>
@@ -126,7 +126,7 @@ const Footer = () => {
               {/* <li>
                 <Link
                   href="#"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Help (FAQ)
                 </Link>
@@ -134,7 +134,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Contact Us
                 </Link>
@@ -142,7 +142,7 @@ const Footer = () => {
               {/* <li>
                 <Link
                   href="/contact-us"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Our Locations
                 </Link>
@@ -150,7 +150,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/policy/tnc"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Terms & Conditions
                 </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/policy/privacy"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   Privacy Policy
                 </Link>
@@ -171,7 +171,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-6 text-school-orange">
               Reach Us
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4">             
               <li className="flex items-start space-x-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,14 +182,12 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <div>
-                  <p className="text-[#000008] font-medium">
+                  <p className=" font-medium">
                     Agasthya Vidyanikethan
                   </p>
-                  <p className="text-[#000008] font-medium">
-                    Srigandhakaval Branch
-                  </p>
-                  <p className="text-[#000008]">9880906633 | 9972342144</p>
-                  <p className="text-[#000008]">info@av.school</p>
+                  <p className=" font-medium">Ullal Branch</p>
+                  <p className=" ">7760776098 | 7760776046</p>
+                  <p className="">info@av.school</p>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
@@ -202,12 +200,14 @@ const Footer = () => {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <div>
-                  <p className="text-[#000008] font-medium">
+                  <p className=" font-medium">
                     Agasthya Vidyanikethan
                   </p>
-                  <p className="text-[#000008] font-medium">Ullal Branch</p>
-                  <p className="text-[#000008] ">7760776098 | 7760776046</p>
-                  <p className="text-[#000008]">info@av.school</p>
+                  <p className=" font-medium">
+                    Srigandhakaval Branch
+                  </p>
+                  <p className="">9880906633 | 9972342144</p>
+                  <p className="">info@av.school</p>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
@@ -221,15 +221,15 @@ const Footer = () => {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 <div>
-                  <p className="text-[#000008] font-medium">More Info:</p>
+                  <p className=" font-medium">More Info:</p>
                   <a
-                    className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                    className=" hover:text-school-orange transition-colors duration-300"
                     href="mailto:admissions@av.school"
                   >
                     admissions@av.school
                   </a>
                   <a
-                    className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                    className=" hover:text-school-orange transition-colors duration-300"
                     href="mailto:career@av.school"
                   >
                     career@av.school
@@ -260,7 +260,7 @@ const Footer = () => {
                 </svg>
                 <a
                   href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   # 1566, &apos;D&apos; Group Layout, 60 ft. Road, Near 2nd
                   Water Tank, Srigandhakaval, Bengaluru - 560091.
@@ -282,7 +282,7 @@ const Footer = () => {
                 </svg>
                 <a
                   href="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
-                  className="text-[#000008] hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-school-orange transition-colors duration-300"
                 >
                   #170/3, 6th block, Sir M. Vishweshwaraiah Layout,
                   Ullal Ring road, Bengaluru-560110
@@ -293,21 +293,21 @@ const Footer = () => {
         </div>
 
         {/* Copyright Section */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-[#000008] text-sm mb-4 md:mb-0">
+        <div className="border-t text-gray-400 pt-8">
+          <div className="flex flex-col md:flex-row justify-between text-gray-400 items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Agasthya Vidyanikethan. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a
                 href="/policy/tnc"
-                className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
+                className=" hover:text-avorange text-sm transition-colors duration-300"
               >
                 Terms & Conditions
               </a>
               <a
                 href="/policy/privacy"
-                className="text-[#000008] hover:text-avorange text-sm transition-colors duration-300"
+                className=" hover:text-avorange text-sm transition-colors duration-300"
               >
                 Privacy Policy
               </a>

@@ -63,7 +63,6 @@ const DashboardContent = () => {
 
           <p className="mt-6 text-md md:text-lg text-gray-600 text-justify leading-relaxed">
           Think of the ATOMS Dashboard as your daily briefing room. It brings all the important updates and tasks related to your child. From daily assignments and announcements to events, everything will be right at your fingertips. As a parent, you can glance at today&apos;s tasks, check upcoming deadlines, monitor key activities, and track your child&apos;s progress easily in real time. No more wondering what&apos;s due tomorrow or missing out on important updates, you&apos;ll always be one step ahead, ready to support and encourage your child each day.
-
           </p>
 
           {/* Stats section */}

@@ -42,7 +42,7 @@ const ExamsContent = () => {
           Get exam-ready with all the details in one place!
           </p>
           <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">        
-            In the Exams section, you can view your test schedules, syllabus details, exam dates, and even results. No more confusion about timings or subjects. Parents can track readiness, review performance, and step in with timely support when it&apos;s needed most. No more confusion or last-minute scrambling, knowing you have all the exam information handy, so you can focus more on studying and less on searching.
+          In the Exams section, you can view your test schedules, syllabus details, exam dates, and even results. No more confusion about timings or subjects. Parents can track readiness, review performance, and step in with timely support when it&apos;s needed most. No more confusion or last-minute scrambling, knowing you have all the exam information handy, so you can focus more on studying and less on searching.
           </p>
           
         </div>

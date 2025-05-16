@@ -41,70 +41,91 @@ export async function POST(req) {
   //   <p>Best regards,<br/>Agasthya Vidhyanikethan</p>
   // `;
 
-  const studentEmailTemplate = (fatherName, motherName, childName, date, selectedTime, address, phone, email, link) => `
-<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td align="center">
-      <img src=" https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747049003/logo_1_fqzip3.png"
-           style="max-width: 600px; width: 60%; height: auto; display: block;" 
-           alt="Logo" />
-    </td>
-  </tr>
-</table>
-
-  <h2>Dear ${fatherName} and ${motherName}</h2>
-
-  <p>Thank you!</p>
-  <p>We appreciate your interest in AV School for <strong>${childName}</strong>'s education. We're delighted to be part of your school selection process.</p>
-
-  <p><strong>Your campus visit is confirmed for:</strong></p>
-  <ul>
-    <li>📅 <strong>Date:</strong> ${date}</li>
-    <li>⏰ <strong>Time:</strong> ${selectedTime}</li>
-    <li>📍 <strong>Location:</strong><a href="${link}">${address}</a></li>
-  </ul>
-
-  <p>Upon arrival, our welcoming staff will greet you at our reception area.</p>
-
-  <p>
-    For a comprehensive experience, we have designed a structured visit to showcase how Agasthya Vidyaniketan's distinctive learning environment helps <strong>${childName}</strong> grow with confidence and succeed both in school and beyond.
-  </p>
-
-  <p><strong>Your Exclusive Campus Experience Includes:</strong></p>
-  <ul>
-    <li>✅ Classroom Tour - Witness our innovative learning spaces in action</li>
-    <li>✅ Meet Our Teachers - Brief interactions with our highly qualified & experienced educators</li>
-    <li>✅ Teaching Methodologies - Observe our unique educational approach</li>
-    <li>✅ Personalized Q&A Session - Address your specific questions/concerns about <strong>${childName}</strong>'s education</li>
-  </ul>
-
-  <p>
-    Need to adjust your appointment or have pre-visit questions?<br/>
-    Our dedicated admissions team is standing by at <strong>${phone}</strong> or <a href="mailto:${email}">${email}</a>.
-  </p>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-  <tr>
-    <td align="center">
-      <img src="https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747045900/email-image_r4gn4t.jpg"
-           style="max-width: 600px; width: 100%; height: auto; display: block;" 
-           alt="Logo" />
-    </td>
-  </tr>
-  </table>
-  <p>
-    We look forward to welcoming your family to AV School on <strong>${date}</strong> and sharing how our educational approach can support <strong>${childName}</strong>'s development.
-  </p>
-
-  <p>With warm anticipation,<br/><strong>The Admissions Team<br/>AV School</strong></p>
-
-  <p>
-    📍 <a href="${link}">${address}</a><br/>
-    📞 ${phone}<br/>
-    📧 <a href="mailto:${email}">${email}</a><br/>
-    🌐 <a href="https://www.av.school">https://www.av.school</a>
-  </p>
-`;
-
+  const studentEmailTemplate = (
+    fatherName,
+    motherName,
+    childName,
+    date,
+    selectedTime,
+    address,
+    phone,
+    email,
+    link
+  ) => `
+    <div style="font-family: Arial, sans-serif; color: #333; padding: 5px; border-radius: 8px; margin: auto;">
+     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="left" style="padding: 10px;">
+          <table width="200" height="100" cellspacing="0" cellpadding="0" border="0" style="background-image: url('https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747049003/logo_1_fqzip3.png'); background-size: contain; background-repeat: no-repeat; background-position: left;">
+            <tr><td>&nbsp;</td></tr>
+          </table>
+        </td>
+      </tr>
+     </table>
+      <h2 style="color: #222;">Dear ${fatherName} and ${motherName},</h2>
+  
+      <p style="text-align: justify;">
+        Thank you for confirming your campus visit to <strong>Agasthya Vidyaniketan</strong> as a potential learning home for <strong>${childName}</strong>. 
+        We look forward to welcoming you on campus and introducing you to our core values, unique educational approach, experienced and dedicated teachers, 
+        and holistic spaces that define our school community.
+      </p>
+  
+      <p><strong>Your visit has been scheduled as follows:</strong></p>
+      <ul style="list-style: none; padding-left: 0;">
+        <li>📅 <strong>Date:</strong> ${date}</li>
+        <li>⏰ <strong>Time:</strong> ${selectedTime}</li>
+        <li>📍 <strong>Location:</strong> <a href="${link}" style="color: #0066cc;">${address}</a></li>
+      </ul>
+  
+      <h3 style="margin-top: 25px; color: #444;">What to Expect During Your Visit</h3>
+      <p style="text-align: justify;">
+        We’ve curated a guided experience to help you explore what makes AV School a nurturing and future-ready learning environment for <strong>${childName}</strong>:
+      </p>
+      <ul style="padding-left: 20px;">
+        <li>✅ Classroom Walkthrough</li>
+        <li>✅ Faculty Interactions</li>
+        <li>✅ Academic Philosophy</li>
+        <li>✅ Q&A Sessions</li>
+      </ul>
+  
+      <p style="text-align: justify;">
+        At Agasthya Vidyaniketan, we are dedicated to empowering every student with the knowledge, skills, and values needed to thrive in a future-focused world. 
+        We encourage you to come prepared with any questions or topics you’d like to discuss to make the most of your visit.
+      </p>
+  
+      <p style="text-align: justify;">
+        Need to adjust your appointment or have pre-visit questions?
+        Feel free to reach out to our admissions team at <strong>${phone}</strong> or <a href="mailto:${email}" style="color: #0066cc;">${email}</a>.
+      </p>
+  
+      <!-- Bottom image with table for compatibility -->
+      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td align="center" style="background-image: url('https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747384275/AV_sj12ct.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 300px;">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+  
+      <p style="text-align: justify;">
+        We look forward to welcoming your family to AV School on <strong>${date}</strong> and sharing how our educational approach can support <strong>${childName}</strong>'s development.
+      </p>
+  
+      <p style="margin-top: 30px;">
+        With warm anticipation,<br/>
+        <strong>Team AV School</strong>
+      </p>
+  
+      <p style="line-height: 1.6; font-size: 14px;">
+        📍 <a href="${link}" style="color: #0066cc;">${address}</a><br/>
+        📞 ${phone}<br/>
+        📧 <a href="mailto:${email}" style="color: #0066cc;">${email}</a><br/>
+        🌐 <a href="https://www.av.school" style="color: #0066cc;">https://www.av.school</a>
+      </p>
+    </div>
+  `;
+  
+  
 
   const schoolEmailTemplate = `
     <h2>New Student Visit Scheduled</h2>
@@ -144,7 +165,7 @@ export async function POST(req) {
       const info1 = await transporter.sendMail({
         from: '"Agasthya Vidhyanikethan" <info@av.school>', // updated to school email
         to: parentEmail,
-        subject: `Your AV School Visit Confirmed: ${date}, ${selectedTime}`,
+        subject: `Campus Visit Confirmed — See You on ${date}, ${selectedTime}`,
         html: studentEmailTemplate(fatherName, motherName, childName, date, selectedTime, address, phone, email, link),
       });
     }    

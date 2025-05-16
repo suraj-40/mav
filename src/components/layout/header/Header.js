@@ -28,11 +28,11 @@ const Header = () => {
     <header>
       <div>
         {/* header top */}
-        {!(isHome2 || isHome2Dark) && (
-          <div className="hidden lg:block">
+        
+          <div className="block">
             <HeaderTop />
           </div>
-        )}
+        
         {/* navbar */}
         <Navbar />
         {/* mobile menu */}

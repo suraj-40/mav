@@ -42,9 +42,8 @@ const SettingsContent = () => {
           Make the ATOMS portal work just the way you like it!
           </p>
           <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-            In Settings, parents can customize how and when they receive updates — from instant announcements to exam reminders. Manage security features, update passwords, and control your notification preferences, so you always get the information that matters most, delivered how you like it. Safe, secure, and personalized for your convenience.
-          </p>
-          
+          In Settings, parents can customize how and when they receive updates — from instant announcements to exam reminders. Manage security features, update passwords, and control your notification preferences, so you always get the information that matters most, delivered how you like it. Safe, secure, and personalized for your convenience.
+          </p>          
         </div>
         <div
           className="w-full lg:w-1/2"

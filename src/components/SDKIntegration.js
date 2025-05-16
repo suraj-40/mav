@@ -84,7 +84,7 @@ const SDKIntegration = ({ lmsDomain, subdomain }) => {
   return (
     <>
       <iframe
-        className="iframe"
+        className="iframe z-99"
         id="iframe"
         style={{
           width: "100vw",

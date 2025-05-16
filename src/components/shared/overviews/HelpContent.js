@@ -42,7 +42,7 @@ const HelpContent = () => {
           Need a hand?
           </p>
           <p className="mt-3 text-md md:text-lg text-gray-600 leading-relaxed">
-            The Help section is a go-to place whenever you have a question or face a problem while using the ATOMS portal. Whether it&apos;s about logging in, forgetting the password, checking courses, or finding exam details, our support team is just a click away. As a parent, you can rely on quick, friendly assistance to keep your ATOMS experience smooth, simple, and worry-free          
+          The Help section is a go-to place whenever you have a question or face a problem while using the ATOMS portal. Whether it&apos;s about logging in, forgetting the password, checking courses, or finding exam details, our support team is just a click away. As a parent, you can rely on quick, friendly assistance to keep your ATOMS experience smooth, simple, and worry-free.          
           </p>          
         </div>
         <div

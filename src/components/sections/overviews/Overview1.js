@@ -87,7 +87,7 @@ const Overview = () => {
       )
     },
     {
-      name: "My Courses",
+      name: "My Subjects",
       content: <MyCourseContent />,
       icon: (
         <svg

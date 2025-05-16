@@ -87,6 +87,7 @@ const ScheduleForm = () => {
       const [response] = await Promise.all([
         axios.post("/api/registration", payload),
         axios.post("/api/ScheduleGoogleSheet", payload),
+        // axios.post("/api/WhatsappSchedule", payload)
       ]);
 
       if (response) {
@@ -173,6 +174,16 @@ const ScheduleForm = () => {
         </div>
       ) : !open ? (
         <form className="space-y-6" onSubmit={handleSubmit}>
+          <div className="mb-4 mt-10 md:mt-5">
+                <span className="text-av relative text-lg md:text-4xl leading-6">
+                  Register to{" "}
+                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-av"></span>
+                </span>
+                <span className="text-avorange relative text-lg md:text-4xl">
+                  Schedule Campus Visit
+                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-gradient-to-r from-av via-avorange to-avorange"></span>
+                </span>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="space-y-1">
               <label className="text-sm font-medium text-blue-800">
@@ -387,6 +398,16 @@ const ScheduleForm = () => {
           className="space-y-6 px-4 md:px-0 flex flex-col items-center"
           onSubmit={handlesubmitDate}
         >
+          <div className="mb-4 mt-10 md:mt-5">
+                <span className="text-av relative text-lg md:text-4xl leading-6">
+                  Register to{" "}
+                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-av"></span>
+                </span>
+                <span className="text-avorange relative text-lg md:text-4xl">
+                  Schedule Campus Visit
+                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-gradient-to-r from-av via-avorange to-avorange"></span>
+                </span>
+          </div>
           <p className="text-lg font-medium text-center">
             Choose a date and time to schedule your visit to the school
           </p>

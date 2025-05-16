@@ -10,11 +10,11 @@ import Av25 from "@/assets/images/av1/img8.jpg";
 import Av26 from "@/assets/images/av1/img9.jpg";
 import Av27 from "@/assets/images/av1/img2.jpg";
 import Av28 from "@/assets/images/av1/img5.jpg";
-import Av29 from "@/assets/images/av1/img7.jpg";
-
+import Av29 from "@/assets/images/av1/img1.jpg";
+import Av30 from "@/assets/images/av1/img7.jpg";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
 
-const images = [Av21, Av23, Av22, Av24, Av25, Av26, Av27, Av28, Av29];
+const images = [Av21,  Av29, Av23, Av22, Av24, Av25, Av26, Av27, Av28, Av30];
 
 const OverviewUnit2 = () => {
   const [showFullText, setShowFullText] = useState(false);
@@ -43,7 +43,7 @@ const OverviewUnit2 = () => {
         if (prev) {
           extraTextRef.current?.scrollIntoView({ behavior: "smooth" });
         } else {
-          window.scrollBy({ top: -1400, behavior: "smooth" }); // Custom scroll-up
+          window.scrollBy({ top: -1000, behavior: "smooth" }); // Custom scroll-up
         }
       }, 100);
       return newState;
@@ -134,21 +134,21 @@ const OverviewUnit2 = () => {
         <div className="space-y-6">
           <div className="space-y-4">
             <div className="leading-relaxed text-base">
-            Founded in 2010, Agasthya Vidyaniketan&apos;s Srigandhakaval branch has been a proud cradle of culture, creativity, and academic excellence. Here, students don&apos;t just study — they perform, create, compete, and evolve into confident individuals who carry their culture and skills with pride. As our longest-standing branch, Srigandhakaval continues to raise young minds who are ready to shine in every sphere — academic, artistic, and beyond. For us, education isn&apos;t a routine — it&apos;s an awakening. Here, curiosity isn&apos;t sparked, it catches fire. Resilience isn&apos;t taught, it&apos;s built in the moments students take the stage, solve the challenge, or create something uniquely theirs. Learning steps out of books and into action — on the chessboard, in the science fair, through theatre performances, and in every space where children discover not just answers, but their own power.
+            <b>Founded in 2012,</b> Agasthya Vidyanikethan&apos;s Srigandhakaval branch has been a proud cradle of academic excellence, creativity, and culture. Here, students don&apos;t just study — they perform, create, compete, and evolve into confident individuals who carry their culture and skills with pride. As our longest-standing branch, Srigandhakaval continues to raise young minds who are ready to shine in every sphere — academic, co-curricular, and beyond. For us, education isn&apos;t a routine — it&apos;s an awakening. Here, resilience isn&apos;t taught, it&apos;s built in the moments students take the stage, solve the challenge, or create something uniquely theirs. Learning steps out of books and into action — on the chessboard, in the science fair, through theatre performances, and in every space where children discover not just answers, but their own power.
             </div>
 
             {showFullText && (
               <div ref={extraTextRef}>
                   <div className="bg-gray-50 text-gray-800 rounded-lg mt-5 p-6  shadow-inner border border-gray-200 text-md" > 
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
-                  Skills Are Honed and Stages Are Owned </div>
+                  Skills Are Honed and Stages Are Owned</div>
                   Students don&apos;t just participate — they take the spotlight. From theatre skits that build fearless speakers to chess matches that sharpen young strategists, every activity is designed to craft real-world skills. Science labs turn curiosity into discovery, art & craft melas unleash hidden talents, and Olympiads and exhibitions challenge students to rise, compete, and conquer. Here, learning doesn&apos;t sit still — it moves, performs, and wins.
                   </div>
 
                   <div className="bg-gray-50   text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200 text-md"> 
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
                   Educators dedicated to Individual Growth </div>
-                  With seasoned educators who spot strengths others might miss, every child in Agasthya Vidyaniketan receives guidance that feels personal and purposeful. Lessons turn into lively conversations, doubts are turned into discoveries, and hidden talents quietly grow into proud skills. Whether it&apos;s helping a shy learner find their voice or polishing a budding writer&apos;s flair, our teachers craft every child&apos;s path with care, patience, and insight.
+                  With seasoned educators who spot strengths others might miss, every child in Agasthya Vidyanikethan receives guidance that feels personal and purposeful. Lessons turn into lively conversations, doubts are turned into discoveries, and hidden talents quietly grow into proud skills. Whether it&apos;s helping a shy learner find their voice or polishing a budding writer&apos;s flair, our teachers craft every child&apos;s path with care, patience, and insight.
                   </div>
                   
 
@@ -157,24 +157,12 @@ const OverviewUnit2 = () => {
                   Top-Notch Facilities for our Champions </div>
                   Our campus is more than just a place to learn—it&apos;s a space designed to inspire, support, and prepare students for the future. With state-of-the-art labs, well-organized transport, and a peaceful, disciplined environment, every corner is tailored to foster growth. Yoga sessions instill mindfulness and resilience, while cutting-edge computer science programs empower students with the skills they need for a rapidly changing world. This is where tradition blends seamlessly with innovation, and each day sets the stage for tomorrow&apos;s success.
                   </div>
-
                   <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200">
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
                   A Tradition of Excellence and Holistic Growth
                   </div>
-                  Growth at <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyaniketan </span> starts with a culture that anchors, discipline that shapes, and academics that sharpen every child&apos;s mind. Here, potential is awakened through experiences that build both knowledge and character. Every child is guided to think critically, perform better, and carry their culture with pride, excelling in studies while growing into a confident and capable individual. Academic strength is deeply intertwined with character building, ensuring that your child is ready for every challenge and opportunity that comes their way. With every lesson mastered, every event embraced, and every experience lived, they step forward stronger in knowledge, richer in values, and ready to shine. With every subject learned, every event participated in, and every experience embraced, they move forward with greater knowledge, deeper values, and the readiness to succeed.
-                  <div className="mt-3">In this setting, every AV student:</div>
-                  <ul className="mb-3 list-disc pl-10 space-y-2 text-gray-800 text-base leading-relaxed">
-                    <li>Gains knowledge through strong academics</li>
-                    <li>Builds character through lived values</li>
-                    <li>Grows confidence through sports and activities</li>
-                    <li>Getting ready to succeed in every field they choose</li>
-                  </ul>
-                  <div>Because at AV, success is not a destination but a journey of continuous growth and achievement
-                    Now, don&apos;t you want your child to excel in every aspect of life?
-                  Enroll at <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyaniketan </span> and give them a foundation built on tradition, talent, and academic excellence.
-                  </div>
-                  </div>             
+                  Growth at Agasthya Vidyanikethan starts with a culture that anchors, discipline that shapes, and academics that sharpen every child&apos;s mind. Here, potential is awakened through experiences that build both knowledge and character. Every child is guided to think critically, perform better, and carry their culture with pride, excelling in studies while growing into a confident and capable individual. Academic strength is deeply intertwined with character building, ensuring that your child is ready for every challenge and opportunity that comes their way. With every lesson mastered, every event embraced, and every experience lived, they step forward stronger in knowledge, richer in values, and ready to shine. With every subject learned, every event participated in, and every experience embraced, they move forward with greater knowledge, deeper values, and the readiness to succeed.
+                  </div>                           
               </div>
             )}
 

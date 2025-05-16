@@ -15,31 +15,31 @@ const Overview = () => {
     {
       name: "Edutainment Videos",
       content: "Learn at your own pace with videos that educate and entertain!",
-      videoUrl: "https://www.youtube.com/embed/XOjp43I98Q4"
+      videoUrl: "https://www.youtube.com/embed/6vX17JjPWR0"
     },
     {
       name: "eBooks",
       content:
         "Quick, colorful, and comprehensive guides for lasting knowledge!",
-      videoUrl: "https://www.youtube.com/embed/GUgMc4v5t8Y"
+      videoUrl: "https://www.youtube.com/embed/rY4xLF4mEeU"
     },
     {
       name: "True or False Questions",
       content:
         "Challenge yourself with quick decisions—three chances to succeed!",
-      videoUrl: "https://www.youtube.com/embed/kGKZqyscgVc"
+      videoUrl: "https://www.youtube.com/embed/mv7E5rZ5Jcg"
     },
     {
       name: "MCQ Questions",
       content:
         "Test your skills, boost your score, and level up your learning!",
-      videoUrl: "https://www.youtube.com/embed/eeCkcK44llI"
+      videoUrl: "https://www.youtube.com/embed/m0cy3tyKq4c"
     },
     {
-      name: "eLab",
+      name: "Fill in the Blanks",
       content:
-        "Code, practice, and perfect—your virtual playground for programming!",
-      videoUrl: "https://www.youtube.com/embed/WSDGLGmmsOs"
+        "Think, recall, and type it right—sharpen your memory one blank at a time!",
+      videoUrl: "https://www.youtube.com/embed/_nS6hrMr0PY"
     }
   ];
 
@@ -80,11 +80,9 @@ const Overview = () => {
                 }}
               >
                 <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-                 A Glimpse of Your Self-Paced Skill Journey
+                 A Glimpse of AV-ATOMS Learning Platform
                 </span>
-              </motion.h1>
-
-              
+              </motion.h1>              
 
               <motion.div
                 className="flex justify-center "

@@ -1,5 +1,5 @@
 "use client";
-import RegistrationForm from "@/components/sections/registrations/ScheduleForm";
+import ScheduleForm from "@/components/sections/registrations/ScheduleForm";
 import { useState, useEffect } from "react";
 
 const PopupModal = () => {
@@ -32,18 +32,7 @@ const PopupModal = () => {
             </button>
 
             <div className="p-4 sm:p-6">
-              <div className="mb-4 mt-10 md:mt-5">
-                <span className="text-av relative text-lg md:text-4xl leading-6">
-                  Register to{" "}
-                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-av"></span>
-                </span>
-                <span className="text-avorange relative text-lg md:text-4xl">
-                  Schedule Campus Visit
-                  <span className="absolute left-0 right-0 bottom-0 h-1 bg-gradient-to-r from-av via-avorange to-avorange"></span>
-                </span>
-              </div>
-
-              <RegistrationForm />
+              <ScheduleForm />
             </div>
           </div>
         </div>
