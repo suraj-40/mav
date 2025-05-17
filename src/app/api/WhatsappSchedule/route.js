@@ -38,10 +38,10 @@ export async function POST(req) {
 
         try {
             const response = await axios.post("https://backend.aisensy.com/campaign/t1/api/v2", {
-                "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZGY4ZWM5MzY4ZDQ2NmJkZTYwNmY4NiIsIm5hbWUiOiJBQkMgLSBUZWNobm9sb2d5IFRyYWluaW5nICYgVXBza2lsbGluZyIsImFwcE5hbWUiOiJBaVNlbnN5IiwiY2xpZW50SWQiOiI2N2RmOGVjOTM2OGQ0NjZiZGU2MDZmODEiLCJhY3RpdmVQbGFuIjoiRlJFRV9GT1JFVkVSIiwiaWF0IjoxNzQyNzA0MzI5fQ.o6Jhif5O1BFjt6NYKt2rCYRgeZhbvw1w1b_YPT5h1N8",
+                "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWVkZDhlNTExNzcxM2UwMTM2NWYwZSIsIm5hbWUiOiJBZ2FzdGh5YSBWaWR5YW5pa2V0aGFuIDMyNTMiLCJhcHBOYW1lIjoiQWlTZW5zeSIsImNsaWVudElkIjoiNjgxZWRkOGU1MTE3NzEzZTAxMzY1ZjA3IiwiYWN0aXZlUGxhbiI6IkZSRUVfRk9SRVZFUiIsImlhdCI6MTc0Njg1MzI2Mn0.vvC0Da8bu60G3siBVF3Gzk-vUqlgWafh4um8Ld9ulRg",
                 "campaignName": "schedulecampusvisit_v1",
                 "userName": "digitalmarketing@av.school",
-                "destination": fatherContact, 
+                "destination": `91${fatherContact.trim()}`, 
                 "templateParams": [parentName, childName, dateTime, address, youtube, brochure, phone],
             });
 

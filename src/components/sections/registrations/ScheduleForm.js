@@ -87,7 +87,7 @@ const ScheduleForm = () => {
       const [response] = await Promise.all([
         axios.post("/api/registration", payload),
         axios.post("/api/ScheduleGoogleSheet", payload),
-        // axios.post("/api/WhatsappSchedule", payload)
+        axios.post("/api/WhatsappSchedule", payload)
       ]);
 
       if (response) {
