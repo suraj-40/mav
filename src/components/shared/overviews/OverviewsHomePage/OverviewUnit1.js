@@ -10,7 +10,7 @@ import Av25 from "@/assets/images/av1/img8.jpg";
 import Av26 from "@/assets/images/av1/img9.jpg";
 import Av27 from "@/assets/images/av1/img2.jpg";
 import Av28 from "@/assets/images/av1/img5.jpg";
-import Av29 from "@/assets/images/av1/img1.jpg";
+import Av29 from "@/assets/images/av1/img1.png";
 import Av30 from "@/assets/images/av1/img7.jpg";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
 
