@@ -239,14 +239,6 @@ import SObservationClasses8 from "@/assets/images/gallery/srigandhakaval/Montess
 import SObservationClasses9 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img9.jpg";
 import SObservationClasses10 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img10.jpg";
 
-// Art and Craft Mela
-import SArtAndCraftMela1 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img1.png";
-import SArtAndCraftMela2 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img2.png";
-import SArtAndCraftMela3 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img3.png";
-import SArtAndCraftMela4 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img4.png";
-import SArtAndCraftMela5 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img5.png";
-
-
 // Ramayana theme
 import SRamayanaTheme1 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img1.jpg";
 import SRamayanaTheme2 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img2.jpg";
