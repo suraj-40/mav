@@ -4,214 +4,181 @@ import CulturalActivitiesHeader from "./CulturalActivitiesHeader";
 import { CulturalActivitiesTimeline } from "@/components/ui/CulturalActivitiesTimeline";
 import CulturalActivitySection from "./CulturalActivitySection";
 
+// Srigandhkaval Branch Image Imports
+// World Environment Day
+import SEnvironmentDay1 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img1.JPG";
+import SEnvironmentDay2 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img2.JPG";
+import SEnvironmentDay3 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img3.JPG";
+import SEnvironmentDay4 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img4.JPG";
+import SEnvironmentDay5 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img5.JPG";
+import SEnvironmentDay6 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img6.JPG";
+import SEnvironmentDay7 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img7.JPG";
+import SEnvironmentDay8 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img8.JPG";
 
-// ULLAL BRANCH
-// Gita Jayanti images
-import UGitajayanti1 from "@/assets/images/cultural/ullal/GitaJayanti/img1.jpg";
-import UGitajayanti2 from "@/assets/images/cultural/ullal/GitaJayanti/img2.jpg";  
-import UGitajayanti3 from "@/assets/images/cultural/ullal/GitaJayanti/img3.jpg";
-import UGitajayanti4 from "@/assets/images/cultural/ullal/GitaJayanti/img4.jpg";  
+// Investiture Ceremony
+import SInvestitureCeremony1 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img2.png";
+import SInvestitureCeremony3 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img3.png";
+import SInvestitureCeremony5 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img5.png";
+import SInvestitureCeremony7 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img7.png";
 
-// Baala Kauthukam images
-import UBaalkauthukam1 from "@/assets/images/cultural/ullal/BaalaKauthukam/img1.jpg";
-import UBaalkauthukam2 from "@/assets/images/cultural/ullal/BaalaKauthukam/img2.jpg";
-import UBaalkauthukam3 from "@/assets/images/cultural/ullal/BaalaKauthukam/img3.jpg";
-import UBaalkauthukam4 from "@/assets/images/cultural/ullal/BaalaKauthukam/img4.jpg";
+// International Yoga Day
+import SInternationalYogaDay1 from "@/assets/images/gallery/srigandhakaval/InternationalYogaDay/img1.png";
+import SInternationalYogaDay3 from "@/assets/images/gallery/srigandhakaval/InternationalYogaDay/img3.png";
+import SInternationalYogaDay5 from "@/assets/images/gallery/srigandhakaval/InternationalYogaDay/img5.png";
+import SInternationalYogaDay7 from "@/assets/images/gallery/srigandhakaval/InternationalYogaDay/img7.png";
 
-// Market Day images
-import UMarketday1 from "@/assets/images/cultural/ullal/MarketDay/img1.jpg";
-import UMarketday2 from "@/assets/images/cultural/ullal/MarketDay/img2.jpg";
-import UMarketday3 from "@/assets/images/cultural/ullal/MarketDay/img3.jpg";
-import UMarketday4 from "@/assets/images/cultural/ullal/MarketDay/img4.jpg";
+// Market Day
+import SMarketDay1 from "@/assets/images/gallery/srigandhakaval/MarketDay/img1.png";
+import SMarketDay3 from "@/assets/images/gallery/srigandhakaval/MarketDay/img3.png";
+import SMarketDay5 from "@/assets/images/gallery/srigandhakaval/MarketDay/img5.png";
+import SMarketDay7 from "@/assets/images/gallery/srigandhakaval/MarketDay/img7.png";
 
-// Guru Poornima images
-import UGurupoornima1 from "@/assets/images/cultural/ullal/GuruPoornima/img1.jpg";
-import UGurupoornima2 from "@/assets/images/cultural/ullal/GuruPoornima/img2.jpg";
-import UGurupoornima3 from "@/assets/images/cultural/ullal/GuruPoornima/img3.jpg";
-import UGurupoornima4 from "@/assets/images/cultural/ullal/GuruPoornima/img4.jpg";
+// Guru Purnima
+import SGuruPoornima1 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img1.png";
+import SGuruPoornima3 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img3.png";
+import SGuruPoornima5 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img5.png";
+import SGuruPoornima7 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img7.png";
 
-// Yoga Day images
-import UYogaday1 from "@/assets/images/cultural/ullal/YogaDay/img1.jpg";
-import UYogaday2 from "@/assets/images/cultural/ullal/YogaDay/img2.jpg";
-import UYogaday3 from "@/assets/images/cultural/ullal/YogaDay/img3.jpg";
-import UYogaday4 from "@/assets/images/cultural/ullal/YogaDay/img4.jpg";
+// Jungle Day
+import SJungleDay1 from "@/assets/images/gallery/srigandhakaval/JungleDay/img1.png";
+import SJungleDay3 from "@/assets/images/gallery/srigandhakaval/JungleDay/img3.png";
+import SJungleDay5 from "@/assets/images/gallery/srigandhakaval/JungleDay/img5.png";
+import SJungleDay7 from "@/assets/images/gallery/srigandhakaval/JungleDay/img7.png";
 
-// Investiture Ceremony images
-import UInvestitureceremony1 from "@/assets/images/cultural/ullal/InvestitureCeremony/img1.jpg";
-import UInvestitureceremony2 from "@/assets/images/cultural/ullal/InvestitureCeremony/img2.jpg";
-import UInvestitureceremony3 from "@/assets/images/cultural/ullal/InvestitureCeremony/img3.jpg";
-import UInvestitureceremony4 from "@/assets/images/cultural/ullal/InvestitureCeremony/img4.jpg";
+// Independence Day
+import SIndependenceDay1 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img1.png";
+import SIndependenceDay3 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img3.png";
+import SIndependenceDay5 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img5.png";
+import SIndependenceDay7 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img7.png";
 
-// Guru Charana Pooja images
-import UGurucharanapooja1 from "@/assets/images/cultural/ullal/GuruCharanaPooja/img1.jpg";
-import UGurucharanapooja2 from "@/assets/images/cultural/ullal/GuruCharanaPooja/img2.jpg";
-import UGurucharanapooja3 from "@/assets/images/cultural/ullal/GuruCharanaPooja/img3.jpg";
+// Krishna Janmastami
+import SKrishnaJanmastami1 from "@/assets/images/gallery/srigandhakaval/KrishnaJanmastami/img1.png";
+import SKrishnaJanmastami3 from "@/assets/images/gallery/srigandhakaval/KrishnaJanmastami/img3.png";
+import SKrishnaJanmastami5 from "@/assets/images/gallery/srigandhakaval/KrishnaJanmastami/img5.png";
+import SKrishnaJanmastami7 from "@/assets/images/gallery/srigandhakaval/KrishnaJanmastami/img7.png";
 
-// Srigandhkaval branch
-// Baala Kauthukam images
-import SBaalakauthukam1 from "@/assets/images/cultural/srigandhakaval/BaalaKauthukam/img1.jpg";
-import SBaalakauthukam2 from "@/assets/images/cultural/srigandhakaval/BaalaKauthukam/img2.jpg";
-import SBaalakauthukam3 from "@/assets/images/cultural/srigandhakaval/BaalaKauthukam/img3.jpg";
-import SBaalakauthukam4 from "@/assets/images/cultural/srigandhakaval/BaalaKauthukam/img4.jpg";
+// Jnana Tarang
+import SJnanaTarang1 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img1.png";
+import SJnanaTarang3 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img3.png";
+import SJnanaTarang5 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img5.png";
+import SJnanaTarang7 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img7.png";
 
-// Bhashaavali images
-import SBhashaavali1 from "@/assets/images/cultural/srigandhakaval/Bhashaavali/img1.jpg";
-import SBhashaavali2 from "@/assets/images/cultural/srigandhakaval/Bhashaavali/img2.jpg";
-import SBhashaavali3 from "@/assets/images/cultural/srigandhakaval/Bhashaavali/img3.jpg";
-import SBhashaavali4 from "@/assets/images/cultural/srigandhakaval/Bhashaavali/img4.jpg";
+// Ganesha Chaturti
+import SGaneshaChaturti1 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img1.png";
+import SGaneshaChaturti3 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img3.png";
+import SGaneshaChaturti5 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img5.png";
+import SGaneshaChaturti7 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img7.png";
 
-// Deepothsavam images
-import SDeepothsavam1 from "@/assets/images/cultural/srigandhakaval/Deepothsavam/img1.jpg";
-import SDeepothsavam2 from "@/assets/images/cultural/srigandhakaval/Deepothsavam/img2.jpg";
-import SDeepothsavam3 from "@/assets/images/cultural/srigandhakaval/Deepothsavam/img3.jpg";
-import SDeepothsavam4 from "@/assets/images/cultural/srigandhakaval/Deepothsavam/img4.jpg";
+// Hindi Diwas
+import SHindiDiwas1 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img1.png";
+import SHindiDiwas2 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img2.png";
+import SHindiDiwas3 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img3.png";
+import SHindiDiwas4 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img4.png";
 
-// Environment Day images
-import SEnvironmentday1 from "@/assets/images/cultural/srigandhakaval/EnvironmentDay/img1.jpg";
-import SEnvironmentday2 from "@/assets/images/cultural/srigandhakaval/EnvironmentDay/img2.jpg";
-import SEnvironmentday3 from "@/assets/images/cultural/srigandhakaval/EnvironmentDay/img3.jpg";
-import SEnvironmentday4 from "@/assets/images/cultural/srigandhakaval/EnvironmentDay/img4.jpg";
+// Dusshera Celebration
+import SDussehraCelebration1 from "@/assets/images/gallery/srigandhakaval/DussehraCelebration/img1.png";
+import SDussehraCelebration3 from "@/assets/images/gallery/srigandhakaval/DussehraCelebration/img3.png";
+import SDussehraCelebration5 from "@/assets/images/gallery/srigandhakaval/DussehraCelebration/img5.png";
+import SDussehraCelebration7 from "@/assets/images/gallery/srigandhakaval/DussehraCelebration/img7.png";
 
-// Ganeshotsava images
-import SGaneshotsava1 from "@/assets/images/cultural/srigandhakaval/Ganeshotsava/img1.jpg";
-import SGaneshotsava2 from "@/assets/images/cultural/srigandhakaval/Ganeshotsava/img2.jpg";
-import SGaneshotsava3 from "@/assets/images/cultural/srigandhakaval/Ganeshotsava/img3.jpg";
-import SGaneshotsava4 from "@/assets/images/cultural/srigandhakaval/Ganeshotsava/img4.jpg";
+// Sports Day
+import SSportsDay1 from "@/assets/images/gallery/srigandhakaval/Sports/img1.png";
+import SSportsDay3 from "@/assets/images/gallery/srigandhakaval/Sports/img3.png";
+import SSportsDay5 from "@/assets/images/gallery/srigandhakaval/Sports/img5.png";
+import SSportsDay7 from "@/assets/images/gallery/srigandhakaval/Sports/img7.png";
 
-// Gita Jayanti images
-import SGitajayanti1 from "@/assets/images/cultural/srigandhakaval/GitaJayanti/img1.jpg";
-import SGitajayanti2 from "@/assets/images/cultural/srigandhakaval/GitaJayanti/img2.jpg";
-import SGitajayanti3 from "@/assets/images/cultural/srigandhakaval/GitaJayanti/img3.jpg";
-import SGitajayanti4 from "@/assets/images/cultural/srigandhakaval/GitaJayanti/img4.jpg";
+// Deepavali
+import SDeepavali1 from "@/assets/images/gallery/srigandhakaval/Deepavali/img1.png";
+import SDeepavali3 from "@/assets/images/gallery/srigandhakaval/Deepavali/img3.png";
+import SDeepavali5 from "@/assets/images/gallery/srigandhakaval/Deepavali/img5.png";
+import SDeepavali7 from "@/assets/images/gallery/srigandhakaval/Deepavali/img7.png";
 
-// Guru Charana Pooja images
-import SGurucharanapooja1 from "@/assets/images/cultural/srigandhakaval/GuruCharanaPooja/img1.jpg";
-import SGurucharanapooja2 from "@/assets/images/cultural/srigandhakaval/GuruCharanaPooja/img2.jpg";
-import SGurucharanapooja3 from "@/assets/images/cultural/srigandhakaval/GuruCharanaPooja/img3.jpg";
-import SGurucharanapooja4 from "@/assets/images/cultural/srigandhakaval/GuruCharanaPooja/img4.jpg";
+// Kannada Rajyothsava
+import SKannadaRajyothsava1 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img1.png";
+import SKannadaRajyothsava3 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img3.png";
+import SKannadaRajyothsava5 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img5.png";
+import SKannadaRajyothsava7 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img7.png";
 
-// Guru Poornima images
-import SGurupoornima1 from "@/assets/images/cultural/srigandhakaval/GuruPoornima/img1.jpg";
-import SGurupoornima2 from "@/assets/images/cultural/srigandhakaval/GuruPoornima/img2.jpg";
-import SGurupoornima3 from "@/assets/images/cultural/srigandhakaval/GuruPoornima/img3.jpg";
-import SGurupoornima4 from "@/assets/images/cultural/srigandhakaval/GuruPoornima/img4.jpg";
+// Annual Day
+import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.JPG";
+import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
+import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.JPG";
+import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
 
-// Independence Day images
-import SIndependenceday1 from "@/assets/images/cultural/srigandhakaval/IndependenceDay/img1.jpg";
-import SIndependenceday2 from "@/assets/images/cultural/srigandhakaval/IndependenceDay/img2.jpg";
-import SIndependenceday3 from "@/assets/images/cultural/srigandhakaval/IndependenceDay/img3.jpg";
-import SIndependenceday4 from "@/assets/images/cultural/srigandhakaval/IndependenceDay/img4.jpg";
+// Gita Jayanti
+import SGitajayanti1 from "@/assets/images/gallery/srigandhakaval/GitaJayanti/img1.jpg";
+import SGitajayanti3 from "@/assets/images/gallery/srigandhakaval/GitaJayanti/img3.jpg";
+import SGitajayanti5 from "@/assets/images/gallery/srigandhakaval/GitaJayanti/img5.jpg";
+import SGitajayanti7 from "@/assets/images/gallery/srigandhakaval/GitaJayanti/img7.jpg";
 
-// Jnanatarang images
-import SJnanatarang1 from "@/assets/images/cultural/srigandhakaval/Jnanatarang/img1.jpg";
-import SJnanatarang2 from "@/assets/images/cultural/srigandhakaval/Jnanatarang/img2.jpg";
-import SJnanatarang3 from "@/assets/images/cultural/srigandhakaval/Jnanatarang/img3.jpg";
-import SJnanatarang4 from "@/assets/images/cultural/srigandhakaval/Jnanatarang/img4.jpg";
+// Observation Classes
+import SObservationClasses1 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img1.jpg";
+import SObservationClasses3 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img3.jpg";
+import SObservationClasses5 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img5.jpg";
+import SObservationClasses7 from "@/assets/images/gallery/srigandhakaval/MontessoriObservation/img7.jpg";
 
-// Karnataka Rajyothsava images
-import SKarnatakrajyothsava1 from "@/assets/images/cultural/srigandhakaval/KarnatakaRajyothsava/img1.jpg";
-import SKarnatakrajyothsava2 from "@/assets/images/cultural/srigandhakaval/KarnatakaRajyothsava/img2.jpg";
-import SKarnatakrajyothsava3 from "@/assets/images/cultural/srigandhakaval/KarnatakaRajyothsava/img3.jpg";
-import SKarnatakrajyothsava4 from "@/assets/images/cultural/srigandhakaval/KarnatakaRajyothsava/img4.jpg";
+// Art and Craft Mela
+import SArtAndCraftMela1 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img1.png";
+import SArtAndCraftMela2 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img2.png";
+import SArtAndCraftMela3 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img3.png";
+import SArtAndCraftMela4 from "@/assets/images/gallery/srigandhakaval/ArtAndCraftMela/img4.png";
 
-// Market Day images
-import SMarketday1 from "@/assets/images/cultural/srigandhakaval/MarketDay/img1.jpg";
-import SMarketday2 from "@/assets/images/cultural/srigandhakaval/MarketDay/img2.jpg";
-import SMarketday3 from "@/assets/images/cultural/srigandhakaval/MarketDay/img3.jpg";
-import SMarketday4 from "@/assets/images/cultural/srigandhakaval/MarketDay/img4.jpg";
+// Ramayana theme
+import SRamayanaTheme1 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img1.jpg";
+import SRamayanaTheme3 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img3.jpg";
+import SRamayanaTheme5 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img5.jpg";
+import SRamayanaTheme7 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img7.jpg";
 
-// Montessori Observation images
-import SMontessoriObservation1 from "@/assets/images/cultural/srigandhakaval/MontessoriObservation/img1.jpg";
-import SMontessoriObservation2 from "@/assets/images/cultural/srigandhakaval/MontessoriObservation/img2.jpg";
-import SMontessoriObservation3 from "@/assets/images/cultural/srigandhakaval/MontessoriObservation/img3.jpg";
-import SMontessoriObservation4 from "@/assets/images/cultural/srigandhakaval/MontessoriObservation/img4.jpg";
+// Ullal Branch Image Imports
+// Investiture Ceremony
+import UInvestitureCeremony1 from "@/assets/images/gallery/ullal/InvestitureCeremony/img1.png";
+import UInvestitureCeremony3 from "@/assets/images/gallery/ullal/InvestitureCeremony/img3.png";
+import UInvestitureCeremony5 from "@/assets/images/gallery/ullal/InvestitureCeremony/img5.png";
+import UInvestitureCeremony7 from "@/assets/images/gallery/ullal/InvestitureCeremony/img7.png";
 
-// Ramayana Utsavam images
-import SRamayanaUtsavam1 from "@/assets/images/cultural/srigandhakaval/Ramayanotsavam/img1.jpg";
-import SRamayanaUtsavam2 from "@/assets/images/cultural/srigandhakaval/Ramayanotsavam/img2.jpg";
-import SRamayanaUtsavam3 from "@/assets/images/cultural/srigandhakaval/Ramayanotsavam/img3.jpg";
-import SRamayanaUtsavam4 from "@/assets/images/cultural/srigandhakaval/Ramayanotsavam/img4.jpg";
+// Guru Poornima
+import UGuruPoornima1 from "@/assets/images/gallery/ullal/GuruPoornima/img1.png";
+import UGuruPoornima3 from "@/assets/images/gallery/ullal/GuruPoornima/img3.png";
+import UGuruPoornima5 from "@/assets/images/gallery/ullal/GuruPoornima/img5.png";
+import UGuruPoornima7 from "@/assets/images/gallery/ullal/GuruPoornima/img7.png";
 
-// Yoga Day images
-import SYogaday1 from "@/assets/images/cultural/srigandhakaval/YogaDay/img1.jpg";
-import SYogaday2 from "@/assets/images/cultural/srigandhakaval/YogaDay/img2.jpg";
-import SYogaday3 from "@/assets/images/cultural/srigandhakaval/YogaDay/img3.jpg";
-import SYogaday4 from "@/assets/images/cultural/srigandhakaval/YogaDay/img4.jpg";
+// Krishna Janmastami
+import UKrishnaJanmastami1 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img1.png";
+import UKrishnaJanmastami3 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img3.png";
+import UKrishnaJanmastami5 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img5.png";
+import UKrishnaJanmastami7 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img7.png";
 
+// Sports
+import USportsDay1 from "@/assets/images/gallery/ullal/Sports/img1.png";
+import USportsDay3 from "@/assets/images/gallery/ullal/Sports/img3.png";
+import USportsDay5 from "@//assets/images/gallery/ullal/Sports/img5.png";
+import USportsDay7 from "@/assets/images/gallery/ullal/Sports/img7.png";
 
-// Data for Ullal branch
-const ullalTimelineData = [
+// Gita Jayanti
+import UGitajayanti1 from "@/assets/images/gallery/ullal/GitaJayanti/img1.jpg";
+import UGitajayanti3 from "@/assets/images/gallery/ullal/GitaJayanti/img3.jpg";
+import UGitajayanti5 from "@/assets/images/gallery/ullal/GitaJayanti/img5.jpg";
+import UGitajayanti7 from "@/assets/images/gallery/ullal/GitaJayanti/img7.jpg";
+
+// Annual Day
+import UAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.JPG";
+import UAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
+import UAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.JPG";
+import UAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
+
+// Data for Srigandhkaval Branch
+const srigandhkavalTimelineData = [
   {
-    title: "Gita Jayanti",
+    title: "World Environment Day",
     content: (
       <CulturalActivitySection
-        activeTab="ullal"
+        activeTab="srigandhkaval"
         sectionIndex={0}
         activities={[
-          { id: 1, image: UGitajayanti1 },
-          { id: 2, image: UGitajayanti2 },
-          { id: 3, image: UGitajayanti3 },
-          { id: 4, image: UGitajayanti4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Baala Kauthukam",
-    content: (
-      <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={1}
-        activities={[
-          { id: 1, image: UBaalkauthukam1 },
-          { id: 2, image: UBaalkauthukam2 },
-          { id: 3, image: UBaalkauthukam3 },
-          { id: 4, image: UBaalkauthukam4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Market Day",
-    content: (
-      <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={3}
-        activities={[
-          { id: 1, image: UMarketday1 },
-          { id: 2, image: UMarketday2 },
-          { id: 3, image: UMarketday3 },
-          { id: 4, image: UMarketday4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Guru Poornima",
-    content: (
-      <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={3}
-        activities={[
-          { id: 1, image: UGurupoornima1 },
-          { id: 2, image: UGurupoornima2 },
-          { id: 3, image: UGurupoornima3 },
-          { id: 4, image: UGurupoornima4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Yoga Day",
-    content: (
-      <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={4}
-        activities={[
-          { id: 1, image: UYogaday1 },
-          { id: 2, image: UYogaday2 },
-          { id: 3, image: UYogaday3 },
-          { id: 4, image: UYogaday4 },
+          { id: 1, image: SEnvironmentDay1 },
+          { id: 2, image: SEnvironmentDay3 },
+          { id: 3, image: SEnvironmentDay5 },
+          { id: 4, image: SEnvironmentDay7 },
         ]}
       />
     ),
@@ -220,93 +187,28 @@ const ullalTimelineData = [
     title: "Investiture Ceremony",
     content: (
       <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={5}
-        activities={[
-          { id: 1, image: UInvestitureceremony1 },
-          { id: 2, image: UInvestitureceremony2 },
-          { id: 3, image: UInvestitureceremony3 },
-          { id: 4, image: UInvestitureceremony4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Guru Charana Pooja",
-    content: (
-      <CulturalActivitySection
-        activeTab="ullal"
-        sectionIndex={6}
-        activities={[
-          { id: 1, image: UGurucharanapooja1 },
-          { id: 2, image: UGurucharanapooja2 },
-          // { id: 3, image: UGurucharanapooja3 },
-          // { id: 4, image: UGurucharanapooja4 },
-        ]}
-      />
-    ),
-  },
-];
-
-// Data for Srigandhkaval branch
-const srigandhkavalTimelineData = [
-  
-  {
-    title: "Gita Jayanti",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={0}
-        activities={[
-          { id: 1, image: SGitajayanti1 },
-          { id: 2, image: SGitajayanti2 },
-          { id: 3, image: SGitajayanti3 },
-          { id: 4, image: SGitajayanti4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Guru Charana Pooja",
-    content: (
-      <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={1}
         activities={[
-          { id: 1, image: SGurucharanapooja1 },
-          { id: 2, image: SGurucharanapooja2 },
-          { id: 3, image: SGurucharanapooja3 },
-          { id: 4, image: SGurucharanapooja4 },
+          { id: 1, image: SInvestitureCeremony1 },
+          { id: 2, image: SInvestitureCeremony3 },
+          { id: 3, image: SInvestitureCeremony5 },
+          { id: 4, image: SInvestitureCeremony7 },
         ]}
       />
     ),
   },
   {
-    title: "Baala Kauthukam",
+    title: "International Yoga Day",
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={2}
         activities={[
-          { id: 1, image: SBaalakauthukam1 },
-          { id: 2, image: SBaalakauthukam2 },
-          { id: 3, image: SBaalakauthukam3 },
-          { id: 4, image: SBaalakauthukam4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Jnanatarang",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={3}
-        activities={[
-          { id: 1, image: SJnanatarang1 },
-          { id: 2, image: SJnanatarang2 },
-          { id: 3, image: SJnanatarang3 },
-          { id: 4, image: SJnanatarang4 },
+          { id: 1, image: SInternationalYogaDay1 },
+          { id: 2, image: SInternationalYogaDay3 },
+          { id: 3, image: SInternationalYogaDay5 },
+          { id: 4, image: SInternationalYogaDay7 },
         ]}
       />
     ),
@@ -316,102 +218,42 @@ const srigandhkavalTimelineData = [
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
-        sectionIndex={4}
+        sectionIndex={3}
         activities={[
-          { id: 1, image: SMarketday1 },
-          { id: 2, image: SMarketday2 },
-          { id: 3, image: SMarketday3 },
-          { id: 4, image: SMarketday4 },
+          { id: 1, image: SMarketDay1 },
+          { id: 2, image: SMarketDay3 },
+          { id: 3, image: SMarketDay5 },
+          { id: 4, image: SMarketDay7 },
         ]}
       />
     ),
   },
   {
-    title: "Bhashaavali",
+    title: "Guru Purnima",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={4}
+        activities={[
+          { id: 1, image: SGuruPoornima1 },
+          { id: 2, image: SGuruPoornima3 },
+          { id: 3, image: SGuruPoornima5 },
+          { id: 4, image: SGuruPoornima7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Jungle Day",
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={5}
         activities={[
-          { id: 1, image: SBhashaavali1 },
-          { id: 2, image: SBhashaavali2 },
-          { id: 3, image: SBhashaavali3 },
-          { id: 4, image: SBhashaavali4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Montessori Observation",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={6}
-        activities={[
-          { id: 1, image: SMontessoriObservation1 },
-          { id: 2, image: SMontessoriObservation2 },
-          { id: 3, image: SMontessoriObservation3 },
-          { id: 4, image: SMontessoriObservation4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Ramayana Utsavam",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={7}
-        activities={[
-          { id: 1, image: SRamayanaUtsavam1 },
-          { id: 2, image: SRamayanaUtsavam2 },
-          { id: 3, image: SRamayanaUtsavam3 },
-          { id: 4, image: SRamayanaUtsavam4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Guru Poornima",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={8}
-        activities={[
-          { id: 1, image: SGurupoornima1 },
-          { id: 2, image: SGurupoornima2 },
-          { id: 3, image: SGurupoornima3 },
-          { id: 4, image: SGurupoornima4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Ganeshotsava",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={9}
-        activities={[
-          { id: 1, image: SGaneshotsava1 },
-          { id: 2, image: SGaneshotsava2 },
-          { id: 3, image: SGaneshotsava3 },
-          { id: 4, image: SGaneshotsava4 },
-        ]}
-      />
-    ),
-  },
-  {
-    title: "Yoga Day",
-    content: (
-      <CulturalActivitySection
-        activeTab="srigandhkaval"
-        sectionIndex={10}
-        activities={[
-          { id: 1, image: SYogaday1 },
-          { id: 2, image: SYogaday2 },
-          { id: 3, image: SYogaday3 },
-          { id: 4, image: SYogaday4 },
+          { id: 1, image: SJungleDay1 },
+          { id: 2, image: SJungleDay3 },
+          { id: 3, image: SJungleDay5 },
+          { id: 4, image: SJungleDay7 },
         ]}
       />
     ),
@@ -421,62 +263,305 @@ const srigandhkavalTimelineData = [
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
-        sectionIndex={11}
+        sectionIndex={6}
         activities={[
-          { id: 1, image: SIndependenceday1 },
-          { id: 2, image: SIndependenceday2 },
-          { id: 3, image: SIndependenceday3 },
-          { id: 4, image: SIndependenceday4 },
+          { id: 1, image: SIndependenceDay1 },
+          { id: 2, image: SIndependenceDay3 },
+          { id: 3, image: SIndependenceDay5 },
+          { id: 4, image: SIndependenceDay7 },
         ]}
       />
     ),
   },
   {
-    title: "Karnataka Rajyothsava",
+    title: "Krishna Janmastami",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={7}
+        activities={[
+          { id: 1, image: SKrishnaJanmastami1 },
+          { id: 2, image: SKrishnaJanmastami3 },
+          { id: 3, image: SKrishnaJanmastami5 },
+          { id: 4, image: SKrishnaJanmastami7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Jnana Tarang",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={8}
+        activities={[
+          { id: 1, image: SJnanaTarang1 },
+          { id: 2, image: SJnanaTarang3 },
+          { id: 3, image: SJnanaTarang5 },
+          { id: 4, image: SJnanaTarang7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Ganesha Chaturti",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={9}
+        activities={[
+          { id: 1, image: SGaneshaChaturti1 },
+          { id: 2, image: SGaneshaChaturti3 },
+          { id: 3, image: SGaneshaChaturti5 },
+          { id: 4, image: SGaneshaChaturti7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Hindi Diwas",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={10}
+        activities={[
+          { id: 1, image: SHindiDiwas1 },
+          { id: 2, image: SHindiDiwas2 },
+          { id: 3, image: SHindiDiwas3 },
+          { id: 4, image: SHindiDiwas4 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Dusshera Celebration",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={11}
+        activities={[
+          { id: 1, image: SDussehraCelebration1 },
+          { id: 2, image: SDussehraCelebration3 },
+          { id: 3, image: SDussehraCelebration5 },
+          { id: 4, image: SDussehraCelebration7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Sports Day",
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={12}
         activities={[
-          { id: 1, image: SKarnatakrajyothsava1 },
-          { id: 2, image: SKarnatakrajyothsava2 },
-          { id: 3, image: SKarnatakrajyothsava3 },
-          { id: 4, image: SKarnatakrajyothsava4 },
+          { id: 1, image: SSportsDay1 },
+          { id: 2, image: SSportsDay3 },
+          { id: 3, image: SSportsDay5 },
+          { id: 4, image: SSportsDay7 },
         ]}
       />
     ),
   },
   {
-    title: "Deepothsavam",
+    title: "Deepavali",
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={13}
         activities={[
-          { id: 1, image: SDeepothsavam1 },
-          { id: 2, image: SDeepothsavam2 },
-          { id: 3, image: SDeepothsavam3 },
-          { id: 4, image: SDeepothsavam4 },
+          { id: 1, image: SDeepavali1 },
+          { id: 2, image: SDeepavali3 },
+          { id: 3, image: SDeepavali5 },
+          { id: 4, image: SDeepavali7 },
         ]}
       />
     ),
   },
   {
-    title: "Environment Day",
+    title: "Kannada Rajyothsava",
     content: (
       <CulturalActivitySection
         activeTab="srigandhkaval"
         sectionIndex={14}
         activities={[
-          { id: 1, image: SEnvironmentday1 },
-          { id: 2, image: SEnvironmentday2 },
-          { id: 3, image: SEnvironmentday3 },
-          { id: 4, image: SEnvironmentday4 },
+          { id: 1, image: SKannadaRajyothsava1 },
+          { id: 2, image: SKannadaRajyothsava3 },
+          { id: 3, image: SKannadaRajyothsava5 },
+          { id: 4, image: SKannadaRajyothsava7 },
         ]}
       />
     ),
   },
- 
+  {
+    title: "Annual Day",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={15}
+        activities={[
+          { id: 1, image: SAnnualDay1 },
+          { id: 2, image: SAnnualDay3 },
+          { id: 3, image: SAnnualDay5 },
+          { id: 4, image: SAnnualDay7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Gita Jayanti",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={16}
+        activities={[
+          { id: 1, image: SGitajayanti1 },
+          { id: 2, image: SGitajayanti3 },
+          { id: 3, image: SGitajayanti5 },
+          { id: 4, image: SGitajayanti7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Observation Classes",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={17}
+        activities={[
+          { id: 1, image: SObservationClasses1 },
+          { id: 2, image: SObservationClasses3 },
+          { id: 3, image: SObservationClasses5 },
+          { id: 4, image: SObservationClasses7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Art and Craft Mela",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={18}
+        activities={[
+          { id: 1, image: SArtAndCraftMela1 },
+          { id: 2, image: SArtAndCraftMela2 },
+          { id: 3, image: SArtAndCraftMela3 },
+          { id: 4, image: SArtAndCraftMela4 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Ramayana theme",
+    content: (
+      <CulturalActivitySection
+        activeTab="srigandhkaval"
+        sectionIndex={19}
+        activities={[
+          { id: 1, image: SRamayanaTheme1 },
+          { id: 2, image: SRamayanaTheme3 },
+          { id: 3, image: SRamayanaTheme5 },
+          { id: 4, image: SRamayanaTheme7 },
+        ]}
+      />
+    ),
+  },
+];
+
+// Data for Ullal Branch
+const ullalTimelineData = [
+  {
+    title: "Investiture Ceremony",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={0}
+        activities={[
+          { id: 1, image: UInvestitureCeremony1 },
+          { id: 2, image: UInvestitureCeremony3 },
+          { id: 3, image: UInvestitureCeremony5 },
+          { id: 4, image: UInvestitureCeremony7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Guru Poornima",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={1}
+        activities={[
+          { id: 1, image: UGuruPoornima1 },
+          { id: 2, image: UGuruPoornima3 },
+          { id: 3, image: UGuruPoornima5 },
+          { id: 4, image: UGuruPoornima7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Krishna Janmastami",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={2}
+        activities={[
+          { id: 1, image: UKrishnaJanmastami1 },
+          { id: 2, image: UKrishnaJanmastami3 },
+          { id: 3, image: UKrishnaJanmastami5 },
+          { id: 4, image: UKrishnaJanmastami7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Sports",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={3}
+        activities={[
+          { id: 1, image: USportsDay1 },
+          { id: 2, image: USportsDay3 },
+          { id: 3, image: USportsDay5 },
+          { id: 4, image: USportsDay7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Gita Jayanti",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={4}
+        activities={[
+          { id: 1, image: UGitajayanti1 },
+          { id: 2, image: UGitajayanti3 },
+          { id: 3, image: UGitajayanti5 },
+          { id: 4, image: UGitajayanti7 },
+        ]}
+      />
+    ),
+  },
+  {
+    title: "Annual Day",
+    content: (
+      <CulturalActivitySection
+        activeTab="ullal"
+        sectionIndex={5}
+        activities={[
+          { id: 1, image: UAnnualDay1 },
+          { id: 2, image: UAnnualDay3 },
+          { id: 3, image: UAnnualDay5 },
+          { id: 4, image: UAnnualDay7 },
+        ]}
+      />
+    ),
+  },
 ];
 
 const CulturalActivitiesMain = () => {

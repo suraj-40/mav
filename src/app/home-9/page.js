@@ -5,7 +5,7 @@ import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 export const metadata = {
   title: "Agasthya Vidhyanikethan",
   description: "School Website",
-  icon: "./favicon.ico"
+  icon: ""
 };
 const Home_9 = () => {
   return (

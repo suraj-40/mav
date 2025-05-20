@@ -38,7 +38,7 @@ export const montserrat = Montserrat({
 export const metadata = {
   title: "Agasthya Vidhya",
   description: "Home description",
-  icons: "./favicon2.ico",
+  icon: "../../public/favicon.ico",
 };
 
 export default function RootLayout({ children }) {
