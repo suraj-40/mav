@@ -29,7 +29,7 @@ const Header = () => {
       <div>
         {/* header top */}
         
-          <div className="block">
+          <div className="hidden md:block">
             <HeaderTop />
           </div>
         

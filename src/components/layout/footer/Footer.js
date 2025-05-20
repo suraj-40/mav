@@ -1,23 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logoImage from "@/assets/images/logo/logo_5.png";
+import logoImage from "@/assets/images/logo/logo_31.png";
 
 const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-av text-white pt-16 pb-8 relative overflow-hidden"
+      className="bg-av text-white pt-10  relative overflow-hidden"
     >
       {/* Subtle background gradient overlay */}
       <div className="absolute inset-0 bg-av  text-white opacity-80 z-0"></div>
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
           {/* School Info */}
           <div data-aos="fade-up">
             <Link
               href="/"
-              className="inline-block mb-6"
+              className="inline-block w-[60%] md:w-full mb-6"
             >
               <Image
                 src={logoImage}
@@ -30,7 +30,7 @@ const Footer = () => {
                 Educating the Future and <br/>
                 Nurturing our Culture at<br/>
               <span
-                className="text-school-orange text-2xl font-samarkan"
+                className="text-avorange text-2xl font-samarkan"
               >
                 Agasthya Vidyanikethan
               </span>
@@ -38,11 +38,11 @@ const Footer = () => {
             <div className="flex space-x-4 md:justify-center md:mt-10">
               <a
                 href="https://www.facebook.com/@AgasthyaVidyaniketan/"
-                className=" hover:text-school-orange transition-colors duration-300"
+                className="text-black bg-white hover:text-white p-[10px] rounded-md hover:bg-avorange transition-colors  duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
+                  className="w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -51,11 +51,11 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.instagram.com/agasthyavidyanikethan/"
-                className=" hover:text-school-orange transition-colors duration-300"
+                className=" text-black bg-white hover:text-white p-[10px] rounded-md hover:bg-avorange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
+                  className="w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -64,11 +64,11 @@ const Footer = () => {
               </a>
               <a
                 href="https://in.linkedin.com/company/agasthya-vidyanikethan"
-                className=" hover:text-school-orange transition-colors duration-300"
+                className=" text-black bg-white hover:text-white p-[10px] rounded-md hover:bg-avorange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
+                  className="w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -78,11 +78,11 @@ const Footer = () => {
               <a
                 href="https://www.youtube.com/@agasthyavidyanikethan6692"
                 target="_blank"
-                className=" hover:text-school-orange transition-colors duration-300"
+                className="text-black bg-white hover:text-white p-[10px] rounded-md hover:bg-avorange transition-colors duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7"
+                  className="w-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -94,14 +94,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div data-aos="fade-up" data-aos-delay="100">
-            <h3 className="text-xl font-semibold mb-6 text-school-orange">
+            <h3 className="text-size-22 text-white  font-bold pl-2 before:w-0.5 relative before:h-[21px] before:bg-avorange before:absolute before:bottom-[5px] before:left-0 leading-30px mb-25px">
               Quick Links
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/schedule"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Schedule
                 </Link>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about-us/our-Leaders/founder"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   About Us
                 </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/nep"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   NEP
                 </Link>
@@ -126,7 +126,7 @@ const Footer = () => {
               {/* <li>
                 <Link
                   href="#"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Help (FAQ)
                 </Link>
@@ -134,7 +134,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact-us"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Contact Us
                 </Link>
@@ -142,7 +142,7 @@ const Footer = () => {
               {/* <li>
                 <Link
                   href="/contact-us"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Our Locations
                 </Link>
@@ -150,7 +150,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/policy/tnc"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Terms & Conditions
                 </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/policy/privacy"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   Privacy Policy
                 </Link>
@@ -168,19 +168,21 @@ const Footer = () => {
 
           {/* Contact Us */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <h3 className="text-xl font-semibold mb-6 text-school-orange">
+            <h3 className="text-size-22 text-white  font-bold pl-2 before:w-0.5 relative before:h-[21px] before:bg-avorange before:absolute before:bottom-[5px] before:left-0 leading-30px mb-25px">
               Reach Us
             </h3>
             <ul className="space-y-4">             
-              <li className="flex items-start space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-1 text-school-orange"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
+              <li className="flex items-start space-x-1">
+              <div className=" p-2 rounded hover:bg-[#FF5722] cursor-pointer inline-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+              </div>
                 <div>
                   <p className=" font-medium">
                     Agasthya Vidyanikethan
@@ -190,15 +192,18 @@ const Footer = () => {
                   <p className="">info@av.school</p>
                 </div>
               </li>
-              <li className="flex items-start space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-1 text-school-orange"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg>
+              <li className="flex items-start space-x-1">
+              <div className=" p-2 rounded hover:bg-[#FF5722] cursor-pointer inline-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+              </div>
+
                 <div>
                   <p className=" font-medium">
                     Agasthya Vidyanikethan
@@ -210,26 +215,30 @@ const Footer = () => {
                   <p className="">info@av.school</p>
                 </div>
               </li>
-              <li className="flex items-start space-x-3">
-                <svg
+              <li className="flex items-start space-x-1">
+              <div className=" p-2 rounded hover:bg-[#FF5722] cursor-pointer inline-block">
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-1 text-school-orange"
+                  className="h-4 w-4"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
+              </div>
+                
+
                 <div>
                   <p className=" font-medium">More Info:</p>
                   <a
-                    className=" hover:text-school-orange transition-colors duration-300"
+                    className=" hover:text-avorange transition-colors duration-300"
                     href="mailto:admissions@av.school"
                   >
                     admissions@av.school
                   </a>
                   <a
-                    className=" hover:text-school-orange transition-colors duration-300"
+                    className=" hover:text-avorange transition-colors duration-300"
                     href="mailto:career@av.school"
                   >
                     career@av.school
@@ -241,14 +250,15 @@ const Footer = () => {
 
           {/* Locations */}
           <div data-aos="fade-up" data-aos-delay="300">
-            <h3 className="text-xl font-semibold mb-6 text-school-orange">
+            <h3 className="text-size-22 text-white  font-bold pl-2 before:w-0.5 relative before:h-[21px] before:bg-avorange before:absolute before:bottom-[5px] before:left-0 leading-30px mb-25px">
               Locate Us
             </h3>
             <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <svg
+              <li className="flex items-start space-x-1">
+              <div className=" p-2 rounded hover:bg-[#FF5722] cursor-pointer inline-block">
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-1 text-school-orange"
+                  className="w-4"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -258,19 +268,22 @@ const Footer = () => {
                     clipRule="evenodd"
                   />
                 </svg>
+              </div>
+                
                 <a
                   href="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   # 1566, &apos;D&apos; Group Layout, 60 ft. Road, Near 2nd
                   Water Tank, Srigandhakaval, Bengaluru - 560091.
                   Landmark: Nagarabhavi Ring Road             
                 </a>
               </li>
-              <li className="flex items-start space-x-3">
-                <svg
+              <li className="flex items-start space-x-1">
+              <div className=" p-2 rounded hover:bg-[#FF5722] cursor-pointer inline-block">
+              <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mt-1 text-school-orange"
+                  className="w-4"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -280,9 +293,11 @@ const Footer = () => {
                     clipRule="evenodd"
                   />
                 </svg>
+              </div>
+              
                 <a
                   href="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
-                  className=" hover:text-school-orange transition-colors duration-300"
+                  className=" hover:text-avorange transition-colors duration-300"
                 >
                   #170/3, 6th block, Sir M. Vishweshwaraiah Layout,
                   Ullal Ring road, Bengaluru-560110
@@ -301,13 +316,13 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a
                 href="/policy/tnc"
-                className=" hover:text-avorange text-sm transition-colors duration-300"
+                className=" hover:text-white text-sm transition-colors duration-300"
               >
                 Terms & Conditions
               </a>
               <a
                 href="/policy/privacy"
-                className=" hover:text-avorange text-sm transition-colors duration-300"
+                className=" hover:text-white text-sm transition-colors duration-300"
               >
                 Privacy Policy
               </a>
