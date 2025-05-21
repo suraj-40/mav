@@ -27,19 +27,19 @@ const Overview = () => {
       name: "True or False Questions",
       content:
         "Challenge yourself with quick decisions—three chances to succeed!",
-      videoUrl: "https://www.youtube.com/embed/mv7E5rZ5Jcg"
+      videoUrl: "https://www.youtube.com/embed/bPJZhrbbDNY"
     },
     {
       name: "MCQ Questions",
       content:
         "Test your skills, boost your score, and level up your learning!",
-      videoUrl: "https://www.youtube.com/embed/m0cy3tyKq4c"
+      videoUrl: "https://www.youtube.com/embed/jJ6Bf4AbpYQ"
     },
     {
       name: "Fill in the Blanks",
       content:
         "Think, recall, and type it right—sharpen your memory one blank at a time!",
-      videoUrl: "https://www.youtube.com/embed/_nS6hrMr0PY"
+      videoUrl: "https://www.youtube.com/embed/WzzGxaaLXlQ"
     }
   ];
 

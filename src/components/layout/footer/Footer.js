@@ -184,7 +184,7 @@ const Footer = () => {
                   </svg>
               </div>
                 <div>
-                  <p className=" font-medium">
+                  <p className=" font-medium text-avorange font-bold">
                     Agasthya Vidyanikethan
                   </p>
                   <p className=" font-medium">Ullal Branch</p>
@@ -205,7 +205,7 @@ const Footer = () => {
               </div>
 
                 <div>
-                  <p className=" font-medium">
+                  <p className=" font-medium text-avorange font-bold">
                     Agasthya Vidyanikethan
                   </p>
                   <p className=" font-medium">

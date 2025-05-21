@@ -4,18 +4,19 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Av21 from "@/assets/images/av2/img1.jpg";
 import Av22 from "@/assets/images/av2/img11.jpg";
-// import Av23 from "@/assets/images/av2/img4.jpg";
+import Av23 from "@/assets/images/av2/img4.jpg";
 import Av24 from "@/assets/images/av2/img2.jpg";
 import Av25 from "@/assets/images/av2/img6.jpg";
 import Av26 from "@/assets/images/av2/img9.jpg";
 import Av27 from "@/assets/images/av2/img10.jpg";
 import Av28 from "@/assets/images/av2/img3.jpg";
 import Av29 from "@/assets/images/av2/img8.jpg";
-// import Av210 from "@/assets/images/av2/img5.jpg";
+import Av210 from "@/assets/images/av2/img5.jpg";
 import Av211 from "@/assets/images/av2/img7.jpg";
+import Av212 from "@/assets/images/av2/img12.jpg";
 import PopupVideo from "@/components/shared/popup/PopupVideo";
 
-const images = [Av21, Av22, Av24, Av25, Av26, Av27, Av28, Av29, Av211];
+const images = [Av21, Av22, Av23, Av24, Av25, Av26, Av27, Av28, Av29, Av210, Av211, Av212];
 
 const OverviewUnit2 = () => {
   const [showFullText, setShowFullText] = useState(false);
