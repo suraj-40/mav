@@ -20,7 +20,8 @@ export async function POST(req) {
         selectedTime,
     } = body;
     
-    const parentName=fatherName+" and "+motherName;
+    const parentName1=fatherName+" and "+motherName;
+    const parentName2=motherName+" and "+fatherName;
     const dateTime=date+" at "+selectedTime.slice(0, 8);
     let phone,address,youtube,brochure;
 
@@ -37,12 +38,23 @@ export async function POST(req) {
       }
 
         try {
+
+            if(motherContact){
+                const response = await axios.post("https://backend.aisensy.com/campaign/t1/api/v2", {
+                "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWVkZDhlNTExNzcxM2UwMTM2NWYwZSIsIm5hbWUiOiJBZ2FzdGh5YSBWaWR5YW5pa2V0aGFuIDMyNTMiLCJhcHBOYW1lIjoiQWlTZW5zeSIsImNsaWVudElkIjoiNjgxZWRkOGU1MTE3NzEzZTAxMzY1ZjA3IiwiYWN0aXZlUGxhbiI6IkZSRUVfRk9SRVZFUiIsImlhdCI6MTc0Njg1MzI2Mn0.vvC0Da8bu60G3siBVF3Gzk-vUqlgWafh4um8Ld9ulRg",
+                "campaignName": "visitconfirmation_v2",
+                "userName": "digitalmarketing@av.school",
+                "destination": `91${motherContact.trim()}`, 
+                "templateParams": [parentName2, childName, dateTime, address, youtube, brochure, phone],
+            });
+
+            }
             const response = await axios.post("https://backend.aisensy.com/campaign/t1/api/v2", {
                 "apiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MWVkZDhlNTExNzcxM2UwMTM2NWYwZSIsIm5hbWUiOiJBZ2FzdGh5YSBWaWR5YW5pa2V0aGFuIDMyNTMiLCJhcHBOYW1lIjoiQWlTZW5zeSIsImNsaWVudElkIjoiNjgxZWRkOGU1MTE3NzEzZTAxMzY1ZjA3IiwiYWN0aXZlUGxhbiI6IkZSRUVfRk9SRVZFUiIsImlhdCI6MTc0Njg1MzI2Mn0.vvC0Da8bu60G3siBVF3Gzk-vUqlgWafh4um8Ld9ulRg",
-                "campaignName": "schedulecampusvisit_v1",
+                "campaignName": "visitconfirmation_v2",
                 "userName": "digitalmarketing@av.school",
                 "destination": `91${fatherContact.trim()}`, 
-                "templateParams": [parentName, childName, dateTime, address, youtube, brochure, phone],
+                "templateParams": [parentName1, childName, dateTime, address, youtube, brochure, phone],
             });
 
             return new Response(

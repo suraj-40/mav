@@ -28,8 +28,8 @@ export async function POST(req) {
     port: 587,
     secure: false,
     auth: {
-      user: "sharath.kr@abc.courses",    //change personal email to school email
-      pass: "vzot jaxd ogln ofid",       //change app password
+      user: "info@av.school",    //change personal email to school email
+      pass: "hhqf sqgv ryan lxsg",       //change app password
     },
   });
 
@@ -171,8 +171,8 @@ export async function POST(req) {
     }    
 
     const info2 = await transporter.sendMail({
-      from: '"Agasthya Vidhyanikethan" <sharath.kr@abc.courses>',  //change personal email to school email
-      to: "sharath.kr@abc.courses",
+      from: '"Agasthya Vidhyanikethan" <info@av.school>',  //change personal email to school email
+      to: "info@av.school",
       subject: "New Student Visit Scheduled",
       html: schoolEmailTemplate,
     });

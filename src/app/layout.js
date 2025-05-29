@@ -36,7 +36,7 @@ export const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Agasthya Vidhya",
+  title: "Agasthya Vidyanikethan",
   description: "Home description",
   icon: "../../public/favicon.ico",
 };
@@ -44,17 +44,51 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>
+      <head>
+        {/* Google Analytics 4 - gtag.js */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQS3R5FHY"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3ZQS3R5FHY');
+            `,
+          }}
+        />
+
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5HPJJP29');`,
+          }}
+        />
+      </head>
       <body
         className={`relative leading-[1.8] bg-bodyBg dark:bg-bodyBg-dark z-0 ${inter.className}`}
       >
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5HPJJP29"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
         <PreloaderPrimary />
         <ToastContainer position="top-right" autoClose={3000} />
-        <PopupWrapper/>
+        <PopupWrapper />
         {children}
         <div>
           <FixedShadow />
           <FixedShadow align={"right"} />
-
         </div>
       </body>
     </html>
