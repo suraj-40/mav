@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import overviewImage from "@/assets/images/about/AV-1.png";
+import overviewImage from "@/assets/images/about/AV-2.png";
 
 
 
