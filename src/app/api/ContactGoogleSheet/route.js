@@ -13,16 +13,27 @@ export async function POST(req) {
 
     try {
        
-        const endpoint ="https://script.google.com/macros/s/AKfycbxKA79JfB1LIGBmPOqZ5Przk6L8VaC-OqiGAOUYTEk9Vw8BcuNxe_gWrnIOAUf9CBWY/exec"
+        const endpoint ="https://script.google.com/macros/s/AKfycbyMmW5Xx-DWwXUMr4Ve2B-Kwexw300Aik3Y2maRUCtc3Bc_GuSOuLWRkxP-Yd4EOmY2xA/exec"
              
-       const response =await axios.post(endpoint, {
-            firstName,
-            lastName,
-            phone,
-            query,
-            message
-       }) 
-     console.log(response.data);
+        const now = new Date();
+
+        const date = now.toLocaleDateString("en-GB", {
+        timeZone: "Asia/Kolkata",
+        }); // e.g., "27/05/2025"
+
+        const time = now.toLocaleTimeString("en-US", {
+        timeZone: "Asia/Kolkata",
+        hour12: true,
+        }); // e.g., "10:45:12 AM"
+
+        const submittedAt = `${date} ${time}`;
+
+        const dataToSend = {
+        submittedAt,
+        ...body,
+        };
+
+        await axios.post(endpoint, dataToSend);
        
            return NextResponse.json({ message: "google sheets updated" }, { status: 200 });
         
@@ -31,6 +42,4 @@ export async function POST(req) {
            
            return NextResponse.json({ message: "google sheets not updated" }, { status: 400 });
        }
-   
-
 }

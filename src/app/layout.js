@@ -13,6 +13,7 @@ import PreloaderPrimary from "@/components/shared/others/PreloaderPrimary";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import PopupWrapper from "@/components/shared/wrappers/PopupWrapper";
+import SDKIntegration from "@/components/SDKIntegration";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +43,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const lmsDomain = "https://atoms.abc.courses/";
+  const subdomain = "abc";
+
   return (
     <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>
       <head>
@@ -90,6 +94,8 @@ export default function RootLayout({ children }) {
           <FixedShadow />
           <FixedShadow align={"right"} />
         </div>
+
+        <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
       </body>
     </html>
   );

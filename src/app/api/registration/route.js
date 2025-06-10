@@ -29,7 +29,7 @@ export async function POST(req) {
     secure: false,
     auth: {
       user: "info@av.school",    //change personal email to school email
-      pass: "hhqf sqgv ryan lxsg",       //change app password
+      pass: "mwkv kkmo eqdy usrj",       //change app password
     },
   });
 

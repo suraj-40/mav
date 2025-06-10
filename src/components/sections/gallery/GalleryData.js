@@ -83,6 +83,11 @@ import SGuruPoornima8 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/i
 import SGuruPoornima9 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img9.png";
 import SGuruPoornima10 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img10.png";
 
+//Intra Class Competition 1-10
+import intraCls1 from "@/assets/images/gallery/srigandhakaval/IntraClassCompetition1-10/intraCls1.jpg";
+import intraCls2 from "@/assets/images/gallery/srigandhakaval/IntraClassCompetition1-10/intraCls2.jpg";
+import intraCls3 from "@/assets/images/gallery/srigandhakaval/IntraClassCompetition1-10/intraCls3.jpg";
+
 // Jungle Day
 import SJungleDay1 from "@/assets/images/gallery/srigandhakaval/JungleDay/img1.png";
 import SJungleDay2 from "@/assets/images/gallery/srigandhakaval/JungleDay/img2.png";
@@ -94,6 +99,11 @@ import SJungleDay7 from "@/assets/images/gallery/srigandhakaval/JungleDay/img7.p
 import SJungleDay8 from "@/assets/images/gallery/srigandhakaval/JungleDay/img8.png";
 import SJungleDay9 from "@/assets/images/gallery/srigandhakaval/JungleDay/img9.png";
 import SJungleDay10 from "@/assets/images/gallery/srigandhakaval/JungleDay/img10.png";
+
+//Intra class competition M1 - M3
+import IntraM1 from "@/assets/images/gallery/srigandhakaval/IntraclasscompetitionM1-M3/IntraM1.jpg";
+import IntraM2 from "@/assets/images/gallery/srigandhakaval/IntraclasscompetitionM1-M3/IntraM2.jpg";
+import IntraM3 from "@/assets/images/gallery/srigandhakaval/IntraclasscompetitionM1-M3/IntraM3.jpg";
 
 // Independence Day
 import SIndependenceDay1 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img1.png";
@@ -131,6 +141,11 @@ import SJnanaTarang8 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/im
 import SJnanaTarang9 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img9.png";
 import SJnanaTarang10 from "@/assets/images/gallery/srigandhakaval/JnanaTarang/img10.png";
 
+//National Sports Day
+import SportDay1 from "@/assets/images/gallery/srigandhakaval/NationalSportsDay/SportsDay1.jpg";
+import SportDay2 from "@/assets/images/gallery/srigandhakaval/NationalSportsDay/SportsDay2.jpg";
+import SportDay3 from "@/assets/images/gallery/srigandhakaval/NationalSportsDay/SportsDay3.jpg";
+
 // Ganesha Chaturti
 import SGaneshaChaturti1 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img1.png";
 import SGaneshaChaturti2 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img2.png";
@@ -144,11 +159,11 @@ import SGaneshaChaturti9 from "@/assets/images/gallery/srigandhakaval/GaneshaCha
 import SGaneshaChaturti10 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img10.png";
 
 // Hindi Diwas
-import SHindiDiwas1 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img1.png";
-import SHindiDiwas2 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img2.png";
-import SHindiDiwas3 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img3.png";
-import SHindiDiwas4 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img4.png";
-import SHindiDiwas5 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/img5.png";
+import HindhiDiwas1 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/HindiDiwas1.png";
+import HindhiDiwas2 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/HindiDiwas2.png";
+import HindhiDiwas3 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/HindiDiwas3.png";
+import HindhiDiwas4 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/HindiDiwas4.png";
+import HindhiDiwas5 from "@/assets/images/gallery/srigandhakaval/HindiDiwas/HindiDiwas5.png";
 
 
 // Dusshera Celebration
@@ -204,6 +219,7 @@ import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.J
 import SAnnualDay2 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img2.JPG";
 import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
 import SAnnualDay4 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img4.JPG";
+
 // import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img5.jpg";
 import SAnnualDay6 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img6.JPG";
 import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
@@ -251,8 +267,31 @@ import SRamayanaTheme8 from "@/assets/images/gallery/srigandhakaval/Ramayanotsav
 import SRamayanaTheme9 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img9.jpg";
 import SRamayanaTheme10 from "@/assets/images/gallery/srigandhakaval/Ramayanotsavam/img10.jpg";
 
+//National Science Day
+import ScienceDay1 from "@/assets/images/gallery/srigandhakaval/NationalScienceDay/ScienceDay1.jpg";
+import ScienceDay2 from "@/assets/images/gallery/srigandhakaval/NationalScienceDay/ScienceDay2.jpg";
+import ScienceDay3 from "@/assets/images/gallery/srigandhakaval/NationalScienceDay/ScienceDay3.jpg";
+
+//Childrens Day
+import childrensDay1 from "@/assets/images/gallery/srigandhakaval/ChildrensDay/childrensDay1.jpg";
+import childrensDay2 from "@/assets/images/gallery/srigandhakaval/ChildrensDay/childrensDay2.jpg";
+import childrensDay3 from "@/assets/images/gallery/srigandhakaval/ChildrensDay/childrensDay3.jpg";
+
+//Mathematics Day
+import Math1 from "@/assets/images/gallery/srigandhakaval/MathematicsDay/Math1.jpg";
+import Math2 from "@/assets/images/gallery/srigandhakaval/MathematicsDay/Math2.jpg";
+import Math3 from "@/assets/images/gallery/srigandhakaval/MathematicsDay/Math3.jpg";
+
+//Sankranti
+import Sankranti1 from "@/assets/images/gallery/srigandhakaval/Sankranti/Sankranti1.jpg";
+import Sankranti2 from "@/assets/images/gallery/srigandhakaval/Sankranti/Sankranti2.jpg";
+import Sankranti3 from "@/assets/images/gallery/srigandhakaval/Sankranti/Sankranti3.jpg";
+
 
 // Ullal Branch Images
+//WorldEnvironmentDay
+import WorldEnvironmentDay1 from "@/assets/images/gallery/ullal/WorldEnvironmentDay/WorldEnvironmentDay1.jpg";
+
 // Guru Poornima
 import UGuruPoornima1 from "@/assets/images/gallery/ullal/GuruPoornima/img1.png";
 import UGuruPoornima2 from "@/assets/images/gallery/ullal/GuruPoornima/img2.png";
@@ -277,17 +316,41 @@ import UInvestitureCeremony8 from "@/assets/images/gallery/ullal/InvestitureCere
 import UInvestitureCeremony9 from "@/assets/images/gallery/ullal/InvestitureCeremony/img9.png";
 import UInvestitureCeremony10 from "@/assets/images/gallery/ullal/InvestitureCeremony/img10.png";
 
-// Krishna Janmastami
-import UKrishnaJanmastami1 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img1.png";
-import UKrishnaJanmastami2 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img2.png";
-import UKrishnaJanmastami3 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img3.png";
-import UKrishnaJanmastami4 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img4.png";
-import UKrishnaJanmastami5 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img5.png";
-import UKrishnaJanmastami6 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img6.png";
-import UKrishnaJanmastami7 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img7.png";
-import UKrishnaJanmastami8 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img8.png";
-import UKrishnaJanmastami9 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img9.png";
-import UKrishnaJanmastami10 from "@/assets/images/gallery/ullal/KrishnaJanmastami/img10.png";
+//Science Exhibition
+import ScienceExhibition1 from "@/assets/images/gallery/ullal/ScienceExhibition/ScienceExhibition1.jpg";
+import ScienceExhibition2 from "@/assets/images/gallery/ullal/ScienceExhibition/ScienceExhibition2.jpg";
+import ScienceExhibition3 from "@/assets/images/gallery/ullal/ScienceExhibition/ScienceExhibition3.jpg";
+
+//IndependenceDay
+import IndependenceDay1 from "@/assets/images/gallery/ullal/IndependenceDay/IndependenceDay1.jpg";
+import IndependenceDay2 from "@/assets/images/gallery/ullal/IndependenceDay/IndependenceDay2.jpg";
+
+//Krishnajanmastami
+import Krishna1 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna1.png";
+import Krishna2 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna2.png";
+import Krishna3 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna3.png";
+import Krishna4 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna4.png";
+import Krishna5 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna5.png";
+import Krishna6 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna6.png";
+import Krishna7 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna7.png";
+import Krishna8 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna8.png";
+import Krishna9 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna9.png";
+import Krishna10 from "@/assets/images/gallery/ullal/KrishnaJanmastami/Krishna10.png";
+
+//Ganesha Chaturti
+import GaneshChaturthi1 from "@/assets/images/gallery/ullal/GaneshaChaturti/GaneshChaturthi1.jpg";
+import GaneshChaturthi2 from "@/assets/images/gallery/ullal/GaneshaChaturti/GaneshChaturthi2.jpg";
+import GaneshChaturthi3 from "@/assets/images/gallery/ullal/GaneshaChaturti/GaneshChaturthi3.jpg";
+
+//National Sports Day
+import NSports1 from "@/assets/images/gallery/ullal/NationalSportsDay/NSports1.jpg";
+import NSports2 from "@/assets/images/gallery/ullal/NationalSportsDay/NSports2.jpg";
+import NSports3 from "@/assets/images/gallery/ullal/NationalSportsDay/NSports3.jpg";
+import NSports4 from "@/assets/images/gallery/ullal/NationalSportsDay/NSports4.jpg";
+
+//Hindi Diwas
+import HDiwas1 from "@/assets/images/gallery/ullal/HindiDiwas/HindiDiwas1.jpg";
+import HDiwas2 from "@/assets/images/gallery/ullal/HindiDiwas/HindiDiwas2.jpg";
 
 // Sports Day
 import USportsDay1 from "@/assets/images/gallery/ullal/Sports/img1.png";
@@ -301,18 +364,32 @@ import USportsDay8 from "@/assets/images/gallery/ullal/Sports/img8.png";
 import USportsDay9 from "@/assets/images/gallery/ullal/Sports/img9.png";
 import USportsDay10 from "@/assets/images/gallery/ullal/Sports/img10.png";
 
-// Gita Jayanti
-import UGitajayanti1 from "@/assets/images/gallery/ullal/GitaJayanti/img1.jpg";
-import UGitajayanti2 from "@/assets/images/gallery/ullal/GitaJayanti/img2.jpg";
-import UGitajayanti3 from "@/assets/images/gallery/ullal/GitaJayanti/img3.jpg";
-import UGitajayanti4 from "@/assets/images/gallery/ullal/GitaJayanti/img4.jpg";
-import UGitajayanti5 from "@/assets/images/gallery/ullal/GitaJayanti/img5.jpg";
-import UGitajayanti6 from "@/assets/images/gallery/ullal/GitaJayanti/img6.jpg";
-import UGitajayanti7 from "@/assets/images/gallery/ullal/GitaJayanti/img7.jpg";
-import UGitajayanti8 from "@/assets/images/gallery/ullal/GitaJayanti/img8.jpg";
-import UGitajayanti9 from "@/assets/images/gallery/ullal/GitaJayanti/img9.jpg";
-import UGitajayanti10 from "@/assets/images/gallery/ullal/GitaJayanti/img10.jpg";
-import { Video } from "lucide-react";
+//Deepawali
+import Deepawali1 from "@/assets/images/gallery/ullal/Deepawali/Deepawali1.jpg";
+import Deepawali2 from "@/assets/images/gallery/ullal/Deepawali/Deepawali2.jpg";
+import Deepawali3 from "@/assets/images/gallery/ullal/Deepawali/Deepawali3.jpg";
+
+//ChildrensDay
+import CDay1 from "@/assets/images/gallery/ullal/ChildrensDay/CDay1.jpg";
+import CDay2 from "@/assets/images/gallery/ullal/ChildrensDay/CDay2.jpg";
+import CDay3 from "@/assets/images/gallery/ullal/ChildrensDay/CDay3.jpg";
+
+//Chess Tournament
+import Chess1 from "@/assets/images/gallery/ullal/ChessTournament/Chess1.jpg";
+import Chess2 from "@/assets/images/gallery/ullal/ChessTournament/Chess2.jpg";
+
+// Guru Poornima
+import UGitaJayanti1 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti1.jpg";
+import UGitaJayanti2 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti2.jpg";
+import UGitaJayanti3 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti3.jpg";
+import UGitaJayanti4 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti4.jpg";
+import UGitaJayanti5 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti5.jpg";
+import UGitaJayanti6 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti6.jpg";
+import UGitaJayanti7 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti7.jpg";
+import UGitaJayanti8 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti8.jpg";
+import UGitaJayanti9 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti9.jpg";
+import UGitaJayanti10 from "@/assets/images/gallery/ullal/GitaJayanti/UGitaJayanti10.jpg";
+
 
 
 export const srigandhkavalActivities = [
@@ -406,8 +483,19 @@ export const srigandhkavalActivities = [
     ],
     description: "Honoring teachers and mentors with heartfelt gratitude and cultural performances."
   },
-  {
+   {
     id: 6,
+    title: "Intra Class Competition 1-10",
+    image: intraCls1,
+    images: [
+      intraCls1,
+      intraCls2,
+      intraCls3
+    ],
+    description: "Students from grades 1-10 showcase their talents and compete in various academic and extracurricular activities."
+  },
+  {
+    id: 7,
     title: "Jungle Day",
     image: SJungleDay1,
     images: [
@@ -425,7 +513,18 @@ export const srigandhkavalActivities = [
     description: "Exploring nature and wildlife through interactive activities and educational displays."
   },
   {
-    id: 7,
+    id: 8,
+    title: "Intra class competition M1 - M3",
+    image: IntraM1,
+    images: [
+      IntraM1,
+      IntraM2,
+      IntraM3
+    ],
+    description: "Creative competition for M1-M3 students featuring art, performance, and innovation challenges to develop their talents and teamwork."
+  },
+  {
+    id: 9,
     title: "Independence Day",
     image: SIndependenceDay1,
     images: [
@@ -443,7 +542,7 @@ export const srigandhkavalActivities = [
     description: "Celebrating India's freedom with patriotic performances and flag-hoisting ceremonies."
   },
   {
-    id: 8,
+    id: 10,
     title: "Krishna Janmastami",
     image: SKrishnaJanmastami1,
     images: [
@@ -461,7 +560,7 @@ export const srigandhkavalActivities = [
     description: "Rejoicing in Lord Krishna's birth with devotional songs, dances, and reenactments."
   },
   {
-    id: 9,
+    id: 11,
     title: "Jnana Tarang",
     image: SJnanaTarang1,
     images: [
@@ -479,7 +578,18 @@ export const srigandhkavalActivities = [
     description: "Igniting intellectual curiosity through quizzes, debates, and knowledge-sharing events."
   },
   {
-    id: 10,
+    id: 12,
+    title: "National Sports Day",
+    image: SportDay1,
+    images: [
+      SportDay1,
+      SportDay2,
+      SportDay3
+    ],
+    description: "A day dedicated to promoting sportsmanship, teamwork and physical wellness."
+  },
+  {
+    id: 13,
     title: "Ganesha Chaturti",
     image: SGaneshaChaturti1,
     images: [
@@ -496,22 +606,21 @@ export const srigandhkavalActivities = [
     ],
     description: "Celebrating Lord Ganesha with vibrant prayers, crafts, and cultural programs."
   },
-  // {
-  //   id: 11,
-  //   title: "Hindi Diwas",
-  //   image: SHindiDiwas1,
-  //   images: [
-  //     SHindiDiwas1,
-  //     SHindiDiwas2,
-  //     SHindiDiwas3,
-  //     SHindiDiwas4,
-  //     SHindiDiwas5,
-      
-  //   ],
-  //   description: "Promoting the Hindi language through poetry, speeches, and cultural showcases."
-  // },
   {
-    id: 11,
+    id: 14,
+    title: "Hindi Diwas",
+    image: HindhiDiwas1,
+    images: [
+      HindhiDiwas1,
+      HindhiDiwas2,
+      HindhiDiwas3,
+      HindhiDiwas4,
+      HindhiDiwas5
+    ],
+    description: "Commemorating the triumph of good over evil with vibrant performances and storytelling."
+  },
+  {
+    id: 15,
     title: "Dusshera Celebration",
     image: SDussehraCelebration1,
     images: [
@@ -529,7 +638,7 @@ export const srigandhkavalActivities = [
     description: "Commemorating the triumph of good over evil with vibrant performances and storytelling."
   },
   {
-    id: 12,
+    id: 16,
     title: "Sports Day",
     image: SSportsDay1,
     images: [
@@ -547,7 +656,7 @@ export const srigandhkavalActivities = [
     description: "Encouraging fitness and teamwork through exciting sports competitions and activities."
   },
   {
-    id: 13,
+    id: 17,
     title: "Deepavali",
     image: SDeepavali1,
     images: [
@@ -565,7 +674,7 @@ export const srigandhkavalActivities = [
     description: "Illuminating the festival of lights with diya decorations and cultural festivities."
   },
   {
-    id: 14,
+    id: 18,
     title: "Kannada Rajyothsava",
     image: SKannadaRajyothsava1,
     images: [
@@ -582,8 +691,19 @@ export const srigandhkavalActivities = [
     ],
     description: "Celebrating Karnataka's rich heritage with traditional performances and cultural pride."
   },
+   {
+    id: 19,
+    title: "Childrens' Day",
+    image: childrensDay1,
+    images: [
+      childrensDay1,
+      childrensDay2,
+      childrensDay3
+    ],
+    description: "Fun activities and celebrations honoring childhood and student achievements."
+  },
   {
-    id: 15,
+    id: 20,
     title: "Annual Day",
     image: SAnnualDay1,
     images: [
@@ -601,7 +721,7 @@ export const srigandhkavalActivities = [
     description: "Showcasing student achievements through vibrant performances and cultural celebrations."
   },
   {
-    id: 16,
+    id: 21,
     title: "Gita Jayanti",
     image: SGitajayanti1,
     images: [
@@ -619,7 +739,7 @@ export const srigandhkavalActivities = [
     description: "Commemorating the sacred Bhagavad Gita through recitations and spiritual discussions."
   },
   {
-    id: 17,
+    id: 22,
     title: "Observation Classes",
     image: SObservationClasses1,
     images: [
@@ -636,22 +756,30 @@ export const srigandhkavalActivities = [
     ],
     description: "Showcasing the Montessori methodology in practice for parents and educators."
   },
-  // {
-  //   id: 19,
-  //   title: "Art and Craft Mela",
-  //   image: SArtAndCraftMela1,
-  //   images: [
-  //     SArtAndCraftMela1,
-  //     SArtAndCraftMela2,
-  //     SArtAndCraftMela3,
-  //     SArtAndCraftMela4,
-  //     SArtAndCraftMela5,
-      
-  //   ],
-  //   description: "Showcasing student creativity through vibrant displays of handmade art and crafts."
-  // },
   {
-    id: 18,
+    id: 23,
+    title: "Mathematics Day",
+    image: Math1,
+    images: [
+      Math1,
+      Math2,
+      Math3
+    ],
+    description: "Celebrating mathematical concepts through fun activities and competitions."
+  },
+  {
+    id: 24,
+    title: "Sankranti",
+    image: Sankranti1,
+    images: [
+      Sankranti1,
+      Sankranti2,
+      Sankranti3
+    ],
+    description: "Traditional harvest festival celebration with cultural activities."
+  },
+  {
+    id: 25,
     title: "Ramayana theme",
     image: SRamayanaTheme1,
     images: [
@@ -667,6 +795,17 @@ export const srigandhkavalActivities = [
       SRamayanaTheme10
     ],
     description: "A celebration of the epic Ramayana through cultural performances and storytelling."
+  },
+  {
+    id: 26,
+    title: "National Science Day",
+    image: ScienceDay1,
+    images: [
+      ScienceDay1,
+      ScienceDay2,
+      ScienceDay3
+    ],
+    description: "Showcasing student science projects and experiments."
   }
 ];
 
@@ -674,6 +813,15 @@ export const srigandhkavalActivities = [
 export const ullalActivities = [
   {
     id: 1,
+    title: "World Environment Day",
+    image: WorldEnvironmentDay1,
+    images: [
+      WorldEnvironmentDay1
+    ],
+    description: "Fostering environmental consciousness through tree planting and sustainability workshops."
+  },
+  {
+    id: 2,
     title: "Investiture Ceremony",
     image: UInvestitureCeremony1,
     images: [
@@ -691,7 +839,7 @@ export const ullalActivities = [
     description: "Empowering student leaders through a formal induction into leadership roles."
   },
   {
-    id: 2,
+    id: 3,
     title: "Guru Poornima",
     image: UGuruPoornima1,
     images: [
@@ -709,25 +857,79 @@ export const ullalActivities = [
     description: "Honoring teachers and mentors with heartfelt gratitude and cultural performances."
   },
   {
-    id: 3,
-    title: "Krishna Janmastami",
-    image: UKrishnaJanmastami1,
+    id: 4,
+    title: "Science Exhibition",
+    image: ScienceExhibition1,
     images: [
-      UKrishnaJanmastami1,
-      UKrishnaJanmastami2,
-      UKrishnaJanmastami3,
-      UKrishnaJanmastami4,
-      UKrishnaJanmastami5,
-      UKrishnaJanmastami6,
-      UKrishnaJanmastami7,
-      UKrishnaJanmastami8,
-      UKrishnaJanmastami9,
-      UKrishnaJanmastami10
+      ScienceExhibition1,
+      ScienceExhibition2,
+      ScienceExhibition3
+    ],
+    description: "Students present inventive solutions and research findings."
+  },
+  {
+    id: 5,
+    title: "Independence Day",
+    image: IndependenceDay1,
+    images: [
+      IndependenceDay1,
+      IndependenceDay2
+    ],
+    description: "Flag hoisting and patriotic celebrations."
+  },
+  {
+    id: 6,
+    title: "Krishna Janmastami",
+    image: Krishna1,
+    images: [
+      Krishna1,
+      Krishna2,
+      Krishna3,
+      Krishna4,
+      Krishna5,
+      Krishna6,
+      Krishna7,
+      Krishna8,
+      Krishna9,
+      Krishna10
     ],
     description: "Rejoicing in Lord Krishna's birth with devotional songs, dances, and reenactments."
   },
   {
-    id: 4,
+    id: 7,
+    title: "Ganesh Chaturthi",
+    image: GaneshChaturthi1,
+    images: [
+      GaneshChaturthi1,
+      GaneshChaturthi2,
+      GaneshChaturthi3
+    ],
+    description: "Festive celebrations with eco-friendly Ganesha idols."
+  },
+  {
+    id: 8,
+    title: "National Sports Day",
+    image: NSports1,
+    images: [
+      NSports1,
+      NSports2,
+      NSports3,
+      NSports4
+    ],
+    description: "Celebrating athleticism through various sports activities."
+  },
+  {
+    id: 9,
+    title: "Hindi Diwas",
+    image: HDiwas1,
+    images: [
+      HDiwas1,
+      HDiwas2
+    ],
+    description: "Celebrating Hindi language with cultural programs and activities."
+  },
+  {
+    id: 10,
     title: "Sports",
     image: USportsDay1,
     images: [
@@ -745,25 +947,57 @@ export const ullalActivities = [
     description: "Encouraging fitness and teamwork through exciting sports competitions and activities."
   },
   {
-    id: 5,
-    title: "Gita Jayanti",
-    image: UGitajayanti1,
+    id: 11,
+    title: "Deepwali",
+    image: Deepawali1,
     images: [
-      UGitajayanti1,
-      UGitajayanti2,
-      UGitajayanti3,
-      UGitajayanti4,
-      UGitajayanti5,
-      UGitajayanti6,
-      UGitajayanti7,
-      UGitajayanti8,
-      UGitajayanti9,
-      UGitajayanti10
+      Deepawali1,
+      Deepawali2,
+      Deepawali3
     ],
-    description: "Commemorating the sacred Bhagavad Gita through recitations and spiritual discussions."
+    description: "Festive celebrations with lamps and decorations."
   },
   {
-    id: 6,
+    id: 12,
+    title: "Childrens' Day",
+    image: CDay1,
+    images: [
+      CDay1,
+      CDay2,
+      CDay3
+    ],
+    description: "A day of joy and student performances."
+  },
+  {
+    id: 13,
+    title: "Gita Jayanti",
+    image: UGitaJayanti1,
+    images: [
+      UGitaJayanti1,
+      UGitaJayanti2,
+      UGitaJayanti3,
+      UGitaJayanti4,
+      UGitaJayanti5,
+      UGitaJayanti6,
+      UGitaJayanti7,
+      UGitaJayanti8,
+      UGitaJayanti9,
+      UGitaJayanti10
+    ],
+    description: "Religious observance with scripture readings."
+  },
+  {
+    id: 14,
+    title: "Chess Tournament",
+    image: Chess1,
+    images: [
+      Chess1,
+      Chess2
+    ],
+    description: "Mind sport event fostering critical thinking."
+  },
+  {
+    id: 15,
     title: "Annual Day",
     image: SAnnualDay3,
     images: [

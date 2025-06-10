@@ -5,7 +5,7 @@ export async function POST(req) {
   const body = await req.json();
 
   try {
-    const endpoint = "https://script.google.com/macros/s/AKfycbx8lvoDlxGdFWNslENhJ7I2ruZUU13Rxv_8QuHb7NG4M29ysSveffuYdJRwk08xjcti/exec";
+    const endpoint = "https://script.google.com/macros/s/AKfycbyC5L1EB284cdAP3deZ2wumu-Gsy4AuYAze_lAXuYUNuyrmK8Uutuh52mzArac5w7zh/exec";
 
     const now = new Date();
 

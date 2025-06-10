@@ -16,8 +16,8 @@ export async function POST(req) {
     port: 587,
     secure: false,
     auth: {
-      user: "sharath.kr@abc.courses", 
-      pass: "vzot jaxd ogln ofid",    
+      user: "info@av.school", 
+      pass: "mwkv kkmo eqdy usrj",    
     },
   });
  
@@ -30,14 +30,13 @@ export async function POST(req) {
     <p><strong>Query Title:</strong> ${query}</p>
     <p><strong>Message:</strong> ${message}</p>
     <br/>
-    <p>System Notification - LMS</p>
   `;
 
   try {
     const info = await transporter.sendMail({
-      from: '"New Message" <sharath.kr@abc.courses>',
-      to: "sharath.kr@abc.courses",
-      subject: "New Student Visit Scheduled",
+      from: '"New Message" <info@av.school>',
+      to: "info@av.school",
+      subject: "New AV Queries",
       html: schoolEmailTemplate,
     });
 

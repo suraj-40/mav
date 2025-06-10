@@ -3,13 +3,12 @@ import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Globe, Youtube } from "lucide-react";
 import useIsTrue from "@/hooks/useIsTrue";
 import "../../../assets/css/ticker.css";
-import SDKIntegration from "@/components/SDKIntegration";
 import UserDropdown from "./UserDropdown";
 import { MdOutlineClose } from "react-icons/md";
 import { CgMenuCheese } from "react-icons/cg";
 import { useState } from "react";
 
-// Improved ticker styles for better performance and responsiveness
+
 const tickerStyles = `
   .ticker-wrap {
     overflow: hidden;
@@ -49,25 +48,11 @@ const tickerStyles = `
 
 const HeaderTop = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const isHome1 = useIsTrue("/");
-  const isHome1Dark = useIsTrue("/home-1-dark");
-  const isHome4 = useIsTrue("/home-4");
-  const isHome4Dark = useIsTrue("/home-4-dark");
-  const isHome5 = useIsTrue("/home-5");
-  const isHome5Dark = useIsTrue("/home-5-dark");
-  const lmsDomain = "https://atoms.abc.courses/";
-  const subdomain = "abc";
 
-  const containerClass =
-    isHome1 || isHome1Dark || isHome4 || isHome4Dark || isHome5 || isHome5Dark
-      ? "lg:container 3xl:container2-lg"
-      : "container 3xl:container-secondary-lg";
 
   return (
     <>
-      {/* Inject ticker styles */}
       <style>{tickerStyles}</style>
-
 
       <div
         className="bg-gradient-to-r from-av to-av sticky top-0 z-50 border-b border-white/10"
@@ -109,27 +94,20 @@ const HeaderTop = () => {
                   +91 7760776046
                 </Link>
                 <span className="text-gray-400">|</span>
-                {/* <Link
-                  href="mailto:info.sgk@av.school"
-                  className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
-                >
-                  info.sgk@av.school
-                </Link> */}
               </div>
 
-              <div className=" font-bold">
-                  <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
-                  <UserDropdown />
-                </div>
-              
+           
+              <div className="font-bold">
+                <UserDropdown />
+              </div>
+
               {/* User Actions and Social Icons */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full md:w-auto gap-4 sm:gap-6">
-                {/* Buttons */}
-                
                 <span className="text-gray-400">|</span>
                 {/* Social Icons */}
                 <div className="flex gap-4">
-                  <Link
+                  {/* ... your social icons ... */}
+                   <Link
                     href="https://www.facebook.com/@AgasthyaVidyaniketan/"
                     target="_blank"
                     rel="noopener noreferrer"

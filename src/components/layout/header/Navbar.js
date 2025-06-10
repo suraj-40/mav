@@ -6,7 +6,6 @@ import NavbarRight from "./NavbarRight";
 import NavItems2 from "./NavItems2";
 import useIsTrue from "@/hooks/useIsTrue";
 import NavbarTop from "./NavbarTop";
-import SDKIntegration from "@/components/SDKIntegration";
 import UserDropdown from "./UserDropdown";
 
 const Navbar = () => {
@@ -19,8 +18,7 @@ const Navbar = () => {
   const isHome4Dark = useIsTrue("/home-4-dark");
   const isHome5 = useIsTrue("/home-5");
   const isHome5Dark = useIsTrue("/home-5-dark");
-  const lmsDomain = "https://atoms.abc.courses/";
-  const subdomain = "abc";
+ 
 
   const showTopNav = isHome4 || isHome4Dark || isHome5 || isHome5Dark;
   const isContainerLarge =
@@ -45,31 +43,23 @@ const Navbar = () => {
               : "3xl:max-w-8xl"
           } 4xl:max-w-[1920px] mx-auto relative`}
         >
-          {/* Top Navbar (Hidden on Smaller Screens) */}
-          {showTopNav && (
-            <div className="hidden lg:block animate-fade-in">
-              <NavbarTop />
-            </div>
-          )}
-
           {/* Main Navbar */}
           <div className="grid grid-cols-3 lg:grid-cols-12 items-center gap-4 lg:gap-6 md:bg-lightorange md:shadow-2xl">
             {/* Navbar Left - Logo */}
             <div className="col-span-1 lg:col-span-2 md:ml-30">
               <NavbarLogo className="transform hover:scale-105 transition-transform duration-300" />
             </div>
-            <div className="w-[120px] font-bold block md:hidden">
-            <SDKIntegration lmsDomain={lmsDomain} subdomain={subdomain} />
-            <UserDropdown />
+            
+         
+            <div className="flex justify-end font-bold md:hidden">
+    
+              <UserDropdown />
             </div> 
+      
 
             {/* Main Menu - Center */}
             <div className="hidden lg:col-span-8 lg:flex justify-center">
-              {/* {isHome2Dark ? (
-                <NavItems2 className="animate-slide-in" />
-              ) : (
-                <NavItems className="animate-slide-in" />
-              )} */}
+              {/* Your NavItems components go here */}
             </div>
 
             {/* Navbar Right */}
