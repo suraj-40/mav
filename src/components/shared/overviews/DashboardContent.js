@@ -12,8 +12,8 @@ const DashboardContent = () => {
   const isHome9Dark = useIsTrue("/home-9-dark");
   const isAbout = useIsTrue("/about");
   const isAboutDark = useIsTrue("/about-dark");
-  const lmsDomain = "https://atoms.abc.courses/";
-  const subdomain = "abc";
+  const lmsDomain = "https://atoms.av.school/";
+  const subdomain = "av";
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },

@@ -39,12 +39,14 @@ export const montserrat = Montserrat({
 export const metadata = {
   title: "Agasthya Vidyanikethan",
   description: "Home description",
-  icon: "../../public/favicon.ico",
+  icons: {
+    icon: "/favicon.ico", // path is relative to `public/`
+  },
 };
 
 export default function RootLayout({ children }) {
-  const lmsDomain = "https://atoms.abc.courses/";
-  const subdomain = "abc";
+  const lmsDomain = "https://atoms.av.school/";
+  const subdomain = "av";
 
   return (
     <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>

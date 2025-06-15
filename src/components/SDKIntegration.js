@@ -40,7 +40,7 @@ const SDKIntegration = ({ lmsDomain, subdomain }) => {
     jqueryScript.crossOrigin = "anonymous";
     document.body.appendChild(jqueryScript);
 
-    const data = localStorage.getItem("https://atoms.abc.courses");
+    const data = localStorage.getItem("https://atoms.av.school/");
 
     if (data) {
       console.log("..........");
