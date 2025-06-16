@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import overviewImage from "@/assets/images/about/Exam.png";
-import overviewKidImage from "@/assets/images/about/AV-1.png";
 import useIsTrue from "@/hooks/useIsTrue";
 
 const ExamsContent = () => {
@@ -52,7 +51,7 @@ const ExamsContent = () => {
           data-aos-delay="300"
         >
           <Image
-            src={isHome9 || isHome9Dark ? overviewKidImage : overviewImage}
+            src={overviewImage}
             alt="Exams Image"
             className="w-full shadow-lg"
             placeholder="blur"

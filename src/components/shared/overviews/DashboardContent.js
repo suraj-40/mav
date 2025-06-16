@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import overviewImage from "@/assets/images/about/DashboardImg.png";
-import overviewKidImage from "@/assets/images/about/AV-1.png";
 import useIsTrue from "@/hooks/useIsTrue";
 import SDKIntegration from "@/components/SDKIntegration";
 import ExploreAtomsDashboard from "../ExploreAtomsDashboard";
@@ -106,7 +105,7 @@ const DashboardContent = () => {
 
             <div className="relative overflow-hidden rounded-2xl border-8 border-white shadow-2xl">
               <Image
-                src={isHome9 || isHome9Dark ? overviewKidImage : overviewImage}
+                src={overviewImage}
                 alt="Dashboard Image"
                 className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                 placeholder="blur"
