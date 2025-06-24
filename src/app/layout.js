@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>
       <head>
         {/* Google Analytics 4 - gtag.js */}
+        <link rel="canonical" href="https://www.av.school/" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQS3R5FHY"></script>
         <script
           dangerouslySetInnerHTML={{
