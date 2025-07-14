@@ -15,6 +15,7 @@ import counter4 from "@/assets/images/counter/counter__4.png";
 import TiltWrapper from "@/components/shared/wrappers/TiltWrapper";
 import useIsTrue from "@/hooks/useIsTrue";
 import herobannerImage2 from "@/assets/images/herobanner/herobanner__2.png";
+import Link from "next/link";
 
 const About1 = (
   { children, image, hideCounter }) => {
@@ -97,6 +98,11 @@ const About1 = (
         {isHome9 || isHome9Dark || hideCounter || (
           <Counter items={counterItems} />
         )}
+        <div className="mt-6">
+          <Link href="/about-us/gallery" className="text-primaryColor underline hover:text-secondaryColor transition">
+            Learn more about our campus in Nagarbhavi, Bangalore
+          </Link>
+        </div>
       </div>
     </section>
   );

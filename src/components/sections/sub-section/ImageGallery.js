@@ -17,6 +17,7 @@ import avecosystemImage4 from "@/assets/images/avecosystem/02.jpg";
 import avecosystemImage5 from "@/assets/images/avecosystem/avecosystem6.jpg";
 import avecosystemImage6 from "@/assets/images/avecosystem/avecosystem8.jpg";
 import useIsTrue from "@/hooks/useIsTrue";
+import ReadyJourneySection from "./ReadyJourneySection";
 
 const modalVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -108,9 +109,17 @@ const ImageGallery = ({ gallary }) => {
             visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
           }}
         >
-          <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-            Gallery
-          </span>
+          {(!gallary && !isHome10 && !isHome10Dark) ? (
+            <Link href="/about-us/gallery">
+              <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent cursor-pointer hover:underline">
+                Gallery
+              </span>
+            </Link>
+          ) : (
+            <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
+              Gallery
+            </span>
+          )}
         </motion.h1>
 
         <motion.div
@@ -307,21 +316,21 @@ const ImageGallery = ({ gallary }) => {
 
           {/* Enhanced View More Button - Tab style with rich animations */}
           {!gallary && (
-            <motion.div
-              className="flex justify-center mt-12 md:mt-16"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 0.5,
-                  delay: 0.6,
-                  type: "spring",
-                  bounce: 0.4
-                }
-              }}
-            >
-              <div className="inline-flex  rounded-full shadow-lg  relative overflow-hidden group">
+            <>
+              <motion.div
+                className="flex justify-center mt-12 md:mt-16"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.6,
+                    type: "spring",
+                    bounce: 0.4
+                  }
+                }}
+              >
                 <Link href="/about-us/gallery" passHref>
                   <motion.button
                     variants={tabVariants}
@@ -330,7 +339,6 @@ const ImageGallery = ({ gallary }) => {
                     onClick={handleButtonTap}
                     className="px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-base sm:text-lg font-semibold transition-colors duration-300 flex items-center gap-2 bg-avorange text-white relative z-10"
                   >
-                    {/* Text with Shine Effect */}
                     <motion.span
                       initial={{ backgroundPosition: "100% 0" }}
                       whileHover={{
@@ -343,40 +351,13 @@ const ImageGallery = ({ gallary }) => {
                     >
                       View More
                     </motion.span>
-                    
                     {/* Arrow with Pulse and Rotate */}
-                    <motion.div
-                      className="flex items-center justify-center"
-                      initial={{ scale: 1 }}
-                      animate={{
-                        scale: [1, 1.1, 1],
-                        transition: {
-                          duration: 0.8,
-                          repeat: Infinity,
-                          repeatType: "reverse"
-                        }
-                      }}
-                      whileHover={{ x: 6, rotate: 15 }}
-                      whileTap={{ rotate: -15 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <ArrowRightCircle className="h-5 w-5 sm:h-6 sm:w-6" />
-                    </motion.div>
+                    <ArrowRightCircle className="w-5 h-5" />
                   </motion.button>
                 </Link>
-                
-                {/* Background Wave Effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-radial from-orange-600/30 to-transparent opacity-0 group-hover:opacity-100"
-                  initial={{ scale: 0, x: 0, y: 0 }}
-                  whileHover={{
-                    scale: 3,
-                    transition: { duration: 0.5, ease: "easeOut" }
-                  }}
-                  style={{ transformOrigin: "center" }}
-                />
-              </div>
-            </motion.div>
+              </motion.div>
+              <ReadyJourneySection />
+            </>
           )}
         </div>
       </div>

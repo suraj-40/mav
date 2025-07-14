@@ -20,32 +20,16 @@ const SettingsContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Set<span className="text-[#FF5722]">tings</span>
           </h1>
-          <div className="">
-            <svg
-              width={160}
-              height={20}
-              viewBox="0 0 160 20"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto lg:mx-0"
-            >
-              <path
-                d="M5,15 Q80,0 155,15"
-                fill="none"
-                stroke="#FF5722"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">Customize Your ATOMS Experience</h2>
+          <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
+            <p className="mb-2">
+              The Settings tab puts control into the hands of the parent. Update your contact information, manage login credentials, and set how you want to receive notifications—SMS, email, or in-app alerts.
+            </p>
+            <p className="mb-0">If more than one guardian uses the dashboard, each can set preferences separately. You can even configure notification types—such as announcements only or everything, including assignments and calendar updates. It’s a fully customizable experience that adapts to how your family stays informed.</p>
           </div>
-          <p className="mt-6 text-md md:text-lg text-gray-600 leading-relaxed">
-          Make the ATOMS portal work just the way you like it!
-          </p>
-          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          In Settings, parents can customize how and when they receive updates — from instant announcements to exam reminders. Manage security features, update passwords, and control your notification preferences, so you always get the information that matters most, delivered how you like it. Safe, secure, and personalized for your convenience.
-          </p>          
         </div>
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >

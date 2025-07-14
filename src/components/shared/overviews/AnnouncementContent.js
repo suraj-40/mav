@@ -11,7 +11,7 @@ const AnnouncementContent = () => {
 
   return (
     <div className="py-10 relative">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+      <div className="flex flex-col lg:flex-row items-stretch justify-between gap-8 lg:gap-12">
         {/* Left side text */}
         <div
           className="w-full lg:w-1/2"
@@ -21,6 +21,7 @@ const AnnouncementContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Announce<span className="text-[#FF5722]">ments</span>
           </h1>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">School Updates in Real Time</h2>
           <div className="">
             <svg
               width={160}
@@ -38,22 +39,31 @@ const AnnouncementContent = () => {
               />
             </svg>
           </div>
-          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          Never miss a beat with the ATOMS Announcements section. From holiday notices and exam alerts to competition updates and new activity launches, every school communication reaches you instantly. Now, you can monitor your child&apos;s performance over time and spot areas where they may need a little extra help, all from the comfort of your home. As a parent, this means you&apos;re always informed and can prepare your child well in advance. It&apos;s your school&apos;s news board, modernized, simplified, and made for today&apos;s busy families.  
-          </p>
+          <div className="mt-4 text-sm md:text-base text-gray-700 bg-orange-50/60 rounded-md px-3 pr-6 py-2 border-l-2 border-[#FF5722] max-w-xl text-justify">
+            <p className="mb-2">
+              The Announcements feature in the <span className="font-semibold text-[#FF5722]">AV ATOMS Learning Management System</span> acts as your school&apos;s official notice board, designed for digital convenience. Instead of relying on paper circulars or scattered messages across multiple apps, parents now receive real-time, organized updates straight from the school dashboard.
+            </p>
+            <p className="mb-2">Whether it&apos;s a holiday notice, exam schedule change, PTM reminder, or competition announcement, every message is:</p>
+            <ul className="list-disc pl-5 mb-2 space-y-0.5">
+              <li><span className="font-medium">Timestamped</span> for clarity</li>
+              <li><span className="font-medium">Categorized</span> for easier access (exams, events, academics, administration)</li>
+              <li><span className="font-medium">Delivered instantly</span> to your phone or desktop via smart notifications</li>
+            </ul>
+            <p className="mt-2">This level of transparency improves communication and strengthens parent-school alignment. As a parent, you no longer need to ask, <span className="italic">“Did I miss something?”</span> because our AV&apos;s Atoms dashboard ensures you&apos;re always informed and prepared.</p>
+          </div>
           {/* Curved line below the paragraph */}
           
         </div>
 
         {/* Right side image */}
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >
           <Image
             src={overviewImage}
-            alt="Announcement Image"
+            alt="LMS dashboard for parents"
             className="w-full shadow-lg"
             placeholder="blur"
           />

@@ -27,11 +27,11 @@ const NavbarRight = () => {
             </li>
           )} */}
           <NavItems />
-          {/* {isHome4 || isHome4Dark || isHome5 || isHome5Dark ? null : (
+          {isHome4 || isHome4Dark || isHome5 || isHome5Dark ? null : (
             <li className="px-5 py-4">
               <LoginButton />
             </li>
-          )} */}
+          )}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -59,11 +59,11 @@ const NavbarRight = () => {
               <DropdownCart />
             </div>
           )} */}
-          {/* {!(isHome4 || isHome4Dark || isHome5 || isHome5Dark) && (
+          {!(isHome4 || isHome4Dark || isHome5 || isHome5Dark) && (
             <div className="mt-4">
               <LoginButton />
             </div>
-          )} */}
+          )}
         </div>
       </div>
     </div>

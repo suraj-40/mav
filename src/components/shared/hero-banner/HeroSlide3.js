@@ -22,10 +22,10 @@ const HeroSlide3 = ({ slide, idx }) => {
       <div data-aos="fade-up" className="md:col-span-12 lg:col-span-7">
         <div>
           <HeroName>{tag}</HeroName>
-          <h1 className="text-size-35 md:text-size-65 lg:text-5xl 2xl:text-size-65 font-bold text-white mb-15px">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight max-w-2xl">
             {title}
           </h1>
-          <p className="text-size-15 md:text-lg text-white font-medium">
+          <p className="text-base md:text-lg text-white font-medium max-w-2xl leading-relaxed mb-4">
             {subtitle}
           </p>
           <div className="mt-30px space-x-30px">

@@ -358,7 +358,7 @@ const PopularSubjects = () => {
                 <Image
                   className="absolute bottom-9 lg:bottom-[-50px] right-[50px] animate-move-hor"
                   src={shapImage}
-                  alt=""
+                  alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
                 />
               </div>
               {isHome9 || isHome9Dark ? (
@@ -398,7 +398,7 @@ const PopularSubjects = () => {
               <Image
                 className="absolute sm:block xl:left-1/4 z-[-1] top-6 animate-move-var"
                 src={shapBgImage}
-                alt=""
+                alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
               />
             </div>
             {/* subject card */}

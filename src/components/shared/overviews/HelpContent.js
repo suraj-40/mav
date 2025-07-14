@@ -20,32 +20,16 @@ const HelpContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             He<span className="text-[#FF5722]">lp</span>
           </h1>
-          <div className="">
-            <svg
-              width={160}
-              height={20}
-              viewBox="0 0 160 20"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto lg:mx-0"
-            >
-              <path
-                d="M5,15 Q80,0 155,15"
-                fill="none"
-                stroke="#FF5722"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">Quick Support for Every Parent</h2>
+          <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
+            <p className="mb-2">
+              No need to feel stuck or confused. The Help section offers step-by-step guides, troubleshooting instructions, and easy explanations for the most common questions—such as how to reset your password, how to navigate subjects, or how to read performance summaries.
+            </p>
+            <p className="mb-0">If your issue isn’t solved through the FAQs, you can instantly reach the school’s technical support or admin team from this section. The goal is to make the Learning Management System feel like a helping hand, not a technical hurdle.</p>
           </div>
-          <p className="mt-6 text-md md:text-lg text-gray-600 leading-relaxed">
-          Need a hand?
-          </p>
-          <p className="mt-3 text-md md:text-lg text-gray-600 leading-relaxed">
-          The Help section is a go-to place whenever you have a question or face a problem while using the ATOMS portal. Whether it&apos;s about logging in, forgetting the password, checking courses, or finding exam details, our support team is just a click away. As a parent, you can rely on quick, friendly assistance to keep your ATOMS experience smooth, simple, and worry-free.          
-          </p>          
         </div>
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >

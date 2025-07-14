@@ -10,4 +10,11 @@ const NEPDinacharya  = () => {
         </>
     );
   };
-  export default NEPDinacharya ;
+
+export const metadata = {
+  alternates: {
+    canonical: "https://www.av.school/student-life/dinacharya",
+  },
+};
+
+export default NEPDinacharya ;

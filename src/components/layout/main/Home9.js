@@ -1,6 +1,7 @@
 import CallToAction from "@/components/CallToAction";
 import About1 from "@/components/sections/abouts/About1";
 import NewAbout from "@/components/sections/abouts/NewAbout";
+import WelcomeSection from "@/components/sections/abouts/WelcomeSection";
 import Blogs from "@/components/sections/blogs/Blogs";
 import HomeBlog from "@/components/sections/blogs/HomeBlog";
 import FeatureCourses from "@/components/sections/featured-courses/FeatureCourses";
@@ -19,6 +20,7 @@ const Home9 = () => {
   return (
     <>
       <Hero9 />
+      <WelcomeSection />
       {/* <About1 /> */}
       <NewAbout />
       {/* <Programs /> */}

@@ -7,6 +7,7 @@ import PopularSubjects from "@/components/sections/popular-subjects/PopularSubje
 import PricingPlans from "@/components/sections/pricing-plans/PricingPlans";
 import Registration from "@/components/sections/registrations/Registration";
 import BrandHero from "@/components/sections/sub-section/BrandHero";
+import ReadyJourneySection from "@/components/sections/sub-section/ReadyJourneySection";
 import React from "react";
 const Home1 = () => {
   return (
@@ -20,6 +21,7 @@ const Home1 = () => {
       <PricingPlans />
       <Instructors />
       <Blogs />
+      <ReadyJourneySection />
     </>
   );
 };

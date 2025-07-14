@@ -6,6 +6,9 @@ import AboutTreasurer from "@/components/layout/main/AboutTreasurer";
 export const metadata = {
   title: "About | Treasurer",
   description: "About | Treasurer",
+  alternates: {
+    canonical: "https://www.av.school/about-us/our-Leaders/treasurer",
+  },
 };
 
 const About = async () => {

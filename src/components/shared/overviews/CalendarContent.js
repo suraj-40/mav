@@ -2,6 +2,7 @@
 import Image from "next/image";
 import overviewImage from "@/assets/images/about/Calendar.png";
 import useIsTrue from "@/hooks/useIsTrue";
+import { useState } from "react";
 
 const CalendarContent = () => {
   const isHome9 = useIsTrue("/home-9");
@@ -20,35 +21,18 @@ const CalendarContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Calen<span className="text-[#FF5722]">dar</span>
           </h1>
-          <div className="">
-            <svg
-              width={160}
-              height={20}
-              viewBox="0 0 160 20"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto lg:mx-0"
-            >
-              <path
-                d="M5,15 Q80,0 155,15"
-                fill="none"
-                stroke="#FF5722"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">A Smart View of School Life</h2>
+          <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
+            <p className="mb-2">
+              Our <span className="font-semibold text-[#FF5722]">AV’s ATOMS Calendar</span> feature is more than just a schedule; it’s a real-time academic planning tool, tailored to your child’s class level. It stays in sync with all school events and milestones, making it easier for students and parents to stay on track.
+            </p>
+            <CalendarAccordion />
+            <p className="mb-2 mt-2">Each calendar entry includes brief descriptions, relevant documents (if any), and links to related dashboard sections like Assignments or Exams. The calendar auto-updates in response to changes made by school administrators, eliminating the risk of outdated information.</p>
+            <p className="mb-0">For busy families, this tool becomes a reliable academic reference that supports planning, punctuality, and preparation—all within the Learning Management System.</p>
           </div>
-          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          The ATOMS Calendar offers a bird&apos;s-eye view of all important dates, from exams and school events to special celebrations and parent-teacher meetings. See your child&apos;s schedule for the day, week, or month, all at one glance.
-          </p>
-          <p className="mt-3 text-md md:text-lg text-gray-600 leading-relaxed">
-          No more last-minute rushes or forgotten days!
-          </p>
-          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          Mark key dates, set reminders, and help your child stay prepared and confident, every step of the way. It&apos;s your personal school planner, keeping everything in order and easy to follow.
-          </p>
         </div>
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >
@@ -65,3 +49,30 @@ const CalendarContent = () => {
 };
 
 export default CalendarContent;
+
+// Modern compact accordion for calendar features
+function CalendarAccordion() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="my-2">
+      <button
+        className={`w-full flex justify-between items-center px-4 py-2 text-left font-medium text-[#FF5722] bg-white/60 rounded-md border border-orange-100 hover:bg-orange-50 focus:outline-none transition-colors ${open ? "bg-orange-50" : ""}`}
+        onClick={() => setOpen((prev) => !prev)}
+        aria-expanded={open}
+      >
+        <span>See What’s Included in Your Calendar</span>
+        <span className={`ml-2 transition-transform ${open ? "rotate-90" : "rotate-0"}`}>▶</span>
+      </button>
+      {open && (
+        <ul className="list-disc pl-8 py-2 text-gray-700 text-sm animate-fade-in">
+          <li>Examination dates</li>
+          <li>Assignment due dates</li>
+          <li>Special event days</li>
+          <li>Holidays and breaks</li>
+          <li>Online class schedules (if applicable)</li>
+          <li>Parent-teacher meeting slots</li>
+        </ul>
+      )}
+    </div>
+  );
+}

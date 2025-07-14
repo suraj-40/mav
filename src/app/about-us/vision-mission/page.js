@@ -18,4 +18,11 @@ const VisionAndMission  = () => {
         </>
     );
   };
-  export default VisionAndMission ;
+
+export const metadata = {
+  alternates: {
+    canonical: "https://www.av.school/about-us/vision-mission",
+  },
+};
+
+export default VisionAndMission ;

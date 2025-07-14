@@ -14,6 +14,7 @@ import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import PopupWrapper from "@/components/shared/wrappers/PopupWrapper";
 import SDKIntegration from "@/components/SDKIntegration";
+import Script from 'next/script';
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -53,17 +54,14 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Analytics 4 - gtag.js */}
         <link rel="canonical" href="https://www.av.school/" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3ZQS3R5FHY"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-3ZQS3R5FHY');
-            `,
-          }}
-        />
+            `}
+        </Script>
 
         {/* Google Tag Manager */}
         <script

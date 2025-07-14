@@ -7,7 +7,10 @@ import ImageGallery from "@/components/sections/sub-section/ImageGallery";
 export const metadata = {
   title: "ATOMS | Agasthya Vidhyanikethan",
   description: "ATOMS | Agasthya Vidhyanikethan",
-  icon:"icon2.ico"
+  icon:"icon2.ico",
+  alternates: {
+    canonical: "https://www.av.school/schedule",
+  },
 };
 
 

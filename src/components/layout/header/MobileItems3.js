@@ -5,7 +5,7 @@ import MobileMenuItem from "./MobileMenuItem";
 const MobileItems3 = () => {
   const items = [
     { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
-    { id: 2, name: "AV-ATOMS", path: "/atoms", accordion: false, dropdown: null },
+    { id: 2, name: "AV-ATOMS", path: "/atoms-e-learning-portal", accordion: false, dropdown: null },
     
     {
       id: 3,

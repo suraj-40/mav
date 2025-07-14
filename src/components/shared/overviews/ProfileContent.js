@@ -20,30 +20,17 @@ const ProfileContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Pro<span className="text-[#FF5722]">file</span>
           </h1>
-          <div className="">
-            <svg
-              width={160}
-              height={20}
-              viewBox="0 0 160 20"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto lg:mx-0"
-            >
-              <path
-                d="M5,15 Q80,0 155,15"
-                fill="none"
-                stroke="#FF5722"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">All Student Details in One Place</h2>
+          <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
+            <p className="mb-2">
+              The Profile page is your child’s school identity card in digital form. It stores their name, admission number, grade, section, roll number, and other academic credentials. It also reflects updates related to co-curricular participation, house group allocations, and subject electives.
+            </p>
+            <p className="mb-0">This section is especially useful during form submissions or while contacting school authorities. Rather than sifting through files, parents can access verified information instantly—accurate, organized, and always updated within the secure Learning Management System.</p>
           </div>
-          <p className="mt-6 text-md md:text-lg text-justify text-gray-600 leading-relaxed">
-          The Profile shows all your child&apos;s school-related information, from name and class to the contact details and admission number. Keep your child&apos;s details updated to make sure you never miss important school communication. It&apos;s simple to view and manage, giving parents an easy way to check and confirm personal records. A well-maintained profile means smoother coordination with your kid&apos;s teachers and the school office.
-          </p>
           
         </div>
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >

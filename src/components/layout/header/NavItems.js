@@ -25,7 +25,7 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     {
       id: 2,
       name: "AV-ATOMS",
-      path: "/atoms",
+      path: "/atoms-e-learning-portal",
       // dropdown: <DropdownCourses />,
       isRelative: false,
     },

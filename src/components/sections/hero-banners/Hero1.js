@@ -53,12 +53,12 @@ const Hero1 = () => {
                   placeholder="blur"
                   className="w-full"
                   src={about8}
-                  alt=""
+                  alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
                 />
                 <Image
                   className="absolute left-0 top-0 lg:top-4 right-0 mx-auto"
                   src={about1}
-                  alt=""
+                  alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
                 />
               </div>
             </TiltWrapper>
@@ -69,22 +69,22 @@ const Hero1 = () => {
           <Image
             className="absolute left-1/2 bottom-[15%] animate-spin-slow"
             src={herobanner2}
-            alt=""
+            alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
           />
           <Image
             className="absolute left-[42%] sm:left-[65%] md:left-[42%] lg:left-[5%] top-[4%] sm:top-[1%] md:top-[4%] lg:top-[10%] animate-move-hor"
             src={herobanner6}
-            alt=""
+            alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
           />
           <Image
             className="absolute right-[5%] bottom-[15%]"
             src={herobanner7}
-            alt=""
+            alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
           />
           <Image
             className="absolute top-[5%] left-[45%]"
             src={herobanner7}
-            alt=""
+            alt="Agasthya Vidyanikethan in Nagarbhavi Bangalore"
           />
         </div>
       </div>

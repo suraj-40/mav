@@ -6,6 +6,9 @@ import AboutSecretary from "@/components/layout/main/AboutSecretary";
 export const metadata = { 
   title: "About | Secretary",
   description: "About | Secretary",
+  alternates: {
+    canonical: "https://www.av.school/about-us/our-Leaders/secretary",
+  },
 };
 
 const About = async () => {

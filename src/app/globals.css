@@ -462,3 +462,17 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Hero Slider Loading State */
+.hero-slider-loading {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-slider-loading .slide {
+  width: 100%;
+  height: 100%;
+}

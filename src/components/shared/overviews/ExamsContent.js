@@ -20,33 +20,24 @@ const ExamsContent = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Ex<span className="text-[#FF5722]">ams</span>
           </h1>
-          <div className="">
-            <svg
-              width={160}
-              height={20}
-              viewBox="0 0 160 20"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto lg:mx-0"
-            >
-              <path
-                d="M5,15 Q80,0 155,15"
-                fill="none"
-                stroke="#FF5722"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
-            </svg>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">Stay Ahead of the Academic Curve</h2>
+          <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
+            <p className="mb-2">
+              In the <span className="font-semibold text-[#FF5722]">ATOMS ecosystem</span>, the Exams section is your personalized space for exam preparation and performance tracking. It provides timely access to:
+            </p>
+            <ul className="list-disc pl-5 mb-2 space-y-0.5">
+              <li>Upcoming exam dates, organized by subject and format (written, oral, practical)</li>
+              <li>Syllabus outlines for each test</li>
+              <li>Revision suggestions and last-minute reminders from teachers</li>
+              <li>Post-exam feedback and marks once results are uploaded</li>
+            </ul>
+            <p className="mb-2">For parents, this is a crucial part of the Learning Management System. It helps track your child’s academic preparedness, manage their revision schedules, and understand subject-wise performance trends over time.</p>
+            <p className="mb-0">Instead of relying on secondhand updates or rushed conversations, everything is delivered cleanly and directly. And when results are published, they’re viewable from the same page—no need for separate apps or emails.</p>
           </div>
-          <p className="mt-6 text-md md:text-lg  text-gray-600 leading-relaxed">
-          Get exam-ready with all the details in one place!
-          </p>
-          <p className="mt-3 text-md md:text-lg text-justify text-gray-600 leading-relaxed">        
-          In the Exams section, you can view your test schedules, syllabus details, exam dates, and even results. No more confusion about timings or subjects. Parents can track readiness, review performance, and step in with timely support when it&apos;s needed most. No more confusion or last-minute scrambling, knowing you have all the exam information handy, so you can focus more on studying and less on searching.
-          </p>
           
         </div>
         <div
-          className="w-full lg:w-1/2"
+          className="w-full lg:w-1/2 self-center lg:mt-32"
           data-aos="fade-left"
           data-aos-delay="300"
         >

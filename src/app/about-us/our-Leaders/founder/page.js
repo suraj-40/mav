@@ -6,6 +6,9 @@ import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 export const metadata = { 
   title: "About | Founder",
   description: "About | Founder",
+  alternates: {
+    canonical: "https://www.av.school/about-us/our-Leaders/founder",
+  },
 };
 
 const About = async () => {

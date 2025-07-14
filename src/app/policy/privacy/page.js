@@ -11,3 +11,9 @@ const page = ()=>{
 
 export default page;
 
+export const metadata = {
+  alternates: {
+    canonical: "https://www.av.school/policy/privacy",
+  },
+};
+

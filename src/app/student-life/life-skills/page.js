@@ -1,4 +1,3 @@
-"use client";
 
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import LifeSkillsMobile from "@/components/sections/life-skills/LifeSkillsMobile";
@@ -20,3 +19,9 @@ const NEPLifeSkills = () => {
 };
 
 export default NEPLifeSkills;
+
+export const metadata = {
+  alternates: {
+    canonical: "https://www.av.school/student-life/life-skills",
+  },
+};

@@ -75,20 +75,12 @@ const OverviewHome = () => {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            Our Campuses
+            Explore Our Campuses
           </motion.span>
           <h2 className="text-4xl md:text-3xl lg:text-6xl py-2 md:py-3 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-av  via-orange-800 to-orange-600 font-samarkan"  data-aos="fade-up">
           Agasthya Vidyanikethan
           </h2>
-          <motion.p
-            className="mt-4 text-gray-600 text-base md:text-lg max-w-2xl mx-auto"
-            data-aos="fade-up"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            Explore our campuses and discover excellence in education
-          </motion.p>
+          
         </motion.div>
 
         {/* Tabs */}
@@ -147,6 +139,16 @@ const OverviewHome = () => {
                       <p className="text-gray-500 text-sm">
                         Established in {tab.key === "srigandhakaval" ? "2010" : "2024"} • Premier Educational Institution
                       </p>
+                      {tab.key === "srigandhakaval" && (
+                        <p className="text-orange-800 text-base font-semibold mt-1">
+                          Years of academic strength and cultural depth
+                        </p>
+                      )}
+                      {tab.key === "ullal" && (
+                        <p className="text-orange-700 text-base font-medium mt-1">
+                          Inspiring young minds to think bigger, grow deeper, and aim higher
+                        </p>
+                      )}
                     </div>
                     <div className="p-6 md:p-8">{tab.content}</div>
                   </motion.div>

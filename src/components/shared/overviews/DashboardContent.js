@@ -106,7 +106,7 @@ const DashboardContent = () => {
             <div className="relative overflow-hidden rounded-2xl border-8 border-white shadow-2xl">
               <Image
                 src={overviewImage}
-                alt="Dashboard Image"
+                alt="ATOMS LMS dashboard view"
                 className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
                 placeholder="blur"
               />
@@ -127,6 +127,128 @@ const DashboardContent = () => {
           </div>
         </motion.div>
       </div>
+      {/* AV ATOMS Info Section - Modern Design */}
+      <section className="relative w-full max-w-5xl mx-auto mt-12 px-4 md:px-8 py-10">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-2 text-[#4B2E05] tracking-tight relative inline-block">
+            <span className="relative z-10">Your Complete Online Learning Management System and E-Learning Portal</span>
+            <span className="block absolute left-1/2 -translate-x-1/2 bottom-0 w-48 h-2 bg-gradient-to-r from-[#FF5722] to-orange-400 rounded-full blur-sm opacity-60 animate-pulse"></span>
+          </h2>
+          <p className="text-center text-[#4B4F5C] text-base md:text-lg font-medium max-w-2xl mx-auto mb-8 mt-4">
+            ATOMS is a digital bridge between school and home, giving parents real-time access to assignments, attendance, events, and performance—all in one place.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            {/* Card 1: Assignment Tracker */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(255,87,34,0.15)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Clipboard List Icon */}
+                <svg className="w-6 h-6 text-[#FF5722]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="4" rx="1"/><rect x="4" y="6" width="16" height="16" rx="2"/><path d="M9 10h6M9 14h6"/></svg>
+                <span className="text-lg font-bold text-[#FF5722]">Assignment Tracker</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">Check homework, due dates, and completed tasks—support your child without repeated reminders.</p>
+            </motion.div>
+            {/* Card 2: Real-Time Attendance */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(34,139,230,0.12)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Clock Check Icon */}
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span className="text-lg font-bold text-blue-600">Real-Time Attendance</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">Instantly know if your child was present or absent—no more guessing or waiting for updates.</p>
+            </motion.div>
+            {/* Card 3: Event & Exam Calendar */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(255,87,34,0.10)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Calendar Days Icon */}
+                <svg className="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+                <span className="text-lg font-bold text-orange-500">Event & Exam Calendar</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">All school events, tests, and important days in one clear calendar—never miss a thing.</p>
+            </motion.div>
+            {/* Card 4: Performance Updates */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(76,175,80,0.10)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Trending Up Icon */}
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+                <span className="text-lg font-bold text-green-700">Performance Updates</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">Track progress and feedback from teachers—see your child’s growth over time.</p>
+            </motion.div>
+            {/* Card 5: Instant Alerts */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(255,193,7,0.10)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Bell Icon */}
+                <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                <span className="text-lg font-bold text-yellow-600">Instant Alerts</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">Get announcements and urgent updates right away—no more missed messages or last-minute surprises.</p>
+            </motion.div>
+            {/* Card 6: Unified Learning Portal */}
+            <motion.div
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(121,85,72,0.10)' }}
+              className="bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-2 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {/* Layout Grid Icon */}
+                <svg className="w-6 h-6 text-[#4B2E05]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/></svg>
+                <span className="text-lg font-bold text-[#4B2E05]">Unified Learning Portal</span>
+              </div>
+              <p className="text-[#4B4F5C] text-base">Everything you need, in one easy-to-use place—works beautifully on phone and desktop.</p>
+            </motion.div>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="mt-10 flex justify-center"
+          >
+            <div className="w-full max-w-xl bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+              <h3 className="text-xl md:text-2xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#FF5722] to-orange-400 bg-clip-text text-transparent tracking-tight">
+                How to Access the ATOMS Learning Portal
+              </h3>
+              <ol className="list-none space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">1</span>
+                  <span className="text-base md:text-lg font-medium">Visit <a href="https://www.av.school/atoms-e-learning-portal/" className="text-[#FF5722] underline font-bold hover:text-orange-700 transition">https://www.av.school/atoms-e-learning-portal/</a></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">2</span>
+                  <span className="text-base md:text-lg font-medium">Log in using the credentials shared by the school</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">3</span>
+                  <span className="text-base md:text-lg font-medium">Explore the dashboard to check assignments, updates, and events</span>
+                </li>
+              </ol>
+              <div className="mt-2 text-center text-sm text-gray-600 bg-orange-50/60 rounded-lg px-4 py-2">
+                <svg className="inline w-4 h-4 mr-1 text-[#FF5722] align-text-bottom" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+                The portal works on any device, and no extra download is required.
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
     </div>
   );
 };
