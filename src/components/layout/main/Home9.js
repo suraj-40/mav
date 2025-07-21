@@ -15,6 +15,7 @@ import PricingPlans from "@/components/sections/pricing-plans/PricingPlans";
 import Programs from "@/components/sections/programs/Programs";
 import Registration from "@/components/sections/registrations/Registration";
 import ImageGallery from "@/components/sections/sub-section/ImageGallery";
+import FAQSection from "@/components/sections/sub-section/FAQSection";
 
 const Home9 = () => {
   return (
@@ -35,6 +36,7 @@ const Home9 = () => {
       {/* <PricingPlans /> */}
       {/* <Instructors2 /> */}
       {/* <Instructors /> */}
+      <FAQSection />
     </>
   );
 };

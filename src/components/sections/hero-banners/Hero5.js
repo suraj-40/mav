@@ -30,10 +30,10 @@ const Hero5 = () => {
             <div data-aos="fade-up" className="lg:col-start-1 lg:col-span-7">
               <div className="3xl:pr-135px">
                 <HreoName>EDUCATION SOLUTION</HreoName>
-                <h1 className="text-size-35 md:text-size-65 lg:text-5xl 2xl:text-size-90 leading-42px md:leading-18 lg:leading-15 2xl:leading-24 text-blackColor dark:text-blackColor-dark md:tracking-half lg:tracking-normal 2xl:tracking-half font-bold mb-15px">
+                <h2 className="text-size-35 md:text-size-65 lg:text-5xl 2xl:text-size-90 leading-42px md:leading-18 lg:leading-15 2xl:leading-24 text-blackColor dark:text-blackColor-dark md:tracking-half lg:tracking-normal 2xl:tracking-half font-bold mb-15px">
                   Your Awesome{" "}
                   <span className="text-secondaryColor">Online</span> Course
-                </h1>
+                </h2>
                 <p className="text-size-15md:text-lg text-blackColor dark:text-blackColor-dark font-medium">
                   Lorem Ipsum is simply dummy text of the printing typesetting
                   <br />

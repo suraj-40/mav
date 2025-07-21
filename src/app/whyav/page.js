@@ -7,8 +7,8 @@ export const metadata = {
   description: "Why AV | Agasthya Vidhyanikethan",
   icon: "icon2.ico",
   alternates: {
-    canonical: "https://www.av.school/whyav",
-  },
+    canonical: "https://www.av.school/whyav"
+  }
 };
 
 const whyAV = async () => {

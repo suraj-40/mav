@@ -7,8 +7,8 @@ export const metadata = {
   title: "About | Treasurer",
   description: "About | Treasurer",
   alternates: {
-    canonical: "https://www.av.school/about-us/our-Leaders/treasurer",
-  },
+    canonical: "https://www.av.school/about-us/our-Leaders/treasurer"
+  }
 };
 
 const About = async () => {

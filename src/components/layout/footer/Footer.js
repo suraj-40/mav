@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/nep"
+                  href="/NEP"
                   className=" hover:text-avorange transition-colors duration-300"
                 >
                   NEP

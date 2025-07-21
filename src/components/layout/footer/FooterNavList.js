@@ -8,7 +8,7 @@ const FooterNavList = () => {
     {
       heading: "Links",
       items: [
-        { name: "Admission", path: "/application" },
+        { name: "Admission", path: "/schedule" },
         { name: "About Us", path: "/aboutus" },
         { name: "Help (FAQ)", path: "#" },
         { name: "Contact Us", path: "/contactus" },

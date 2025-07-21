@@ -3,12 +3,12 @@ import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import AboutSecretary from "@/components/layout/main/AboutSecretary";
 
-export const metadata = { 
+export const metadata = {
   title: "About | Secretary",
   description: "About | Secretary",
   alternates: {
-    canonical: "https://www.av.school/about-us/our-Leaders/secretary",
-  },
+    canonical: "https://www.av.school/about-us/our-Leaders/secretary"
+  }
 };
 
 const About = async () => {

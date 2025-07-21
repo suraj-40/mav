@@ -7,7 +7,7 @@ const Decleration=()=>{
         <div className="modal-dialog" role="document">
         <div className="modal-content rounded-4 shadow">
             <div className="modal-header border-bottom-0">
-            <h1 className="modal-title fs-5">Modal title</h1>
+            <h2 className="modal-title fs-5">Modal title</h2>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body py-0">

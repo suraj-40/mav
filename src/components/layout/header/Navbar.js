@@ -52,8 +52,7 @@ const Navbar = () => {
             
          
             <div className="flex justify-end font-bold md:hidden">
-    
-              <UserDropdown />
+              {/* <UserDropdown /> */}
             </div> 
       
 

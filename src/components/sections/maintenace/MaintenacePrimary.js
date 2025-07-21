@@ -9,9 +9,9 @@ const MaintenacePrimary = () => {
           <h5 className="text-size-28 font-bold mb-15px text-blackColor dark:text-blackColor-dark leading-1.2">
             Sorry, We are
           </h5>
-          <h1 className="text-size-40 3xl:text-size-100 font-bold mb-15px text-blackColor dark:text-blackColor-dark leading-1.2">
+          <h2 className="text-size-40 3xl:text-size-100 font-bold mb-15px text-blackColor dark:text-blackColor-dark leading-1.2">
             Under Maintenance
-          </h1>
+          </h2>
           <p className="text-contentColor dark:text-contentColor-dark">
             {"We're"} currently under maintenance, if all goes as planned{" "}
             {"we'll"} be back in

@@ -35,6 +35,6 @@ export default ContactUs;
 
 export const metadata = {
   alternates: {
-    canonical: "https://www.av.school/contact-us",
-  },
+    canonical: "https://www.av.school/contact-us"
+  }
 };

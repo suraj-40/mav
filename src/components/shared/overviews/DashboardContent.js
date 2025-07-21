@@ -38,9 +38,9 @@ const DashboardContent = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Dash<span className="text-[#FF5722]">board</span>
-          </h1>
+          </h2>
 
           <div className="">
             <svg

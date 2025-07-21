@@ -18,9 +18,9 @@ const CalendarContent = () => {
           data-aos="fade-right"
           data-aos-delay="100"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Calen<span className="text-[#FF5722]">dar</span>
-          </h1>
+          </h2>
           <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">A Smart View of School Life</h2>
           <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
             <p className="mb-2">

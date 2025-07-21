@@ -52,7 +52,7 @@ const VisionMissonMobile = () => {
             transition={{ duration: 1, delay: 0.2 }}
             style={{ transform: "translate(-50%, -50%)" }}
           />
-          <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
+          <h2 className="text-3xl font-bold text-gray-800 tracking-tight">
             Our{" "}
             <span
               className="bg-gradient-to-r from-[#FF5722] to-orange-600 bg-clip-text text-transparent"
@@ -60,7 +60,7 @@ const VisionMissonMobile = () => {
             >
               Journey
             </span>
-          </h1>
+          </h2>
           <motion.p
             className="max-w-md mx-auto text-gray-600 text-base leading-relaxed mt-3"
             initial={{ opacity: 0, y: 20 }}

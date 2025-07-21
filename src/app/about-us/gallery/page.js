@@ -8,8 +8,8 @@ export const metadata = {
   description: "Gallery | Agasthya Vidhyanikethan",
   icon: "icon2.ico",
   alternates: {
-    canonical: "https://www.av.school/about-us/gallery",
-  },
+    canonical: "https://www.av.school/about-us/gallery"
+  }
 };
 
 const gallery = async () => {

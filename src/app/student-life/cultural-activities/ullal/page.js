@@ -16,8 +16,8 @@ const NEPCulturalActivities  = () => {
 
 export const metadata = {
   alternates: {
-    canonical: "https://www.av.school/student-life/cultural-activities/ullal",
-  },
+    canonical: "https://www.av.school/student-life/cultural-activities/ullal"
+  }
 };
 
 export default NEPCulturalActivities ;

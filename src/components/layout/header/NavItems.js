@@ -30,6 +30,12 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
       isRelative: false,
     },
     {
+      id: 2.5,
+      name: "What's New",
+      path: "/whats-new",
+      isRelative: false,
+    },
+    {
       id: 3,
       name: "About Us",
       path: "",

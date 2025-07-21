@@ -9,8 +9,8 @@ export const metadata = {
   description: "ATOMS | Agasthya Vidhyanikethan",
   icon:"icon2.ico",
   alternates: {
-    canonical: "https://www.av.school/schedule",
-  },
+    canonical: "https://www.av.school/schedule"
+  }
 };
 
 

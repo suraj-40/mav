@@ -22,6 +22,6 @@ export default NEPLifeSkills;
 
 export const metadata = {
   alternates: {
-    canonical: "https://www.av.school/student-life/life-skills",
-  },
+    canonical: "https://www.av.school/student-life/life-skills"
+  }
 };

@@ -6,6 +6,7 @@ const MobileItems3 = () => {
   const items = [
     { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
     { id: 2, name: "AV-ATOMS", path: "/atoms-e-learning-portal", accordion: false, dropdown: null },
+    { id: 2.5, name: "What's New", path: "/whats-new", accordion: false, dropdown: null },
     
     {
       id: 3,

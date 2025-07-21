@@ -21,8 +21,8 @@ const VisionAndMission  = () => {
 
 export const metadata = {
   alternates: {
-    canonical: "https://www.av.school/about-us/vision-mission",
-  },
+    canonical: "https://www.av.school/about-us/vision-mission"
+  }
 };
 
 export default VisionAndMission ;

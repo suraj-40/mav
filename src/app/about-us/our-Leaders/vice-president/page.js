@@ -7,8 +7,8 @@ export const metadata = {
   title: "About | Vice President",
   description: "About | Vice President",
   alternates: {
-    canonical: "https://www.av.school/about-us/our-Leaders/vice-president",
-  },
+    canonical: "https://www.av.school/about-us/our-Leaders/vice-president"
+  }
 };
 
 const About = async () => {

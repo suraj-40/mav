@@ -18,9 +18,9 @@ const AnnouncementContent = () => {
           data-aos="fade-right"
           data-aos-delay="100"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
             Announce<span className="text-[#FF5722]">ments</span>
-          </h1>
+          </h2>
           <h2 className="text-xl md:text-2xl font-semibold text-[#FF5722] mt-2 mb-4">School Updates in Real Time</h2>
           <div className="">
             <svg

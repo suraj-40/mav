@@ -18,9 +18,9 @@ const HeroPrimary = ({ title, path }) => {
         </div>
         <div className="container">
           <div className="text-center">
-            <h1 className="text-3xl md:text-size-40 2xl:text-size-55 font-bold text-blackColor2 dark:text-blackColor2-dark  leading-18 md:leading-15 lg:leading-18">
+            <h2 className="text-3xl md:text-size-40 2xl:text-size-55 font-bold text-blackColor2 dark:text-blackColor2-dark  leading-18 md:leading-15 lg:leading-18">
               {title}
-            </h1>
+            </h2>
             <ul className="flex gap-1 justify-center  ">
               <li>
                 <Link

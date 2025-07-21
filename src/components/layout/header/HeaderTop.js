@@ -66,7 +66,7 @@ const HeaderTop = () => {
                 <div className="ticker">
                   <div className="ticker__item">
                     <Link
-                      href="https://av.school/application"
+                      href="/schedule"
                       className="text-secondaryColor md:text-lg lg:text-xl hover:text-[#FF4F1E]/80 transition-colors duration-50"
                     >
                       Admissions Open for Academic Year 2025 - 2026

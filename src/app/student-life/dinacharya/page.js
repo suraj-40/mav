@@ -13,8 +13,8 @@ const NEPDinacharya  = () => {
 
 export const metadata = {
   alternates: {
-    canonical: "https://www.av.school/student-life/dinacharya",
-  },
+    canonical: "https://www.av.school/student-life/dinacharya"
+  }
 };
 
 export default NEPDinacharya ;
