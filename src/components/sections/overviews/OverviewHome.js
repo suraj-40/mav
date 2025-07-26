@@ -102,7 +102,7 @@ const OverviewHome = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                <span className="block md:hidden">{tab.key === 'ullal' ? 'Ullal' : 'Srigandhakaval'}</span>
+                <span className="block md:hidden">{tab.key === 'ullal' ? 'AV Ullal' : 'AV Srigandhakaval'}</span>
                 <span className="hidden md:block">{tab.name}</span>
               </motion.button>
             ))}

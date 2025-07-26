@@ -109,7 +109,7 @@ const docFiles = {
   5: "Building Safety Certificate (Sl No. 5).pdf",
   6: "Fire NOC (Sl No. 6).pdf",
   7: "Self Certification (Sl No. 7).pdf",
-  8: "WATER, HEALTH AND SANITATION CERTIFICATES (SL No.8).pdf",
+  8: "WHSC (SL No.8).pdf",
   9: "FEE STRUCTURE OF THE SCHOOL (Sl No. 9).pdf",
   10: "Annual Callendar (Sl No. 10).pdf",
   11: "School Management (Sl No. 11).pdf",
@@ -163,26 +163,22 @@ export default function PublicDisclosure() {
           {/* Branch Selector */}
           <div className="mb-12">
             <div className="flex justify-center mb-8">
-              <div className="flex w-full max-w-2xl bg-white/95 rounded-lg shadow-md border border-gray-100 overflow-hidden">
+              <div className="flex w-full max-w-5xl bg-white/95 rounded-xl shadow-lg border border-gray-100">
                 {branches.map((branch, index) => (
                   <button
                     key={branch.id}
                     onClick={() => setActiveBranch(branch.id)}
-                    className={`relative z-10 w-1/2 px-4 py-3 text-center font-medium text-sm md:text-base transition-all duration-300
+                    className={`relative z-10 w-1/2 px-4 py-2 text-center font-semibold text-sm transition-all duration-300
                       ${activeBranch === branch.id 
                         ? "bg-avorange text-white" 
-                        : "bg-white text-gray-800 hover:bg-orange-50 hover:text-orange-700"
-                      }
-                      ${index === 0 ? "rounded-l-lg" : ""} 
-                      ${index === branches.length - 1 ? "rounded-r-lg" : ""}
+                        : "bg-white text-gray-900 hover:bg-orange-50 hover:text-orange-700"}
+                      ${index === 0 ? "rounded-l-xl" : ""} 
+                      ${index === branches.length - 1 ? "rounded-r-xl" : ""}
                       ${index !== 0 ? "border-l border-gray-200" : ""}
                     `}
                   >
-                    <div className="flex items-center justify-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span className="hidden md:block">{branch.shortName}</span>
-                      <span className="md:hidden">{branch.shortName.split(' ')[0]}</span>
-                    </div>
+                    <span className="block md:hidden">{branch.id === "ullal" ? "AV Ullal" : "AV Srigandhakaval"}</span>
+                    <span className="hidden md:block whitespace-nowrap">{branch.name}</span>
                   </button>
                 ))}
               </div>
