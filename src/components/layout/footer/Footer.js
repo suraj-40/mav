@@ -163,6 +163,14 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/public-disclosure"
+                  className=" hover:text-avorange transition-colors duration-300"
+                >
+                  Public Disclosure
+                </Link>
+              </li>
             </ul>
           </div>
 

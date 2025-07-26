@@ -27,15 +27,17 @@ const NavbarRight = () => {
             </li>
           )} */}
           <NavItems />
-          {isHome4 || isHome4Dark || isHome5 || isHome5Dark ? null : (
-            <li className="px-5 py-4">
-              <LoginButton />
-            </li>
-          )}
+          {/* Removed user/profile icon button */}
         </ul>
 
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden">
+        {/* Mobile Menu Button and Login Button */}
+        <div className="lg:hidden flex items-center gap-2">
+          <a
+            href="#"
+            className="loginButton login text-xs font-normal sm:text-sm md:text-md lg:text-md bg-gradient-to-r from-[#FF5722] to-orange-600 text-white rounded-lg px-3 py-1 shadow border border-[#FF5722] hover:bg-white hover:text-[#FF5722] transition-all duration-300"
+          >
+            Log In
+          </a>
           <MobileMenuOpen onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
         </div>
       </div>

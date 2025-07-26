@@ -84,41 +84,33 @@ const OverviewHome = () => {
         </motion.div>
 
         {/* Tabs */}
-        <div className="flex justify-center m-5 md:m-30 md:my-12" data-aos="fade-up">
-          <div className="relative  p-1 bg-white/70 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-50/50  w-full">
-            <motion.div
-              className="absolute top-1 bottom-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-xl shadow-lg"
-              initial={false}
-              animate={{
-                x: tabRefs.current[activeIndex]?.offsetLeft || 0,
-                width: tabRefs.current[activeIndex]?.offsetWidth || "50%",
-              }}
-              transition={{ type: "spring", stiffness: 400, damping: 30 }}
-            />
+        <div className="flex justify-center my-4 md:m-30 md:my-12 px-2" data-aos="fade-up">
+          <div className="flex w-full bg-white/95 rounded-lg shadow-md border border-gray-100 overflow-hidden gap-[2px]">
             {tabs.map((tab, index) => (
               <motion.button
                 key={tab.key}
                 ref={(el) => (tabRefs.current[index] = el)}
                 onClick={() => handleTabChange(tab.key, index)}
-                className={`relative z-10 w-1/2 p-3 text-center font-medium text-size-20 justify-center items-center md:text-base rounded-xl transition-all duration-300 ${
-                  activeTab === tab.key
-                    ? "text-white"
-                    : "text-gray-700 hover:text-gray-900"
-                }`}
+                className={`relative z-10 w-1/2 px-2 py-1 md:px-4 md:py-3 text-center font-medium text-[13px] md:text-base rounded-md md:rounded-xl transition-all duration-300 whitespace-nowrap
+                  ${activeTab === tab.key ? "bg-avorange text-white" : "bg-white text-gray-800 hover:bg-orange-50 hover:text-orange-700"}
+                  ${index === 0 ? "rounded-l-md md:rounded-l-xl" : ""} ${index === tabs.length - 1 ? "rounded-r-md md:rounded-r-xl" : ""}
+                  ${index !== 0 ? "border-l-2 border-white" : ""}
+                `}
                 disabled={animating}
                 aria-selected={activeTab === tab.key}
                 role="tab"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
               >
-                {tab.name}
+                <span className="block md:hidden">{tab.key === 'ullal' ? 'Ullal' : 'Srigandhakaval'}</span>
+                <span className="hidden md:block">{tab.name}</span>
               </motion.button>
             ))}
           </div>
         </div>
 
         {/* Tab Content */}
-        <div className="relative md:mx-20" data-aos="fade-up">
+        <div className="relative md:mx-20 mt-4" data-aos="fade-up">
           <AnimatePresence mode="wait">
             {tabs.map(
               (tab) =>
