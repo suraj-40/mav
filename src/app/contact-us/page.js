@@ -34,6 +34,8 @@ const ContactUs = () => {
 export default ContactUs;
 
 export const metadata = {
+  title: "Contact Us - Get in Touch | Agasthya Vidyanikethan School",
+  description: "Get in touch with Agasthya Vidyanikethan School. Contact us for admissions, inquiries, campus visits, or general information. We're here to help with your educational journey.",
   alternates: {
     canonical: "https://www.av.school/contact-us"
   }

@@ -102,7 +102,7 @@ const ImageGallery = ({ gallary }) => {
   return (
     <div className="my-12 md:my-20">
       <div className="text-center mb-8 md:mb-12">
-        <motion.h1
+        <motion.h2
           className="text-3xl md:text-7xl font-bold tracking-tight"
           variants={{
             hidden: { opacity: 0, y: -20 },
@@ -120,7 +120,7 @@ const ImageGallery = ({ gallary }) => {
               Gallery
             </span>
           )}
-        </motion.h1>
+        </motion.h2>
 
         <motion.div
           className="flex justify-center mt-4 sm:mt-6"

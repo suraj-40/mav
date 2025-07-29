@@ -24,9 +24,9 @@ const NewAbout = () => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-[34px] leading-[1.1] font-bold text-avorange">
+                  <h2 className="text-[34px] leading-[1.1] font-bold text-avorange">
                     <span data-countup-number="2000">2</span>
-                  </h1>
+                  </h2>
                   <p className="uppercase text-white font-bold leading-[18px]">
                     Campuses
                   </p>
@@ -50,9 +50,9 @@ const NewAbout = () => {
                   />
                 </div>
                 <div className="md:mr-7">
-                  <h1 className="text-[34px] leading-[1.1] font-bold text-avorange">
+                  <h2 className="text-[34px] leading-[1.1] font-bold text-avorange">
                     <span data-countup-number="2000">100</span>+
-                  </h1>
+                  </h2>
                   <p className="uppercase text-white font-bold leading-[18px]">
                     Dedicated Educators
                   </p>
@@ -76,9 +76,9 @@ const NewAbout = () => {
                   />
                 </div>
                 <div className="md:mr-7">
-                  <h1 className="text-[34px] leading-[1.1] font-bold text-avorange">
+                  <h2 className="text-[34px] leading-[1.1] font-bold text-avorange">
                     <span data-countup-number="2000">1000</span>+
-                  </h1>
+                  </h2>
                   <p className="uppercase text-white font-bold leading-[18px]">
                     Bright Minds
                   </p>

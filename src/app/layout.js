@@ -39,7 +39,10 @@ export const montserrat = Montserrat({
 
 export const metadata = {
   title: "Agasthya Vidyanikethan",
-  description: "Home description",
+  description: "Agasthya Vidyanikethan School - Providing quality education and holistic development in Bangalore. Discover our comprehensive approach to learning and student growth.",
+  alternates: {
+    canonical: "https://www.av.school",
+  },
   icons: {
     icon: "/favicon.ico", // path is relative to `public/`
   },

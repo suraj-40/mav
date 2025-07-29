@@ -67,8 +67,8 @@ const WelcomeSection = () => {
 
             {/* Content */}
             <div className="relative z-10 text-left md:text-center">
-              {/* H1 Heading */}
-              <motion.h1
+              {/* H2 Heading */}
+              <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -82,7 +82,7 @@ const WelcomeSection = () => {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-orange-700 to-orange-600 text-xs md:text-xl lg:text-2xl">
                   Top School in Nagarbhavi, Bangalore
                 </span>
-              </motion.h1>
+              </motion.h2>
               {/* H2 Subheading */}
               <motion.h2
                 initial={{ opacity: 0, y: -15 }}

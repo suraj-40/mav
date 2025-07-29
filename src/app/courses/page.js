@@ -4,8 +4,11 @@ import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
 export const metadata = {
-  title: "Courses | Edurock - Education LMS Template",
-  description: "Courses | Edurock - Education LMS Template",
+  title: "Courses & Programs | Agasthya Vidyanikethan School",
+  description: "Explore our comprehensive range of courses and educational programs designed to provide holistic development and academic excellence at Agasthya Vidyanikethan.",
+  alternates: {
+    canonical: "https://www.av.school/courses",
+  },
 };
 
 const Courses = async () => {

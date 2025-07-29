@@ -15,6 +15,8 @@ const NEPCulturalActivities  = () => {
   };
 
 export const metadata = {
+  title: "Cultural Activities - Ullal Campus | Agasthya Vidyanikethan School",
+  description: "Experience vibrant cultural activities at Agasthya Vidyanikethan's Ullal campus. From music and dance to arts and cultural events, discover our rich cultural programs.",
   alternates: {
     canonical: "https://www.av.school/student-life/cultural-activities/ullal"
   }

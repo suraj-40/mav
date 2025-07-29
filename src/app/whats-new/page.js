@@ -2,7 +2,7 @@ import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Why Foundational Years Matter | Agasthya Vidyanikethan School",
+  title: "What's New - Latest Updates & Articles | Agasthya Vidyanikethan School",
   description: "Looking for the best schools near Nagarbhavi or Ullal? Learn how Agasthya Vidyanikethan shapes early childhood with real-life skills that go far beyond classroom teaching.",
   alternates: {
     canonical: "https://www.av.school/whats-new",
