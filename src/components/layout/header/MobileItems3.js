@@ -49,7 +49,15 @@ const MobileItems3 = () => {
         // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
-    { id: 5, name: "Why AV?", path: "/whyav", accordion: false, dropdown: null },
+    {
+      id: 5,
+      name: "Why AV?",
+      path: null,
+      accordion: true,
+      dropdown: [
+        { name: "NEP", path: "/NEP" }
+      ],
+    },
     { id: 6, name: "Contact Us", path: "/contact-us", accordion: false, dropdown: null },
   ];
 

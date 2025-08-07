@@ -6,6 +6,9 @@ import MainTabs from "./MainTabs";
 import BranchTabs from "./BranchTabs";
 import GalleryContent from "./GalleryContent";
 import VideoGallery from "./VideoGallery";
+import { academicYears } from "./GalleryData";
+import { Listbox } from '@headlessui/react';
+import { ChevronUpDownIcon } from '@heroicons/react/24/solid';
 
 const fadeVariants = {
   hidden: { opacity: 0 },
@@ -18,6 +21,7 @@ const GalleryMain = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [tappedTab, setTappedTab] = useState(null);
   const [expandedCardId, setExpandedCardId] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(academicYears[academicYears.length - 1]);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -110,6 +114,26 @@ const GalleryMain = () => {
         </motion.div>
       </motion.div>
 
+      <div className="flex flex-col items-center mb-8">
+        <span className="mb-2 text-lg font-semibold text-gray-700">Please select an academic year:</span>
+        <div className="flex items-center justify-center gap-2">
+          {academicYears.map((year, idx) => (
+            <React.Fragment key={year}>
+              <button
+                onClick={() => setSelectedYear(year)}
+                className={`px-5 py-2 rounded-full border-2 font-semibold text-base shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-avorange
+                  ${selectedYear === year ? 'bg-avorange text-white border-avorange' : 'bg-white text-gray-800 border-gray-200 hover:bg-orange-50 hover:border-avorange'}`}
+              >
+                {year}
+              </button>
+              {idx < academicYears.length - 1 && (
+                <span className="h-0.5 w-6 bg-avorange opacity-60 mx-1 rounded-full"></span>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+
       <MainTabs mainTab={mainTab} setMainTab={setMainTab} handleTabTap={handleTabTap} />
       <BranchTabs mainTab={mainTab} activeBranchTab={activeBranchTab} setActiveBranchTab={setActiveBranchTab} />
       
@@ -119,9 +143,10 @@ const GalleryMain = () => {
           activeBranchTab={activeBranchTab}
           expandedCardId={expandedCardId}
           toggleCardExpand={toggleCardExpand}
+          selectedYear={selectedYear}
         />
       ) : (
-        <VideoGallery expandedCardId={expandedCardId} toggleCardExpand={toggleCardExpand} />
+        <VideoGallery expandedCardId={expandedCardId} toggleCardExpand={toggleCardExpand} selectedYear={selectedYear} />
       )}
 
       <div className="absolute top-20 left-0 w-32 h-32 bg-avorange opacity-5 blur-xl -z-10"></div>

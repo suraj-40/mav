@@ -1,6 +1,9 @@
 import axios from 'axios';
 
 export async function POST(req) {
+    // WhatsApp functionality commented out due to expired plan
+    // Only email functionality will be used
+    
     const body = await req.json();
     const {
         childName,
@@ -20,6 +23,8 @@ export async function POST(req) {
         selectedTime,
     } = body;
     
+    // Commented out WhatsApp message logic
+    /*
     const parentName1=fatherName+" and "+motherName;
     const parentName2=motherName+" and "+fatherName;
     const dateTime=date+" at "+selectedTime.slice(0, 8);
@@ -77,4 +82,11 @@ export async function POST(req) {
                 error: error.response ? error.response.data : error.message
             };
         }
+    */
+
+    // Return success response without sending WhatsApp messages
+    return new Response(
+        JSON.stringify({ success: true, message: "WhatsApp functionality disabled - email only" }),
+        { status: 200 }
+    );
 }

@@ -50,7 +50,8 @@ export async function POST(req) {
     address,
     phone,
     email,
-    link
+    link,
+    branchImage
   ) => `
     <div style="font-family: Arial, sans-serif; color: #333; padding: 5px; border-radius: 8px; margin: auto;">
      <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
@@ -101,7 +102,7 @@ export async function POST(req) {
       <!-- Bottom image with table for compatibility -->
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
         <tr>
-          <td align="center" style="background-image: url('https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747384275/AV_sj12ct.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 300px;">
+          <td align="center" style="background-image: url('${branchImage}'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 300px;">
             &nbsp;
           </td>
         </tr>
@@ -149,24 +150,26 @@ export async function POST(req) {
 
   try {
     if (parentEmail) {
-      let email, phone, address, link;
+      let email, phone, address, link, branchImage;
 
       if (branch === "AV Ullal") {
         email = "info@av.school";
         phone = "7760776098 | 7760776046";
         address = "#170/3, 6th block, Sir M. Vishweshwaraiah Layout, Ullal Ring road, Bengaluru-560110";
-        link="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6"
+        link="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6";
+        branchImage = "https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747384275/AV_sj12ct.png"; // Replace with your Ullal branch image URL
       } else {
         email = "info@av.school";
         phone = "9880906633 | 9972342144";
         address = "# 1566, 'D' Group Layout, 60 ft. Road, Near 2nd Water Tank, Srigandhakaval, Bengaluru - 560091. Landmark: Nagarabhavi Ring Road   ";
-        link="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8"
+        link="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8";
+        branchImage = "https://res.cloudinary.com/dpv2jcm1c/image/upload/v1754033935/AV1_epwjbu.png"; // Current image for main branch
       }
       const info1 = await transporter.sendMail({
         from: '"Agasthya Vidhyanikethan" <info@av.school>', // updated to school email
         to: parentEmail,
         subject: `Campus Visit Confirmed — See You on ${date}, ${selectedTime}`,
-        html: studentEmailTemplate(fatherName, motherName, childName, date, selectedTime, address, phone, email, link),
+        html: studentEmailTemplate(fatherName, motherName, childName, date, selectedTime, address, phone, email, link, branchImage),
       });
     }    
 

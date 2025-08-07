@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import GalleryCard from "@/components/ui/GalleryCard";
-import { videoActivities } from "./GalleryData";
+import { videoActivitiesByYear } from "./GalleryData";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -15,7 +15,8 @@ const containerVariants = {
   }
 };
 
-const VideoGallery = ({ expandedCardId, toggleCardExpand }) => {
+const VideoGallery = ({ expandedCardId, toggleCardExpand, selectedYear }) => {
+  const videos = videoActivitiesByYear[selectedYear] || [];
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -31,7 +32,7 @@ const VideoGallery = ({ expandedCardId, toggleCardExpand }) => {
           animate="visible"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {videoActivities.map((activity) => (
+          {videos.map((activity) => (
             <GalleryCard
               key={`${activity.branch}-${activity.id}`}
               {...activity}

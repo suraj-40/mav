@@ -1091,3 +1091,21 @@ export const videoActivities = [
     branch: "srigandhkaval"
   }
 ];
+
+export const srigandhkavalActivitiesByYear = {
+  "2024-25": srigandhkavalActivities,
+  "2025-26": [] // Add 2025-26 activities here
+};
+
+export const ullalActivitiesByYear = {
+  "2024-25": ullalActivities,
+  "2025-26": [] // Add 2025-26 activities here
+};
+
+export const videoActivitiesByYear = {
+  "2024-25": videoActivities,
+  "2025-26": [] // Add 2025-26 videos here
+};
+
+// Optionally, export the available years for use in the UI
+export const academicYears = ["2024-25", "2025-26"];

@@ -53,7 +53,20 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
       id: 5,
       name: "Why AV?",
       path: "/whyav",
-      // dropdown: <DropdownDemoes />,
+      dropdown: (
+        <div className="shadow-lg rounded-xl bg-white border border-gray-100 min-w-[120px]">
+          <ul className="py-2">
+            <li>
+              <a
+                href="/NEP"
+                className="whitespace-nowrap text-sm 2xl:text-base font-semibold text-contentColor border-l-2 border-transparent transition duration-300 hover:border-avorange block hover:bg-whitegrey1 hover:text-primaryColor leading-sm 3xl:leading-lg px-4 py-2"
+              >
+                NEP
+              </a>
+            </li>
+          </ul>
+        </div>
+      ),
       isRelative: true,
     },
     {

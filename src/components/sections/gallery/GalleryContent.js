@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import GalleryCard from "@/components/ui/GalleryCard";
-import { ullalActivities, srigandhkavalActivities } from "./GalleryData";
+import { ullalActivitiesByYear, srigandhkavalActivitiesByYear } from "./GalleryData";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -19,12 +19,13 @@ const GalleryContent = ({
   mainTab,
   activeBranchTab,
   expandedCardId,
-  toggleCardExpand
+  toggleCardExpand,
+  selectedYear
 }) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={`${mainTab}-${activeBranchTab}`}
+        key={`${mainTab}-${activeBranchTab}-${selectedYear}`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -38,8 +39,8 @@ const GalleryContent = ({
         >
           {mainTab === "photos" &&
             (activeBranchTab === "ullal"
-              ? ullalActivities
-              : srigandhkavalActivities
+              ? ullalActivitiesByYear[selectedYear] || []
+              : srigandhkavalActivitiesByYear[selectedYear] || []
             ).map((activity) => (
               <GalleryCard
                 key={activity.id}

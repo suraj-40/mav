@@ -52,7 +52,7 @@ export const SectionData = [
       ],
       [
         { time: "9:40 AM to 10:20 AM", label: "PERIOD 2", bgClass: "bg-av" },
-        { time: "10:20 AM to 10:40 AM", label: "BREAKFAST", bgClass: "bg-avorange" },
+        { time: "10:20 AM to 10:40 AM", label: "SHORT BREAK", bgClass: "bg-avorange" },
       ]
     ]
   },
