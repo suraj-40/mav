@@ -44,7 +44,8 @@ export const metadata = {
     canonical: "https://www.av.school",
   },
   icons: {
-    icon: "/favicon.ico", // path is relative to `public/`
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
 };
 
@@ -55,6 +56,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${hind.variable} ${montserrat.variable}`}>
       <head>
+        {/* Favicon Links */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        
         {/* Google Analytics 4 - gtag.js */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
@@ -77,6 +82,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
+        suppressHydrationWarning
         className={`relative leading-[1.8] bg-bodyBg dark:bg-bodyBg-dark z-0 ${inter.className}`}
       >
         {/* Google Tag Manager (noscript) */}

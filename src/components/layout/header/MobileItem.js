@@ -4,7 +4,7 @@ import MobileLink from "./MobileLink";
 import Accordion from "@/components/shared/accordion/Accordion";
 import AccordionContent from "@/components/shared/accordion/AccordionContent";
 const MobileMenuItem = ({ item }) => {
-  const { name, path, children, accordion } = item;
+  const { name, path, dropdown, accordion } = item;
 
   return !accordion ? (
     <MobileLink item={{ name, path }} />
@@ -13,7 +13,7 @@ const MobileMenuItem = ({ item }) => {
       <AccordionController type={"primary"}>
         <MobileLink item={{ name, path }} />
       </AccordionController>
-      <AccordionContent>{children && children}</AccordionContent>
+      <AccordionContent>{dropdown && dropdown}</AccordionContent>
     </Accordion>
   );
 };

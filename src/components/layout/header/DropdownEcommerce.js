@@ -41,12 +41,6 @@ const DropdownEcommerce = () => {
         },
       ],
     },
-    {
-      name: "Gallery",
-      status: null,
-      path: "/about-us/gallery",
-      type: "secondary",
-    },
   ];
   return <DropdownPrimary items={items} />;
 };

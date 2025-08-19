@@ -101,6 +101,12 @@ const documents = [
     icon: CheckCircle,
     description: "Self certification proforma for school compliance",
     image: "/images/gallery/self-cert.jpg"
+  },
+  {
+    title: "MANDATORY DISCLOSURE DETAILS",
+    icon: FileText,
+    description: "Mandatory disclosure details",
+    image: "/images/gallery/mandatory.jpg"
   }
 ];
 
@@ -118,7 +124,8 @@ const docFiles = {
   11: "School Management (Sl No. 11).pdf",
   12: "PTA (SL No.12).pdf",
   13: "Last 3 years 2_(SL No. 13).pdf",
-  14: "AV-2_Self_Certification_Proforma_Scanned.pdf"
+  14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
+  15: "Mandatory Disclosure Details _ AV ULLA.pdf"
 };
 
 const branches = [

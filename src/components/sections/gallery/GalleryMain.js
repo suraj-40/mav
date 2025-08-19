@@ -21,7 +21,7 @@ const GalleryMain = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [tappedTab, setTappedTab] = useState(null);
   const [expandedCardId, setExpandedCardId] = useState(null);
-  const [selectedYear, setSelectedYear] = useState(academicYears[academicYears.length - 1]);
+  const [selectedYear, setSelectedYear] = useState("2024-25");
 
   useEffect(() => {
     setIsLoaded(true);
@@ -134,6 +134,7 @@ const GalleryMain = () => {
         </div>
       </div>
 
+      {/* Main Tabs (Videos/Photos) */}
       <MainTabs mainTab={mainTab} setMainTab={setMainTab} handleTabTap={handleTabTap} />
       <BranchTabs mainTab={mainTab} activeBranchTab={activeBranchTab} setActiveBranchTab={setActiveBranchTab} />
       
