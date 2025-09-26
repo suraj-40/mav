@@ -42,16 +42,6 @@ const HeroSlider3 = () => {
     {
       title: (
         <>
-          Registrations <span className="text-secondaryColor">open</span>
-        </>
-      ),
-      image: herobannerImage1,
-      tag: "AGASTHYA VIDYANIKETHAN",
-      subtitle: "Your journey begins here join us today and embark on an educational adventure",
-    },
-    {
-      title: (
-        <>
           Excellence in <span className="text-secondaryColor">Education</span>
         </>
       ),

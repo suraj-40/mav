@@ -93,7 +93,7 @@ const Registration = () => {
           {/* Left Section - Content */}
           <div className="space-y-8" data-aos="fade-right">
             <span className="inline-block px-4 py-2 bg-[#FF5B00] text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm">
-              Academic Year 2025 - 2026
+              Academic Year 2026 - 2027
             </span>
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
               Begin Your Child’s Journey at

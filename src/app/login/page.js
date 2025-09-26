@@ -3,8 +3,8 @@ import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 
 export const metadata = {
-  title: "Login/Register | Agasthya Vidyanikethan School",
-  description: "Access your Agasthya Vidyanikethan School account. Login or register to access student portal, course materials, assignments, and school resources.",
+  title: "Login/Register | Agasthya Vidyanikethan ",
+  description: "Access your Agasthya Vidyanikethan  account. Login or register to access student portal, course materials, assignments, and school resources.",
   alternates: {
     canonical: "https://www.av.school/login"
   }

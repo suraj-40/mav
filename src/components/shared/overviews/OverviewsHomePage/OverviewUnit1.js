@@ -8,18 +8,18 @@ import Av23 from "@/assets/images/av1/img6.jpg";
 import Av24 from "@/assets/images/av1/img3.jpg";
 import Av25 from "@/assets/images/av1/img8.jpg";
 import Av26 from "@/assets/images/av1/img9.jpg";
-import Av27 from "@/assets/images/av1/img2.jpg";
+// import Av27 from "@/assets/images/av1/img2.jpg";
 import Av28 from "@/assets/images/av1/img5.jpg";
 import Av29 from "@/assets/images/av1/img1.png";
 import Av30 from "@/assets/images/av1/img7.jpg";
 import Av31 from "@/assets/images/av1/img11.jpg";
 import Av32 from "@/assets/images/av1/img12.jpg";
-import Av33 from "@/assets/images/av1/img13.jpg";
+// import Av33 from "@/assets/images/av1/img13.jpg";
 
 
 import PopupVideo from "@/components/shared/popup/PopupVideo";
 
-const images = [Av21,  Av29, Av23, Av31, Av22, Av32, Av24, Av25, Av26,Av33, Av27, Av28, Av30];
+const images = [Av21, Av29, Av23, Av31, Av22, Av32, Av24, Av25, Av26, Av28, Av30];
 
 const OverviewUnit2 = () => {
   const [showFullText, setShowFullText] = useState(false);

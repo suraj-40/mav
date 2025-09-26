@@ -11,7 +11,7 @@ const CallToAction = () => {
               Ready to Join Our Community?
             </h2>
             <p className="text-white/90 max-w-md">
-              Applications for the 2025-2026 academic year are now open. Secure your child&apos;s place in our nurturing educational environment today.
+              Applications for the 2026-2027 academic year are now open. Secure your child&apos;s place in our nurturing educational environment today.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">

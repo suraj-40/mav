@@ -12,7 +12,7 @@ const page = ()=>{
 export default page;
 
 export const metadata = {
-  title: "Terms & Conditions | Agasthya Vidyanikethan School",
+  title: "Terms & Conditions | Agasthya Vidyanikethan ",
   description: "Read Agasthya Vidyanikethan's terms and conditions. Understand our school policies, rules, guidelines, and expectations for students, parents, and visitors.",
   alternates: {
     canonical: "https://www.av.school/policy/tnc"

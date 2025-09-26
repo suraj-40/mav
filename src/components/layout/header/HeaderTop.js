@@ -61,7 +61,7 @@ const HeaderTop = () => {
         <div className="4xl:container mx-auto text-whiteColor text-size-12 xl:text-sm py-2 xl:py-3 px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             {/* Left Side - Ticker */}
-            <div className="w-full md:w-2/6 overflow-hidden">
+            <div className="w-full md:w-3/6 overflow-hidden">
               <div className="ticker-wrap">
                 <div className="ticker">
                   <div className="ticker__item">
@@ -69,7 +69,7 @@ const HeaderTop = () => {
                       href="/schedule"
                       className="text-secondaryColor md:text-lg lg:text-xl hover:text-[#FF4F1E]/80 transition-colors duration-50"
                     >
-                      Admissions Open for Academic Year 2025 - 2026
+                      Admissions Open for Academic Year 2026 - 2027
                     </Link>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const HeaderTop = () => {
             <div className="w-full md:w-4/6 flex flex-col md:flex-row justify-start md:justify-end items-start md:items-center gap-6 md:gap-12">
               {/* Contact Info */}
               <div className="hidden md:flex items-center flex-wrap gap-x-4 gap-y-2 text-sm md:text-base">
-                <Link
+                {/* <Link
                   href="tel:+91 7760776098"
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                 >
@@ -92,8 +92,8 @@ const HeaderTop = () => {
                   className="text-whiteColor hover:text-[#FF4F1E]/80 transition-colors duration-300"
                 >
                   +91 7760776046
-                </Link>
-                <span className="text-gray-400">|</span>
+                </Link> */}
+                {/* <span className="text-gray-400">|</span> */}
               </div>
 
            

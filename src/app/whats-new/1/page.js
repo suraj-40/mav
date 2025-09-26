@@ -69,7 +69,7 @@ export default function WhatsNewBlog1() {
                 {/* Left Column - Text Content */}
                 <div className="space-y-6">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    The early years of a child&apos;s life are not just about ABCs and numbers. These years form the bedrock for everything that follows. At <span className="text-orange-600 font-semibold">Agasthya Vidyanikethan School</span>, we recognise that the real impact of education begins before formal schooling does. That is why our focus on Early Childhood Development goes beyond books and routines. It is about shaping the way children think, feel, and connect with the world.
+                    The early years of a child&apos;s life are not just about ABCs and numbers. These years form the bedrock for everything that follows. At <span className="text-orange-600 font-semibold">Agasthya Vidyanikethan </span>, we recognise that the real impact of education begins before formal schooling does. That is why our focus on Early Childhood Development goes beyond books and routines. It is about shaping the way children think, feel, and connect with the world.
                   </p>
                   
                   <p className="text-lg text-gray-700 leading-relaxed">
@@ -118,7 +118,7 @@ export default function WhatsNewBlog1() {
                   {/* Right Column - Text Content */}
                   <div className="space-y-6">
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      <span className="font-bold text-orange-600">ECCE</span> full form in education is <span className="bg-yellow-100 px-1 rounded">Early Childhood Care and Education</span>. This phase targets children between <span className="text-orange-700 font-semibold">3 and 8 years</span> of age and plays a crucial role in building <span className="underline decoration-orange-400">cognitive, emotional, and social strength</span>. At <span className="font-bold text-orange-600">Agasthya Vidyanikethan School</span>, ECCE is not treated as a mere transition to primary classes. It is a well-structured foundation that prepares learners to face future academic and personal challenges with confidence.
+                      <span className="font-bold text-orange-600">ECCE</span> full form in education is <span className="bg-yellow-100 px-1 rounded">Early Childhood Care and Education</span>. This phase targets children between <span className="text-orange-700 font-semibold">3 and 8 years</span> of age and plays a crucial role in building <span className="underline decoration-orange-400">cognitive, emotional, and social strength</span>. At <span className="font-bold text-orange-600">Agasthya Vidyanikethan </span>, ECCE is not treated as a mere transition to primary classes. It is a well-structured foundation that prepares learners to face future academic and personal challenges with confidence.
                     </p>
                     
                     <p className="text-lg text-gray-700 leading-relaxed">
@@ -293,7 +293,7 @@ export default function WhatsNewBlog1() {
                     </p>
                     
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      <span className="font-bold text-orange-600">Agasthya Vidyanikethan School</span>, situated within convenient reach for families searching for schools near Nagarbhavi and schools near Ullal, stands out because of its personalised approach. Every child is seen as a unique learner. Our spaces are designed to support open-ended learning, movement, and self-expression. For parents seeking the best schools near me, the answer lies not just in good reviews but in visible, measurable child development.
+                      <span className="font-bold text-orange-600">Agasthya Vidyanikethan </span>, situated within convenient reach for families searching for schools near Nagarbhavi and schools near Ullal, stands out because of its personalised approach. Every child is seen as a unique learner. Our spaces are designed to support open-ended learning, movement, and self-expression. For parents seeking the best schools near me, the answer lies not just in good reviews but in visible, measurable child development.
                     </p>
                   </div>
                 </div>
@@ -325,7 +325,7 @@ export default function WhatsNewBlog1() {
                     </p>
                     
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      At <span className="font-bold text-orange-600">Agasthya Vidyanikethan School</span>, learning takes place in thoughtfully designed environments that inspire curiosity. From nature-based projects to storytelling corners and sensory zones, we build learning ecosystems that encourage children to ask questions, make choices, and learn through doing - not just content delivery.
+                      At <span className="font-bold text-orange-600">Agasthya Vidyanikethan </span>, learning takes place in thoughtfully designed environments that inspire curiosity. From nature-based projects to storytelling corners and sensory zones, we build learning ecosystems that encourage children to ask questions, make choices, and learn through doing - not just content delivery.
                     </p>
                   </div>
 
@@ -393,7 +393,7 @@ export default function WhatsNewBlog1() {
                   {/* Right Column - Image */}
                   <div className="relative">
                     <div className="relative h-80">
-                      <Image src="/images/whats-new/1/Asset 5.png" alt="Family activity at home" fill className="object-cover rounded-lg" />
+                      <Image src="/images/whats-new/1/Asset 5.jpg" alt="Family activity at home" fill className="object-cover rounded-lg" />
                     </div>
                   </div>
                 </div>
@@ -407,7 +407,7 @@ export default function WhatsNewBlog1() {
               </div>
             </motion.div>
 
-            {/* Seventh Section - What Sets Agasthya Vidyanikethan School Apart */}
+            {/* Seventh Section - What Sets Agasthya Vidyanikethan  Apart */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -417,7 +417,7 @@ export default function WhatsNewBlog1() {
               {/* Section Header */}
               <div className="text-center mb-8">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  What Sets <span className="text-orange-600">Agasthya Vidyanikethan School Apart</span>
+                  What Sets <span className="text-orange-600">Agasthya Vidyanikethan  Apart</span>
                 </h2>
                 <div className="w-25 h-1 bg-gradient-to-r from-av via-avorange to-avorange mx-auto"></div>
               </div>
@@ -473,7 +473,7 @@ export default function WhatsNewBlog1() {
                   </p>
                   
                   <p className="text-lg leading-relaxed">
-                    At <span className="font-bold text-orange-400">Agasthya Vidyanikethan School</span>, our vision is to create a generation of learners who are not just academically sound but emotionally and socially prepared for life. For families looking for meaningful education options among <span className="font-semibold text-orange-400">schools near Nagarbhavi</span>, <span className="font-semibold text-orange-400">schools near Ullal</span>, or the <span className="font-bold text-orange-400">top school in Nagarbhavi</span>, we invite you to explore how we&#39;re changing the narrative of early education.
+                    At <span className="font-bold text-orange-400">Agasthya Vidyanikethan </span>, our vision is to create a generation of learners who are not just academically sound but emotionally and socially prepared for life. For families looking for meaningful education options among <span className="font-semibold text-orange-400">schools near Nagarbhavi</span>, <span className="font-semibold text-orange-400">schools near Ullal</span>, or the <span className="font-bold text-orange-400">top school in Nagarbhavi</span>, we invite you to explore how we&#39;re changing the narrative of early education.
                   </p>
                 </div>
               </div>

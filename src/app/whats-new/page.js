@@ -9,10 +9,10 @@ const blogPosts = [
     id: 1,
     title: "Why Foundational Years Matter: Building Skills Beyond the Classroom",
     date: "July 2025",
-    author: "Agasthya Vidyanikethan School",
+    author: "Agasthya Vidyanikethan ",
     image: "/images/blogs/foundational-years.jpg",
     excerpt:
-      "The early years of a child's life are not just about ABCs and numbers. These years form the bedrock for everything that follows. At Agasthya Vidyanikethan School, we recognise that the real impact of education begins before formal schooling does. That is why our focus on Early Childhood Development goes beyond books and routines. It is about shaping the way children think, feel, and connect with the world.",
+      "The early years of a child's life are not just about ABCs and numbers. These years form the bedrock for everything that follows. At Agasthya Vidyanikethan , we recognise that the real impact of education begins before formal schooling does. That is why our focus on Early Childhood Development goes beyond books and routines. It is about shaping the way children think, feel, and connect with the world.",
     slug: "why-foundational-years-matter",
   },
   // Future posts can be added here
@@ -69,7 +69,7 @@ const WhatsNew = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Discover the latest insights, updates, & stories from Agasthya Vidyanikethan School. Stay informed about our educational innovations, student achievements, & community initiatives.
+            Discover the latest insights, updates, & stories from Agasthya Vidyanikethan. Stay informed about our educational innovations, student achievements, & community initiatives.
           </motion.p>
           
           <motion.div

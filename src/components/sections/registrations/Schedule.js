@@ -161,7 +161,7 @@ const Schedule = () => {
       <div className="relative z-10 container mx-auto px-4 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12">
           <div className="space-y-8" data-aos="fade-right">
-            <span className="text-white inline-block px-4 py-2 bg-yellow-200/80 text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm bg-av">Academic Year 2025 - 2026</span>
+            <span className="text-white inline-block px-4 py-2 bg-yellow-200/80 text-blue-700 rounded-full text-sm font-medium shadow-md backdrop-blur-sm bg-av">Academic Year 2026 - 2027</span>
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
               Begin Your Child&apos;s Journey at
               <span className="block text-avorange relative">
@@ -209,8 +209,8 @@ const Schedule = () => {
                     <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-blue-800">Parent&apos;s Email</label>
-                    <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
+                    <label className="text-sm font-medium text-blue-800">Parent&apos;s Email <span className="text-red-600">*</span> </label>
+                    <input type="email" name="parentEmail" value={formData.parentEmail} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Gender <span className="text-red-600">*</span></label>
@@ -237,7 +237,7 @@ const Schedule = () => {
                       {[...Array(formData.branch === 'AV Srigandhakavalu' ? 3 : formData.branch === 'AV Ullal' ? 3 : 0)].map((_, i) => (
                         <option key={i} value={`Montessori ${i + 1}`}>Montessori {i + 1}</option>
                       ))}
-                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 7 : 0)].map((_, i) => (
+                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 8 : 0)].map((_, i) => (
                         <option key={i} value={`Class ${i + 1}`}>Class {i + 1}</option>
                       ))}
                     </select>
@@ -301,7 +301,7 @@ const Schedule = () => {
                           <option>1:00 PM - 2:00 PM</option>
                           <option>2:00 PM - 3:00 PM</option>
                           <option>3:00 PM - 4:00 PM</option>
-                          <option>4:00 PM - 5:00 PM</option>
+                          <option>4:00 PM - 4:30 PM</option>
                         </select>
                       </div>
                     </div>

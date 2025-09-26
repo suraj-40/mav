@@ -21,7 +21,7 @@ const NEPLifeSkills = () => {
 export default NEPLifeSkills;
 
 export const metadata = {
-  title: "Life Skills Development | Agasthya Vidyanikethan School",
+  title: "Life Skills Development | Agasthya Vidyanikethan ",
   description: "Build essential life skills at Agasthya Vidyanikethan. Our comprehensive program focuses on communication, leadership, problem-solving, and character development for future success.",
   alternates: {
     canonical: "https://www.av.school/student-life/life-skills"

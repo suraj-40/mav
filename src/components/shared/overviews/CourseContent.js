@@ -1,6 +1,6 @@
 import getAllCourses from "@/libs/getAllCourses";
 import CourseCard2 from "../courses/CourseCard2";
-
+ 
 const CourseContent = ({ isNotSidebar }) => {
   const allCourses = getAllCourses();
   const courses = allCourses.slice(0, 3);

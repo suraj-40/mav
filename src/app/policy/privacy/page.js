@@ -12,7 +12,7 @@ const page = ()=>{
 export default page;
 
 export const metadata = {
-  title: "Privacy Policy | Agasthya Vidyanikethan School",
+  title: "Privacy Policy | Agasthya Vidyanikethan ",
   description: "Learn about Agasthya Vidyanikethan's privacy policy and data protection practices. Understand how we collect, use, and safeguard your personal information and data.",
   alternates: {
     canonical: "https://www.av.school/policy/privacy"

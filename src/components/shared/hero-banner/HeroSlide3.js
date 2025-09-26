@@ -29,7 +29,7 @@ const HeroSlide3 = ({ slide, idx }) => {
             {subtitle}
           </p>
           <div className="mt-30px space-x-30px">
-            <ButtonPrimary2 path="/schedule">Admissions</ButtonPrimary2>
+            <ButtonPrimary2 path="/schedule">Admissions Open</ButtonPrimary2>
           </div>
         </div>
       </div>     

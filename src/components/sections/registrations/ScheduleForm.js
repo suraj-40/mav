@@ -282,13 +282,14 @@ const ScheduleForm = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
-                Parent&apos;s Email
+                Parent&apos;s Email <span className="text-red-600">*</span>
               </label>
               <input
                 type="email"
                 name="parentEmail"
                 value={formData.parentEmail}
                 onChange={handleChange}
+                required
                 className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800"
               />
             </div>
@@ -345,7 +346,7 @@ const ScheduleForm = () => {
                     </option>
                   )
                 )}
-                {[...Array(formData.branch === "AV Srigandhakavalu" ? 10 : formData.branch === "AV Ullal" ? 7 : 0)].map(
+                {[...Array(formData.branch === "AV Srigandhakavalu" ? 10 : formData.branch === "AV Ullal" ? 8 : 0)].map(
                   (_, i) => (
                     <option key={i} value={`Class ${i + 1}`}>
                       Class {i + 1}
@@ -438,6 +439,7 @@ const ScheduleForm = () => {
                       toggleCalendar();
                     }}
                     value={value}
+                    titleDisabled={({ date }) => date.getDay() === 0}
                   />
                 </div>
               )}
@@ -459,7 +461,7 @@ const ScheduleForm = () => {
                 <option>1:00 PM - 2:00 PM</option>
                 <option>2:00 PM - 3:00 PM</option>
                 <option>3:00 PM - 4:00 PM</option>
-                <option>4:00 PM - 5:00 PM</option>
+                <option>4:00 PM - 4:30 PM</option>
               </select>
             </div>
           </div>
@@ -711,7 +713,7 @@ export default ScheduleForm;
 //                         <option key={i} value={`Montessori ${i + 1}`}>Montessori {i + 1}</option>
 //                       ))}
                       
-//                       {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 7 : 0)].map((_, i) => (
+//                       {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 8 : 0)].map((_, i) => (
 //                         <option key={i} value={`Class ${i + 1}`}>Class {i + 1}</option>
 //                       ))}
 //                     </select>
@@ -793,7 +795,7 @@ export default ScheduleForm;
 //                 <option>1:00 PM - 2:00 PM</option>
 //                 <option>2:00 PM - 3:00 PM</option>
 //                 <option>3:00 PM - 4:00 PM</option>
-//                 <option>4:00 PM - 5:00 PM</option>
+//                 <option>4:00 PM - 4:30 PM</option>
 //               </select>
 //             </div>
 //           </div>
@@ -1027,7 +1029,7 @@ export default ScheduleForm;
 //                         <option key={i} value={`Montessori ${i + 1}`}>Montessori {i + 1}</option>
 //                       ))}
                       
-//                       {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 7 : 0)].map((_, i) => (
+//                       {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 8 : 0)].map((_, i) => (
 //                         <option key={i} value={`Class ${i + 1}`}>Class {i + 1}</option>
 //                       ))}
 //                     </select>
@@ -1105,7 +1107,7 @@ export default ScheduleForm;
 //                         <option>1:00 PM - 2:00 PM</option>
 //                         <option>2:00 PM - 3:00 PM</option>
 //                         <option>3:00 PM - 4:00 PM</option>
-//                         <option>4:00 PM - 5:00 PM</option>
+//                         <option>4:00 PM - 4:30 PM</option>
 //                       </select>
 //                     </div>
 //                     </div>

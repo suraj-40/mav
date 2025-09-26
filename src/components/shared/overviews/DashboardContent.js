@@ -221,8 +221,9 @@ const DashboardContent = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-10 flex justify-center"
+            className="mt-10 flex flex-col items-center gap-8"
           >
+            {/* ATOMS Portal Steps Box */}
             <div className="w-full max-w-xl bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-4">
               <h3 className="text-xl md:text-2xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#FF5722] to-orange-400 bg-clip-text text-transparent tracking-tight">
                 How to Access the ATOMS Learning Portal
@@ -238,12 +239,61 @@ const DashboardContent = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">3</span>
-                  <span className="text-base md:text-lg font-medium">Explore the dashboard to check assignments, updates, and events</span>
+                  <span className="text-base md:text-lg font-medium">Explore the dashboard for learning content, check assignments, updates, events and many more.</span>
                 </li>
               </ol>
               <div className="mt-2 text-center text-sm text-gray-600 bg-orange-50/60 rounded-lg px-4 py-2">
                 <svg className="inline w-4 h-4 mr-1 text-[#FF5722] align-text-bottom" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
                 The portal works on any device, and no extra download is required.
+              </div>
+            </div>
+
+            {/* App Download Steps Box */}
+            <div className="w-full max-w-xl bg-white/80 backdrop-blur-md border border-orange-100 rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+              <h3 className="text-xl md:text-2xl font-extrabold text-center mb-2 bg-gradient-to-r from-[#FF5722] to-orange-400 bg-clip-text text-transparent tracking-tight">
+                How to Download the AV-ATOMS App
+              </h3>
+              <ol className="list-none space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">1</span>
+                  <span className="text-base md:text-lg font-medium">Open the <span className="font-semibold text-orange-600">Google Play Store</span> (Android) or <span className="font-semibold text-orange-600">Apple App Store</span> (iOS) on your device</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">2</span>
+                  <span className="text-base md:text-lg font-medium">
+                    Search for <span className="font-semibold text-orange-600">&ldquo;AV ATOMS&rdquo;</span> in the search bar or{' '}
+                    <a 
+                      href="#" 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                        window.location.href = isIOS 
+                          ? 'https://apps.apple.com/in/app/av-atoms/id6747069636'
+                          : 'https://play.google.com/store/apps/details?id=com.edmingle.avatoms';
+                      }}
+                      className="font-semibold text-[#FF5722] underline hover:text-orange-700 transition cursor-pointer"
+                    >
+                      Click here
+                    </a>
+                    {' '}to download directly
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">3</span>
+                  <span className="text-base md:text-lg font-medium">Tap <span className="font-semibold text-orange-600">Install</span> (Android) or <span className="font-semibold text-orange-600">Get</span> (iOS) to download and install the app</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">4</span>
+                  <span className="text-base md:text-lg font-medium">Open the app and log in using the credentials shared by the school</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FF5722] text-white flex items-center justify-center font-bold text-lg shadow-md">5</span>
+                  <span className="text-base md:text-lg font-medium">Explore the dashboard for learning content, check assignments, updates, events and many more.</span>
+                </li>
+              </ol>
+              <div className="mt-2 text-center text-sm text-gray-600 bg-orange-50/60 rounded-lg px-4 py-2">
+                <svg className="inline w-4 h-4 mr-1 text-[#FF5722] align-text-bottom" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+                The app is available for both Android and iOS devices. No extra charges apply.
               </div>
             </div>
           </motion.div>

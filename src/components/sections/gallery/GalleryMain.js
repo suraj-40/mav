@@ -72,7 +72,7 @@ const GalleryMain = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Discover our vibrant events, achievements, and celebrations.
+          Discover our cultural events, achievements, and celebrations.
         </motion.p>
         <motion.div
           className="flex justify-center mt-4 sm:mt-6"
