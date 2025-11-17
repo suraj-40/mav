@@ -25,7 +25,7 @@ const DropdownDashboard = () => {
         {
           name: "Srigandhakaval",
           status: null,
-          path: "/student-life/cultural-activities/srigandhakaval",
+          path: "/about-us/gallery",
           type: "secondary",
         },
         {

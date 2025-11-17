@@ -77,6 +77,12 @@ const NavItems = ({ isMobile = false, isMediumScreen = false }) => {
     // },
     {
       id: 6,
+      name: "Careers",
+      path: "/careers",
+      isRelative: false,
+    },
+    {
+      id: 7,
       name: "Contact Us",
       path: "/contact-us",
       // dropdown: <DropdownDemoes />,

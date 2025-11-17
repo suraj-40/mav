@@ -48,7 +48,8 @@ const MobileItems3 = () => {
         // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
-    { id: 5.5, name: "Gallery", path: "/about-us/gallery", accordion: false, dropdown: null },
+  { id: 5.5, name: "Gallery", path: "/about-us/gallery", accordion: false, dropdown: null },
+  { id: 5.7, name: "Careers", path: "/careers", accordion: false, dropdown: null },
     // {
     //   id: 5,
     //   name: "Why AV?",
