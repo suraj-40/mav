@@ -293,15 +293,15 @@ import SEnvironmentDay8 from "@/assets/images/gallery/srigandhakaval/WorldEnviro
 import SEnvironmentDay9 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img9.png";
 import SEnvironmentDay10 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img10.png";
 import SEnvironmentDay11 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img11.jpg";
-import SEnvironmentDay12 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img12.JPG";
-import SEnvironmentDay13 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img13.JPG";
-import SEnvironmentDay14 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img14.JPG";
-import SEnvironmentDay15 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img15.JPG";
-import SEnvironmentDay16 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img16.JPG";
-import SEnvironmentDay17 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img17.JPG";
-import SEnvironmentDay18 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img18.JPG";
-import SEnvironmentDay19 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img19.JPG";
-import SEnvironmentDay20 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img20.JPG";
+import SEnvironmentDay12 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img12.jpg";
+import SEnvironmentDay13 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img13.jpg";
+import SEnvironmentDay14 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img14.jpg";
+import SEnvironmentDay15 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img15.jpg";
+import SEnvironmentDay16 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img16.jpg";
+import SEnvironmentDay17 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img17.jpg";
+import SEnvironmentDay18 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img18.jpg";
+import SEnvironmentDay19 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img19.jpg";
+import SEnvironmentDay20 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img20.jpg";
 
 // Investiture Ceremony
 import SInvestitureCeremony1 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img2.png";
@@ -492,21 +492,21 @@ import SKannadaRajyothsava9 from "@/assets/images/gallery/srigandhakaval/Kannada
 import SKannadaRajyothsava10 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img10.png";
 
 // Annual Day
-import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.JPG";
-import SAnnualDay2 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img2.JPG";
-import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
-import SAnnualDay4 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img4.JPG";
+import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.png";
+import SAnnualDay2 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img2.png";
+import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.png";
+import SAnnualDay4 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img4.png";
 
 // import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img5.jpg";
-import SAnnualDay6 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img6.JPG";
-import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
-import SAnnualDay8 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img8.JPG";
-import SAnnualDay9 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img9.JPG";
-import SAnnualDay10 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img10.JPG";
-import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.JPG";
-import SAnnualDay12 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img12.JPG";
-import SAnnualDay13 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img13.JPG";
-import SAnnualDay14 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img14.JPG";
+import SAnnualDay6 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img6.png";
+import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.png";
+import SAnnualDay8 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img8.png";
+import SAnnualDay9 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img9.png";
+import SAnnualDay10 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img10.png";
+import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.png";
+import SAnnualDay12 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img12.png";
+import SAnnualDay13 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img13.png";
+import SAnnualDay14 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img14.png";
 
 // Gita Jayanti
 import SGitajayanti1 from "@/assets/images/gallery/srigandhakaval/GitaJayanti/img1.jpg";

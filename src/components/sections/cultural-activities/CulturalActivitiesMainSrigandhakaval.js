@@ -6,14 +6,14 @@ import CulturalActivitySection from "./CulturalActivitySection";
 
 // Srigandhkaval Branch Image Imports
 // World Environment Day
-import SEnvironmentDay1 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img1.JPG";
-import SEnvironmentDay2 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img2.JPG";
-import SEnvironmentDay3 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img3.JPG";
-import SEnvironmentDay4 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img4.JPG";
-import SEnvironmentDay5 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img5.JPG";
-import SEnvironmentDay6 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img6.JPG";
-import SEnvironmentDay7 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img7.JPG";
-import SEnvironmentDay8 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img8.JPG";
+import SEnvironmentDay1 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img1.png";
+import SEnvironmentDay2 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img2.png";
+import SEnvironmentDay3 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img3.png";
+import SEnvironmentDay4 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img4.png";
+import SEnvironmentDay5 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img5.png";
+import SEnvironmentDay6 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img6.png";
+import SEnvironmentDay7 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img7.png";
+import SEnvironmentDay8 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img8.png";
 
 // Investiture Ceremony
 import SInvestitureCeremony1 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img2.png";
@@ -101,10 +101,10 @@ import SKannadaRajyothsava5 from "@/assets/images/gallery/srigandhakaval/Kannada
 import SKannadaRajyothsava7 from "@/assets/images/gallery/srigandhakaval/KannadaRajyotsava/img7.png";
 
 // Annual Day
-import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.JPG";
-import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
-import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.JPG";
-import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
+import SAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.png";
+import SAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.png";
+import SAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.png";
+import SAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.png";
 
 // Gita Jayanti
 import SGitajayanti1 from "@/assets/images/cultural/srigandhakaval/GitaJayanti/img1.jpg";
@@ -162,10 +162,10 @@ import UGitajayanti5 from "@/assets/images/gallery/ullal/GitaJayanti/img5.jpg";
 import UGitajayanti7 from "@/assets/images/gallery/ullal/GitaJayanti/img7.jpg";
 
 // Annual Day
-import UAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.JPG";
-import UAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.JPG";
-import UAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.JPG";
-import UAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.JPG";
+import UAnnualDay1 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img1.png";
+import UAnnualDay3 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img3.png";
+import UAnnualDay5 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img11.png";
+import UAnnualDay7 from "@/assets/images/gallery/srigandhakaval/AnnualDay/img7.png";
 
 // Data for Srigandhkaval Branch
 const srigandhkavalTimelineData = [
