@@ -107,6 +107,12 @@ const documents = [
     icon: FileText,
     description: "Mandatory disclosure details",
     image: "/images/gallery/mandatory.jpg"
+  },
+  {
+    title: "LAND CERTIFICATE",
+    icon: MapPin,
+    description: "Land ownership & property certificate",
+    image: "/images/gallery/land.jpg"
   }
 ];
 
@@ -125,7 +131,8 @@ const docFiles = {
   12: "PTA (SL No.12).pdf",
   13: "Last 3 years 2_(SL No. 13).pdf",
   14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
-  15: "Mandatory Disclosure Details _ AV ULLA.pdf"
+  15: "Mandatory Disclosure Details _ AV ULLA.pdf",
+  16: "Land Certicate.pdf"
 };
 
 const branches = [
@@ -198,18 +205,25 @@ export default function PublicDisclosure() {
             </div>
           </div>
 
-          {/* Branch Selector - Clean white card */}
+          {/* Branch Selector - Clean white card with slider */}
           <div className="mb-12">
             <div className="flex justify-center mb-8">
-              <div className="flex w-full max-w-5xl bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-                {branches.map((branch, index) => (
+              <div className="relative flex w-full max-w-6xl bg-white rounded-2xl shadow-lg border border-gray-100 p-1 overflow-visible">
+                <div
+                  className="absolute top-1 bottom-1 bg-gradient-to-r from-[#FF5722] to-[#ff7a33] rounded-2xl transition-all duration-300 ease-out shadow-md"
+                  style={{
+                    width: "calc(50% + 2.5rem)",
+                    left: activeBranch === "ullal" ? "-1.25rem" : "calc(50% - 1.25rem)"
+                  }}
+                />
+                {branches.map((branch) => (
                   <button
                     key={branch.id}
                     onClick={() => setActiveBranch(branch.id)}
-                    className={`relative z-10 w-1/2 px-6 py-4 text-center font-semibold text-sm transition-all duration-300
+                    className={`relative z-10 w-1/2 px-6 py-4 text-center font-semibold text-sm md:text-base transition-all duration-300
                       ${activeBranch === branch.id 
-                        ? "bg-[#FF5722] text-white" 
-                        : "bg-white text-gray-900 hover:bg-orange-50 hover:text-[#FF5722]"}
+                        ? "text-white scale-[1.01]" 
+                        : "text-gray-900"}
                     `}
                   >
                     <span className="block md:hidden">{branch.id === "ullal" ? "AV Ullal" : "AV Srigandhakaval"}</span>
@@ -218,7 +232,7 @@ export default function PublicDisclosure() {
                 ))}
               </div>
             </div>
-           </div>
+          </div>
           
            {/* Academic Year Selector - Future Implementation */}
             {/*
