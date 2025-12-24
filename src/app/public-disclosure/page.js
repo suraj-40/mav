@@ -1,16 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import { 
-  FileText, 
-  Building2, 
-  Shield, 
-  Award, 
-  Flame, 
-  CheckCircle, 
-  Droplets, 
-  DollarSign, 
-  Calendar, 
-  Users, 
+import {
+  FileText,
+  Building2,
+  Shield,
+  Award,
+  Flame,
+  CheckCircle,
+  Droplets,
+  DollarSign,
+  Calendar,
+  Users,
   TrendingUp,
   MapPin
 } from "lucide-react";
@@ -113,6 +113,12 @@ const documents = [
     icon: MapPin,
     description: "Land ownership & property certificate",
     image: "/images/gallery/land.jpg"
+  },
+  {
+    title: "COPIES OF VALID WATER TESTING REPORT",
+    icon: Droplets,
+    description: "WATER TESTING REPORT",
+    image: "/images/gallery/water.jpg"
   }
 ];
 
@@ -132,7 +138,8 @@ const docFiles = {
   13: "Last 3 years 2_(SL No. 13).pdf",
   14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
   15: "Mandatory Disclosure Details _ AV ULLA.pdf",
-  16: "Land Certicate.pdf"
+  16: "Land Certicate.pdf",
+  17: "WHSC (SL No.17).pdf"
 };
 
 const branches = [
@@ -168,11 +175,11 @@ export default function PublicDisclosure() {
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
               <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-              Public Disclosure
+                Public Disclosure
               </span>
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-              Transparency & accountability are core values at Agasthya Vidyanikethan. 
+              Transparency & accountability are core values at Agasthya Vidyanikethan.
               Access all important school documents & certificates here.
             </p>
             {/* Animated underline */}
@@ -221,8 +228,8 @@ export default function PublicDisclosure() {
                     key={branch.id}
                     onClick={() => setActiveBranch(branch.id)}
                     className={`relative z-10 w-1/2 px-6 py-4 text-center font-semibold text-sm md:text-base transition-all duration-300
-                      ${activeBranch === branch.id 
-                        ? "text-white scale-[1.01]" 
+                      ${activeBranch === branch.id
+                        ? "text-white scale-[1.01]"
                         : "text-gray-900"}
                     `}
                   >
@@ -233,9 +240,9 @@ export default function PublicDisclosure() {
               </div>
             </div>
           </div>
-          
-           {/* Academic Year Selector - Future Implementation */}
-            {/*
+
+          {/* Academic Year Selector - Future Implementation */}
+          {/*
             <div className="mb-12">
               <div className="flex justify-center mb-8">
                 <div className="flex w-full max-w-5xl bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
@@ -249,37 +256,37 @@ export default function PublicDisclosure() {
               </div>
             */}
 
-            {/* Branch Info - White card with shadow */}
-            {branches.map(branch => (
-              branch.id === activeBranch && (
-                <div key={branch.id} className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
-                  <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-[#FF5722] rounded-xl flex items-center justify-center">
-                        <MapPin className="w-7 h-7 text-white" />
-                      </div>
+          {/* Branch Info - White card with shadow */}
+          {branches.map(branch => (
+            branch.id === activeBranch && (
+              <div key={branch.id} className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                <div className="flex items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 bg-[#FF5722] rounded-xl flex items-center justify-center">
+                      <MapPin className="w-7 h-7 text-white" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4">{branch.name}</h3>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-600">
-                        <div>
-                          <span className="font-semibold text-gray-700 block mb-2">Address:</span>
-                          <p className="leading-relaxed">{branch.address}</p>
-                        </div>
-                        <div>
-                          <span className="font-semibold text-gray-700 block mb-2">Phone:</span>
-                          <p className="leading-relaxed">{branch.phone}</p>
-                        </div>
-                        <div>
-                          <span className="font-semibold text-gray-700 block mb-2">Email:</span>
-                          <p className="leading-relaxed">{branch.email}</p>
-                        </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{branch.name}</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-600">
+                      <div>
+                        <span className="font-semibold text-gray-700 block mb-2">Address:</span>
+                        <p className="leading-relaxed">{branch.address}</p>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-gray-700 block mb-2">Phone:</span>
+                        <p className="leading-relaxed">{branch.phone}</p>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-gray-700 block mb-2">Email:</span>
+                        <p className="leading-relaxed">{branch.email}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              )
-            ))}
+              </div>
+            )
+          ))}
 
           {/* Documents Section */}
           {branches.find(b => b.id === activeBranch)?.hasDocuments ? (
@@ -302,8 +309,8 @@ export default function PublicDisclosure() {
                   const fileName = docFiles[slNo];
                   const fileUrl = fileName ? `/docs/${fileName}` : null;
                   return (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group cursor-pointer"
                       aria-label={doc.title}
                     >
@@ -316,7 +323,7 @@ export default function PublicDisclosure() {
                               src={`${fileUrl}#toolbar=0&navpanes=0&scrollbar=0&view=FitH&scrollbar=0&statusbar=0&messages=0&scrollbar=0`}
                               className="w-[130%] h-full md:w-full"
                               title={`PDF Preview - ${doc.title}`}
-                              style={{ 
+                              style={{
                                 border: 'none',
                                 overflow: 'hidden !important',
                                 scrollbarWidth: 'none !important',
@@ -334,26 +341,26 @@ export default function PublicDisclosure() {
                             <IconComponent className="w-16 h-16 text-gray-400" />
                           </div>
                         )}
-                        
+
                         {/* Dark overlay at bottom for text */}
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent h-20 md:h-24"></div>
-                        
+
                         {/* Orange numbered circle */}
                         <div className="absolute bottom-4 left-4 w-8 h-8 bg-[#FF5722] rounded-full flex items-center justify-center">
                           <span className="text-white text-sm font-bold">
                             {String(slNo).padStart(2, '0')}
                           </span>
                         </div>
-                        
+
                         {/* Title removed as requested */}
-                        </div>
+                      </div>
 
                       {/* Card Body - Action buttons */}
                       <div className="p-6">
                         <p className="text-gray-700 text-sm leading-relaxed mb-4 font-bold">
                           {doc.description}
                         </p>
-                        
+
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3">
                           {fileUrl ? (
