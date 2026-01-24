@@ -87,7 +87,7 @@ const documents = [
   {
     title: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*",
     icon: Users,
-    description: "PTA committee members",
+    description: "PTA committee members & contacts",
     image: "/images/gallery/pta.jpg"
   },
   {
@@ -146,7 +146,7 @@ const docFiles = {
   9: "9. Fee Structure.pdf",
   10: "10. AV-2_School calendar.pdf",
   11: "11. SMC.pdf",
-  12: "PTA (SL No.12).pdf",
+  12: "12. PTA.pdf",
   13: "Last 3 years 2_(SL No. 13).pdf",
   14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
   15: "Mandatory Disclosure Details _ AV ULLA.pdf",
