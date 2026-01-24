@@ -67,21 +67,21 @@ const documents = [
     image: "/images/gallery/water.jpg"
   },
   {
-    title: "FEE STRUCTURE OF THE SCHOOL*",
+    title: "Fee Structure",
     icon: DollarSign,
-    description: "Complete fee structure & payment details",
+    description: "Fee Structure",
     image: "/images/gallery/fees.jpg"
   },
   {
-    title: "ANNUAL ACADEMIC CALENDER*",
+    title: "Academic calendar",
     icon: Calendar,
-    description: "Academic calendar & important dates",
+    description: "Academic calendar",
     image: "/images/gallery/calendar.jpg"
   },
   {
-    title: "LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)*",
+    title: "School Management Committee",
     icon: Users,
-    description: "School Management committee members",
+    description: "School Management Committee",
     image: "/images/gallery/smc.jpg"
   },
   {
@@ -119,6 +119,18 @@ const documents = [
     icon: Droplets,
     description: "WATER TESTING REPORT",
     image: "/images/gallery/water.jpg"
+  },
+  {
+    title: "Student Strength",
+    icon: Users,
+    description: "Student Strength Details",
+    image: "/images/gallery/students.jpg"
+  },
+  {
+    title: "Teaching Staff",
+    icon: Users,
+    description: "Teaching Staff Details",
+    image: "/images/gallery/staff.jpg"
   }
 ];
 
@@ -131,15 +143,17 @@ const docFiles = {
   6: "Fire NOC (Sl No. 6).pdf",
   7: "Self Certification (Sl No. 7).pdf",
   8: "WHSC (SL No.8).pdf",
-  9: "FEE STRUCTURE OF THE SCHOOL (Sl No. 9).pdf",
-  10: "Annual Callendar (Sl No. 10).pdf",
-  11: "School Management (Sl No. 11).pdf",
+  9: "9. Fee Structure.pdf",
+  10: "10. AV-2_School calendar.pdf",
+  11: "11. SMC.pdf",
   12: "PTA (SL No.12).pdf",
   13: "Last 3 years 2_(SL No. 13).pdf",
   14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
   15: "Mandatory Disclosure Details _ AV ULLA.pdf",
   16: "Land Certicate.pdf",
-  17: "WHSC (SL No.17).pdf"
+  17: "WHSC (SL No.17).pdf",
+  18: "18. av2 student strength 25-26.pdf",
+  19: "19. Teaching Staff.pdf"
 };
 
 const branches = [
