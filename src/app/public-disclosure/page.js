@@ -87,7 +87,7 @@ const documents = [
   {
     title: "LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS*",
     icon: Users,
-    description: "PTA committee members & contacts",
+    description: "PTA committee members",
     image: "/images/gallery/pta.jpg"
   },
   {
