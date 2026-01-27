@@ -153,7 +153,7 @@ const docFiles = {
   16: "Land Certicate.pdf",
   17: "WHSC (SL No.17).pdf",
   18: "18. av2 student strength 25-26.pdf",
-  19: "19. Teaching Staff.pdf"
+  19: "Updated Teaching Staff.pdf"
 };
 
 const branches = [
