@@ -149,7 +149,7 @@ const docFiles = {
   12: "12. PTA.pdf",
   13: "Last 3 years 2_(SL No. 13).pdf",
   14: "AV-2_Self_Certification_Proforma_Scanned.pdf",
-  15: "Mandatory Disclosure Details _ AV ULLA.pdf",
+  15: "Mandatory Disclosure Details _ AV.pdf",
   16: "Land Certicate.pdf",
   17: "WHSC (SL No.17).pdf",
   18: "18. av2 student strength 25-26.pdf",
