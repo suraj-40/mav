@@ -131,6 +131,12 @@ const documents = [
     icon: Users,
     description: "Teaching Staff Details",
     image: "/images/gallery/staff.jpg"
+  },
+  {
+    title: "Affidavit",
+    icon: Users,
+    description: "Affidavit",
+    image: "/images/gallery/affidavit.jpg"
   }
 ];
 
@@ -153,7 +159,8 @@ const docFiles = {
   16: "Land Certicate.pdf",
   17: "WHSC (SL No.17).pdf",
   18: "18. av2 student strength 25-26.pdf",
-  19: "Updated Teaching Staff.pdf"
+  19: "Updated Teaching Staff.pdf",
+  20: "Affidavit.pdf"
 };
 
 const branches = [
