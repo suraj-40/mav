@@ -24,7 +24,7 @@
     "isotope-layout": "^3.0.6",
     "lucide-react": "^0.486.0",
     "motion": "^12.9.4",
-    "next": "^15.3.1",
+    "next": "^16.1.6",
     "nodemailer": "^6.10.0",
     "react": "^18",
     "react-calendar": "^5.1.0",
