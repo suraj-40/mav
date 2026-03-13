@@ -566,14 +566,12 @@ const ullalTimelineData = [
 ];
 
 const CulturalActivitiesMainUllal = () => {
-  const [activeTab, setActiveTab] = useState("ullal");
-
   return (
     <div className="relative w-full overflow-clip">
-      <CulturalActivitiesHeader activeTab={activeTab} setActiveTab={setActiveTab} />
+      <CulturalActivitiesHeader activeTab="ullal" />
       <CulturalActivitiesTimeline
-        data={activeTab === "ullal" ? ullalTimelineData : srigandhkavalTimelineData}
-        activeTab={activeTab}
+        data={ullalTimelineData}
+        activeTab="ullal"
       />
     </div>
   );

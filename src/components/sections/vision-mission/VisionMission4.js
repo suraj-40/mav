@@ -7,7 +7,7 @@ const lifelongSuccessData = [
   {
     title: "Lifelong Success",
     description:
-      "At Agasthya Vidyaniketan, we understand that a child's journey through education is not just about academics; it's about shaping a well-rounded individual ready to conquer life's challenges. Our commitment to holistic development ensures that your child is prepared for a successful and fulfilling life, both academically and personally.",
+      "At Maharshi Agasthya Vidyanikethan, we understand that a child's journey through education is not just about academics; it's about shaping a well-rounded individual ready to conquer life's challenges. Our commitment to holistic development ensures that your child is prepared for a successful and fulfilling life, both academically and personally.",
     icon: "🌟"
   },
   {
@@ -31,7 +31,7 @@ const lifelongSuccessData = [
   {
     title: "A Foundation for Lifelong Success",
     description:
-      "Our holistic approach prepares your child for lifelong success. They leave Agasthya Vidyaniketan not only with academic excellence but also with the life skills, ethics, and mindset needed to excel in any field they choose. We believe in nurturing individuals who are not just academically competent but also well-rounded and resilient.",
+      "Our holistic approach prepares your child for lifelong success. They leave Maharshi Agasthya Vidyanikethan not only with academic excellence but also with the life skills, ethics, and mindset needed to excel in any field they choose. We believe in nurturing individuals who are not just academically competent but also well-rounded and resilient.",
     icon: "🚀"
   }
 ];
@@ -79,7 +79,7 @@ const VisionMission4 = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Lifelong Success at Agasthya Vidyaniketan
+            Lifelong Success at Maharshi Agasthya Vidyanikethan
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF5722] to-orange-600 mx-auto mt-4"></div>
         </motion.div> */}

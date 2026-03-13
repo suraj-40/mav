@@ -36,7 +36,8 @@ const GalleryCard = ({
   toggleExpand,
   activityId,
   showVideo,
-  videoDisabled = false
+  videoDisabled = false,
+  layout
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -110,30 +111,41 @@ const GalleryCard = ({
         className="relative overflow-hidden rounded-2xl shadow-lg group cursor-pointer"
         whileHover={{ y: -8, transition: { duration: 0.3 } }}
       >
-        <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+        <div className="aspect-[4/5] overflow-hidden relative bg-black/95">
+          {/* Blurred backdrop for a premium "filled" look regardless of asset ratio */}
+          {(layout === 'poster' || image?.src?.toLowerCase().includes('2025-26-video')) && (
+            <div className="absolute inset-0 overflow-hidden blur-2xl opacity-50 scale-110">
+              <Image
+                src={image}
+                alt=""
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
+
           <Image
             src={image}
             alt={title}
-            className="object-cover w-full h-56 sm:h-64 md:h-80 lg:h-96 transform transition-transform duration-700 ease-in-out group-hover:scale-110"
+            className="object-cover object-top w-full h-full transform transition-transform duration-700 ease-in-out group-hover:scale-110 relative z-10"
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F/PQAJpgNwD9TvpgAAAABJRU5ErkJggg=="
           />
         </div>
 
-        {/* Gradient overlay */}
+        {/* Gradient overlay - Deepened at bottom for "shadow blur" effect */}
         <div
-          className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-300 ${
-            isHovered ? "opacity-90" : "opacity-70"
-          }`}
+          className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-85"
+            }`}
         />
 
-        {/* Content */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white transform transition-all duration-500 ease-in-out">
+        {/* Content Section - Simplified backdrop for a more integrated feel */}
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white transform transition-all duration-500 ease-in-out z-20">
           <div className="flex items-center mb-2 sm:mb-3">
             <span className="bg-avorange text-white text-xs sm:text-sm md:text-base px-3 sm:px-4 py-1 sm:py-1.5 rounded-full font-medium mr-2 sm:mr-3">
               {id < 10 ? `0${id}` : id}
             </span>
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight">
+            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               {title}
             </h3>
           </div>
@@ -146,18 +158,17 @@ const GalleryCard = ({
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 sm:mb-6">
+                <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-4 sm:mb-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
                   {description}
                 </p>
                 {showVideo && (
                   <button
                     onClick={handleWatchClick}
                     disabled={videoDisabled}
-                    className={`inline-flex items-center text-sm sm:text-base font-medium rounded-lg px-4 sm:px-5 py-2 sm:py-3 transition-all duration-300 ${
-                      videoDisabled
-                        ? "text-white bg-avorange bg-opacity-50 cursor-not-allowed"
-                        : "text-white bg-avorange hover:bg-opacity-90"
-                    }`}
+                    className={`inline-flex items-center text-sm sm:text-base font-medium rounded-lg px-4 sm:px-5 py-2 sm:py-3 transition-all duration-300 ${videoDisabled
+                      ? "text-white bg-avorange bg-opacity-50 cursor-not-allowed"
+                      : "text-white bg-avorange hover:bg-opacity-90"
+                      }`}
                   >
                     <PlayCircle className="mr-2 h-4 sm:h-5 w-4 sm:w-5" />
                     Watch
@@ -187,7 +198,7 @@ const GalleryCard = ({
               <button
                 onClick={handleCloseModal}
                 className="absolute -top-4 -right-4 bg-avorange text-white rounded-full p-2 hover:bg-avorange/90 transition-colors"
-                 style={{ zIndex: 10 }}
+                style={{ zIndex: 10 }}
               >
                 <X className="h-5 w-5" />
               </button>
@@ -276,11 +287,10 @@ const GalleryCard = ({
                       <motion.button
                         key={index}
                         onClick={() => goToImage(index)}
-                        className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                          index === currentImageIndex
-                            ? "bg-avorange"
-                            : "bg-gray-300 hover:bg-gray-400"
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentImageIndex
+                          ? "bg-avorange"
+                          : "bg-gray-300 hover:bg-gray-400"
+                          }`}
                         aria-label={`Go to image ${index + 1}`}
                         whileHover={{ scale: 1.2 }}
                       />

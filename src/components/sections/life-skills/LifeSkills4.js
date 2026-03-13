@@ -7,7 +7,7 @@ import img41 from "@/assets/images/life-skills/04. Samskrita Siddhi/1.jpg";
 import img42 from "@/assets/images/life-skills/04. Samskrita Siddhi/2.jpg";
 
 const samskritaData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Samskrita Siddhi's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const samskritaData = {
     icon: "📜"
   },
   samskrita_description:
-    "Samskrita Siddhi at Agasthya Vidyaniketan introduces students to Sanskrit, fostering a connection to India's cultural and linguistic heritage. This program enhances cognitive flexibility and supports NEP 2020's goal of promoting multidisciplinary and culturally rooted education."
+    "Samskrita Siddhi at Maharshi Agasthya Vidyanikethan introduces students to Sanskrit, fostering a connection to India's cultural and linguistic heritage. This program enhances cognitive flexibility and supports NEP 2020's goal of promoting multidisciplinary and culturally rooted education."
 };
 
 const LifeSkills4 = () => {

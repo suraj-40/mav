@@ -8,72 +8,55 @@ import { toast } from 'react-toastify';
 import ButtonPrimary from '@/components/shared/buttons/ButtonPrimary';
 
 const ContactUs = () => {
-      const [firstName, setFirstName] = useState("");
-      const [lastName, setLastName] = useState("");
-      const [phone, setPhone] = useState("");
-      const [query, setQuery] = useState("");
-      const [message, setMessage] = useState("");
-      const formRef = useRef(null);
-    const handleSubmit = async (e) => {
-        await e.preventDefault();
-        const formData = {
-            firstName,
-            lastName,
-            phone,
-            query,
-            message,
-          };
-          try {
-            const response = await axios.post(`/api/ContactGoogleSheet`, formData);
-            console.log("Response:", response.data);
-            await axios.post(`/api/ContactMail`, formData); 
-            if(response.status === 200) {
-              toast.success('Form submitted successfully!');
-            }
-            else {
-              toast.success("Form submission failed!");
-            }
-          } catch (error) {
-            console.error("Error submitting form:", error);
-            toast.success("Submission failed!");
-          }
-          formRef.current.reset();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [query, setQuery] = useState("");
+  const [message, setMessage] = useState("");
+  const formRef = useRef(null);
+  const handleSubmit = async (e) => {
+    await e.preventDefault();
+    const formData = {
+      firstName,
+      lastName,
+      phone,
+      query,
+      message,
+    };
+    try {
+      const response = await axios.post(`/api/ContactGoogleSheet`, formData);
+      console.log("Response:", response.data);
+      await axios.post(`/api/ContactMail`, formData);
+      if (response.status === 200) {
+        toast.success('Form submitted successfully!');
+      }
+      else {
+        toast.success("Form submission failed!");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.success("Submission failed!");
     }
-    
+    formRef.current.reset();
+  }
+
   return (
     <section className="contact-us-area m-4 md:my-10 md:mx-30 bg-white rounded-xl shadow-xl" data-aos="fade-up">
       <div className="container mx-auto px-4 md:px-20">
-        <div className="flex flex-wrap items-center gap-5">
+        <div className="flex flex-wrap items-start gap-5">
           {/* Left Side - Contact Info */}
-          <div className="w-full lg:w-1/2 xl:w-1/3" data-aos="fade-up">
-            <div className="mb-6">
-              {/* <image
-                src={contact}
-                alt="Contact Us"
-                className="w-full"
-              /> */}
-            </div>
+          <div className="w-full lg:w-1/2 xl:w-1/3 py-10 md:py-20" data-aos="fade-up">
+
 
             <div className="space-y-6">
               <h3 className="text-2xl font-bold">We&apos;re Always Eager to Hear From You!</h3>
 
               <ul className="space-y-4">
-                {/* Branch 1 */}
-                <li>
-                  <h6 className="font-semibold">Agasthya Vidyanikethan Srigandhakaval</h6>
-                  <div className="flex text-sm mt-1 " style={{ color: "grey" }}>
-                    <p className="pr-2 border-r border-black">
-                      <a href="tel:+919880906633">+91 9880906633</a>
-                    </p>
-                    <p className="pl-2" >
-                      <a href="tel:+919972342144">+91 9972342144</a>
-                    </p>
-                  </div>
-                </li>
+
 
                 {/* Branch 2 */}
                 <li>
-                  <h6 className="font-semibold">Agasthya Vidyanikethan Ullal</h6>
+                  <h6 className="font-semibold">Maharshi Agasthya Vidyanikethan Ullal</h6>
                   <div className="flex text-sm mt-1" style={{ color: "grey" }}>
                     <p className="pr-2 border-r border-black">
                       <a href="tel:+917760776098">+91 7760776098</a>
@@ -102,40 +85,40 @@ const ContactUs = () => {
               {/* Social Links */}
               <ul className="flex space-x-4 mt-4 text-2xl">
                 <li>
-                    <a href="https://www.facebook.com/@AgasthyaVidyaniketan/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/@AgasthyaVidyaniketan/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF className="hover:text-avorange transition" />
-                    </a>
+                  </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/agasthyavidyanikethan/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/agasthyavidyanikethan/" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="hover:text-avorange transition" />
-                    </a>
+                  </a>
                 </li>
                 <li>
-                    <a href="https://in.linkedin.com/company/agasthya-vidyanikethan" target="_blank" rel="noopener noreferrer">
+                  <a href="https://in.linkedin.com/company/agasthya-vidyanikethan" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn className="hover:text-avorange transition" />
-                    </a>
+                  </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/@agasthyavidyanikethan6692" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com/@agasthyavidyanikethan6692" target="_blank" rel="noopener noreferrer">
                     <FaYoutube className="hover:text-avorange transition" />
-                    </a>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="w-full lg:w-1/2 xl:w-2/5 lg:ml-auto py-5" data-aos="fade-up">
+          <div className="w-full lg:w-1/2 xl:w-2/5 lg:ml-auto py-10 md:py-20" data-aos="fade-up">
             <div className="bg-white dark:bg-gray-900 shadow-xl rounded-md p-6 border border-5 border-avorange">
               <div className="mb-6">
                 <h4 className="text-xl font-semibold mb-2">Get In Touch</h4>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Fill out this form for any queries.</p>
               </div>
 
-              <form  id="contact-form" ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+              <form id="contact-form" ref={formRef} onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4">
-                  <input type="hidden"  />
+                  <input type="hidden" />
 
                   <input
                     type="text"

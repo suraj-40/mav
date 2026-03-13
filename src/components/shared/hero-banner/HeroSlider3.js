@@ -1,99 +1,21 @@
 "use client";
-import { useEffect, useState } from "react";
-import herobannerImage1 from "@/assets/images/herobanner/AV1School.png";
 import herobannerImage5 from "@/assets/images/herobanner/01.jpg";
-import herobannerImage7 from "@/assets/images/herobanner/02.jpg";
 import HeroSlide3 from "./HeroSlide3";
-import useIsTrue from "@/hooks/useIsTrue";
 
 const HeroSlider3 = () => {
-  const [Swiper, setSwiper] = useState(null);
-  const [SwiperSlide, setSwiperSlide] = useState(null);
-  const [modules, setModules] = useState(null);
-  const [isClient, setIsClient] = useState(false);
-  
-  const isHome9 = useIsTrue("/home-9");
-  const isHome9Dark = useIsTrue("/home-9-dark");
+  const slide = {
+    title: (
+      <>
+        Excellence in <span className="text-secondaryColor">Education</span>
+      </>
+    ),
+    image: herobannerImage5,
+    tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
+    subtitle:
+      "Your journey begins here, Join us today and embark on an educational adventure.",
+  };
 
-  useEffect(() => {
-    setIsClient(true);
-    const loadSwiper = async () => {
-      try {
-        const { Navigation, Pagination, Autoplay } = await import("swiper/modules");
-        const { Swiper: SwiperComponent, SwiperSlide: SwiperSlideComponent } = await import("swiper/react");
-        
-        // Import Swiper CSS
-        await import("swiper/css");
-        await import("swiper/css/navigation");
-        await import("swiper/css/pagination");
-        
-        setSwiper(() => SwiperComponent);
-        setSwiperSlide(() => SwiperSlideComponent);
-        setModules([Navigation, Pagination, Autoplay]);
-      } catch (error) {
-        console.error("Failed to load Swiper:", error);
-      }
-    };
-    
-    loadSwiper();
-  }, []);
-
-  const slides = [
-    {
-      title: (
-        <>
-          Excellence in <span className="text-secondaryColor">Education</span>
-        </>
-      ),
-      image:  herobannerImage5,
-      tag: "AGASTHYA VIDYANIKETHAN",
-      subtitle: "Your journey begins here, Join us today and embark on an educational adventure.",
-    },
-    {
-      title: (
-        <>
-          Best in Class <span className="text-secondaryColor">Education</span>
-        </>
-      ),
-      image: herobannerImage7,
-      tag: "AGASTHYA VIDYANIKETHAN",
-      subtitle:
-        "Where every student's journey to excellence begins, shaping future leaders and change-makers.",
-    },
-  ];
-
-  // Show loading state or fallback during SSR
-  if (!isClient || !Swiper || !SwiperSlide || !modules) {
-    return (
-      <div className="hero-slider-loading">
-        <div className="slide">
-          <HeroSlide3 idx={0} slide={slides[0]} />
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <Swiper
-      navigation={true}
-      pagination={{ clickable: true }}
-      grabCursor={true}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
-      modules={modules}
-      className={`ecommerce-slider ${
-        isHome9 || isHome9Dark ? "kindergarden" : ""
-      }  overflow-hidden`}
-    >
-      {slides.map((slide, idx) => (
-        <SwiperSlide className="" key={idx}>
-          <HeroSlide3 idx={idx} slide={slide} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  );
+  return <HeroSlide3 idx={0} slide={slide} />;
 };
 
 export default HeroSlider3;
@@ -131,7 +53,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? HomeTumbail : herobannerImage,
-//       tag: "AGASTHYA VIDYANIKETHAN",
+//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Your journey begins here join us today and embark on an educational adventure ",
 //     },
 //     {
@@ -146,7 +68,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? herobannerImage5 : herobannerImage2,
-//       tag: "AGASTHYA VIDYANIKETHAN",
+//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Your journey begins here, Join us today and embark on an educational adventure.",
 //     },
 //     {
@@ -162,7 +84,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? herobannerImage7 : herobannerImage3,
-//       tag: "AGASTHYA VIDYANIKETHAN",
+//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Where every student's journey to excellence begins, shaping future leaders and change-makers.",
 //     },
 //   ];

@@ -31,7 +31,7 @@ const Registration = () => {
     motherContact: '',
     dateOfBirth: '',
     nationality: '',
-    branch: '',
+    branch: 'AV Ullal',
     admissionClass: '',
     gender: '',
     lastSchool: '',
@@ -99,7 +99,7 @@ const Registration = () => {
           motherContact: '',
           dateOfBirth: '',
           nationality: '',
-          branch: '',
+          branch: 'AV Ullal',
           admissionClass: '',
           gender: '',
           lastSchool: '',
@@ -166,10 +166,10 @@ const Registration = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] gap-12">
           <div className="space-y-8" data-aos="fade-right">
             <h3 className="text-3xl md:text-[35px] 2xl:text-size-42 leading-[45px] 2xl:leading-2xl font-bold text-whiteColor pb-25px">
-              Register now and 
+              Register now and
               Get access to{" "}
               <span className="text-secondaryColor">ATOMs </span>
-              Features 
+              Features
             </h3>
             <div className="mx-auto inline-block px-4 relative">
               <Image
@@ -181,8 +181,8 @@ const Registration = () => {
               />
               <div className="absolute top-0 bottom-0 right-0 left-0 flex items-center justify-center">
                 <PopupVideo videoUrl="https://www.youtube.com/embed/u9mBCrTPOTo?autoplay=1&rel=0" />
-              </div>  
-            </div>               
+              </div>
+            </div>
             <div>
               <p className="text-size-15 text-justify md:text-[22px] lg:text-lg 2xl:text-[22px] leading-6 md:leading-9 lg:leading-8 2xl:leading-9 font-semibold text-white">
                 Join us on a journey where your <span className="text-secondaryColor">potential </span> becomes your strength and your dreams are at the forefront of your <span className="text-secondaryColor">success</span>.
@@ -197,7 +197,7 @@ const Registration = () => {
                   Form Submitted Successfully!
                 </h2>
                 <p className="text-gray-700 text-center">
-                  Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyaniketan. </span> We look forward to welcoming you!
+                  Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan. </span> We look forward to welcoming you!
                 </p>
               </div>
             ) : !open ? (
@@ -248,28 +248,24 @@ const Registration = () => {
                     </select>
                   </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="space-y-2">
+                <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
+                  <div className="space-y-2 hidden">
                     <label className="text-sm font-medium text-blue-800">Branch <span className="text-red-600">*</span></label>
-                    <select name="branch" value={formData.branch} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
-                      <option value="">Select Branch</option>
-                      <option value="AV Srigandhakavalu">AV Srigandhakavalu</option>
-                      <option value="AV Ullal">AV Ullal</option>
-                    </select>
+                    <input type="hidden" name="branch" value={formData.branch} />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 w-full md:w-1/3">
                     <label className="text-sm font-medium text-blue-800">Admission for Class <span className="text-red-600">*</span></label>
                     <select name="admissionClass" value={formData.admissionClass} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
                       <option value="">Select Class</option>
-                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 3 : formData.branch === 'AV Ullal' ? 3 : 0)].map((_, i) => (
+                      {[...Array(3)].map((_, i) => (
                         <option key={i} value={`Montessori ${i + 1}`}>Montessori {i + 1}</option>
                       ))}
-                      {[...Array(formData.branch === 'AV Srigandhakavalu' ? 10 : formData.branch === 'AV Ullal' ? 8 : 0)].map((_, i) => (
+                      {[...Array(8)].map((_, i) => (
                         <option key={i} value={`Class ${i + 1}`}>Class {i + 1}</option>
                       ))}
                     </select>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-2 w-full md:w-1/3">
                     <label className="text-sm font-medium text-blue-800">Last School Attended</label>
                     <input type="text" name="lastSchool" value={formData.lastSchool} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
@@ -277,7 +273,7 @@ const Registration = () => {
                 <div className="flex items-center space-x-2">
                   <input type="checkbox" id="PrivacyPolicy" name="acceptPolicy" checked={formData.acceptPolicy} onChange={handleChange} required />
                   <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700 text-center">
-                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
+                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Maharshi Agasthya Vidyanikethan
                   </label>
                 </div>
                 <div className="text-center">

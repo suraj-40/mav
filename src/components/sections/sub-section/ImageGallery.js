@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,9 +16,6 @@ import avecosystemImage3 from "@/assets/images/avecosystem/03.jpg";
 import avecosystemImage1 from "@/assets/images/avecosystem/02.jpg";
 // import avecosystemImage5 from "@/assets/images/avecosystem/avecosystem6.jpg";
 // import avecosystemImage6 from "@/assets/images/avecosystem/avecosystem8.jpg";
-import avecosystemImage4 from "@/assets/images/gallery/srigandhakaval/IndependenceDay/img2.png";
-import avecosystemImage5 from "@/assets/images/gallery/srigandhakaval/GuruPurnima/img2.png";
-import avecosystemImage6 from "@/assets/images/gallery/srigandhakaval/InternationalYogaDay/img4.png";
 import useIsTrue from "@/hooks/useIsTrue";
 import ReadyJourneySection from "./ReadyJourneySection";
 
@@ -52,20 +49,7 @@ const ullalImages = [
   { src: avecosystemImage3, title: "Ullal 3" }
 ];
 
-const srigandhakavalImages = [
-  { src: avecosystemImage4, title: "Srigandhakaval 1" },
-  { src: avecosystemImage5, title: "Srigandhakaval 2" },
-  { src: avecosystemImage6, title: "Srigandhakaval 3" }
-];
 
-const allImages = [
-  { src: avecosystemImage1, title: "Ecosystem 1" },
-  { src: avecosystemImage2, title: "Ecosystem 2" },
-  { src: avecosystemImage3, title: "Ecosystem 3" },
-  { src: avecosystemImage4, title: "Ecosystem 4" },
-  { src: avecosystemImage5, title: "Ecosystem 5" },
-  { src: avecosystemImage6, title: "Ecosystem 6" }
-];
 
 const ImageGallery = ({ gallary }) => {
   const isHome10 = useIsTrue("/home-10");
@@ -73,21 +57,8 @@ const ImageGallery = ({ gallary }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(null);
-  const [currentImages, setCurrentImages] = useState([]);
+  const [currentImages, setCurrentImages] = useState(ullalImages);
   const [tappedButton, setTappedButton] = useState(false);
-  const [activeTab, setActiveTab] = useState("ullal");
-  const [animating, setAnimating] = useState(false);
-  const tabRefs = useRef([]);
-
-  // Initialize current images
-  useEffect(() => {
-    const initialImages = gallary 
-      ? allImages.slice(0, 6) 
-      : activeTab === "ullal" 
-        ? ullalImages 
-        : srigandhakavalImages;
-    setCurrentImages(initialImages);
-  }, [gallary, activeTab]);
 
   // Handle image click for modal
   const handleImageClick = (index, images) => {
@@ -96,16 +67,7 @@ const ImageGallery = ({ gallary }) => {
     setIsModalOpen(true);
   };
 
-  // Tab change handler
-  const handleTabChange = (key, idx) => {
-    if (animating || activeTab === key) return;
-    setAnimating(true);
-    setTimeout(() => {
-      setActiveTab(key);
-      setCurrentImages(key === "ullal" ? ullalImages : srigandhakavalImages);
-      setAnimating(false);
-    }, 350);
-  };
+
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -113,13 +75,13 @@ const ImageGallery = ({ gallary }) => {
   };
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === 0 ? currentImages.length - 1 : prev - 1
     );
   };
 
   const handleNextImage = () => {
-    setCurrentImageIndex((prev) => 
+    setCurrentImageIndex((prev) =>
       prev === currentImages.length - 1 ? 0 : prev + 1
     );
   };
@@ -135,35 +97,6 @@ const ImageGallery = ({ gallary }) => {
 
   return (
     <div className="my-12 md:my-20">
-      {/* Gallery header and controls here */}
-      {(!gallary && !isHome10 && !isHome10Dark) && (
-        <div className="flex justify-center my-4 md:m-30 md:my-12 px-2" data-aos="fade-up">
-          <div className="flex w-full bg-white/95 rounded-lg shadow-md border border-gray-100 overflow-hidden gap-[2px]">
-            {[
-              { key: "ullal", title: "AV Ullal", name: "Agasthya Vidyanikethan - Ullal Branch" },
-              { key: "srigandhakaval", title: "AV Srigandhakaval", name: "Agasthya Vidyanikethan - Srigandhakaval Branch" }
-            ].map((tab, index) => (
-              <motion.button
-                key={tab.key}
-                ref={el => (tabRefs.current[index] = el)}
-                onClick={() => handleTabChange(tab.key, index)}
-                className={`relative z-10 w-1/2 px-2 py-1 md:px-4 md:py-3 text-center font-medium text-[13px] md:text-base rounded-md md:rounded-xl transition-all duration-300 whitespace-nowrap
-                  ${activeTab === tab.key ? "bg-avorange text-white" : "bg-white text-gray-800 hover:bg-orange-50 hover:text-orange-700"}
-                  ${index === 0 ? "rounded-l-md md:rounded-l-xl" : ""} ${index === 1 ? "rounded-r-md md:rounded-r-xl" : ""}
-                  ${index !== 0 ? "border-l-2 border-white" : ""}`}
-                disabled={animating}
-                aria-selected={activeTab === tab.key}
-                role="tab"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                <span className="block md:hidden">{tab.title}</span>
-                <span className="hidden md:block">{tab.name}</span>
-              </motion.button>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Modal */}
       <AnimatePresence>
@@ -229,11 +162,10 @@ const ImageGallery = ({ gallary }) => {
                     <motion.button
                       key={index}
                       onClick={() => handleGoToImage(index)}
-                      className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                        index === currentImageIndex
-                          ? "bg-avorange"
-                          : "bg-gray-300 hover:bg-gray-400"
-                      }`}
+                      className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentImageIndex
+                        ? "bg-avorange"
+                        : "bg-gray-300 hover:bg-gray-400"
+                        }`}
                       whileHover={{ scale: 1.2 }}
                     />
                   ))}
@@ -246,93 +178,47 @@ const ImageGallery = ({ gallary }) => {
 
       {/* Grid Display */}
       <div className="mx-4 sm:mx-6 md:mx-8 p-4 sm:p-6 mb-16 sm:mb-20 md:mb-24 bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-100">
-        {activeTab === "ullal" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
-            {ullalImages.map((image, idx) => (
-              <motion.div
-                key={idx}
-                variants={cardVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ delay: idx * 0.1 }}
-                className="relative overflow-hidden rounded-xl shadow-md group cursor-pointer bg-gray-50 mb-6 sm:mb-8"
-                whileHover={{ y: -4, transition: { duration: 0.3 } }}
-                onHoverStart={() => setIsHovered(idx)}
-                onHoverEnd={() => setIsHovered(null)}
-                onClick={() => handleImageClick(idx, ullalImages)}
-              >
-                <div className="relative pt-[75%] overflow-hidden">
-                  <Image
-                    src={image.src}
-                    alt={image.title}
-                    fill
-                    className="object-cover object-center transform transition-transform duration-700 ease-in-out group-hover:scale-110"
-                    placeholder="blur"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-300 ${
-                  isHovered === idx ? "opacity-90" : "opacity-70"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
+          {ullalImages.map((image, idx) => (
+            <motion.div
+              key={idx}
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: idx * 0.1 }}
+              className="relative overflow-hidden rounded-xl shadow-md group cursor-pointer bg-gray-50 mb-6 sm:mb-8"
+              whileHover={{ y: -4, transition: { duration: 0.3 } }}
+              onHoverStart={() => setIsHovered(idx)}
+              onHoverEnd={() => setIsHovered(null)}
+              onClick={() => handleImageClick(idx, ullalImages)}
+            >
+              <div className="relative pt-[75%] overflow-hidden">
+                <Image
+                  src={image.src}
+                  alt={image.title}
+                  fill
+                  className="object-cover object-center transform transition-transform duration-700 ease-in-out group-hover:scale-110"
+                  placeholder="blur"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+              <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-300 ${isHovered === idx ? "opacity-90" : "opacity-70"
                 }`} />
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{
-                      opacity: isHovered === idx ? 1 : 0,
-                      scale: isHovered === idx ? 1 : 0.8
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Eye className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
-                  </motion.div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {srigandhakavalImages.map((image, idx) => (
-              <motion.div
-                key={idx}
-                variants={cardVariants}
-                initial="hidden"
-                animate="visible"
-                transition={{ delay: idx * 0.1 }}
-                className="relative overflow-hidden rounded-xl shadow-md group cursor-pointer bg-gray-50 mb-6 sm:mb-8"
-                whileHover={{ y: -4, transition: { duration: 0.3 } }}
-                onHoverStart={() => setIsHovered(idx)}
-                onHoverEnd={() => setIsHovered(null)}
-                onClick={() => handleImageClick(idx, srigandhakavalImages)}
-              >
-                <div className="relative pt-[75%] overflow-hidden">
-                  <Image
-                    src={image.src}
-                    alt={image.title}
-                    fill
-                    className="object-cover object-center transform transition-transform duration-700 ease-in-out group-hover:scale-110"
-                    placeholder="blur"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-opacity duration-300 ${
-                  isHovered === idx ? "opacity-90" : "opacity-70"
-                }`} />
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{
-                      opacity: isHovered === idx ? 1 : 0,
-                      scale: isHovered === idx ? 1 : 0.8
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Eye className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
-                  </motion.div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        )}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{
+                    opacity: isHovered === idx ? 1 : 0,
+                    scale: isHovered === idx ? 1 : 0.8
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Eye className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+                </motion.div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {!gallary && (

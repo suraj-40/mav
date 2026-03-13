@@ -48,7 +48,7 @@ const QualityEducationContent = () => {
             remains on ensuring an enriching and effective learning experience for all students.
           </p>
           <p className="text-foreground leading-relaxed text-base md:text-lg">
-            At Agasthya Vidyanikethan, we take immense pride in delivering quality education that goes beyond
+            At Maharshi Agasthya Vidyanikethan, we take immense pride in delivering quality education that goes beyond
             conventional teaching methods. Our commitment to academic excellence is reflected in our dedicated faculty,
             who serve not just as educators but as mentors guiding students on their journey of knowledge acquisition.
           </p>
@@ -130,7 +130,7 @@ const QualityEducationContent = () => {
               </h3>
             </div>
             <p className="text-foreground leading-relaxed mb-3 text-sm md:text-base">
-              Rather than waiting for students to enroll after the campus was built, we at Agasthya Vidyanikethan have
+              Rather than waiting for students to enroll after the campus was built, we at Maharshi Agasthya Vidyanikethan have
               proactively expanded and developed additional campuses to accommodate more students.
             </p>
             <p className="text-foreground leading-relaxed text-sm md:text-base">

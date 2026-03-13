@@ -38,18 +38,16 @@ const GalleryContent = ({
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {mainTab === "photos" &&
-            (activeBranchTab === "ullal"
-              ? ullalActivitiesByYear[selectedYear] || []
-              : srigandhkavalActivitiesByYear[selectedYear] || []
-            ).map((activity) => (
+            (ullalActivitiesByYear[selectedYear] || []).map((activity) => (
               <GalleryCard
                 key={activity.id}
                 {...activity}
-                activityId={`${activeBranchTab}-${activity.id}`}
-                isExpanded={expandedCardId === `${activeBranchTab}-${activity.id}`}
+                activityId={`ullal-${activity.id}`}
+                isExpanded={expandedCardId === `ullal-${activity.id}`}
                 toggleExpand={toggleCardExpand}
                 showVideo={false}
                 videoDisabled={activity.videoDisabled}
+                layout={activity.layout}
               />
             ))}
         </motion.div>

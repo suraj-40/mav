@@ -8,6 +8,9 @@ import LifeSkills3 from "./LifeSkills3";
 import LifeSkills4 from "./LifeSkills4";
 import LifeSkills5 from "./LifeSkills5";
 import LifeSkills6 from "./LifeSkills6";
+import LifeSkills7 from "./LifeSkills7";
+import LifeSkills8 from "./LifeSkills8";
+import LifeSkills9 from "./LifeSkills9";
 
 const LifeSkillsMobile = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -19,6 +22,9 @@ const LifeSkillsMobile = () => {
     { name: "Samskrita Siddhi", content: <LifeSkills4 /> },
     { name: "Naatya Siddhi", content: <LifeSkills5 /> },
     { name: "Sangeeta Siddhi", content: <LifeSkills6 /> },
+    { name: "Bhagavad Gita", content: <LifeSkills7 /> },
+    { name: "Dhanur Vidya", content: <LifeSkills8 /> },
+    { name: "Scouts & Guides", content: <LifeSkills9 /> },
   ];
 
   const handleTabClick = (idx) => setCurrentIdx(idx);
@@ -60,7 +66,7 @@ const LifeSkillsMobile = () => {
             className="text-3xl font-bold text-avorange tracking-tight"
             style={{ fontFamily: "Samarkan, cursive" }}
           >
-            Agasthya Vidyanikethan
+            Maharshi Agasthya Vidyanikethan
           </h2>
           <motion.h2
             className="text-2xl font-bold mt-3 bg-gradient-to-r from-av to-avorange bg-clip-text text-transparent"
@@ -68,7 +74,7 @@ const LifeSkillsMobile = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Six Mandatory Life Skills
+            Nine Mandatory Life Skills
           </motion.h2>
           <motion.p
             className="max-w-md mx-auto text-gray-600 text-base leading-relaxed mt-3"
@@ -76,7 +82,7 @@ const LifeSkillsMobile = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Cultivating holistic development through our six foundational life skills program, empowering students for a balanced and successful future.
+            Cultivating holistic development through our nine foundational life skills program, empowering students for a balanced and successful future.
           </motion.p>
           <motion.div
             className="flex justify-center mt-6"

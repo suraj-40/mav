@@ -46,7 +46,7 @@ const EcosystemContent = () => {
             <span className="absolute -bottom-1 left-0 w-1/3 h-1 bg-secondaryColor/20 rounded-full"></span>
           </h2>
           <p className="text-foreground leading-relaxed mb-3 text-base md:text-lg">
-            At Agasthya Vidyanikethan, we place a high value on education that is both futuristic and environmentally conscious. Our approach is rooted in a vision that merges innovation with sustainability to foster holistic student growth.
+            At Maharshi Agasthya Vidyanikethan, we place a high value on education that is both futuristic and environmentally conscious. Our approach is rooted in a vision that merges innovation with sustainability to foster holistic student growth.
           </p>
           <p className="text-foreground leading-relaxed text-base md:text-lg">
             Experience learning in IoT-powered NEP-aligned classrooms, enriched with thoughtfully planned campuses designed for bagless learning. Our commitment goes beyond academics—ensuring a vibrant, inclusive, and empowering ecosystem for every learner.

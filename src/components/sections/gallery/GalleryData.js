@@ -204,7 +204,7 @@ import ICCM10 from "@/assets/images/gallery/srigandhakaval2025/16 Intra Class Co
 import KJ1 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (1).jpg";
 import KJ2 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (2).jpg";
 import KJ3 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (3).jpg";
-import KJ4 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (4).jpg"; 
+import KJ4 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (4).jpg";
 import KJ5 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (5).jpg";
 import KJ6 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (6).jpg";
 import KJ7 from "@/assets/images/gallery/srigandhakaval2025/17 Krishna Janmashtami/AV1 KJ (7).jpg";
@@ -280,6 +280,25 @@ import VideoBhashaavali from "@/assets/images/gallery/VideoBhashaavali.jpg";
 import VideoYogaDay from "@/assets/images/gallery/VideoYogaDay.jpg";
 import VideoInvestitureCeremony from "@/assets/images/gallery/VideoInvestitureCeremony.jpg";
 
+// Instagram Thumbnails 2025-26
+import InstaBhagavadgita from "@/assets/images/2025-26-video-thumbnails/Bhagavadgita/AV2 Bhagavadgita Shloka Chanting Competition Instagram thumbnail.jpg";
+import InstaBusyBee from "@/assets/images/2025-26-video-thumbnails/Busy beee/busy bee day instagram thumbnail.jpg";
+import InstaDeepotsava from "@/assets/images/2025-26-video-thumbnails/Deepotsava/Deepotsava Instagram thumbnail.jpg";
+import InstaEnvironmentDay from "@/assets/images/2025-26-video-thumbnails/Environmenta Day/ENVIRONMENT AV 2.jpg";
+import InstaEverydayHeroes from "@/assets/images/2025-26-video-thumbnails/Everyday Heroes/HEREOS_INTRA_KETHAN_ENVIRON AV2 _NADOTSAV-05.jpg";
+import InstaFirstDay from "@/assets/images/2025-26-video-thumbnails/First day of school/INSTA REELS THUMBNAILS-01.jpg";
+import InstaGaneshotsava from "@/assets/images/2025-26-video-thumbnails/Ganeshotsava/AV2 Ganeshotsava Instagram thumbnail-01.jpg";
+import InstaGnanatarang from "@/assets/images/2025-26-video-thumbnails/Gnaana Tarang/Gnanatarang AV 2 (Instagram Thumbnail).jpg";
+import InstaGokulashtami from "@/assets/images/2025-26-video-thumbnails/Gokulashtami/GOKULASHTAMI REELS-01-01.jpg";
+import InstaGurupurnima from "@/assets/images/2025-26-video-thumbnails/Gurupurnima/gurupurnima AV 2 INSTAGRAM.jpg";
+import InstaIndependenceDay from "@/assets/images/2025-26-video-thumbnails/Independance Day/independence day av 2 reels-01-01.jpg";
+import InstaIntraClass from "@/assets/images/2025-26-video-thumbnails/Intraclass Competition/INTRA CLASS.jpg";
+import InstaKalaaMela from "@/assets/images/2025-26-video-thumbnails/Kalaa mela/Kalaa Mela Instagram thumbnail.jpg";
+import InstaNationalSportsDay from "@/assets/images/2025-26-video-thumbnails/National Sports Day/AV 1 Sports Day Instagram Thumbnail-01.jpg";
+import InstaNavaratri from "@/assets/images/2025-26-video-thumbnails/Navaratri celebration/Navarathri Celebration AV 2 Instagram thumbnail-01.jpg";
+import InstaScienceExcursion from "@/assets/images/2025-26-video-thumbnails/Science Excursion/Science Excursion (Instagram thumbnail).jpg";
+import InstaYogaDay from "@/assets/images/2025-26-video-thumbnails/Yoga Day/AV 2 International Yoga Day 2.jpg";
+
 // Srigandhakaval Branch Images
 // World Environment Day
 import SEnvironmentDay1 from "@/assets/images/gallery/srigandhakaval/WorldEnvironmentDay/img1.png";
@@ -306,7 +325,7 @@ import SEnvironmentDay20 from "@/assets/images/gallery/srigandhakaval/WorldEnvir
 // Investiture Ceremony
 import SInvestitureCeremony1 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img2.png";
 import SInvestitureCeremony2 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img2.png";
-import SInvestitureCeremony3 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img3.png";    
+import SInvestitureCeremony3 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img3.png";
 import SInvestitureCeremony4 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img4.png";
 import SInvestitureCeremony5 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img5.png";
 import SInvestitureCeremony6 from "@/assets/images/gallery/srigandhakaval/InvestitureCeremony/img6.png";
@@ -428,7 +447,7 @@ import SGaneshaChaturti1 from "@/assets/images/gallery/srigandhakaval/GaneshaCha
 import SGaneshaChaturti2 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img2.png";
 import SGaneshaChaturti3 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img3.png";
 import SGaneshaChaturti4 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img4.png";
-import SGaneshaChaturti5 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img5.png";   
+import SGaneshaChaturti5 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img5.png";
 import SGaneshaChaturti6 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img6.png";
 import SGaneshaChaturti7 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img7.png";
 import SGaneshaChaturti8 from "@/assets/images/gallery/srigandhakaval/GaneshaChaturti/img8.png";
@@ -915,7 +934,7 @@ export const srigandhkavalActivities2024 = [
     ],
     description: "Honoring teachers and mentors with heartfelt gratitude and cultural performances."
   },
-   {
+  {
     id: 6,
     title: "Intra Class Competition 1-10",
     image: intraCls1,
@@ -1123,7 +1142,7 @@ export const srigandhkavalActivities2024 = [
     ],
     description: "Celebrating Karnataka's rich heritage with traditional performances and cultural pride."
   },
-   {
+  {
     id: 19,
     title: "Childrens' Day",
     image: childrensDay1,
@@ -1802,6 +1821,199 @@ export const videoActivities = [
   }
 ];
 
+export const videoActivities2025 = [
+  {
+    id: 1,
+    title: "First day of School",
+    image: InstaFirstDay,
+    description: "Welcoming students to a new academic year with joy and enthusiasm.",
+    videoUrl: "https://www.youtube.com/embed/HL_uYkf4dFs",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 2,
+    title: "World Environment Day",
+    image: InstaEnvironmentDay,
+    description: "Promoting environmental awareness and sustainability through engaging activities.",
+    videoUrl: "https://www.youtube.com/embed/mzUN-r-TpNE",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 3,
+    title: "International Yoga Day",
+    image: InstaYogaDay,
+    description: "Celebrating the ancient practice of yoga with demonstrations and group sessions.",
+    videoUrl: "https://www.youtube.com/embed/-YF95oAMwVw",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 4,
+    title: "Intraclass competition",
+    image: InstaIntraClass,
+    description: "Students showcase their skills and learning through friendly competitions.",
+    videoUrl: "https://www.youtube.com/embed/Wuyaha7L3VM",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 5,
+    title: "Guru Purnima",
+    image: InstaGurupurnima,
+    description: "Expressing gratitude to teachers through traditional celebrations and cultural programs.",
+    videoUrl: "https://www.youtube.com/embed/Uv-KxgEgz5w",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 6,
+    title: "Everyday Heroes",
+    image: InstaEverydayHeroes,
+    description: "Celebrating the everyday heroes in our community who inspire and make a difference.",
+    videoUrl: "https://www.youtube.com/embed/NIWrh3YF9HU",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 7,
+    title: "Science Excursion",
+    image: InstaScienceExcursion,
+    description: "Educational field trip exploring scientific concepts through hands-on experiences.",
+    videoUrl: "https://www.youtube.com/embed/UBx3HY8Zk2g",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 8,
+    title: "Gnaana-Tarang",
+    image: InstaGnanatarang,
+    description: "A knowledge festival celebrating academic excellence and intellectual pursuits.",
+    videoUrl: "https://www.youtube.com/embed/qgcD7pnIANk",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 9,
+    title: "Independence Day",
+    image: InstaIndependenceDay,
+    description: "Commemorating India's independence with patriotic celebrations and cultural performances.",
+    videoUrl: "https://www.youtube.com/embed/NFD_TAHb0Rk",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 10,
+    title: "Science Exhibition",
+    image: InstaGnanatarang,
+    description: "Showcasing inventive solutions and research findings through student projects.",
+    videoUrl: "https://www.youtube.com/embed/qgcD7pnIANk",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 11,
+    title: "Gokulashtami",
+    image: InstaGokulashtami,
+    description: "Celebrating Lord Krishna's birthday with devotional activities and cultural performances.",
+    videoUrl: "https://www.youtube.com/embed/99o0RcWyHks",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 12,
+    title: "National Sports Day",
+    image: InstaNationalSportsDay,
+    description: "Promoting sports and physical fitness through various athletic activities and competitions.",
+    videoUrl: "https://www.youtube.com/embed/go28MA_0i_A",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 13,
+    title: "Ganeshotsava",
+    image: InstaGaneshotsava,
+    description: "Celebrating Lord Ganesha's festival with devotion, art activities, and cultural programs.",
+    videoUrl: "https://www.youtube.com/embed/c-5yw7dzF_M",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 14,
+    title: "NAVARATHRI celebration",
+    image: InstaNavaratri,
+    description: "The triumph of good over evil celebrated with vibrant performances and storytelling.",
+    videoUrl: "https://www.youtube.com/embed/fCR6Pv0Wauo",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 15,
+    title: "Deepotsava celebration",
+    image: InstaDeepotsava,
+    description: "Illuminating the festival of lights with traditional lamps and cultural festivities.",
+    videoUrl: "https://www.youtube.com/embed/tdnocxxqiTQ",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 16,
+    title: "Busy Bee Day",
+    image: InstaBusyBee,
+    description: "A day filled with activity and learning for our young explorers.",
+    videoUrl: "https://www.youtube.com/embed/w7BQks9twI0",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 17,
+    title: "Bhagavadgita Shloka Chanting",
+    image: InstaBhagavadgita,
+    description: "Students reciting sacred verses, connecting with our ancient philosophical heritage.",
+    videoUrl: "https://www.youtube.com/embed/W2K8mqrASzQ",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 18,
+    title: "Intra-Class Competition",
+    image: InstaIntraClass,
+    description: "Fostering healthy competition and showcasing talents across different grade levels.",
+    videoUrl: "https://www.youtube.com/embed/Wuyaha7L3VM",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  },
+  {
+    id: 19,
+    title: "Kalaa Mela Day",
+    image: InstaKalaaMela,
+    description: "A celebration of artistic expression and creativity through various workshops and exhibitions.",
+    videoUrl: "https://www.youtube.com/embed/2acb1Gs3038",
+    videoDisabled: false,
+    branch: "ullal",
+    layout: "poster"
+  }
+];
+
 export const srigandhkavalActivitiesByYear = {
   "2024-25": srigandhkavalActivities2024,
   "2025-26": srigandhkavalActivities2025 // Add 2025-26 activities here
@@ -1814,7 +2026,7 @@ export const ullalActivitiesByYear = {
 
 export const videoActivitiesByYear = {
   "2024-25": videoActivities,
-  "2025-26": [] // Add 2025-26 videos here
+  "2025-26": videoActivities2025 // Add 2025-26 videos here
 };
 
 // Optionally, export the available years for use in the UI

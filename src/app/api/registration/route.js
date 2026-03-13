@@ -66,7 +66,7 @@ export async function POST(req) {
       <h2 style="color: #222;">Dear ${fatherName} and ${motherName},</h2>
   
       <p style="text-align: justify;">
-        Thank you for confirming your campus visit to <strong>Agasthya Vidyaniketan</strong> as a potential learning home for <strong>${childName}</strong>. 
+        Thank you for confirming your campus visit to <strong>Maharshi Agasthya Vidyanikethan</strong> as a potential learning home for <strong>${childName}</strong>. 
         We look forward to welcoming you on campus and introducing you to our core values, unique educational approach, experienced and dedicated teachers, 
         and holistic spaces that define our school community.
       </p>
@@ -90,7 +90,7 @@ export async function POST(req) {
       </ul>
   
       <p style="text-align: justify;">
-        At Agasthya Vidyaniketan, we are dedicated to empowering every student with the knowledge, skills, and values needed to thrive in a future-focused world. 
+        At Maharshi Agasthya Vidyanikethan, we are dedicated to empowering every student with the knowledge, skills, and values needed to thrive in a future-focused world. 
         We encourage you to come prepared with any questions or topics you’d like to discuss to make the most of your visit.
       </p>
   
@@ -166,7 +166,7 @@ export async function POST(req) {
         branchImage = "https://res.cloudinary.com/dpv2jcm1c/image/upload/v1754033935/AV1_epwjbu.png"; // Current image for main branch
       }
       const info1 = await transporter.sendMail({
-        from: '"Agasthya Vidhyanikethan" <info@av.school>', // updated to school email
+        from: '"Maharshi Agasthya Vidyanikethan" <info@av.school>', // updated to school email
         to: parentEmail,
         subject: `Campus Visit Confirmed — See You on ${date}, ${selectedTime}`,
         html: studentEmailTemplate(fatherName, motherName, childName, date, selectedTime, address, phone, email, link, branchImage),
@@ -174,7 +174,7 @@ export async function POST(req) {
     }    
 
     const info2 = await transporter.sendMail({
-      from: '"Agasthya Vidhyanikethan" <info@av.school>',  //change personal email to school email
+      from: '"Maharshi Agasthya Vidyanikethan" <info@av.school>',  //change personal email to school email
       to: "info@av.school",
       subject: "New Student Visit Scheduled",
       html: schoolEmailTemplate,

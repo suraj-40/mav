@@ -3,7 +3,7 @@ import DropdownPrimary from "./DropdownPrimary";
 
 const DropdownDashboard = () => {
   const items = [
-   
+
     {
       name: "Dinacharya",
       status: null,
@@ -19,24 +19,10 @@ const DropdownDashboard = () => {
     {
       name: "Cultural Activities",
       status: null,
-      path: "",
+      path: "/student-life/cultural-activities/ullal",
       type: "secondary",
-      dropdown: [
-        {
-          name: "Srigandhakaval",
-          status: null,
-          path: "/about-us/gallery",
-          type: "secondary",
-        },
-        {
-          name: "Ullal",
-          status: null,
-          path: "/student-life/cultural-activities/ullal",
-          type: "secondary",
-        }
-      ]
     },
-    
+
     // {
     //   name: "Campus Activity",
     //   status: null,

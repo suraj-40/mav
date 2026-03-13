@@ -31,7 +31,7 @@ const ScheduleForm = () => {
     motherContact: "",
     dateOfBirth: "",
     nationality: "",
-    branch: "",
+    branch: "AV Ullal",
     admissionClass: "",
     gender: "",
     lastSchool: "",
@@ -100,7 +100,7 @@ const ScheduleForm = () => {
           motherContact: "",
           dateOfBirth: "",
           nationality: "",
-          branch: "",
+          branch: "AV Ullal",
           admissionClass: "",
           gender: "",
           lastSchool: "",
@@ -168,7 +168,7 @@ const ScheduleForm = () => {
             Form Submitted Successfully!
           </h2>
           <p className="text-gray-700 text-center">
-            Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyaniketan. </span> We look
+            Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan. </span> We look
             forward to welcoming you!
           </p>
         </div>
@@ -184,8 +184,8 @@ const ScheduleForm = () => {
                   <span className="absolute left-0 right-0 bottom-0 h-1 bg-gradient-to-r from-av via-avorange to-avorange"></span>
                 </span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="space-y-1">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Child&apos;s Full Name <span className="text-red-600">*</span>
               </label>
@@ -199,7 +199,7 @@ const ScheduleForm = () => {
                 className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800"
               />
             </div>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Date of Birth <span className="text-red-600">*</span>
               </label>
@@ -239,7 +239,7 @@ const ScheduleForm = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Mother&apos;s Name <span className="text-red-600">*</span>
@@ -294,7 +294,7 @@ const ScheduleForm = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Gender <span className="text-red-600">*</span>
@@ -311,21 +311,11 @@ const ScheduleForm = () => {
                 <option value="female">Female</option>
               </select>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 hidden">
               <label className="text-sm font-medium text-blue-800">
                 Branch <span className="text-red-600">*</span>
               </label>
-              <select
-                name="branch"
-                value={formData.branch}
-                onChange={handleChange}
-                required
-                className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800"
-              >
-                <option value="">Select Branch</option>
-                <option value="AV Srigandhakavalu">AV Srigandhakavalu</option>
-                <option value="AV Ullal">AV Ullal</option>
-              </select>
+              <input type="hidden" name="branch" value={formData.branch} />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
@@ -339,14 +329,14 @@ const ScheduleForm = () => {
                 className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800"
               >
                 <option value="">Select Class</option>
-                {[...Array(formData.branch === "AV Srigandhakavalu" ? 3 : formData.branch === "AV Ullal" ? 3 : 0)].map(
+                {[...Array(3)].map(
                   (_, i) => (
                     <option key={i} value={`Montessori ${i + 1}`}>
                       Montessori {i + 1}
                     </option>
                   )
                 )}
-                {[...Array(formData.branch === "AV Srigandhakavalu" ? 10 : formData.branch === "AV Ullal" ? 8 : 0)].map(
+                {[...Array(8)].map(
                   (_, i) => (
                     <option key={i} value={`Class ${i + 1}`}>
                       Class {i + 1}
@@ -382,7 +372,7 @@ const ScheduleForm = () => {
               <Link href="/policy/privacy" className="text-blueDark underline">
                 Privacy Policy
               </Link>{" "}
-              for Agasthya Vidyanikethan
+              for Maharshi Agasthya Vidyanikethan
             </label>
           </div>
           <div className="text-center">
@@ -734,7 +724,7 @@ export default ScheduleForm;
 //               required
 //             />
 //             <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700">
-//               I accept the  <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
+//               I accept the  <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Maharshi Agasthya Vidyanikethan
 //             </label>
 //           </div>
 //           <div className="text-center">

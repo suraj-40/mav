@@ -10,7 +10,7 @@ const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
     <div className="  p-6 mb-6 relative rounded-xl shadow-xl" data-aos="fade-up">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center" data-aos="fade-up">
         {imagePosition === "left" && (
-          <div  className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+          <div className="md:col-span-1  relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
             <Image src={image} alt={alt} className="rounded-xl w-[350px] h-[180px] object-cover mx-auto   transform group-hover:scale-105 transition-transform duration-300" />
           </div>
         )}
@@ -32,7 +32,7 @@ const Dinacharya = ({ image, alt, timelineData, imagePosition = "left" }) => {
 
         {imagePosition === "right" && (
           <div className="md:col-span-1 relative group rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-            <Image src={image} alt={alt}  className="rounded-xl w-[350px] h-[180px] object-cover mx-auto transform group-hover:scale-105 transition-transform duration-300" />
+            <Image src={image} alt={alt} className="rounded-xl w-[350px] h-[180px] object-cover mx-auto transform group-hover:scale-105 transition-transform duration-300" />
           </div>
         )}
       </div>
@@ -82,8 +82,8 @@ export const SectionData = [
       ],
       [
         { time: "2:25 PM to 3:05 PM", label: "PERIOD 8", bgClass: "bg-av" },
-        { time: "3:05 PM to 3:15 PM", label: "DIARY TIME", bgClass: "bg-av" },
-      ]      
+        { time: "3:05 PM to 3:20 PM", label: "DIARY TIME", bgClass: "bg-av" },
+      ]
     ]
   },
   {
@@ -92,7 +92,7 @@ export const SectionData = [
     imagePosition: "right",
     timelineData: [
       [
-          { time: "3:15 PM", label: "EXIT TIME", bgClass: "bg-avorange" }
+        { time: "3:20 PM", label: "EXIT TIME", bgClass: "bg-avorange" }
       ]
     ]
   }

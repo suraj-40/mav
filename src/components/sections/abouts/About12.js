@@ -119,7 +119,7 @@ const About12 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-              Discover how Agasthya Vidyanikethan implements NEP 2020 guidelines to create holistic, 
+              Discover how Maharshi Agasthya Vidyanikethan implements NEP 2020 guidelines to create holistic, 
               future-ready learners through our innovative educational approach.
             </motion.p>
             <motion.div
@@ -186,10 +186,10 @@ const About12 = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                    Agasthya Vidyanikethan
+                    Maharshi Agasthya Vidyanikethan
                   </h3>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    Agasthya Vidyanikethan has emerged as one of the best schools in Bangalore, Nagarbhavi region. Started in 2012, it is one of the top schools in the vicinity, headed and micro-managed by a profound scholar, Mr. Manjunath Aradhya, who has been in the field of higher education for over 17 years.
+                    Maharshi Agasthya Vidyanikethan has emerged as one of the best schools in Bangalore, Nagarbhavi region. Started in 2012, it is one of the top schools in the vicinity, headed and micro-managed by a profound scholar, Mr. Manjunath Aradhya, who has been in the field of higher education for over 17 years.
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
@@ -315,7 +315,7 @@ const About12 = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              NEP Activities at <span className="text-avorange">Agasthya Vidyanikethan</span>
+              NEP Activities at <span className="text-avorange">Maharshi Agasthya Vidyanikethan</span>
             </h2>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed">
               Developing Students&apos; Capabilities, To Create Solutions for Tomorrow&apos;s Challenges

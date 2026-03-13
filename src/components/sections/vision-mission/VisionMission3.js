@@ -7,7 +7,7 @@ const qualityData = [
   {
     title: "Quality Learning",
     description:
-      "At Agasthya Vidyaniketan, we take immense pride in our exceptional team of educators who serve as the bedrock of your child's educational journey. We believe that quality learning begins with quality educators, and that's precisely what you'll find within our distinguished faculty.",
+      "At Maharshi Agasthya Vidyanikethan, we take immense pride in our exceptional team of educators who serve as the bedrock of your child's educational journey. We believe that quality learning begins with quality educators, and that's precisely what you'll find within our distinguished faculty.",
     icon: "🌟"
   },
   {
@@ -85,7 +85,7 @@ const VisionMission3 = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Quality Education at Agasthya Vidyaniketan
+            Quality Education at Maharshi Agasthya Vidyanikethan
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF5722] to-orange-600 mx-auto mt-4"></div>
         </motion.div> */}

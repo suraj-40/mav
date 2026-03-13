@@ -7,7 +7,7 @@ const MobileItems3 = () => {
     { id: 1, name: "Home", path: "/", accordion: false, dropdown: null },
     { id: 2, name: "AV-ATOMS", path: "/atoms-e-learning-portal", accordion: false, dropdown: null },
     { id: 2.5, name: "What's New", path: "/whats-new", accordion: false, dropdown: null },
-    
+
     {
       id: 3,
       name: "About Us",
@@ -36,20 +36,13 @@ const MobileItems3 = () => {
       dropdown: [
         { name: "Dinacharya", path: "/student-life/dinacharya" },
         { name: "Mandatory Life Skills", path: "/student-life/life-skills" },
-        {
-          name: "Cultural Activities",
-          path: null,
-          dropdown: [
-            { name: "Srigandhakaval", path: "/student-life/cultural-activities/srigandhakaval" },
-            { name: "Ullal", path: "/student-life/cultural-activities/ullal" },
-          ],
-        },
-        
+        { name: "Cultural Activities", path: "/student-life/cultural-activities/ullal" },
+
         // { name: "Campus Activity", path: "/NEP/campus-Activity" },
       ],
     },
-  { id: 5.5, name: "Gallery", path: "/about-us/gallery", accordion: false, dropdown: null },
-  { id: 5.7, name: "Careers", path: "/careers", accordion: false, dropdown: null },
+    { id: 5.5, name: "Gallery", path: "/about-us/gallery", accordion: false, dropdown: null },
+    { id: 5.7, name: "Careers", path: "/careers", accordion: false, dropdown: null },
     // {
     //   id: 5,
     //   name: "Why AV?",

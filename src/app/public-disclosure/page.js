@@ -166,21 +166,12 @@ const docFiles = {
 const branches = [
   {
     id: "ullal",
-    name: "Agasthya Vidyanikethan - Ullal Branch Campus",
+    name: "Maharshi Agasthya Vidyanikethan - Ullal Campus",
     shortName: "Ullal Branch",
     address: "#170/3, 6th block, Sir M. Vishweshwaraiah Layout, Ullal Ring road, Bengaluru-560110",
     phone: "7760776098 | 7760776046",
     email: "info@av.school",
     hasDocuments: true
-  },
-  {
-    id: "srigandhakaval",
-    name: "Agasthya Vidyanikethan - Srigandhakaval Branch Campus",
-    shortName: "Srigandhakaval Branch",
-    address: "# 1566, 'D' Group Layout, 60 ft. Road, Near 2nd Water Tank, Srigandhakaval, Bengaluru - 560091",
-    phone: "9880906633 | 9972342144",
-    email: "info@av.school",
-    hasDocuments: false
   }
 ];
 
@@ -200,7 +191,7 @@ export default function PublicDisclosure() {
               </span>
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-              Transparency & accountability are core values at Agasthya Vidyanikethan.
+              Transparency & accountability are core values at Maharshi Agasthya Vidyanikethan.
               Access all important school documents & certificates here.
             </p>
             {/* Animated underline */}
@@ -233,34 +224,7 @@ export default function PublicDisclosure() {
             </div>
           </div>
 
-          {/* Branch Selector - Clean white card with slider */}
-          <div className="mb-12">
-            <div className="flex justify-center mb-8">
-              <div className="relative flex w-full max-w-6xl bg-white rounded-2xl shadow-lg border border-gray-100 p-1 overflow-visible">
-                <div
-                  className="absolute top-1 bottom-1 bg-gradient-to-r from-[#FF5722] to-[#ff7a33] rounded-2xl transition-all duration-300 ease-out shadow-md"
-                  style={{
-                    width: "calc(50% + 2.5rem)",
-                    left: activeBranch === "ullal" ? "-1.25rem" : "calc(50% - 1.25rem)"
-                  }}
-                />
-                {branches.map((branch) => (
-                  <button
-                    key={branch.id}
-                    onClick={() => setActiveBranch(branch.id)}
-                    className={`relative z-10 w-1/2 px-6 py-4 text-center font-semibold text-sm md:text-base transition-all duration-300
-                      ${activeBranch === branch.id
-                        ? "text-white scale-[1.01]"
-                        : "text-gray-900"}
-                    `}
-                  >
-                    <span className="block md:hidden">{branch.id === "ullal" ? "AV Ullal" : "AV Srigandhakaval"}</span>
-                    <span className="hidden md:block whitespace-nowrap">{branch.name}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
+
 
           {/* Academic Year Selector - Future Implementation */}
           {/*

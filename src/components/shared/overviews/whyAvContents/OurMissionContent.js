@@ -50,7 +50,7 @@ const OurMissionContent = () => {
             Our mission is to inspire, educate, and empower the next generation of leaders while deeply rooted in culture and ethics.
           </p>
           <p className="text-foreground leading-relaxed text-base md:text-lg">
-            Agasthya Vidyanikethan is committed to a transformative educational journey — blending academic excellence with a holistic,
+            Maharshi Agasthya Vidyanikethan is committed to a transformative educational journey — blending academic excellence with a holistic,
             value-driven approach. We don&apos;t just teach subjects; we shape purpose-filled lives.
           </p>
         </motion.div>

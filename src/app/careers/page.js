@@ -11,7 +11,6 @@ import Navbar from "@/components/layout/header/Navbar";
 import Footer from "@/components/layout/footer/Footer";
 
 export default function Careers() {
-  const [selectedBranch, setSelectedBranch] = useState('ullal');
   const [isLoaded, setIsLoaded] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalJobTitle, setModalJobTitle] = useState("");
@@ -32,7 +31,7 @@ export default function Careers() {
         <HeaderTop />
       </div>
       <Navbar />
-      <div className="flex-1 w-full max-w-5xl mx-auto px-2 sm:px-4 lg:px-8 pt-6 pb-16">
+      <div className="flex-1 w-full max-w-5xl mx-auto px-2 sm:px-4 lg:px-8 pt-12 md:pt-20 pb-16">
         <motion.div
           initial="hidden"
           animate={isLoaded ? "visible" : "hidden"}
@@ -50,40 +49,15 @@ export default function Careers() {
           </p>
         </motion.div>
 
-        {/* Branch Selection Tabs - Styled as in pasted image */}
-        <div className="flex justify-center my-4 md:m-30 md:my-12 px-1">
-          <div className="flex w-full bg-white/95 rounded-lg shadow-md border border-gray-100 overflow-hidden gap-[2px] flex-wrap">
-            <button
-              onClick={() => setSelectedBranch('ullal')}
-              className={`flex-1 py-2 px-2 text-sm sm:text-base font-semibold transition-all duration-200 focus:outline-none ${
-                selectedBranch === 'ullal'
-                  ? 'bg-[#ff6600] text-white shadow-inner'
-                  : 'bg-[#f9f6f2] text-brown-700'
-              }`}
-              style={{ borderRadius: selectedBranch === 'ullal' ? '16px 0 0 16px' : '16px 0 0 16px' }}
-            >
-              Agasthya Vidyanikethan - Ullal Branch
-            </button>
-            <button
-              onClick={() => setSelectedBranch('srigandhakaval')}
-              className={`flex-1 py-2 px-2 text-sm sm:text-base font-semibold transition-all duration-200 focus:outline-none ${
-                selectedBranch === 'srigandhakaval'
-                  ? 'bg-[#ff6600] text-white shadow-inner'
-                  : 'bg-[#f9f6f2] text-brown-700'
-              }`}
-              style={{ borderRadius: selectedBranch === 'srigandhakaval' ? '0 16px 16px 0' : '0 16px 16px 0' }}
-            >
-              Agasthya Vidyanikethan - Srigandhakaval Branch
-            </button>
-          </div>
-        </div>
+        {/* Branch selection removed - Showing Ullal branch by default */}
+
 
         {/* Job Listings */}
-  <div className="grid gap-6 mt-6 sm:gap-8 sm:mt-8">
-          {jobListings[selectedBranch].length === 0 && (
-            <div className="text-center text-gray-500 py-12">No job openings currently for this branch.</div>
+        <div className="grid gap-6 mt-6 sm:gap-8 sm:mt-8">
+          {jobListings['ullal'].length === 0 && (
+            <div className="text-center text-gray-500 py-12">No job openings currently.</div>
           )}
-          {jobListings[selectedBranch].map((job) => (
+          {jobListings['ullal'].map((job) => (
             <motion.div
               key={job.id}
               initial={{ opacity: 0, y: 20 }}

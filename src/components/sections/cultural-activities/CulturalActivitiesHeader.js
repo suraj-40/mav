@@ -52,10 +52,10 @@ const CulturalActivitiesHeader = ({ activeTab, setActiveTab }) => {
           }}
         >
           <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-          Cultural Activities
+            Cultural Activities
           </span>
         </motion.h1>
-       
+
         <motion.p
           className="text-gray-600 max-w-3xl mx-auto mt-3 sm:mt-6 text-base sm:text-lg md:text-xl leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
@@ -105,56 +105,6 @@ const CulturalActivitiesHeader = ({ activeTab, setActiveTab }) => {
         </motion.div>
       </motion.div>
 
-      {/* Tabs */}
-      <div className="flex justify-center mb-1 sm:mb-12">
-        <div className="inline-flex bg-white rounded-full shadow-lg p-1.5 sm:p-2">
-          {/* Srigandhkaval Button */}
-          <motion.button
-            variants={tabVariants}
-            animate={
-              activeTab === "srigandhkaval"
-                ? "active"
-                : tappedTab === "srigandhkaval"
-                ? "tapped"
-                : "inactive"
-            }
-            onClick={() => {
-              setActiveTab("srigandhkaval");
-              handleTabTap("srigandhkaval");
-            }}
-            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold transition-colors duration-300 ${
-              activeTab === "srigandhkaval"
-                ? "bg-avorange text-white"
-                : "bg-transparent text-av hover:bg-gray-100"
-            }`}
-          >
-            Srigandhkaval Branch
-          </motion.button>
-
-          {/* Ullal Button */}
-          <motion.button
-            variants={tabVariants}
-            animate={
-              activeTab === "ullal"
-                ? "active"
-                : tappedTab === "ullal"
-                ? "tapped"
-                : "inactive"
-            }
-            onClick={() => {
-              setActiveTab("ullal");
-              handleTabTap("ullal");
-            }}
-            className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold transition-colors duration-300 ${
-              activeTab === "ullal"
-                ? "bg-avorange text-white"
-                : "bg-transparent text-av hover:bg-gray-100"
-            }`}
-          >
-            Ullal Branch
-          </motion.button>
-        </div>
-      </div>
     </section>
   );
 };

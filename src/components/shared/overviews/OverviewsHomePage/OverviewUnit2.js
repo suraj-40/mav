@@ -134,7 +134,7 @@ const OverviewUnit2 = () => {
         <div className="space-y-6">
           <div className="space-y-4">
             <div className="leading-relaxed text-base">
-              <b>In 2024,</b> Agasthya Vidyanikethan opened its Ullal branch in Nagarbhavi with a clear mission to redefine education and create a space where students aren&apos;t just taught but are inspired to grow into their finest version. While our Srigandhakaval branch continues to lead the way, the Ullal branch shines as a beacon for those ready to begin their journey of educational success, innovation, and limitless possibilities in Bangalore. We see education as a transformative journey, not just a walk through the academic textbooks. It&apos;s about igniting curiosity, fueling ideas & fostering innovation, as well as deep-rooting moral and cultural values that help students succeed in school life and beyond. Here, learning isn&apos;t confined to a classroom; it extends into real-world experiences that build character, resilience, and the confidence to dream big.
+              <b>In 2024,</b> Maharshi Agasthya Vidyanikethan opened its Ullal branch in Nagarbhavi with a clear mission to redefine education and create a space where students aren&apos;t just taught but are inspired to grow into their finest version. While our Srigandhakaval branch continues to lead the way, the Ullal branch shines as a beacon for those ready to begin their journey of educational success, innovation, and limitless possibilities in Bangalore. We see education as a transformative journey, not just a walk through the academic textbooks. It&apos;s about igniting curiosity, fueling ideas & fostering innovation, as well as deep-rooting moral and cultural values that help students succeed in school life and beyond. Here, learning isn&apos;t confined to a classroom; it extends into real-world experiences that build character, resilience, and the confidence to dream big.
             </div>
 
             {showFullText && (
@@ -155,7 +155,7 @@ const OverviewUnit2 = () => {
                   <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200"> 
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
                   A Secure, Comfortable, and Future-Ready Environment </div>
-                  At Agasthya Vidyanikethan, your child&apos;s safety comes first — always. With 24/7 CCTV security and a calm, protected campus, every student can learn and grow with complete peace of mind. Our spacious, sunlit classrooms create the perfect space for young minds to focus and imagine. And with smart tools like LED screens, lessons come alive, blending comfort, safety, and technology to provide an experience that is both secure and exciting every day.
+                  At Maharshi Agasthya Vidyanikethan, your child&apos;s safety comes first — always. With 24/7 CCTV security and a calm, protected campus, every student can learn and grow with complete peace of mind. Our spacious, sunlit classrooms create the perfect space for young minds to focus and imagine. And with smart tools like LED screens, lessons come alive, blending comfort, safety, and technology to provide an experience that is both secure and exciting every day.
                   </div>
 
                   <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200">
@@ -168,18 +168,18 @@ const OverviewUnit2 = () => {
                   <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200">
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
                   A School Built for Success </div>
-                  Success doesn&apos;t happen by accident; it&apos;s built step by step, in the right environment. At Agasthya Vidyanikethan, sharp intellect meets real-world skill, and character grows alongside achievement. With elite academic programs, vibrant co-curricular activity spaces, cutting-edge classrooms, and a strong focus on overall well-being, we create the space where tomorrow&apos;s leaders are shaped with care and precision.
+                  Success doesn&apos;t happen by accident; it&apos;s built step by step, in the right environment. At Maharshi Agasthya Vidyanikethan, sharp intellect meets real-world skill, and character grows alongside achievement. With elite academic programs, vibrant co-curricular activity spaces, cutting-edge classrooms, and a strong focus on overall well-being, we create the space where tomorrow&apos;s leaders are shaped with care and precision.
                   </div>
 
                   <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200">
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
-                  More Than a Start — Agasthya Vidyanikethan is a Pathway to Success.</div>
+                  More Than a Start — Maharshi Agasthya Vidyanikethan is a Pathway to Success.</div>
                   The path to excellence begins with that first bold step. Here, students aren&apos;t just prepared; they are primed to excel, to lead, and to stand apart. Give your child more than schooling, they deserve the tools to excel, the opportunities to lead, and the unwavering support to reach their full potential.
                   <div className="font-bold text-center mt-3">We don&apos;t just educate — we shape confident, capable individuals ready to face the world. </div>
                   </div>
 
                   {/* <div className="bg-gray-50  text-gray-800 rounded-lg mt-5 p-6 shadow-inner border border-gray-200 text-center">
-                  At <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyaniketan </span> we prepare them for a future filled with promise, pride, and limitless possibility.
+                  At <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan </span> we prepare them for a future filled with promise, pride, and limitless possibility.
                   <div className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent  text-lg font-bold text-center">
                   Enroll now and take the first step toward a future they&apos;ll own.</div>
                   </div>               */}

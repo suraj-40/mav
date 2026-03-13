@@ -7,7 +7,7 @@ import img11 from "@/assets/images/life-skills/01. Yoga Siddhi/1.png";
 import img12 from "@/assets/images/life-skills/01. Yoga Siddhi/2.jpg";
 
 const yogaData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Yoga Siddhi's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const yogaData = {
     icon: "🧘"
   },
   yoga_description:
-    "Yoga Siddhi at Agasthya Vidyaniketan transforms students by fostering physical vitality, mental focus, and inner peace. Through guided yoga practices, students cultivate discipline and mindfulness, aligning with NEP 2020's holistic learning goals."
+    "Yoga Siddhi at Maharshi Agasthya Vidyanikethan transforms students by fostering physical vitality, mental focus, and inner peace. Through guided yoga practices, students cultivate discipline and mindfulness, aligning with NEP 2020's holistic learning goals."
 };
 
 const LifeSkills1 = () => {

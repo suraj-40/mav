@@ -4,12 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const nepData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   nep_alignment: [
     {
       title: "A Holistic Approach to Education",
       description:
-        "At Agasthya Vidyaniketan, we have embraced the holistic approach outlined in NEP. We understand that education is not just about academic achievement but also about the overall development of your child. Our curriculum places equal emphasis on academic excellence, sports, arts, and extracurricular activities to ensure a well-rounded education.",
+        "At Maharshi Agasthya Vidyanikethan, we have embraced the holistic approach outlined in NEP. We understand that education is not just about academic achievement but also about the overall development of your child. Our curriculum places equal emphasis on academic excellence, sports, arts, and extracurricular activities to ensure a well-rounded education.",
       icon: "🌟"
     },
     {
@@ -39,7 +39,7 @@ const nepData = {
     {
       title: "Focus on Values and Ethical Education",
       description:
-        "The policy places a strong emphasis on instilling values and ethics in students. At Agasthya Vidyaniketan, we share this commitment and ensure that values such as integrity, empathy, and responsibility are an integral part of the educational experience.",
+        "The policy places a strong emphasis on instilling values and ethics in students. At Maharshi Agasthya Vidyanikethan, we share this commitment and ensure that values such as integrity, empathy, and responsibility are an integral part of the educational experience.",
       icon: "❤️"
     },
     {
@@ -68,7 +68,7 @@ const nepData = {
     }
   ],
   commitment_statement:
-    "Agasthya Vidyaniketan is fully committed to implementing the features and principles outlined in NEP. We are dedicated to providing your child with a well-rounded education that prepares them for the demands of the 21st century, nurtures their creativity and critical thinking, and fosters their holistic development. Our alignment with NEP ensures that your child receives an education that is not just of the highest quality but also future-ready and in sync with the changing educational landscape."
+    "Maharshi Agasthya Vidyanikethan is fully committed to implementing the features and principles outlined in NEP. We are dedicated to providing your child with a well-rounded education that prepares them for the demands of the 21st century, nurtures their creativity and critical thinking, and fosters their holistic development. Our alignment with NEP ensures that your child receives an education that is not just of the highest quality but also future-ready and in sync with the changing educational landscape."
 };
 
 const VisionMission1 = () => {

@@ -7,7 +7,7 @@ import img31 from "@/assets/images/life-skills/03. Chaduranga Siddhi/1.jpg";
 import img32 from "@/assets/images/life-skills/03. Chaduranga Siddhi/2.jpg";
 
 const chadurangaData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Chaduranga Siddhi's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const chadurangaData = {
     icon: "♟️"
   },
   chaduranga_description:
-    "Chaduranga Siddhi at Agasthya Vidyaniketan engages students in strategic games like chess to enhance cognitive abilities. This program fosters critical thinking, problem-solving, and decision-making, aligning with NEP 2020's goal of developing analytical and intellectual skills."
+    "Chaduranga Siddhi at Maharshi Agasthya Vidyanikethan engages students in strategic games like chess to enhance cognitive abilities. This program fosters critical thinking, problem-solving, and decision-making, aligning with NEP 2020's goal of developing analytical and intellectual skills."
 };
 
 const LifeSkills3 = () => {

@@ -46,7 +46,7 @@ const FuturisticApproachContent = () => {
             <span className="absolute -bottom-1 left-0 w-1/3 h-1 bg-secondaryColor/20 rounded-full"></span>
           </h2>
           <p className="text-foreground leading-relaxed mb-3 text-base md:text-lg">
-            In a constantly evolving world, Agasthya Vidyanikethan stands at the forefront of education with a futuristic approach.
+            In a constantly evolving world, Maharshi Agasthya Vidyanikethan stands at the forefront of education with a futuristic approach.
             We recognize the necessity of preparing students for a rapidly changing global landscape.
           </p>
           <p className="text-foreground leading-relaxed text-base md:text-lg">
@@ -131,7 +131,7 @@ const FuturisticApproachContent = () => {
             
             <div className={`mt-3 text-foreground leading-relaxed text-sm md:text-base overflow-hidden transition-all duration-300 ${activeFeature === "communication" ? "max-h-96" : "max-h-16 md:max-h-24 text-ellipsis overflow-hidden"}`}>
               <p>
-                We at Agasthya Vidyanikethan do not compromise on communication. All of our students are excellent communicators,
+                We at Maharshi Agasthya Vidyanikethan do not compromise on communication. All of our students are excellent communicators,
                 fluent in English and deeply appreciative of their mother tongue. They are rooted in cultural traditions and values.
               </p>
               

@@ -12,47 +12,47 @@ const Registration = () => {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      const user = {
-        name,
-        email,
-        parentsContact,
-        admissionForClass,
-        lastSchoolAttended,
-        branch,
-        gender
-      };
-        try {
-          console.log('user:', user);
-          const response = await fetch('http://localhost:8080/api/admission', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(user)
-          });
-
-          if (response.ok) {
-              const data = await response.json();
-              console.log('success:', data);
-              // Handle successful registration (e.g., redirect to login page)
-          } else {
-              console.error('failed:', response.statusText);
-              // Handle registration failure
-          }
-      } catch (error) {
-          console.error('Error:', error);
-          // Handle error
-      }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const user = {
+      name,
+      email,
+      parentsContact,
+      admissionForClass,
+      lastSchoolAttended,
+      branch,
+      gender
     };
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [parentsContact, setParentsContact] = useState('');
-    const [admissionForClass, setAdmissionForClass] = useState(''); 
-    const [branch, setBranch] = useState('');
-    const [gender, setGender] = useState('');
-    const [lastSchoolAttended, setLastSchoolAttended] = useState('');
+    try {
+      console.log('user:', user);
+      const response = await fetch('http://localhost:8080/api/admission', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('success:', data);
+        // Handle successful registration (e.g., redirect to login page)
+      } else {
+        console.error('failed:', response.statusText);
+        // Handle registration failure
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle error
+    }
+  };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [parentsContact, setParentsContact] = useState('');
+  const [admissionForClass, setAdmissionForClass] = useState('');
+  const [branch, setBranch] = useState('Ullal');
+  const [gender, setGender] = useState('');
+  const [lastSchoolAttended, setLastSchoolAttended] = useState('');
 
   return (
     <section
@@ -98,7 +98,7 @@ const Registration = () => {
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
               Begin Your Child’s Journey at
               <span className="block text-green-300 relative">
-                Agasthya Vidyanikethan
+                Maharshi Agasthya Vidyanikethan
                 <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-yellow-400 rounded-full" />
               </span>
             </h3>
@@ -150,17 +150,9 @@ const Registration = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
+                  <div className="space-y-2 hidden">
                     <label className="text-sm font-medium text-blue-800">Branch</label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
-                      id="branch"
-                      value={branch}
-                      onChange={(e) => setBranch(e.target.value)}  
-                    >
-                      <option value="" className="text-gray-500">Select Branch</option>
-                      <option value="Srigandhakavalu" className="text-gray-800">AV Srigandhakavalu</option>
-                      <option value="Ullal" className="text-gray-800">AV Ullal</option>
-                    </select>
+                    <input type="hidden" id="branch" value={branch} />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Gender</label>
@@ -176,28 +168,30 @@ const Registration = () => {
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-blue-800">Last School Attended</label>
-                  <input
-                    type="text"
-                    placeholder="Last School Attended (If Any)"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
-                    id="lastSchoolAttended"
-                    value={lastSchoolAttended}
-                    onChange={(e) => setLastSchoolAttended(e.target.value)}
-                  />
-                </div>
+                <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
+                  <div className="space-y-2 w-full md:w-1/2">
+                    <label className="text-sm font-medium text-blue-800">Last School Attended</label>
+                    <input
+                      type="text"
+                      placeholder="Last School Attended (If Any)"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="lastSchoolAttended"
+                      value={lastSchoolAttended}
+                      onChange={(e) => setLastSchoolAttended(e.target.value)}
+                    />
+                  </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-blue-800">Admission for Class</label>
-                  <input
-                    type="text"
-                    placeholder="Montessori 1, 2 or 3, Class 1, 2, 3..."
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
-                    id="admissionForClass"
-                    value={admissionForClass}
-                    onChange={(e) => setAdmissionForClass(e.target.value)}
-                  />
+                  <div className="space-y-2 w-full md:w-1/2">
+                    <label className="text-sm font-medium text-blue-800">Admission for Class</label>
+                    <input
+                      type="text"
+                      placeholder="Montessori 1, 2 or 3, Class 1, 2, 3..."
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-white/80 text-gray-800"
+                      id="admissionForClass"
+                      value={admissionForClass}
+                      onChange={(e) => setAdmissionForClass(e.target.value)}
+                    />
+                  </div>
                 </div>
 
                 <div className="flex items-center space-x-2">
@@ -212,7 +206,7 @@ const Registration = () => {
                     <button type="button" onClick={openModal} className="text-blue-600 hover:underline">
                       Privacy Policy
                     </button>{" "}
-                    for Agasthya Vidyanikethan
+                    for Maharshi Agasthya Vidyanikethan
                   </label>
                 </div>
 

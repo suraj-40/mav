@@ -20,8 +20,8 @@ const VisionAndMission  = () => {
   };
 
 export const metadata = {
-  title: "Vision & Mission - Our Educational Philosophy | Agasthya Vidyanikethan ",
-  description: "Discover Agasthya Vidyanikethan's vision and mission for excellence in education. Learn about our commitment to holistic development and academic achievement.",
+  title: "Vision & Mission - Our Educational Philosophy | Maharshi Agasthya Vidyanikethan ",
+  description: "Discover Maharshi Agasthya Vidyanikethan's vision and mission for excellence in education. Learn about our commitment to holistic development and academic achievement.",
   alternates: {
     canonical: "https://www.av.school/about-us/vision-mission"
   }

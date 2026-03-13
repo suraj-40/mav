@@ -7,7 +7,7 @@ import img21 from "@/assets/images/life-skills/02. Kalaripayattu/1.jpg";
 import img22 from "@/assets/images/life-skills/02. Kalaripayattu/2.jpg";
 
 const kalaripayattuData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Kalaripayattu's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const kalaripayattuData = {
     icon: "🥋"
   },
   kalaripayattu_description:
-    "Kalaripayattu at Agasthya Vidyaniketan is a dynamic program that builds physical strength, discipline, and mental agility. Rooted in ancient Indian martial arts, it empowers students with self-defense skills and fosters resilience, aligning with NEP 2020's emphasis on physical education and experiential learning."
+    "Kalaripayattu at Maharshi Agasthya Vidyanikethan is a dynamic program that builds physical strength, discipline, and mental agility. Rooted in ancient Indian martial arts, it empowers students with self-defense skills and fosters resilience, aligning with NEP 2020's emphasis on physical education and experiential learning."
 };
 
 const LifeSkills2 = () => {

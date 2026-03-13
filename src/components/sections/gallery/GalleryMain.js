@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MainTabs from "./MainTabs";
-import BranchTabs from "./BranchTabs";
 import GalleryContent from "./GalleryContent";
 import VideoGallery from "./VideoGallery";
 import { academicYears } from "./GalleryData";
@@ -16,8 +15,8 @@ const fadeVariants = {
 };
 
 const GalleryMain = () => {
-  const [mainTab, setMainTab] = useState("videos");
-  const [activeBranchTab, setActiveBranchTab] = useState("srigandhkaval");
+  const [mainTab, setMainTab] = useState("photos");
+  const [activeBranchTab, setActiveBranchTab] = useState("ullal");
   const [isLoaded, setIsLoaded] = useState(false);
   const [tappedTab, setTappedTab] = useState(null);
   const [expandedCardId, setExpandedCardId] = useState(null);
@@ -29,14 +28,9 @@ const GalleryMain = () => {
 
   useEffect(() => {
     setExpandedCardId(null);
-    if (mainTab === "photos") {
-      setActiveBranchTab("srigandhkaval");
-    }
   }, [mainTab]);
 
-  useEffect(() => {
-    setExpandedCardId(null);
-  }, [activeBranchTab]);
+
 
   const handleTabTap = (tab) => {
     setTappedTab(tab);
@@ -114,30 +108,54 @@ const GalleryMain = () => {
         </motion.div>
       </motion.div>
 
-      <div className="flex flex-col items-center mb-8">
-        <span className="mb-2 text-lg font-semibold text-gray-700">Please select an academic year:</span>
-        <div className="flex items-center justify-center gap-2">
-          {academicYears.map((year, idx) => (
-            <React.Fragment key={year}>
-              <button
-                onClick={() => setSelectedYear(year)}
-                className={`px-5 py-2 rounded-full border-2 font-semibold text-base shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-avorange
-                  ${selectedYear === year ? 'bg-avorange text-white border-avorange' : 'bg-white text-gray-800 border-gray-200 hover:bg-orange-50 hover:border-avorange'}`}
-              >
-                {year}
-              </button>
-              {idx < academicYears.length - 1 && (
-                <span className="h-0.5 w-6 bg-avorange opacity-60 mx-1 rounded-full"></span>
-              )}
-            </React.Fragment>
-          ))}
+      <div className="flex flex-col items-center mb-10 w-full max-w-xs mx-auto">
+        <label className="mb-3 text-lg font-semibold text-gray-700">Please select an academic year:</label>
+        <div className="w-full relative">
+          <Listbox value={selectedYear} onChange={setSelectedYear}>
+            <div className="relative">
+              <Listbox.Button className="relative w-full cursor-pointer rounded-xl bg-white py-3 pl-4 pr-10 text-left border-2 border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-avorange focus:border-avorange transition-all duration-200">
+                <span className="block truncate text-gray-800 font-medium text-lg">{selectedYear}</span>
+                <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                  <ChevronUpDownIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                </span>
+              </Listbox.Button>
+              <Listbox.Options className="absolute z-50 mt-2 max-h-60 w-full overflow-auto rounded-xl bg-white py-1 text-base shadow-xl border border-gray-100 focus:outline-none sm:text-lg">
+                {academicYears.map((year) => (
+                  <Listbox.Option
+                    key={year}
+                    className={({ active }) =>
+                      `relative cursor-pointer select-none py-3 pl-10 pr-4 transition-colors duration-150 ${
+                        active ? 'bg-orange-50 text-avorange' : 'text-gray-900'
+                      }`
+                    }
+                    value={year}
+                  >
+                    {({ selected }) => (
+                      <>
+                        <span className={`block truncate ${selected ? 'font-bold' : 'font-normal'}`}>
+                          {year}
+                        </span>
+                        {selected ? (
+                          <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-avorange">
+                            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </span>
+                        ) : null}
+                      </>
+                    )}
+                  </Listbox.Option>
+                ))}
+              </Listbox.Options>
+            </div>
+          </Listbox>
         </div>
       </div>
 
-      {/* Main Tabs (Videos/Photos) */}
       <MainTabs mainTab={mainTab} setMainTab={setMainTab} handleTabTap={handleTabTap} />
-      <BranchTabs mainTab={mainTab} activeBranchTab={activeBranchTab} setActiveBranchTab={setActiveBranchTab} />
-      
+      {/* BranchTabs removed as only Ullal is now shown */}
+
+
       {mainTab === "photos" ? (
         <GalleryContent
           mainTab={mainTab}

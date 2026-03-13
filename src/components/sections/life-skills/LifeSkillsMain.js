@@ -8,6 +8,9 @@ import LifeSkills3 from "./LifeSkills3";
 import LifeSkills4 from "./LifeSkills4";
 import LifeSkills5 from "./LifeSkills5";
 import LifeSkills6 from "./LifeSkills6";
+import LifeSkills7 from "./LifeSkills7";
+import LifeSkills8 from "./LifeSkills8";
+import LifeSkills9 from "./LifeSkills9";
 
 // Animation variants for header
 const fadeInUp = {
@@ -50,6 +53,18 @@ const LifeSkillsMain = () => {
     {
       title: "Sangeeta Siddhi",
       content: <LifeSkills6 />
+    },
+    {
+      title: "Bhagavad Gita",
+      content: <LifeSkills7 />
+    },
+    {
+      title: "Dhanur Vidya",
+      content: <LifeSkills8 />
+    },
+    {
+      title: "Scouts & Guides",
+      content: <LifeSkills9 />
     }
   ];
 
@@ -77,7 +92,7 @@ const LifeSkillsMain = () => {
           }}
         >
           <span className="bg-gradient-to-r from-[#FF5722] to-orange-900 bg-clip-text text-transparent">
-          Six Mandatory Life Skills
+          Nine Mandatory Life Skills
           </span>
         </motion.h1>
         
@@ -89,7 +104,7 @@ const LifeSkillsMain = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Cultivating holistic development through our six foundational life skills program, empowering students for a balanced and successful future.
+          Cultivating holistic development through our nine foundational life skills program, empowering students for a balanced and successful future.
         </motion.p>
         
         <motion.div

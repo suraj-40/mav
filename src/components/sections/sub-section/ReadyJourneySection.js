@@ -14,7 +14,7 @@ const ReadyJourneySection = () => {
         
         {/* Main statement with color emphasis */}
         <p className="text-xl md:text-2xl font-semibold text-gray-800 max-w-3xl mx-auto leading-relaxed mb-10">
-          At <span className="font-bold text-amber-600">Agasthya Vidyanikethan</span>, we don&apos;t just open classroom doors. We create{' '}
+          At <span className="font-bold text-amber-600">Maharshi Agasthya Vidyanikethan</span>, we don&apos;t just open classroom doors. We create{' '}
           <span className="text-orange-600 font-bold">pathways for growth</span>,{' '}
           <span className="text-yellow-600 font-bold">learning</span>, and{' '}
           <span className="text-amber-700 font-bold">lifelong possibilities</span>.

@@ -41,7 +41,7 @@ const MyCourseContent = () => {
           </div>
           <div className="mt-6 text-[15px] md:text-base text-gray-700 bg-orange-50/70 rounded-md px-4 pr-8 py-3 border-l-4 border-[#FF5722] max-w-xl shadow-sm text-justify">
             <p className="mb-2">
-              The My Subjects section of <span className="font-semibold text-[#FF5722]">AV’s ATOMS Learning Management System</span> opens up a structured view into your child’s academic journey, one subject at a time. At Agasthya Vidyanikethan, this feature is more than just a content list—it’s a complete learning portal built to make learning consistent, enjoyable, and measurable.
+              The My Subjects section of <span className="font-semibold text-[#FF5722]">AV’s ATOMS Learning Management System</span> opens up a structured view into your child’s academic journey, one subject at a time. At Maharshi Agasthya Vidyanikethan, this feature is more than just a content list—it’s a complete learning portal built to make learning consistent, enjoyable, and measurable.
             </p>
             <p className="mb-2">Each subject block is tailored to the student’s current class level and includes access to:</p>
             <Accordion />

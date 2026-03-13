@@ -7,7 +7,7 @@ import img61 from "@/assets/images/life-skills/06. Sangeeta Siddhi/1.jpg";
 import img62 from "@/assets/images/life-skills/06. Sangeeta Siddhi/2.jpg";
 
 const sangeetaData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Sangeeta Siddhi's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const sangeetaData = {
     icon: "🎶"
   },
   sangeeta_description:
-    "Sangeeta Siddhi at Agasthya Vidyaniketan immerses students in the art of music, fostering creativity and emotional resilience. This program enhances artistic skills and supports NEP 2020's vision of holistic development through experiential learning."
+    "Sangeeta Siddhi at Maharshi Agasthya Vidyanikethan immerses students in the art of music, fostering creativity and emotional resilience. This program enhances artistic skills and supports NEP 2020's vision of holistic development through experiential learning."
 };
 
 const LifeSkills6 = () => {

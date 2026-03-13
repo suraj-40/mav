@@ -41,6 +41,7 @@ const VideoGallery = ({ expandedCardId, toggleCardExpand, selectedYear }) => {
               toggleExpand={toggleCardExpand}
               showVideo={true}
               videoDisabled={activity.videoDisabled}
+              layout={activity.layout}
             />
           ))}
         </motion.div>

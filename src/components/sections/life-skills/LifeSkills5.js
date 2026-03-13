@@ -7,7 +7,7 @@ import img51 from "@/assets/images/life-skills/05. Naatya Siddhi/1.jpg";
 import img52 from "@/assets/images/life-skills/05. Naatya Siddhi/2.jpg";
 
 const naatyaData = {
-  school: "Agasthya Vidyaniketan",
+  school: "Maharshi Agasthya Vidyanikethan",
   alignment_info: {
     title: "Naatya Siddhi's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const naatyaData = {
     icon: "💃"
   },
   naatya_description:
-    "Naatya Siddhi at Agasthya Vidyaniketan celebrates the art of dance, encouraging students to express themselves creatively. This program enhances emotional intelligence and cultural awareness, aligning with NEP 2020's focus on creativity and holistic development."
+    "Naatya Siddhi at Maharshi Agasthya Vidyanikethan celebrates the art of dance, encouraging students to express themselves creatively. This program enhances emotional intelligence and cultural awareness, aligning with NEP 2020's focus on creativity and holistic development."
 };
 
 const LifeSkills5 = () => {

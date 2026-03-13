@@ -7,7 +7,7 @@ const technologyData = [
   {
     title: "Technology-Enhanced Learning",
     description:
-      "At Agasthya Vidyaniketan, we are resolute in our commitment to providing your child with an unparalleled educational experience, deeply rooted in modernity and technology. Our state-of-the-art facilities and technology-enhanced learning environments are meticulously designed to foster excellence and innovation.",
+      "At Maharshi Agasthya Vidyanikethan, we are resolute in our commitment to providing your child with an unparalleled educational experience, deeply rooted in modernity and technology. Our state-of-the-art facilities and technology-enhanced learning environments are meticulously designed to foster excellence and innovation.",
     icon: "💻"
   },
   {
@@ -49,7 +49,7 @@ const technologyData = [
 ];
 
 const conclusion =
-  "Your child's educational journey at Agasthya Vidyaniketan is characterized by a modern and technology-driven approach that ensures they are well-prepared for the future. We believe that providing access to modern facilities and technology-enhanced learning is an investment in your child's success and a testament to our commitment to their growth and development.";
+  "Your child's educational journey at Maharshi Agasthya Vidyanikethan is characterized by a modern and technology-driven approach that ensures they are well-prepared for the future. We believe that providing access to modern facilities and technology-enhanced learning is an investment in your child's success and a testament to our commitment to their growth and development.";
 
 const VisionMission2 = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -91,7 +91,7 @@ const VisionMission2 = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Technology at Agasthya Vidyaniketan
+            Technology at Maharshi Agasthya Vidyanikethan
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-[#FF5722] to-orange-600 mx-auto mt-4"></div>
         </motion.div> */}

@@ -5,8 +5,8 @@ import PageWrapper from "@/components/shared/wrappers/PageWrapper";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Top School in Bangalore – Agasthya Vidyanikethan Nagarbhavi",
-  description: "Ranked among Bangalore's best! Explore Agasthya Vidyanikethan, Nagarbhavi where holistic education, sports, and cultural growth come together.",
+  title: "Top School in Bangalore – Maharshi Agasthya Vidyanikethan Nagarbhavi",
+  description: "Ranked among Bangalore's best! Explore Maharshi Agasthya Vidyanikethan, Nagarbhavi where holistic education, sports, and cultural growth come together.",
   alternates: {
     canonical: "https://www.av.school/",
   },
@@ -22,7 +22,7 @@ export default function Home() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "School",
-            "name": "Agasthya Vidyanikethan",
+            "name": "Maharshi Agasthya Vidyanikethan",
             "alternateName": "AV",
             "url": "https://www.av.school/",
             "logo": "https://www.av.school/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo_1.bbc98d07.png&w=256&q=75",
@@ -38,7 +38,7 @@ export default function Home() {
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            "name": "Agasthya Vidyanikethan",
+            "name": "Maharshi Agasthya Vidyanikethan",
             "url": "https://www.av.school/",
             "potentialAction": {
               "@type": "SearchAction",
@@ -55,8 +55,8 @@ export default function Home() {
               "@type": "WebPage",
               "@id": "https://www.av.school/"
             },
-            "headline": "Agasthya Vidyanikethan – Top School in Nagarbhavi, Bangalore",
-            "description": "In 2024, Agasthya Vidyanikethan opened its Ullal branch with a clear mission to redefine education and create a space where students are justly taught but are inspired to grow into their finest version. While our Srigandhakaval branch continues to lead the way, the Ullal branch serves as a beacon for those ready to begin their journey of educational success, innovation, and limitless possibilities.",
+            "headline": "Maharshi Agasthya Vidyanikethan – Top School in Nagarbhavi, Bangalore",
+            "description": "In 2024, Maharshi Agasthya Vidyanikethan opened its Ullal branch with a clear mission to redefine education and create a space where students are justly taught but are inspired to grow into their finest version. While our Srigandhakaval branch continues to lead the way, the Ullal branch serves as a beacon for those ready to begin their journey of educational success, innovation, and limitless possibilities.",
             "publisher": {
               "@type": "Organization",
               "name": "",
