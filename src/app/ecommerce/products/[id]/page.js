@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import ProductDetailsMain from "@/components/layout/main/ecommerce/ProductDetailsMain";
 import ThemeController from "@/components/shared/others/ThemeController";
 import PageWrapper from "@/components/shared/wrappers/PageWrapper";
