@@ -7,7 +7,7 @@ import img21 from "@/assets/images/life-skills/08. Dhanur Vidya/1.png";
 import img22 from "@/assets/images/life-skills/08. Dhanur Vidya/2.png";
 
 const dhanurData = {
-  school: "Maharshi Agasthya Vidyanikethan",
+  school: "Agasthya Vidyanikethan",
   alignment_info: {
     title: "Dhanur Vidya's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const dhanurData = {
     icon: "🏹"
   },
   description:
-    "Dhanur Vidya at Maharshi Agasthya Vidyanikethan teaches students the art of archery, focusing on precision, patience, and concentration. It is not just about hitting a target but about mastering the mind and body in perfect unison."
+    "Dhanur Vidya at Agasthya Vidyanikethan teaches students the art of archery, focusing on precision, patience, and concentration. It is not just about hitting a target but about mastering the mind and body in perfect unison."
 };
 
 const LifeSkills8 = () => {

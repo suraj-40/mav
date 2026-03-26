@@ -10,7 +10,7 @@ const HeroSlider3 = () => {
       </>
     ),
     image: herobannerImage5,
-    tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
+    tag: "AGASTHYA VIDYANIKETHAN",
     subtitle:
       "Your journey begins here, Join us today and embark on an educational adventure.",
   };
@@ -53,7 +53,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? HomeTumbail : herobannerImage,
-//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
+//       tag: "AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Your journey begins here join us today and embark on an educational adventure ",
 //     },
 //     {
@@ -68,7 +68,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? herobannerImage5 : herobannerImage2,
-//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
+//       tag: "AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Your journey begins here, Join us today and embark on an educational adventure.",
 //     },
 //     {
@@ -84,7 +84,7 @@ export default HeroSlider3;
 //           </>
 //         ),
 //       image: isHome9 || isHome9Dark ? herobannerImage7 : herobannerImage3,
-//       tag: "MAHARSHI AGASTHYA VIDYANIKETHAN",
+//       tag: "AGASTHYA VIDYANIKETHAN",
 //       subtitle:"Where every student's journey to excellence begins, shaping future leaders and change-makers.",
 //     },
 //   ];

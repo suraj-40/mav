@@ -21,7 +21,7 @@ const Footer = () => {
             >
               <Image
                 src={logoImage}
-                alt="Maharshi Agasthya Vidyanikethan"
+                alt="Agasthya Vidyanikethan"
                 placeholder="blur"
                 className=""
               />
@@ -32,7 +32,7 @@ const Footer = () => {
               <span
                 className="text-avorange text-2xl font-samarkan"
               >
-                Maharshi Agasthya Vidyanikethan
+                Agasthya Vidyanikethan
               </span>
             </p>
             <div className="flex space-x-4 md:justify-center md:mt-10">
@@ -193,7 +193,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className=" font-medium text-avorange font-bold">
-                    Maharshi Agasthya Vidyanikethan
+                    Agasthya Vidyanikethan
                   </p>
                   <p className=" font-medium">Ullal Branch</p>
                   <p className=" ">7760776098 | 7760776046</p>
@@ -275,7 +275,7 @@ const Footer = () => {
         <div className="border-t text-gray-400 pt-8">
           <div className="flex flex-col md:flex-row justify-between text-gray-400 items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Maharshi Agasthya Vidyanikethan. All rights reserved.
+              © 2025 Agasthya Vidyanikethan. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a

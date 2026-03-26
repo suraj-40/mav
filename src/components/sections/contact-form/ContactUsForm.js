@@ -56,7 +56,7 @@ const ContactUs = () => {
 
                 {/* Branch 2 */}
                 <li>
-                  <h6 className="font-semibold">Maharshi Agasthya Vidyanikethan Ullal</h6>
+                  <h6 className="font-semibold">Agasthya Vidyanikethan Ullal</h6>
                   <div className="flex text-sm mt-1" style={{ color: "grey" }}>
                     <p className="pr-2 border-r border-black">
                       <a href="tel:+917760776098">+91 7760776098</a>

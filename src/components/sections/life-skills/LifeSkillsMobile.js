@@ -66,7 +66,7 @@ const LifeSkillsMobile = () => {
             className="text-3xl font-bold text-avorange tracking-tight"
             style={{ fontFamily: "Samarkan, cursive" }}
           >
-            Maharshi Agasthya Vidyanikethan
+            Agasthya Vidyanikethan
           </h2>
           <motion.h2
             className="text-2xl font-bold mt-3 bg-gradient-to-r from-av to-avorange bg-clip-text text-transparent"

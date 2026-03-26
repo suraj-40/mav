@@ -98,7 +98,7 @@ const Registration = () => {
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
               Begin Your Child’s Journey at
               <span className="block text-green-300 relative">
-                Maharshi Agasthya Vidyanikethan
+                Agasthya Vidyanikethan
                 <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-yellow-400 rounded-full" />
               </span>
             </h3>
@@ -206,7 +206,7 @@ const Registration = () => {
                     <button type="button" onClick={openModal} className="text-blue-600 hover:underline">
                       Privacy Policy
                     </button>{" "}
-                    for Maharshi Agasthya Vidyanikethan
+                    for Agasthya Vidyanikethan
                   </label>
                 </div>
 

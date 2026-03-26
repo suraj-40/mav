@@ -70,7 +70,7 @@ const OverviewHome = () => {
           >
             <div className="text-center bg-gradient-to-r from-orange-50 to-white py-5 px-6 border-b border-gray-100">
               <h3 className="text-xl md:text-2xl font-semibold text-gray-800">
-                Maharshi Agasthya Vidyanikethan - Ullal Campus
+                Agasthya Vidyanikethan - Ullal Campus
               </h3>
               <p className="text-gray-500 text-sm">
                 Established in 2024 • Premier Educational Institution

@@ -165,7 +165,7 @@ const Schedule = () => {
             <h3 className="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg">
               Begin Your Child&apos;s Journey at
               <span className="block text-avorange relative">
-                Maharshi Agasthya Vidyanikethan
+                Agasthya Vidyanikethan
                 <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-yellow-400 rounded-full" />
               </span>
             </h3>
@@ -246,7 +246,7 @@ const Schedule = () => {
                 <div className="flex items-center space-x-2">
                   <input type="checkbox" id="PrivacyPolicy" name="acceptPolicy" checked={formData.acceptPolicy} onChange={handleChange} required />
                   <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700 text-center">
-                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Maharshi Agasthya Vidyanikethan
+                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
                   </label>
                 </div>
                 <div className="text-center">
@@ -265,7 +265,7 @@ const Schedule = () => {
                     Form Submitted Successfully!
                   </h2>
                   <p className="text-gray-700 text-center">
-                    Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan. </span> We look
+                    Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyanikethan. </span> We look
                     forward to welcoming you!
                   </p>
                 </div>
@@ -639,7 +639,7 @@ export default Schedule;
 //                     <button type="button" className="text-blue-600 hover:underline">
 //                       Privacy Policy
 //                     </button>{" "}
-//                     for Maharshi Agasthya Vidyanikethan
+//                     for Agasthya Vidyanikethan
 //                   </label>
 //                 </div>
 //                 <ButtonPrimary

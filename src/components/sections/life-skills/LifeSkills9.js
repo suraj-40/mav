@@ -7,7 +7,7 @@ import img31 from "@/assets/images/life-skills/09. Scouts & Guides/1.png";
 import img32 from "@/assets/images/life-skills/09. Scouts & Guides/2.png";
 
 const scoutsData = {
-  school: "Maharshi Agasthya Vidyanikethan",
+  school: "Agasthya Vidyanikethan",
   alignment_info: {
     title: "Scouts & Guides' alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const scoutsData = {
     icon: "⚜️"
   },
   description:
-    "Scouts & Guides at Maharshi Agasthya Vidyanikethan empower students with practical life skills, leadership qualities, and a spirit of service. Through outdoor activities and community engagement, students build character and resilience."
+    "Scouts & Guides at Agasthya Vidyanikethan empower students with practical life skills, leadership qualities, and a spirit of service. Through outdoor activities and community engagement, students build character and resilience."
 };
 
 const LifeSkills9 = () => {

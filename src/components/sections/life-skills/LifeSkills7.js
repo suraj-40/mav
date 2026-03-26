@@ -7,7 +7,7 @@ import img11 from "@/assets/images/life-skills/07. Bhagavad Gita/1.png";
 import img12 from "@/assets/images/life-skills/07. Bhagavad Gita/2.png";
 
 const gitaData = {
-  school: "Maharshi Agasthya Vidyanikethan",
+  school: "Agasthya Vidyanikethan",
   alignment_info: {
     title: "Bhagavad Gita's alignment with NEP 2020",
     description:
@@ -15,7 +15,7 @@ const gitaData = {
     icon: "📖"
   },
   description:
-    "The Bhagavad Gita at Maharshi Agasthya Vidyanikethan introduces students to timeless wisdom and ethical principles. By exploring its teachings, students learn about duty, emotional balance, and the path to spiritual and personal growth."
+    "The Bhagavad Gita at Agasthya Vidyanikethan introduces students to timeless wisdom and ethical principles. By exploring its teachings, students learn about duty, emotional balance, and the path to spiritual and personal growth."
 };
 
 const LifeSkills7 = () => {

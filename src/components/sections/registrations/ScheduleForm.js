@@ -168,7 +168,7 @@ const ScheduleForm = () => {
             Form Submitted Successfully!
           </h2>
           <p className="text-gray-700 text-center">
-            Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan. </span> We look
+            Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyanikethan. </span> We look
             forward to welcoming you!
           </p>
         </div>
@@ -372,7 +372,7 @@ const ScheduleForm = () => {
               <Link href="/policy/privacy" className="text-blueDark underline">
                 Privacy Policy
               </Link>{" "}
-              for Maharshi Agasthya Vidyanikethan
+              for Agasthya Vidyanikethan
             </label>
           </div>
           <div className="text-center">
@@ -724,7 +724,7 @@ export default ScheduleForm;
 //               required
 //             />
 //             <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700">
-//               I accept the  <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Maharshi Agasthya Vidyanikethan
+//               I accept the  <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
 //             </label>
 //           </div>
 //           <div className="text-center">

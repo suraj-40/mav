@@ -197,7 +197,7 @@ const Registration = () => {
                   Form Submitted Successfully!
                 </h2>
                 <p className="text-gray-700 text-center">
-                  Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Maharshi Agasthya Vidyanikethan. </span> We look forward to welcoming you!
+                  Thank you for scheduling your visit to <span className="bg-gradient-to-r from-[#FF5722] to-orange-950 bg-clip-text text-transparent font-bold font-samarkan text-xl"> Agasthya Vidyanikethan. </span> We look forward to welcoming you!
                 </p>
               </div>
             ) : !open ? (
@@ -273,7 +273,7 @@ const Registration = () => {
                 <div className="flex items-center space-x-2">
                   <input type="checkbox" id="PrivacyPolicy" name="acceptPolicy" checked={formData.acceptPolicy} onChange={handleChange} required />
                   <label htmlFor="PrivacyPolicy" className="text-sm text-gray-700 text-center">
-                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Maharshi Agasthya Vidyanikethan
+                    I accept the <a href="/policy/privacy" className="text-blueDark underline">Privacy Policy</a> for Agasthya Vidyanikethan
                   </label>
                 </div>
                 <div className="text-center">

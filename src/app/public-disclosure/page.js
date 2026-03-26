@@ -166,7 +166,7 @@ const docFiles = {
 const branches = [
   {
     id: "ullal",
-    name: "Maharshi Agasthya Vidyanikethan - Ullal Campus",
+    name: "Agasthya Vidyanikethan - Ullal Campus",
     shortName: "Ullal Branch",
     address: "#170/3, 6th block, Sir M. Vishweshwaraiah Layout, Ullal Ring road, Bengaluru-560110",
     phone: "7760776098 | 7760776046",
@@ -191,7 +191,7 @@ export default function PublicDisclosure() {
               </span>
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
-              Transparency & accountability are core values at Maharshi Agasthya Vidyanikethan.
+              Transparency & accountability are core values at Agasthya Vidyanikethan.
               Access all important school documents & certificates here.
             </p>
             {/* Animated underline */}
