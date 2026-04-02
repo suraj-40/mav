@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "../../../assets/images/logo/logo_1.png";
+import Logo from "../../../assets/images/logo/color-small.png";
 
 const WelcomeSection = () => {
   return (

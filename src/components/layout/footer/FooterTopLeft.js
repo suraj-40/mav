@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logoImage from "@/assets/images/logo/logo_2.png";
+import logoImage from "@/assets/images/logo/bw-logo.png";
 import Link from "next/link";
 
 const FooterTopLeft = () => {

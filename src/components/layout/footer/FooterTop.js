@@ -1,6 +1,6 @@
 import useIsSecondary from "@/hooks/useIsSecondary";
 import Image from "next/image";
-import logoImage from "@/assets/images/logo/logo_2.png";
+import logoImage from "@/assets/images/logo/bw-logo.png";
 import FooterTopLeft from "./FooterTopLeft";
 import FooterNavList from "./FooterNavList";  
 

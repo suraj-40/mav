@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logoImage from "@/assets/images/logo/logo_31.png";
+import logoImage from "@/assets/images/logo/bw-logo.png";
 
 const Footer = () => {
   return (
@@ -14,10 +14,10 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
           {/* School Info */}
-          <div data-aos="fade-up">
+          <div data-aos="fade-up" className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <Link
               href="/"
-              className="inline-block w-[60%] md:w-full mb-6"
+              className="inline-block w-[60%] md:w-full mb-1"
             >
               <Image
                 src={logoImage}
@@ -26,7 +26,7 @@ const Footer = () => {
                 className=""
               />
             </Link>
-            <p className="mb-6 text-[16px] md:text-center leading-tight font-medium">
+            <p className="mb-6 text-[16px] leading-tight font-medium">
               Educating the Future and <br />
               Nurturing our Culture at<br />
               <span
@@ -35,7 +35,7 @@ const Footer = () => {
                 Agasthya Vidyanikethan
               </span>
             </p>
-            <div className="flex space-x-4 md:justify-center md:mt-10">
+            <div className="flex space-x-4 lg:justify-start lg:mt-10">
               <a
                 href="https://www.facebook.com/@AgasthyaVidyaniketan/"
                 className="text-black bg-white hover:text-white p-[10px] rounded-md hover:bg-avorange transition-colors  duration-300"

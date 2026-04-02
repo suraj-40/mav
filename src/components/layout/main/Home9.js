@@ -16,6 +16,7 @@ import Programs from "@/components/sections/programs/Programs";
 import Registration from "@/components/sections/registrations/Registration";
 import ImageGallery from "@/components/sections/sub-section/ImageGallery";
 import FAQSection from "@/components/sections/sub-section/FAQSection";
+import AdmissionSteps from "@/components/sections/admission-steps/AdmissionSteps";
 
 const Home9 = () => {
   return (
@@ -29,6 +30,7 @@ const Home9 = () => {
       <OverviewHome/>
       {/* <FeatureCourses title="Our online courses" course="2" /> */}
       <Registration />
+      <AdmissionSteps />
       <ImageGallery />
       {/* <Blogs /> */}
       {/* <HomeBlog/>  */}

@@ -6,21 +6,21 @@ import logoImage from "@/assets/images/logo/logo_2.png";
 export async function POST(req) {
   const body = await req.json();
   const {
-      childName,
-      parentEmail,
-      fatherName,
-      fatherContact,
-      motherName,
-      motherContact,
-      dateOfBirth,
-      nationality,
-      branch,
-      admissionClass,
-      gender,
-      lastSchool,     
-      acceptPolicy,
-      date,
-      selectedTime,
+    childName,
+    parentEmail,
+    fatherName,
+    fatherContact,
+    motherName,
+    motherContact,
+    dateOfBirth,
+    nationality,
+    branch,
+    admissionClass,
+    gender,
+    lastSchool,
+    acceptPolicy,
+    date,
+    selectedTime,
   } = body;
 
   const transporter = nodemailer.createTransport({
@@ -125,8 +125,8 @@ export async function POST(req) {
       </p>
     </div>
   `;
-  
-  
+
+
 
   const schoolEmailTemplate = `
     <h2>New Student Visit Scheduled</h2>
@@ -156,13 +156,13 @@ export async function POST(req) {
         email = "info@av.school";
         phone = "7760776098 | 7760776046";
         address = "#170/3, 6th block, Sir M. Vishweshwaraiah Layout, Ullal Ring road, Bengaluru-560110";
-        link="https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6";
+        link = "https://maps.app.goo.gl/Xe6HM1q4uXFXi59J6";
         branchImage = "https://res.cloudinary.com/dpv2jcm1c/image/upload/v1747384275/AV_sj12ct.png"; // Replace with your Ullal branch image URL
       } else {
         email = "info@av.school";
         phone = "9880906633 | 9972342144";
         address = "# 1566, 'D' Group Layout, 60 ft. Road, Near 2nd Water Tank, Srigandhakaval, Bengaluru - 560091. Landmark: Nagarabhavi Ring Road   ";
-        link="https://maps.app.goo.gl/h7nNTso9x3Eag8oW8";
+        link = "https://maps.app.goo.gl/h7nNTso9x3Eag8oW8";
         branchImage = "https://res.cloudinary.com/dpv2jcm1c/image/upload/v1754033935/AV1_epwjbu.png"; // Current image for main branch
       }
       const info1 = await transporter.sendMail({
@@ -171,7 +171,7 @@ export async function POST(req) {
         subject: `Campus Visit Confirmed — See You on ${date}, ${selectedTime}`,
         html: studentEmailTemplate(fatherName, motherName, childName, date, selectedTime, address, phone, email, link, branchImage),
       });
-    }    
+    }
 
     const info2 = await transporter.sendMail({
       from: '"Agasthya Vidyanikethan" <info@av.school>',  //change personal email to school email

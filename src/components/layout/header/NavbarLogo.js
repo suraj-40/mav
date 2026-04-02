@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo1 from "@/assets/images/logo/logo_1.png";
+import logo1 from "@/assets/images/logo/color-small.png";
 import Link from "next/link";
 
 const NavbarLogo = () => {
@@ -8,7 +8,7 @@ const NavbarLogo = () => {
     <div className="lg:col-start-1 lg:col-span-2 flex items-center">
       <Link
         href="/"
-        className="w-logo-sm lg:w-logo-lg transition-all duration-300 hover:opacity-90"
+        className="w-auto transition-all duration-300 hover:opacity-90"
       >
         <Image
           priority={true}
