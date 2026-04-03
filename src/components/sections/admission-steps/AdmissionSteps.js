@@ -2,6 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import checkProfile from "@/assets/images/registration-path/check-profile.png";
+import apply from "@/assets/images/registration-path/apply.png";
+import createFile from "@/assets/images/registration-path/create-file.png";
+import handshake from "@/assets/images/registration-path/handshake.png";
+import confirm from "@/assets/images/registration-path/confirm.png";
 
 // ── Custom Premium SVG Icons ──────────────────────────────────────────────────
 
@@ -74,35 +80,75 @@ const steps = [
   {
     title: "Register & Verify",
     description: "Fill the form, verify your mobile & E-mail ID.",
-    icon: <IconRegister />,
+    icon: (
+      <Image
+        src={checkProfile}
+        alt="Register & Verify"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain scale-110"
+      />
+    ),
     step: "01",
     accent: "#182153"
   },
   {
     title: "Apply Now",
     description: "Submit the application form with the fee.",
-    icon: <IconApply />,
+    icon: (
+      <Image
+        src={apply}
+        alt="Apply Now"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain scale-110"
+      />
+    ),
     step: "02",
     accent: "#EA5529"
   },
   {
     title: "Assessment",
     description: "Student Proficiency Assessment at campus.",
-    icon: <IconAssessment />,
+    icon: (
+      <Image
+        src={createFile}
+        alt="Assessment"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain scale-110"
+      />
+    ),
     step: "03",
     accent: "#182153"
   },
   {
     title: "Interaction",
     description: "Scheduled meeting with the academic team.",
-    icon: <IconInteraction />,
+    icon: (
+      <Image
+        src={handshake}
+        alt="Interaction"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain scale-110"
+      />
+    ),
     step: "04",
     accent: "#EA5529"
   },
   {
     title: "Confirmation",
     description: "Block the seat within 7 days of the letter.",
-    icon: <IconConfirmation />,
+    icon: (
+      <Image
+        src={confirm}
+        alt="Confirmation"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain scale-110"
+      />
+    ),
     step: "05",
     accent: "#182153"
   }
@@ -176,27 +222,18 @@ const AdmissionSteps = () => {
 
                   {/* Card */}
                   <motion.div
-                    whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(234,85,41,0.18)" }}
+                    whileHover={{ y: -6 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     className="
                       w-[104px] h-[104px] rounded-[28px]
-                      bg-white dark:bg-[#182153]
-                      border border-slate-100 dark:border-slate-800
-                      shadow-[0_8px_24px_rgba(0,0,0,0.06)] dark:shadow-none
                       flex items-center justify-center
                       text-[#182153] dark:text-white
-                      group-hover:border-[#EA5529]/60
                       transition-colors duration-300
                       relative overflow-hidden
                     "
                   >
                     {/* Subtle radial glow on hover */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(circle_at_60%_40%,rgba(234,85,41,0.07),transparent_70%)]" />
-
-                    {/* Step watermark */}
-                    <span className="absolute top-2 right-2.5 text-[9px] font-black text-slate-200 dark:text-slate-700 tracking-wider select-none">
-                      {step.step}
-                    </span>
 
                     <div className="relative z-10 group-hover:scale-110 transition-transform duration-300">
                       {step.icon}
@@ -235,7 +272,7 @@ const AdmissionSteps = () => {
               className="flex items-center gap-5 p-5 rounded-2xl bg-slate-50 dark:bg-[#182153]/20 border border-slate-100 dark:border-slate-800 hover:border-[#EA5529]/40 hover:bg-white dark:hover:bg-[#182153]/40 group transition-all duration-300"
             >
               {/* Icon tile */}
-              <div className="flex-shrink-0 w-[68px] h-[68px] rounded-2xl bg-white dark:bg-[#0C0E2B] flex items-center justify-center text-[#182153] dark:text-white shadow-sm border border-slate-100 dark:border-slate-800 group-hover:border-[#EA5529]/50 group-hover:shadow-[0_6px_20px_rgba(234,85,41,0.12)] transition-all duration-300">
+              <div className="flex-shrink-0 w-[68px] h-[68px] rounded-2xl flex items-center justify-center text-[#182153] dark:text-white transition-all duration-300">
                 {step.icon}
               </div>
 

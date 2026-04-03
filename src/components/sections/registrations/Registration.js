@@ -202,7 +202,7 @@ const Registration = () => {
               </div>
             ) : !open ? (
               <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Child&apos;s Full Name <span className="text-red-600">*</span></label>
                     <input type="text" name="childName" value={formData.childName} onChange={handleChange} required placeholder="Full Name in CAPITAL" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
@@ -216,7 +216,7 @@ const Registration = () => {
                     <input type="text" name="nationality" value={formData.nationality} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Father&apos;s Name <span className="text-red-600">*</span></label>
                     <input type="text" name="fatherName" value={formData.fatherName} onChange={handleChange} required className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
@@ -230,7 +230,7 @@ const Registration = () => {
                     <input type="text" name="fatherContact" value={formData.fatherContact} onChange={handleChange} required pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-blue-800">Mother&apos;s Contact</label>
                     <input type="text" name="motherContact" value={formData.motherContact} onChange={handleChange} pattern="\d{10}" className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
@@ -248,12 +248,12 @@ const Registration = () => {
                     </select>
                   </div>
                 </div>
-                <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                   <div className="space-y-2 hidden">
                     <label className="text-sm font-medium text-blue-800">Branch <span className="text-red-600">*</span></label>
                     <input type="hidden" name="branch" value={formData.branch} />
                   </div>
-                  <div className="space-y-2 w-full md:w-1/3">
+                  <div className="space-y-2 w-full">
                     <label className="text-sm font-medium text-blue-800">Admission for Class <span className="text-red-600">*</span></label>
                     <select name="admissionClass" value={formData.admissionClass} onChange={handleChange} required className="input w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800">
                       <option value="">Select Class</option>
@@ -265,7 +265,7 @@ const Registration = () => {
                       ))}
                     </select>
                   </div>
-                  <div className="space-y-2 w-full md:w-1/3">
+                  <div className="space-y-2 w-full">
                     <label className="text-sm font-medium text-blue-800">Last School Attended</label>
                     <input type="text" name="lastSchool" value={formData.lastSchool} onChange={handleChange} className="input w-full p-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 bg-white/80 text-gray-800" />
                   </div>

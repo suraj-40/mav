@@ -184,7 +184,7 @@ const ScheduleForm = () => {
                   <span className="absolute left-0 right-0 bottom-0 h-1 bg-gradient-to-r from-av via-avorange to-avorange"></span>
                 </span>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Child&apos;s Full Name <span className="text-red-600">*</span>
@@ -239,7 +239,7 @@ const ScheduleForm = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Mother&apos;s Name <span className="text-red-600">*</span>
@@ -294,7 +294,7 @@ const ScheduleForm = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-blue-800">
                 Gender <span className="text-red-600">*</span>
